@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+
+dconfig="$HOME/Documents/dalis/.config"
+dhome="$HOME/Documents/dalis/home"
+config=()
+home=()
+devices=(
+	#Dispositivos definidos em ssh
+	"dariolaptop"
+)
+for i in $(ls $dconfig); do
+	config+=("$HOME/.config/$i")
+done
+for i in $(ls -A $dhome); do
+	home+=("$HOME/$i")
+done
+
+for device in ${devices[@]}; do
+	# Verificar conexão
+	ssh -q -o BatchMode=yes  -o StrictHostKeyChecking=no -o ConnectTimeout=5 "$device" 'exit 0'
+	go="$?"
+	if [ "$go" = "0" ]; then
+	    #Sincronizar configuração
+	    rsync -uvrP --delete ${config[@]} $device:~/.config
+	    rsync -uvrP --delete ${home[@]} $device:
+        #criar backup, pode demorar um tempo
+	    rsync -uvrP --delete "$HOME/Documents"/* $device:~/Documents
+        notify-send "Laptop update 💻" "Devices ${devices[@]} updated with success!"
+	fi
+done

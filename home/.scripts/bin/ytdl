@@ -1,0 +1,23 @@
+#!/bin/bash
+links=()
+printf "start para começar os downloads\nquit para sair\n"
+while true
+do
+	printf ">> "
+	read r
+	case $r in
+		"start")
+			for i in ${links[@]}
+			do
+				yt-dlp -x -f "bestaudio[ext=m4a]" --add-metadata --embed-thumbnail "$i"
+			done
+			break
+			;;
+		"quit")
+			break
+			;;
+		*)
+			links+=($r)
+			;;
+esac
+done

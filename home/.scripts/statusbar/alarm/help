@@ -1,0 +1,6 @@
+Utilização:
+-s para segundos
+-m para minutos
+-h para horas
+Ex: Para apitar em 2 horas , 15 minutos e 20 segundos:
+alarm -h 2 -m 15 -s 20

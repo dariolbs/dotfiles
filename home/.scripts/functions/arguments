@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+args=(
+"$1"
+"$2"
+"$3"
+"$4"
+"$5"
+"$6"
+"$7"
+)
+last_argument=$(n=0; for i in ${args[@]};do [ -z $i ] && echo ${args[$(($n-1))]} && continue; n=$(($n+1)); done)
+echo $last_argument
+echo ${args[1]}

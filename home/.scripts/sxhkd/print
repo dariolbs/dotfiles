@@ -1,0 +1,13 @@
+#!/bin/bash
+case $1 in
+	"select")
+		scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png --select &&
+		notify-send " Scrot" -u low 'Print Taken!' &&
+		xclip -selection clipboard -t image/png -i $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)
+		;;
+	"")
+		scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png &&
+		notify-send " Scrot" -u low 'Print Taken!' &&
+		xclip -selection clipboard -t image/png -i $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)
+		;;
+esac

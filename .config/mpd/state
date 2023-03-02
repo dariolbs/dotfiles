@@ -1,0 +1,42 @@
+sw_volume: 86
+audio_device_state:1:my_fifo
+audio_device_state:1:mpd pulseaudio-output
+state: pause
+current: 24
+time: 146.253000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Music/osts/Dai Gyakuten Saiban 2 OST ｜ 34 Great Pursuit ~ The Resolve of Naruhodou Ryuunosuke [bAtJnMEUkQs].opus
+1:Music/osts/[Persona 4 OST] 08 - Your Affection-d-x3ojOGWa8.m4a
+2:Music/osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
+3:Music/osts/Persona 4 Golden - Shadow World (Full)--oIWGlbl92k.m4a
+4:Music/gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
+5:Music/gd/Creo - In Circles-E8pMGq5VL3Q.m4a
+6:Music/gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
+7:Music/gd/Ethereal Artifice (NemesisTheory - Rose At Twilight) Low Pitch-WZVYc1ujiHk.m4a
+8:Music/gd/Protoflicker (Silentroom - Protoflicker) Low Pitch-x_C9JkGlYvU.m4a
+9:Music/gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
+10:Music/gd/Xtrullor - Screamroom-ox9X6SjHob8.m4a
+11:Music/gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
+12:Music/gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
+13:Music/gd/Creo - Wavelight-Kc4lIlboH2M.m4a
+14:Music/gd/Plexity - Rebirth Blaster (Sonic Blaster Remix)-Swzg3jgEAgk_D_minor__bpm_145.mp3
+15:Music/gd/Warak - Reanimate-zKCe1cA9Eb8.m4a
+16:Music/gd/Sonic Wave (F-777 - Sonic Blaster) Super Low Pitch-XVcI-XIA-NA.m4a
+17:Music/gd/Shukketsu (ぬゆり - ダラクダ) High Pitch-NdT_8eIOj38.m4a
+18:Music/gd/The Hallucination.m4a
+19:Music/M2U - Quo Vadis [7pY2y3ABo_Y].m4a
+20:Music/trance/Infected Mushroom - Milosh-_cJeo91-tno.m4a
+21:Music/pop/Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]-papuvlVeZg8.m4a
+22:Music/pop/Clean Bandit - Symphony (feat. Zara Larsson) [Official Video] [aatr_2MstrI].m4a
+23:Music/pop/Bon Jovi - It's My Life (Official Music Video)-vx2u5uUu3DE.m4a
+24:Music/pop/Avicii - Waiting For Love-cHHLHGNpCSA.m4a
+25:Music/pop/Pitbull - Timber (Official Video) ft. Ke$ha-hHUbLv4ThOo.m4a
+26:Music/pop/Selena Gomez, Marshmello - Wolves-cH4E_t3m3xM.m4a
+playlist_end

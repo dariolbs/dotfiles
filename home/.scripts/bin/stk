@@ -1,0 +1,114 @@
+#!/usr/bin/bash
+source $HOME/.scripts/functions/colors
+streak_directory="$HOME/Documents/Pessoal/streaks"
+PS3="Selected options: "
+
+[ -d $streak_directory ] || mkdir -p $streak_directory
+
+actual_date="$(date +%d/%m/%Y)"
+
+add_steak() {
+    local streak_name
+    local streak_date
+    printf "Name of the streak: \n"
+    read streak_name
+    printf "Starting date of the streak: (day/month/year)\nLeave blank if its today\n"
+    read streak_date
+    [ -z "$streak_date" ] && printf "$actual_date\n" > $streak_directory/$streak_name ||
+        printf "$streak_date\n" > $streak_directory/$streak_name
+}
+
+day_difference(){
+    python3 $HOME/.scripts/.used/count_days.py ${1} ${2}
+}
+
+manual() {
+	printf "USAGE:
+removing a streak: stk rm (streak)
+renaming a streak: stk mv (streak)
+incrementing a streak: stk increment (streak)
+"
+}
+
+not_found(){
+printf "\nError: Streak not found\n\n${BOLD_GREEN}Automatic streaks${NO_COLOR}:\n$(ls $folder/automatic)\n\n${BOLD_RED}Manual Streaks${NO_COLOR}:\n$(ls $folder/manual)\n"
+}
+
+enfatize() {
+	#USO: enfatize (nome) (dias)
+	#RETORNA: dias enfatizados
+	local name="$1"
+	local days="$2"
+	if [ $days -lt 5 ]; then
+		printf "${BOLD_WHITE}$name ${NO_COLOR}==>${BOLD_WHITE} $days days! 😇${NO_COLOR}\n"
+	elif [ $days -lt 10 ]; then
+		printf "${BLUE}$name ${NO_COLOR}->${BLUE} $days days${NO_COLOR}\n"
+	elif [ $days -lt 20 ]; then
+		printf "${GREEN}$name ${NO_COLOR}->${GREEN} $days days${NO_COLOR}\n"
+	elif [ $days -lt 30 ]; then
+		printf "${YELLOW}$name ${NO_COLOR}->${YELLOW} $days days${NO_COLOR}\n"
+	elif [ $days -lt 100 ]; then
+		printf "${BOLD_BLUE}$name ${NO_COLOR}->>${BOLD_BLUE} $days days 😁${NO_COLOR}\n"
+	elif [ $days -lt 365 ]; then
+		printf "${BOLD_GREEN}$name ${NO_COLOR}->>${BOLD_GREEN} $days days 😎${NO_COLOR}\n"
+	elif [ $days -lt 730 ]; then
+		printf "${BOLD_YELLOW}$name ${NO_COLOR}=>${BOLD_YELLOW} $days days 🤩${NO_COLOR}\n"
+	elif [ $days -lt 1000 ]; then
+		printf "${BOLD_RED}$name ${NO_COLOR}==>${BOLD_RED} $days days! 🔥${NO_COLOR}\n"
+	else
+		printf "${BOLD_WHITE}$name ${NO_COLOR}==>${BOLD_WHITE} $days days! 😇${NO_COLOR}\n"
+	fi
+}
+
+case $1 in
+	"" | "ls")
+		#printf "${BOLD_RED}Steaks${NO_COLOR}\n\n"
+		for i in $(ls $streak_directory);do
+			streak_date=$(cat $streak_directory/$i)
+            streak_days=$(eval day_difference $streak_date $actual_date)
+			printf "$(eval enfatize $i $streak_days)\nstarting date: ($streak_date)\n"
+		done
+		;;
+	"add" | "-a")
+		if [ -z "$2" ]; then
+			printf "Name of the streak: \n"
+			read streak_name
+			printf "Starting date of the streak: (day/month/year)\nLeave blank if its today\n"
+			read streak_date
+			[ -z "$streak_date" ] && printf "$actual_date\n" > $streak_directory/$streak_name ||
+				printf "$streak_date\n" > $streak_directory/$streak_name
+		else
+			for argument in $2 $3 $4 $5 $6 $7 $8 $9; do
+				printf "Starting date of the $argument streak: (day/month/year)\nLeave blank if its today\n"
+				read streak_date
+				[ -z "$streak_date" ] && printf "$actual_date\n" > $streak_directory/$argument ||
+					printf "$streak_date\n" > $streak_directory/$argument
+			done
+		fi
+		;;
+	"rm" | "-r")
+		if [ -z "$2" ];then
+			select streak in $(ls $streak_directory); do
+				printf "Are you sure you want to remove $streak? (yes/no)\n"
+				read r
+				case $r in
+					"yes" | "y")
+						rm "$streak_directory/$streak" && printf "Streak removesd with success\n"
+						;;
+				esac
+				break
+			done
+		else
+			for argument in $2 $3 $4 $5 $6 $7 $8 $9; do
+				#[ -z "$argument" ] || 
+				printf "Are you sure you want to remove $argument? (yes/no)\n"
+				read r
+				case $r in
+					"yes" | "y")
+						rm "$streak_directory/$argument" && printf "Streak removed with success\n"
+						;;
+				esac
+			done
+		fi
+        ;;
+esac

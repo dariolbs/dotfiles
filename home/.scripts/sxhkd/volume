@@ -1,0 +1,23 @@
+#!/bin/sh
+case $1 in
+	"+")
+	pactl set-sink-volume @DEFAULT_SINK@ +$2%
+    curr_volume="$(sh ~/.scripts/statusbar/volume.sh)"
+	notify-send "墳 ${curr_volume}%" -i volume-mute -r 100 -t 700 -h int:value:$curr_volume
+		;;
+	"-")
+	pactl set-sink-volume @DEFAULT_SINK@ -$2%
+    curr_volume="$(sh ~/.scripts/statusbar/volume.sh)"
+	notify-send "墳 ${curr_volume}%" -i volume-mute -r 100 -t 700 -h int:value:$curr_volume
+		;;
+	"toggle")
+		pactl set-sink-mute @DEFAULT_SINK@ toggle 
+		if [ $(cat $HOME/.scripts/sxhkd/volumestate) = "on" ]; then
+			notify-send "婢 volume off" -i volume-mute -r 100 -t 1500
+			printf "off" > $HOME/.scripts/sxhkd/volumestate
+		elif [ $(cat $HOME/.scripts/sxhkd/volumestate) = "off" ]; then
+			notify-send "墳 volume on" -i volume-mute -r 100 -t 1500
+			printf "on" > $HOME/.scripts/sxhkd/volumestate
+		fi
+		;;
+esac

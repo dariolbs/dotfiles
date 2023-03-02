@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+dconfig="$HOME/Documents/Dalis/.config"
+dhome="$HOME/Documents/Dalis/home"
+config=()
+home=()
+
+for i in $(ls $dconfig); do
+	config+=("$HOME/.config/$i")
+done
+for i in $(ls -A $dhome); do
+	home+=("$HOME/$i")
+done
+
+#Sincronizar dotfiles locais
+rsync -uvrP --delete ${config[@]} $dconfig 2> $HOME/.dalis/dalis_update.log && 
+rsync -uvrP --delete ${home[@]} $dhome 2>> $HOME/.dalis/dalis_update.log &&
+notify-send "Dalis Backup 🔧" "Updated with success!" || notify-send -u critical "Backup" "An error ocurred updating dalis 😓"

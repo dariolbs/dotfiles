@@ -1,0 +1,71 @@
+alias dir='dir --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias grep='grep --color=auto'
+alias grubup="sudo update-grub"
+alias hw='hwinfo --short'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias psmem='ps auxf | sort -nr -k 4'
+alias rmpkg="sudo pacman -Rdd"
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias ls='ls --color'
+alias upd='/usr/bin/update'
+alias vdir='vdir --color=auto'
+alias wget='wget -c '
+#alias pwd='echo /home/miguel'
+
+# MY ALIASES
+
+alias aquario="asciiquarium"
+alias za="zathura"
+alias volume="sh ~/.scripts/statusbar/volume.sh"
+alias updategrub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias lf='lf-ueberzug'
+alias v='vim'
+alias nv='nvim'
+alias nb="newsboat"
+alias cl="clear"
+alias wireless="sudo ip link set wlp2s0 up"
+alias cal="calcurse"
+alias nm="neomutt"
+alias horario="sxiv ~/.scripts/media/horario.png"
+alias ncm="ncmpcpp"
+alias t='task'
+
+# YOUTUBE-DL
+
+alias ytm4a='yt-dlp -x -f "bestaudio[ext=m4a]" --add-metadata --embed-thumbnail'
+alias ytmp4='yt-dlp -f mp4 --add-metadata --embed-thumbnail'
+ 
+# SHORTCUTS
+
+alias suckless="cd ~/Documents/Dalis/suckless"
+alias barracuda="cd /mnt/Barracuda"
+alias robalo="cd /mnt/Robalo"
+alias hdd="cd /mnt/HDD"
+alias uni="cd ~/Universidade"
+alias doc="cd ~/Documents"
+alias books="cd ~/Documents/Media/Books"
+alias music="cd ~/Documents/Media/Music"
+alias podcasts="cd ~/Documents/Media/Podcasts"
+alias movies="cd ~/Documents/Media/Movies"
+alias anime="cd ~/Documents/Media/Anime"
+alias doc="cd ~/Documents"
+alias gd="cd /home/dario/.local/share/Steam/steamapps/common/Geometry\ Dash"
+
+# MINECRAFT SERVERS
+
+alias sv='java -Xmx1024M -Xms1024M -jar'
+alias bettermcsv="/usr/lib/jvm/java-8-openjdk/jre/bin/java -Xmx4000M -jar forge.jar nogui"
+alias forgesv="/usr/lib/jvm/java-8-openjdk/jre/bin/java -Xmx3000m -jar"
+
+# Cleanup orphaned packages
+alias cleanup='sudo pacman -Rns `pacman -Qtdq`'
+
+# Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# Recent installed packages
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"

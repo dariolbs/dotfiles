@@ -1,0 +1,6 @@
+#!/usr/bin/env /bin/sh
+# Check files
+folder="$HOME/Documents/Pessoal"
+[ -d $folder ] || mkdir $folder
+[ -f $folder/bookmarks ] || touch $folder/bookmarks
+xdotool type --delay 1 "$(cat $folder/bookmarks | grep -v "^#" | dmenu -bw 2 -l 20 -p "Select Bookmark:" | cut -f 1 -d " ")"

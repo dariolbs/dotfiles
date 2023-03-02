@@ -1,0 +1,24 @@
+#!/usr/bin/sh
+proj_folder="$HOME/.local/share/proj"
+[ -d $proj_folder ] || (mkdir -p $proj_folder && touch $proj_folder/current_project)
+current="$(cat $proj_folder/current_project)"
+case "$1" in
+    "")
+        if [ -d "$current" ]; then
+            cd "$current"
+        else
+            printf "Path $current does not exist\n"
+            exit 1
+        fi
+        ;;
+    "ls")
+        echo $current
+        ;;
+    *)
+        newproj="$(realpath $1)"
+        if [ -d "$newproj" ]; then
+            printf "$newproj\n" > "$proj_folder/current_project"
+            exit 0
+        fi
+        ;;
+esac

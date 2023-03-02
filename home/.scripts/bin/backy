@@ -1,0 +1,51 @@
+#!/usr/bin/sh
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+#source $HOME/.scripts/functions/colors
+config_dir="$HOME/.config/backy"
+cache_dir="$HOME/.cache/backy"
+[ -d "$cache_dir" ] || (mkdir -p "$cache_dir" && touch "$cache_dir/file")
+[ -d "$config_dir" ] || (mkdir -p "$config_dir" && touch "$config_dir/config")
+old_ifs="$IFS"
+
+update(){
+    IFS=":"
+    for path in $(cat $config_dir/config | grep -v "^#"); do
+        if [ -d "$path" ]; then
+            if [ -z "$from" ]; then
+                from="${path}"
+            else
+                rsync -uvrP --delete "$from"/* "$path"
+                from=""
+            fi
+        fi
+    done
+    IFS="$old_ifs"
+    notify-send "Backy 🎒" "Update done!"
+}
+
+linkdirs(){
+    #USO: linkdirs $(from) $(to)
+    for directory in "$1" "$2"; do
+        [ -d "$directory" ] || (printf "$directory doesnt exist!\n" && return 1)
+    done
+    printf ":${1}:${2}:\n" >> $config_dir/config
+}
+
+case "$1" in
+    "update" | "-u") update ;;
+    "link" | "-l") 
+        if [ -z "$2" ]; then
+            if [ -z $(cat $cache_dir/file) ]; then
+                printf "Use \"backy link\" again to create a link from $PWD to another directory\n"
+                printf "$PWD\n" > "$cache_dir/file"
+            else
+                linkdirs "$(cat $cache_dir/file)" "$PWD" &&
+                printf "There was created a link from $(cat $cache_dir/file) to $PWD\n" &&
+                printf "\n" > "$cache_dir/file"
+            fi
+        else
+            linkdirs "$PWD" "$2"
+        fi
+        ;;
+    *) grep -v "^#" "$config_dir/config" | sed -e "s/^://; s/:$//; s/:/ -> /";;
+esac

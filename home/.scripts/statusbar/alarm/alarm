@@ -1,0 +1,67 @@
+#!/bin/sh
+r=true
+n=0
+time(){
+minutes=$(($1/60))
+hours=$(($1/3600))
+if [ $1 -lt 60 ]
+then
+	printf "%ds" $1
+elif [ $1 -lt 3600 ]
+then
+	printf "%dm%ds" $minutes $(($1-$minutes*60))
+else
+	printf "%dh%dm" $hours $(($minutes-$hours*60))
+fi
+}
+
+func(){
+		while [ $n -lt $seconds ]
+		do
+			echo $(time $(($seconds-$n))) > ~/.scripts/alarmf/alarm-state
+			sleep 1 && n=$((n+=1))
+		done
+}
+
+case $1 in
+	-s)
+		seconds=$2
+		;;
+	-m)
+		seconds=$(($2*60))
+		;;
+	-h)
+		seconds=$(($2*3600))
+		;;
+	help)
+		cat ~/.scripts/alarmf/help
+		r=false
+		;;
+	clean)
+		printf "" > ~/.scripts/alarmf/alarm-state
+		r=false
+		;;
+	*)
+		cat ~/.scripts/alarmf/alarm-state
+		r=false
+		;;
+
+esac
+case $3 in
+	-s)
+		seconds=$(($seconds+$4))
+		;;
+	-m)
+		seconds=$(($seconds+$4*60))
+		;;
+	-h)
+		seconds=$(($seconds+$4*3600))
+		;;
+	"")
+		;;
+	*)
+		cat ~/.scripts/alarmf/help
+		r=false
+		;;
+esac
+[ $r = true ] && func && printf "" > ~/.scripts/alarmf/alarm-state && mpv --no-video ~/.scripts/programs/alarm.mp3

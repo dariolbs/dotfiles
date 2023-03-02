@@ -1,0 +1,38 @@
+#!/usr/bin/bash
+source $HOME/.scripts/functions/colors
+folder="$HOME/Documents/Pessoal/consoom"
+PS3="Next content to consoom: "
+[ -d $folder ] || mkdir -p $folder
+
+case $1 in
+	"ls")
+		ls "$folder"
+		;;
+	"rm")
+		[ $# -eq 2 ] && rm -r $folder/$2 || printf "No file specified.\n" 
+		;;
+	"help")
+		printf "This script makes it easier for you so consoom more content.\n"
+		;;
+	"import")
+		[ $# -eq 2 ] && import $2 || help 
+		;;
+	"mv")
+		[ $# -eq 3 ] && mv $folder/$2 $folder/$3 || help 
+		;;
+
+	"")
+		printf "Remember to be ${BOLD_RED}excited ${NO_COLOR}about the next ${BOLD_GREEN}major ${NO_COLOR}product!\n"
+		select file in $(ls $folder)
+		do
+			$EDITOR $folder/$file
+		done
+		;;
+	*)
+		if [ -f $folder/$1 ]; then
+			echo "File already exists"
+		else
+			touch "$folder/$1" && $EDITOR "$folder/$1"
+		fi
+		;;
+esac

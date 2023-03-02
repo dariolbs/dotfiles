@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+java -jar $HOME/Games/Tlauncher/TLauncher-2.86.jar

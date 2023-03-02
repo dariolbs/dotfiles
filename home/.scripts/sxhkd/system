@@ -1,0 +1,14 @@
+#!/usr/bin/env /bin/bash
+old_ifs="$IFS"
+IFS=":"
+font="JetBrainsMono:size=15"
+#options=" Exit dwm: Restart dwm:⏻ Poweroff: Reboot: Lock"
+options="Exit dwm:Restart dwm:Poweroff:Reboot:Lock"
+#case $(for option in ${options[@]}; do printf "$option\n";done | dmenu -c -bw 2 -fn "$font" -l 5) in
+case $(for option in ${options[@]}; do printf "$option\n";done | dmenu -c -bw 2 -l 5 ) in
+	*"Exit dwm") killall startdwm || killall dwm;;
+	*"Poweroff") poweroff;;
+	*"Reboot") reboot;;
+	*"Restart dwm") killall dwm;;
+	*"Lock") slock;;
+esac

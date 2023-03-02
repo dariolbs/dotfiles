@@ -1,0 +1,82 @@
+#!/usr/bin/sh
+r=true
+
+n=0
+tempo(){
+	minutes=$(($1/60))
+	hours=$(($1/3600))
+	if [ $1 -lt 60 ]; then
+		printf "%ds" $1
+	elif [ $1 -lt 3600 ]; then
+		printf "%dm%ds" $minutes $(($1-$minutes*60))
+	else
+		printf "%dh%dm" $hours $(($minutes-$hours*60))
+	fi
+}
+
+func(){
+	while [ $n -lt $seconds ]
+	do
+		echo $(tempo $(($seconds-$n))) > ~/.scripts/statusbar/alarm/alarm-state
+		sleep 1 && n=$((n+=1))
+	done
+}
+
+sp(){
+	case $1 in
+		"sec") printf $2 | cut -f 3 -d ":" ;;
+		"min") printf $2 | cut -f 2 -d ":" ;;
+		"hour") printf $2 | cut -f 1 -d ":" ;;
+	esac
+}
+
+timeleft(){
+	if [ $(printf "$1\n" | sed "s/:/\n/g" | wc -l) -eq 3 ]; then
+		date=$(date | cut -f 5 -d " ")
+		local seconds; local minutes; local hours
+		seconds=$(($(sp "sec" "$1") - $(sp "sec" "$date")))
+		minutes=$(($(sp "min" "$1") - $(sp "min" "$date")))
+		hours=$(($(sp "hour" "$1") - $(sp "hour" "$date")))
+		printf "$(($seconds + $minutes*60 + $hours*3600))"
+	else
+		printf "Unsupported format\n"
+		r=false
+		return 1
+	fi
+}
+case $1 in
+	-s)
+		seconds=$2
+		;;
+	-m)
+		seconds=$(($2*60))
+		;;
+	-h)
+		seconds=$(($2*3600))
+		;;
+	help)
+		cat ~/.scripts/statusbar/alarm/help
+		r=false
+		;;
+	clean | clear | done)
+		printf "0s" > ~/.scripts/statusbar/alarm/alarm-state
+		r=false
+		killall alarm 2> /dev/null
+		;;
+	"")
+		cat ~/.scripts/statusbar/alarm/alarm-state
+		r=false
+		;;
+	*)
+		seconds=$(timeleft "$1")
+		;;
+esac
+case $3 in
+	-s) seconds=$(($seconds+$4)) ;;
+	-m) seconds=$(($seconds+$4*60)) ;;
+	-h) seconds=$(($seconds+$4*3600)) ;;
+	"") ;; 
+	*) r=false ;;
+esac
+
+[ $r = true ] && func && printf "0s\n" > ~/.scripts/statusbar/alarm/alarm-state && mpv --no-video ~/.scripts/media/alarm.*

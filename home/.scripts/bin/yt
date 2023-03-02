@@ -1,0 +1,14 @@
+#!/usr/bin/sh
+case "$1" in
+    "help" | "-help")
+        printf "Usage:\n For best quality: yt best (link)\nFor 360p: yt bad (link)\nFor default quality: yt (link) or yt mid (link)\n";;
+    "best")
+        mpv "$2";;
+    "bad")
+        mpv --ytdl-format=18 "$2";;
+    "mid")
+        mpv --ytdl-format=22 "$2";;
+    *)
+        mpv --ytdl-format=22 "$1";;
+esac
+

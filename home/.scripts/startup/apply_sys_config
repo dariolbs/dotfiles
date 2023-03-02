@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+config_file="$HOME/.config/system/config"
+[ -f "$config_file" ] || (mkdir "$HOME/.config/system" && touch "$config_file")
+logs_dir="$HOME/.dalis/logs"
+[ -d "$logs_dir" ] || mkdir -p "$logs_dir"
+source "$config_file"
+
+case "${#monitors[@]}" in
+    1)
+        xrandr --output ${monitors[0]} --primary --mode 1920x1080 --rate ${refresh[1]} 2> "$logs_dir/apply_sys_config"
+        ;;
+    2)
+        xrandr --output ${monitors[1]} --primary --mode 1920x1080 --rate ${refresh[1]}\
+        --output ${monitors[0]} --mode 1920x1080 --rate ${refresh[0]} --left-of ${monitors[1]} 2> "$logs_dir/apply_sys_config"
+        ;;
+    3)
+        xrandr --output ${monitors[1]} --primary --mode 1920x1080 --rate ${refresh[1]}\
+        --output ${monitors[0]} --mode 1920x1080 --rate ${refresh[0]} --left-of ${monitors[1]}\
+        --output ${monitors[2]} --mode 1920x1080 --rate ${refresh[2]} --right-of ${monitors[1]} 2> "$logs_dir/apply_sys_config"
+        ;;
+esac

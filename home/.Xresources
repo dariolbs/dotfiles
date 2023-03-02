@@ -1,0 +1,49 @@
+! hard contrast: *background: #1d2021
+*background: #000000
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #665c54
+*color8:  #928c74
+! DarkRed + Red
+*color1:  #ea6962
+*color9:  #ea6962
+! DarkGreen + Green
+*color2:  #a9b665
+*color10: #a9b665
+! DarkYellow + Yellow
+*color3:  #fabd2f
+*color11: #e3a84e
+! DarkBlue + Blue
+*color4:  #7daea3
+*color12: #7daea3
+! DarkMagenta + Magenta
+*color5:  #d3869b
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #89b482
+*color14: #89b482
+! LightGrey + White
+*color7:  #dfbf8e
+*color15: #dfbf8e
+
+! Dwm
+dwm.normbgcolor: #282828
+dwm.normbordercolor: #4d4d4d
+dwm.normfgcolor: #BBBBBB
+dwm.selbgcolor: #83a598
+dwm.selbordercolor: #ea6962
+dwm.selfgcolor: #3A3A3A
+dwm.borderpx: 1
+dwm.snap: 32
+dwm.showbar: 1
+dwm.topbar: 1
+dwm.nmaster: 1
+dwm.resizehints: 0
+dwm.mfact: 0.55
+
+!dmenu
+dmenu.background: #282828
+dmenu.foreground: #BBBBBB
+dmenu.selbackground: #83a598
+dmenu.selforeground: #3A3A3A

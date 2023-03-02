@@ -1,0 +1,238 @@
+# Gigachad's Configuration of lf file manager
+set previewer ~/.config/lf/lf-ueberzug-previewer
+set cleaner ~/.config/lf/lf-ueberzug-cleaner
+set icons true
+#set drawbox
+set shell zsh
+set shellopts '-euy'
+set ifs "\n"
+set filesep "\n"  # default already
+
+cmd mkdir ${{
+	printf "Name of the new directory:\n"
+	read r
+	mkdir "$r"
+}}
+cmd mkfile ${{
+	printf "Name of the new file:\n"
+	read r
+	nv "$r"
+}}
+cmd rename &{{
+	printf "Rename $f to:\n"
+	read r
+	mv "$f" "$r"
+}}
+cmd compress ${{
+	printf "Select a compression type:\n(1)tar\n(2)zip\n(3)rar\n"
+	read r
+	case $r in
+		'1')
+			tar -czfv $f.tar.gz $f
+			;;
+		'2')
+			zip $f.zip $f
+			;;
+		'3')
+			rar a $f.rar $f
+			;;
+	esac
+}}
+
+cmd extract ${{
+	case "$f" in
+		*.zip) unzip $f ;;
+		*.tar.gz | *.tar.xz | *.tar) tar -xf $f ;;
+		*.rar) unrar e $f ;;
+		*.7z) 7z x $f ;;
+	esac
+}}
+
+cmd encrypt ${{
+    if [ -d $f ]; then
+        gpgtar -c -o "$f.gpg" "$f"
+    else
+        gpg -c "$f"
+    fi
+}}
+
+cmd decrypt ${{
+    gpg "$f"
+}}
+
+cmd create_directory ${{
+	printf "Name of the directory: "
+	read r
+	mkdir $r
+}}
+
+cmd create_file ${{
+	printf "Name of the file: "
+	read r
+	touch $r
+}}
+
+cmd rm ${{
+	case $1 in
+		"-r")
+			printf "Are you sure you want to remove file $2?\nyes(y)no(n)\n"
+			read r
+			if [ $r = "y" ] || [ $r = "yes" ]; then
+				rm -r $2
+			fi
+			;;
+		*)
+			rm $1
+			;;
+	esac
+}}
+
+cmd edit ${{
+	nvim "$f"
+}}
+
+cmd new_edit ${{
+	st -e nvim "$f" &
+}}
+
+cmd touch ${{
+	touch $1
+}}
+
+cmd lf ${{
+	alacritty -e lf $PWD &
+}}
+
+cmd chwallpaper ${{
+	[ -d $HOME/.config/wallpaper ] || mkdir -p $HOME/.config/wallpaper
+	cp -r ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
+	cp -r $f ~/.config/wallpaper/wallpaper
+	xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send -u low " Wallpaper updated!"
+}}
+
+cmd bakwallpaper ${{
+	cp -r ~/.config/wallpaper/wallpaper.bak ~/.config/wallpaper/wallpaper
+	xwallpaper --zoom  ~/.config/wallpaper/wallpaper
+}}
+
+cmd makefile ${{
+	printf "Name of the file: "; read r
+	touch "$r"
+}}
+
+cmd makedirectory ${{
+	printf "Name of the directory: "; read r
+	mkdir "$r"
+}}
+
+cmd move ${{
+	printf "Change name from $f to: "; read r
+	mv "$f" "$r"
+}}
+
+cmd copyimage ${{
+	case $f in
+		*.png)
+			xclip -selection clipboard -t image/png -i $f
+			;;
+		*.jpg)
+			xclip -selection clipboard -t image/jpg -i $f
+			;;
+		*.jpeg)
+			xclip -selection clipboard -t image/jpeg -i $f
+			;;
+		esac
+}}
+cmd trash ${{
+	if [ -z "$fs" ]; then
+		mv "$f" ~/.trash
+	else
+		mv "$fs" ~/.trash
+	fi
+}}
+
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+         text/* | inode/x-empty | application/json) $EDITOR "$f";;
+        #video/*|image/*/application/pdf) xdg-open "$f" & ;;
+        *) xdg-open "$f" &;;
+    esac
+}}
+
+cmd opensxiv ${{
+	sxiv -ft *
+}}
+
+cmd syncrepo ${{
+	printf "Commit message: "
+	read message 
+	git commit -a -m "$message"
+	git push
+}}
+
+cmd gitadd ${{
+	if [ -z "$fs" ]; then
+		git add $f
+	else
+		git add $fs
+	fi
+}}
+
+# Removed bindings
+
+map t
+map n
+map N
+map m
+
+##Binds
+map DD delete
+map H set hidden!
+map R reload
+map S shell
+map B bible
+map e edit
+map E new_edit
+map n $nvim
+map a $tmux a
+
+##Shortcuts
+map gW cd /run/media/Windows
+map gu cd ~/Universidade
+map gH cd /mnt/HDD
+map gt cd ~/.trash
+map gb cd /mnt/Barracuda
+map gr cd /mnt/Robalo
+map gd cd ~/Documents
+map gS cd ~/Documents/Dalis/suckless
+map gs cd ~/.scripts
+map gm cd ~/Media
+map gw cd ~/Media/Wallpapers
+map gp cd ~/Documents/Pessoal
+map gv cd ~/.config/nvim
+map gL cd ~/.config/lf
+map gl cd ~/Documents/Lab
+map gc cd ~/.config
+map gn cd ~/Documents/Notas
+map gP cd ~/Documents/Projetos
+
+##Tools
+map tE encrypt
+map tD decrypt
+map tc compress
+map tb $backy link
+map tS syncrepo
+map ta gitadd
+map te extract
+map tw chwallpaper
+map tW bakwallpaper
+map ts opensxiv
+map tn $nvim
+map md makedirectory
+map mf makefile
+map mv movedir
+
+##Create
+map xd create_directory
+map xf create_file
+map xv move

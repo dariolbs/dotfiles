@@ -1,0 +1,19 @@
+#!/usr/bin/sh
+device=$(ls /sys/class/backlight)
+state=$(cat /sys/class/backlight/$device/actual_brightness)
+max=$(cat /sys/class/backlight/$device/max_brightness)
+case $1 in
+    "+")
+        new_state=$(($state + $2))
+        if [ $new_state -lt $max ] && [ $new_state -gt 0 ]; then
+            printf "$new_state\n" >> /sys/class/backlight/$device/brightness
+        fi
+        ;;
+    "-")
+        new_state=$(($state - $2))
+        if [ $new_state -lt $max ] && [ $new_state -gt 0 ]; then
+            printf "$new_state\n" >> /sys/class/backlight/$device/brightness
+        fi
+        ;;
+esac
+notify-send -u low "☀ $new_state" -r 100 -t 700

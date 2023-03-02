@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+source $HOME/.dalis/config
+n=0
+date="$(date +%d:%m:%Y)"
+for disco in ${backup_disks[@]}; do
+    [ -f "${disco}/old_backups/backup_${date}"* ] && exit 0
+    # Verificar ficheiros necessários
+    [ -d "$HOME/.dalis/logs" ] || mkdir -p "$HOME/.dalis/logs/"
+    # Remover backups antigos caso existam
+    backups_number=$(ls ${disco}/old_backups | grep backups | wc -l)
+    while [ $backups_number -ge ${temp_backup_keep[$n]} ]; do
+        oldest="$(ls -rt ${disco}/old_backups | grep backups | head -1 )"
+        rm -rvf "${disco}/old_backups/${oldest}" &> "$HOME/.dalis/logs/temp_backups.log"
+    done
+    for directory in ${temp_backup_dirs[@]}; do
+        tar -cvpf ${disco}/old_backups/backup_${date}.tar.gz ${directory} 2>> "$HOME/.dalis/logs/temp_backup.log"
+    done
+    n=$(($n + 1))
+done && notify-send "Weekly Backups 💾" "Backups created with success" || notify-send -u critical "Weekly Backups 💾" "There was a problem creating the backups. Check the logs!"

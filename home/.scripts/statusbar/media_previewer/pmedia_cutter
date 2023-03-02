@@ -1,0 +1,12 @@
+#!/bin/env /bin/python3
+from sys import argv
+from time import sleep
+def loop(stin, maxim, sep):
+    string = str(stin) + str(sep) 
+    while True:
+        file = open(argv[4], "w")
+        file.write(string[0:int(maxim)]+ "\n")
+        file.close()
+        string = string.replace(string[0], "", 1) + string[0]
+        sleep(1)
+loop(argv[1], argv[2], argv[3])

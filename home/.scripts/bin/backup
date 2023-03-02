@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+source $HOME/.scripts/functions/colors
+PS3="Selected option: "
+options=( "Documents" "Media" "Both" )
+case "$1" in
+    "")
+        select option in ${options[@]}; do
+            case $option in
+                "Both")
+                    tar -cfvz backup.tar.gz "$HOME/Documents" "$HOME/Media"
+                    ;;
+                *)
+                    tar -cfvz backup.tar.gz "$HOME/$option"
+                    ;;
+            esac
+            break
+        done
+esac

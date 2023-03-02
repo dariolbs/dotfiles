@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+for device in ${devices[@]}; do
+	# Verificar conexão
+	ssh -q -o BatchMode=yes  -o StrictHostKeyChecking=no -o ConnectTimeout=5 "$device" 'exit 0'
+	go="$?"
+	if [ "$go" = "0" ]; then
+		#Sincronizar mail
+		rsync -uvrP --delete $HOME/.local/share/mail $device:~/.local/share
+	fi
+done 

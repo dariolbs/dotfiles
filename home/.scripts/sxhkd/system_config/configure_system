@@ -1,0 +1,183 @@
+#!/usr/bin/env bash
+
+old_ifs="$IFS"
+IFS=":"
+script_folder="$HOME/.scripts/sxhkd/system_config"
+
+change_keymap(){
+	keymaps_folder="$HOME/Documents/Pessoal/keymaps"
+	options="Default:GD"
+	case $(for option in ${options[@]}; do printf "${option[@]}\n"; done | dmenu -c -bw 2 -l 5) in
+		"GD")
+			xmodmap "$keymaps_folder/gd" && notify-send "Keymap updated" "Changed keymap to GD"
+			;;
+		"Default")
+			xmodmap "$keymaps_folder/default" && notify-send "Keymap updated" "Changed keymap to Default"
+			;;
+	esac
+}
+
+change_colorscheme(){
+	local colorscheme="$HOME/Documents/Dalis/colorschemes/$(ls $HOME/Documents/Dalis/colorschemes/ | dmenu -c -bw 2 -l 10)"
+	cp -r $colorscheme/$(ls $colorscheme | dmenu -c -bw 2 -l 10) $HOME/.Xresources && notify-send "System" "Colorscheme updated! 🎨"
+}
+
+change_monitor_layout(){
+    source "$HOME/.config/system/config"
+	monitor_options="Apply default config:Primary only:Second only:Third only"
+	option=$(for i in ${monitor_options[@]}; do printf "${i}\n"; done | dmenu -c -bw 2 -p "Layout:" -l 5)
+    case "$option" in 
+        "Apply default config") apply_sys_config;;
+        "Primary only")
+            xrandr --output $monitor1 --primary --mode 1920x1080 --rate $rr1 2> "$logs_dir/apply_sys_config"
+            [ -z $monitor2 ] || xrandr --output $monitor2 --off
+            [ -z $monitor3 ] || xrandr --output $monitor3 --off
+            ;;
+        "Second only")
+            if [ -z $monitor2 ]; then
+                notify-send "System" "You dont have a second monitor configured in $HOME/.config/system/config"
+            else
+                xrandr --output $monitor2 --primary --mode 1920x1080 --rate $rr2 2> "$logs_dir/apply_sys_config"
+                [ -z $monitor1 ] || xrandr --output $monitor1 --off
+                [ -z $monitor3 ] || xrandr --output $monitor3 --off
+            fi
+            ;;
+        "Third only")
+            if [ -z $monitor3 ]; then
+                notify-send "System" "You dont have a third monitor configured in $HOME/.config/system/config"
+            else
+                xrandr --output $monitor3 --primary --mode 1920x1080 --rate $rr2 2> "$logs_dir/apply_sys_config"
+                [ -z $monitor1 ] || xrandr --output $monitor1 --off
+                [ -z $monitor2 ] || xrandr --output $monitor2 --off
+            fi
+            ;;
+    esac
+}
+configure_picom(){
+	local options=("Toggle:Blur:Rounded Corners:Shaders:Fading:Vsync")
+	case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu -c -bw 2 -l 6) in
+		"Toggle")
+			if [ "$(pidof picom)" = "" ]; then
+				picom &
+				notify-send "Picom is active! 🌟"
+			else
+				killall picom
+				notify-send -u normal "Picom is no more"
+			fi
+			;;
+		"Vsync")
+			local file="$HOME/.config/picom/picom.conf"
+			if [ -z "$(pidof picom)" ]; then
+				notify-send "😥 Picom is not running!" "Activate picom if you want to use vsync."
+			else
+				local state=$(grep "^vsync =" "$file" )
+				state=${state##*"= "}
+				if [ $state = "false" ]; then
+					sed -i "s/vsync = false/vsync = true/" "$file"
+					notify-send "Vsync in on!"
+				else
+					sed -i "s/vsync = true/vsync = false/" "$file"
+					notify-send "Vsync in off!"
+				fi
+			fi
+			;;
+		"Blur")
+			local state="$(grep "^blur-method" $HOME/.config/picom/picom.conf)"
+			if [ -z $state ]; then
+				sed -i "s/#blur-method/blur-method/g" $HOME/.config/picom/picom.conf
+			else
+				sed -i "s/blur-method/#blur-method/g" $HOME/.config/picom/picom.conf
+			fi
+			;;
+		"Shaders")
+			local file="$HOME/.config/picom/picom.conf"
+			local state=$(grep "^shadow =" "$file" )
+			state=${state##*"= "}
+			if [ $state = "false;" ]; then
+				sed -i "s/shadow = false;/shadow = true;/" "$file"
+				notify-send "Shadows are on!"
+			else
+				sed -i "s/shadow = true;/shadow = false;/" "$file"
+				notify-send "Shadows are off!"
+			fi
+			;;
+		"Fading")
+			local file="$HOME/.config/picom/picom.conf"
+			local state=$(grep "^fading =" "$file" )
+			state=${state##*"= "}
+			if [ $state = "false;" ]; then
+				sed -i "s/fading = false;/fading = true;/" "$file"
+				notify-send "Fading enabled!"
+			else
+				sed -i "s/fading = true;/fading = false;/" "$file"
+				notify-send "Fading disabled!"
+			fi
+			;;
+		"Rounded Corners")
+			local state="$(grep "^corner-radius" $HOME/.config/picom/picom.conf)"
+			if [ -z $state ]; then
+				sed -i "s/#corner-radius/corner-radius/g" $HOME/.config/picom/picom.conf
+			else
+				sed -i "s/corner-radius/#corner-radius/g" $HOME/.config/picom/picom.conf
+			fi
+			;;
+esac
+}
+change_tablet_layout(){
+	local device="$(xsetwacom list devices | grep stylus)"
+	local device="${device%%stylus*}stylus"
+	local absolute_area=$(xsetwacom get "$device" Area | cut -f 3 -d " ")
+	if [ -f $script_folder/.tablet_data ]; then
+		local absolute_area=$(cat $script_folder/.tablet_data)
+	else
+		local absolute_area=$(xsetwacom get "$device" Area | cut -f 3 -d " ") && printf "$absolute_area" > $script_folder/.tablet_data
+	fi
+	local precision=1000000
+	local def_area=$(($absolute_area*(1080*$precision/1920)))
+	local def_area=$(($def_area / $precision ))
+
+	source $script_folder/.tablet_data
+	local tablet_options=("Monitor 1:Monitor 2:Osu!")
+	#case $(for option in ${tablet_options[@]}; do printf "${option}\n"; done | dmenu -c -bw 2 -l 3 -p "New layout:") in
+	case $(for option in ${tablet_options[@]}; do printf "${option}\n"; done | dmenu -c -bw 2 -l 3 ) in
+		*"Monitor 1")
+			# Mapear para o monitor principal
+			xsetwacom set "$device" MapToOutput 1920x1080+1920+0
+			# Introduzir o area correta
+			xsetwacom set "$device" Area 0 0 $absolute_area $def_area
+			;;
+		*"Monitor 2")
+			# Mapear para monitor principal
+			xsetwacom set "$device" MapToOutput 1920x1080+0+0
+			# Introduzir o area correta
+			xsetwacom set "$device" Area 0 0 $absolute_area $def_area
+			;;
+		*"Monitor 3")
+			# Mapear para monitor principal
+			xsetwacom set "$device" MapToOutput 1920x1080+3840+0
+			# Introduzir o area correta
+			xsetwacom set "$device" Area 0 0 $absolute_area $def_area
+			;;
+		*"Osu!")
+			# Mapear para monitor principal
+			xsetwacom set "$device" MapToOutput 1920x1080+1920+0
+			# Introduzir o area correta
+			#xsetwacom set "$device" Area 5000 0 25400 14287
+			xsetwacom set "$device" Area 5000 0 17780 10001
+			# Salvar área de tablet original
+			;;
+	esac
+}
+
+# Options on the script
+options="Keybindings:Tablet:Monitors:Colorschemes:Picom"
+
+case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu -c -bw 2 -l 5) in
+	"Keybindings") change_keymap;;
+	"Tablet") change_tablet_layout;;
+	"Monitors") change_monitor_layout;;
+	"Colorschemes") change_colorscheme;;
+	"Picom") configure_picom;;
+esac
+
+old_ifs="$IFS"

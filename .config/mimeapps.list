@@ -1,0 +1,20 @@
+[Default Applications]
+image/png=sxiv.desktop
+image/jpg=sxiv.desktop
+image/jpeg=sxiv.desktop
+inode/directory=pcmanfm.desktop
+x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
+text/plain=vim.desktop
+text/x-shellscript=vim.desktop
+text/shellscript=vim.desktop
+inode/x-empty=vim.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-6DPBZ1.desktop
+message/rfc822=userapp-Thunderbird-6DPBZ1.desktop
+x-scheme-handler/mid=userapp-Thunderbird-6DPBZ1.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub+zip=org.pwmt.zathura.desktop
+x-scheme-handler/discord-460807638964371468=discord-460807638964371468.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-6DPBZ1.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-6DPBZ1.desktop;
