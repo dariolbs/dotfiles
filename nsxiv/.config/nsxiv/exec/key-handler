@@ -1,0 +1,28 @@
+#!/bin/bash
+while read file
+do
+	fullpath="$PWD/$file"
+	case $1 in
+		"c")
+			case $file in
+				*.png)
+					xclip -selection clipboard -t image/png -i "$file"
+					;;
+				*.jpg)
+					xclip -selection clipboard -t image/jpg -i "$file"
+					;;
+				*.jpeg)
+					xclip -selection clipboard -t image/jpeg -i "$file"
+					;;
+			esac
+			;;
+		"w")
+			[ -d $HOME/.config/wallpaper ] || mkdir -p $HOME/.config/wallpaper
+			cp -r ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
+			cp -r "$file" ~/.config/wallpaper/wallpaper
+			xwallpaper --zoom  ~/.config/wallpaper/wallpaper &&
+				notify-send " Wallpaper updated!"
+			;;
+	esac
+done
+

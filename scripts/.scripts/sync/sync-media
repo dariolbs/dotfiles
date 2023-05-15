@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+source "$HOME/.scripts/functions/colors"
+icon="$HOME/.local/share/icons/dalis/pepereading.png"
+devices=("dariolaptop" "dariopc" )
+dir="$HOME/Media"
+PS3="Selected option: "
+printf "What device do you want to sync your notes? (${BOLD_RED}all notes will be replaced${NO_COLOR})\n"
+select device in ${devices[@]}; do
+    if [ $device = "dariopc" ]; then
+        rsync -uvrP --delete dariolaptop:${dir}/* ${dir} 2> ~/.dalis/logs/sy-docs.log
+        status="$?"
+    else
+        rsync -uvrP --delete ${dir}/* $device:${dir} 2> ~/.dalis/logs/sy-docs.log
+        status="$?"
+    fi
+    break
+done
+[ $status -eq 0 ] && 
+    notify-send -i $icon "Media Sync" "Media synced with success on device ${device}" ||
+    notify-send -u critical "Media Sync" "There were problems syncing your media with ${device}. Check the logs!"

@@ -1,0 +1,8 @@
+#!/bin/bash
+while true; do
+    # Log stderror to a file 
+    [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+    dwm 2> ~/.dalis/logs/dwm.log
+    # No error logging
+    #dwm >/dev/null 2>&1
+done

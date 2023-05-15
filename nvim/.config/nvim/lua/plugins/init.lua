@@ -1,0 +1,8 @@
+require("plugins.mason")
+require("plugins.lsp")
+require("plugins.cmp")
+require("plugins.dab")
+require("plugins.treesitter")
+require("plugins.telescope")
+require("plugins.floaterm")
+require("plugins.lf")

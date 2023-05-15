@@ -1,0 +1,13 @@
+#!/bin/sh
+keymaps_folder="$HOME/.config/keymaps"
+keysets=$(ls $HOME/.config/keymaps)
+PS3="Select keymap: "
+[ -d $keymaps_folder ] || mkdir -p $keymaps_folder
+case "$1" in
+	"")
+		select keyset in ${keysets[@]}
+		do
+			xmodmap "$keymaps_folder/$keyset" && exit 0
+		done
+        ;;
+esac

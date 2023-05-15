@@ -1,0 +1,49 @@
+! hard contrast: *background: #03A062
+*background: #000000
+! soft contrast: *background: #03A062
+*foreground: #03A062
+! Black + DarkGrey
+*color0:  #03A062
+*color8:  #03A062
+! DarkRed + Red
+*color1:  #03A062
+*color9:  #03A062
+! DarkGreen + Green
+*color2:  #03A062
+*color10: #03A062
+! DarkYellow + Yellow
+*color3:  #03A062
+*color11: #03A062
+! DarkBlue + Blue
+*color4:  #03A062
+*color12: #03A062
+! DarkMagenta + Magenta
+*color5:  #03A062
+*color13: #03A062
+! DarkCyan + Cyan
+*color6:  #03A062
+*color14: #03A062
+! LightGrey + White
+*color7:  #03A062
+*color15: #03A062
+
+! Dwm
+dwm.normbgcolor: #000000
+dwm.normbordercolor: #000000
+dwm.normfgcolor: #03A062
+dwm.selbgcolor: #03A062
+dwm.selbordercolor: #03A062
+dwm.selfgcolor: #000000
+dwm.borderpx: 1
+dwm.snap: 32
+dwm.showbar: 1
+dwm.topbar: 1
+dwm.nmaster: 1
+dwm.resizehints: 0
+dwm.mfact: 0.55
+
+!dmenu
+dmenu.background: #000000
+dmenu.foreground: #03A062
+dmenu.selbackground: #03A062
+dmenu.selforeground: #000000

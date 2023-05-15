@@ -1,0 +1,43 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+source "$HOME/.scripts/functions/colors"
+folder="$HOME/.local/share"
+old_ifs="$IFS"
+IFS=":"
+[ -f $folder/tasks ] || touch $folder/tasks
+icon="$HOME/.local/share/icons/dalis/bugman.png"
+idk="$(cat $folder/tasks)"
+tasks="$(for i in ${idk[@]}; do printf "$i\n"; done)"
+phrases=("Hey man! You gotta do these!:Hi buddy! Don't forget those!:Get shit done dude!")
+random_phrase=$(for i in ${phrases[@]}; do printf "${i}\n"; done | sort -R | head -1)
+case $1 in
+    "ls") 
+        if [ ${tasks[@]} != "\n" ]; then
+            printf "${tasks[@]}\n"
+        else
+            printf "Good job man! You have no tasks no complete!\n"
+        fi 2> /dev/null
+        ;;
+    "add")
+        printf "New task to add: "
+        read new
+        printf " -> ${new[@]}:" >> $folder/tasks
+        ;;
+    "rm" | "r")
+        exclude="$(for task in ${tasks[@]}; do printf "$task\n"; done | dmenu -l 10 -p "Select task to remove:")"
+        sed -i "s/${exclude}://" $folder/tasks
+        ;; 
+    "clear" | "c")
+        printf "Are you sure you want to remove all tasks? (yes/no)\n"
+        read r
+        [ $r = "yes" ] && printf "" > $folder/tasks
+        ;;
+    "notify" | "n")
+        [ -z "$tasks" ] ||
+            notify-send -i $icon "${random_phrase[@]}" "${tasks[@]}"
+        ;;
+    *)
+        printf "$1: Option not found!\n"
+        ;;
+esac
+IFS="$old_ifs"

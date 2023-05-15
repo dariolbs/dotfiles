@@ -1,0 +1,323 @@
+# Gigachad's Configuration of the lf file manager
+set previewer ~/.config/lf/lf-ueberzug-previewer
+set cleaner ~/.config/lf/lf-ueberzug-cleaner
+set icons true
+#set drawbox
+set shell zsh
+set shellopts '-euy'
+set ifs "\n"
+set filesep "\n"  # default already
+
+cmd firefox ${{
+# Open a file with firefox, for webdev
+    firefox $f &> /dev/null &
+}}
+cmd mkdir ${{
+	printf "Name of the new directory:\n"
+	read r
+	mkdir "$r"
+}}
+cmd mkfile ${{
+	printf "Name of the new file:\n"
+	read r
+	nvim "$r"
+}}
+cmd rename &{{
+	printf "Rename $f to:\n"
+	read r
+	mv "$f" "$r"
+}}
+cmd compress ${{
+	printf "Select a compression type:\n(1)tar\n(2)zip\n(3)rar\n"
+	read r
+	case $r in
+		'1')
+            trator tar "$f"
+			;;
+		'2')
+            trator zip "$f"
+			;;
+		'3')
+            trator rar "$f"
+			;;
+	esac
+}}
+
+cmd enterTmux ${{
+    tmux a || tmux
+}}
+
+cmd extract ${{
+    trator "$f"
+}}
+
+cmd chwpmon ${{
+    source "$HOME/.dalis/config"
+    if [ ${#monitors[@]} -gt 0 ]; then
+        n=1
+        printf "Choose a monitor to apply this wallpaper to\n"
+        for monitor in ${monitors[@]}; do
+            printf "$n -> $monitor\n"
+            n=$(($n+1))
+        done
+        read r
+        ch_mon="${monitors[$r]}"
+        cp "$f" "$HOME/.config/wallpaper/$ch_mon"
+        xwallpaper --output $ch_mon --zoom "$HOME/.config/wallpaper/$ch_mon"
+    else
+       printf "Não tens motitores ó pobre\n" 
+    fi
+}}
+
+cmd encrypt ${{
+    if [ -d $f ]; then
+        gpgtar -c -o "$f.gpg" "$f"
+    else
+        gpg -c "$f"
+    fi
+}}
+
+cmd decrypt ${{
+    gpg "$f"
+}}
+
+cmd create_directory ${{
+	printf "Name of the directory: "
+	read r
+	mkdir $r
+}}
+
+cmd create_file ${{
+	printf "Name of the file: "
+	read r
+	touch $r
+}}
+
+cmd rm ${{
+	case $1 in
+		"-r")
+			printf "Are you sure you want to remove file $2?\nyes(y)no(n)\n"
+			read r
+			if [ $r = "y" ] || [ $r = "yes" ]; then
+				rm -r $2
+			fi
+			;;
+		*)
+			rm $1
+			;;
+	esac
+}}
+
+cmd edit ${{
+	nvim "$f"
+}}
+
+cmd new_edit ${{
+    st -e nvim "$f" 2> /dev/null &
+}}
+
+cmd new_instance ${{
+    st -e lf $PWD 2> /dev/null &
+}}
+
+cmd touch ${{
+	touch $1
+}}
+
+cmd lf ${{
+	alacritty -e lf $PWD &
+}}
+
+cmd chwallpaper ${{
+	[ -d $HOME/.config/wallpaper ] || mkdir -p $HOME/.config/wallpaper
+	cp -r ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
+	cp -r $f ~/.config/wallpaper/wallpaper
+    # Remove old muli-monitor wallpaper setup
+    #ls $HOME/.config/wallpaper/*-* || rm $HOME/.config/wallpaper/*-*
+	xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+}}
+
+cmd bakwallpaper ${{
+	cp -r ~/.config/wallpaper/wallpaper.bak ~/.config/wallpaper/wallpaper
+	xwallpaper --zoom  ~/.config/wallpaper/wallpaper
+}}
+
+cmd makefile ${{
+	printf "Name of the file: "; read r
+	touch "$r"
+}}
+
+cmd makedirectory ${{
+	printf "Name of the directory: "; read r
+	mkdir "$r"
+}}
+
+cmd move ${{
+	printf "Change name from $f to: "; read r
+	mv "$f" "$r"
+}}
+
+cmd copyimage ${{
+	case $f in
+		*.png)
+			xclip -selection clipboard -t image/png -i $f
+			;;
+		*.jpg)
+			xclip -selection clipboard -t image/jpg -i $f
+			;;
+		*.jpeg)
+			xclip -selection clipboard -t image/jpeg -i $f
+			;;
+		esac
+}}
+
+cmd trash ${{
+	if [ -z "$fs" ]; then
+		trash-put $f
+	else
+		trash-put $fs
+	fi
+    #lf -remote 'send reload'
+}}
+
+# Forces removing a file
+cmd forcerm ${{
+	if [ -z "$fs" ]; then
+		rm -rfi $f
+	else
+		rm -rfi $fs
+	fi
+}}
+
+# Shreds and removes files.
+# Safer option if you want to delete somthing without
+# the possibility of it being restored
+cmd shredandrm ${{
+	if [ -z "$fs" ]; then
+        printf "Do you really want to delete (and shred) %s?" $f
+        read r
+        case $r in
+            "yes" | "y")
+                shred $f &&
+                rm -rf $f
+                ;;
+        esac
+	else
+        printf "Do you really want to delete (and shred) %s? (yes/no) " $f
+        read r
+        case $r in
+            "yes" | "y")
+                shred $fs &&
+                rm -rf $fs
+                ;;
+        esac
+	fi
+}}
+
+cmd cdfuzzy ${{
+    file="$(fzf)"
+    [ -n $file ] && cd "${file%/*}"
+}}
+
+cmd nvimfuzzy ${{
+    file="$(fzf)"
+    [ -n $file ] && $EDITOR "$file"
+}}
+
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+         text/* | inode/x-empty | application/json) $EDITOR "$f";;
+         image/gif | inode/x-empty | application/json) nsxiv -a "$f" &;;
+        #video/*|image/*/application/pdf) xdg-open "$f" & ;;
+        *) xdg-open "$f" &> /dev/null &;;
+    esac
+}}
+
+cmd opensxiv ${{
+	nsxiv -t * &
+}}
+
+cmd syncrepo ${{
+	printf "Commit message: "
+	read message 
+	git commit -a -m "$message"
+	git push
+}}
+
+cmd gitadd ${{
+	if [ -z "$fs" ]; then
+		git add $f
+	else
+		git add $fs
+	fi
+}}
+
+# Removed bindings
+
+map t
+map F
+map n
+map N
+map m
+
+##Binds
+map o new_instance
+map DD trash
+map DF delete
+map DS shredandrm
+map H set hidden!
+map R reload
+map S shell
+map B bible
+map e edit
+map E new_edit
+map n $nvim
+map N nvimfuzzy
+map F cdfuzzy
+map a enterTmux
+
+##Shortcuts
+map gW cd /run/media/Windows
+map gu cd ~/Universidade
+map gH cd /mnt/HDD
+map gt cd ~/.local/share/Trash/
+map gf cd ~/.local/share/fonts/
+map gb cd /mnt/Barracuda
+map gr cd /mnt/Robalo
+map gd cd ~/Documents
+map gD cd ~/.dotfiles
+map gS cd ~/.config/suckless
+map gs cd ~/.scripts
+map gm cd ~/Media
+map gw cd ~/Media/Wallpapers
+map gp cd ~/Documents/Pessoal
+map gv cd ~/.config/nvim
+map gL cd ~/.config/lf
+map gl cd ~/Documents/Lab
+map gc cd ~/.config
+map gn cd ~/Documents/Notas
+map gP cd ~/Documents/Projetos
+map gi cd ~/.local/share/icons/dalis
+
+##Tools
+map tf firefox
+map tE encrypt
+map tD decrypt
+map tc compress
+map tb $backy link
+map tS syncrepo
+map ta gitadd
+map te extract
+map tw chwallpaper
+map tm chwpmon
+map tW bakwallpaper
+map ts opensxiv
+map tn $nvim
+map md makedirectory
+map mf makefile
+map mv movedir
+
+##Create
+map xd create_directory
+map xf create_file
+map xv move

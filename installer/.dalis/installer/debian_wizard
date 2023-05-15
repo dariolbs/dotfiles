@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+printf "Welcome to the ubuntu wizard! This can be used in any debian-based distro.\n"
+printf "Its meant to just install a basic development environment\n"
+
+sudo apt-get install "${programs[@]}"
+
+# Install packer
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+programs=(
+    "zsh"
+    "npm"
+    "cmake"
+    "vim"
+    "lldb"
+    )
+

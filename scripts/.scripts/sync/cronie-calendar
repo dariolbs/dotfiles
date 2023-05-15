@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+
+calendar_path="$HOME/.local/share/calcurse"
+devices=("dariolaptop")
+icon="$HOME/.local/share/icons/dalis/bigbrainpepe.png"
+
+#Sincronizar dotfiles locais
+for device in ${devices[@]}; do
+    rsync -uvrP --delete ${calendar_path}/*  $device:${calendar_path} 2> ~/.dalis/logs/cronie-calendar &&
+    notify-send -i $icon "Calendar Update 📅" "Updated with success!"
+done

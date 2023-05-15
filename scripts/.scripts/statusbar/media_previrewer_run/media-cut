@@ -1,0 +1,27 @@
+#!/bin/sh
+main(){
+folder="$HOME/.scripts/statusbar/media_previrewer_run"
+process_number=0
+while true; do
+	status="$(playerctl metadata --format '{{ artist }} - {{ title }}' 2> /dev/null)"
+	if [ "$?" != "0" ]; then
+		[ $process_number -gt 0 ] && kill $process_number
+		printf "None\n"
+		process_number=0
+		sleep 5
+	elif [ ${#status} -lt 30 ]; then
+		[ $process_number -gt 0 ] && kill $process_number
+		printf "$status\n"
+		process_number=0
+		sleep 5
+	elif [ "${status}" != "${current}" ]; then
+		[ $process_number -gt 0 ] && kill $process_number
+		python3 $folder/pmedia_cutter "${status}" 30 " | " "$folder/state" &
+		process_number="$!"
+		current="${status}"
+	else
+		sleep 5
+	fi
+done || pkill $process_number 2> /dev/null
+}
+main

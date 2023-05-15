@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+source $HOME/.dalis/config
+n=0
+icon="/home/dario/.local/share/icons/dalis/thumbsup.png"
+date="$(date +%d:%m:%Y)"
+
+# Check errors in the config files
+if [ ${#backup_disks[@]} -ne ${#temp_backup_keep[@]} ]; then
+    notify-send -u critical "There are problems with your config file"\
+    "Lenght of backup_disks and temp_backup_keep is not the same"
+    exit 1
+fi
+
+for disco in ${backup_disks[@]}; do
+    [ -d "${disco}/old_backups" ] || mkdir -p "${disco}/old_backups"
+    [ -f "${disco}/old_backups/backup_${date}"* ] && continue
+    # Verificar ficheiros necessários
+    [ -d "$HOME/.dalis/logs" ] || mkdir -p "$HOME/.dalis/logs/"
+    # Remover backups antigos caso existam
+    backups_number=$(ls ${disco}/old_backups | grep backup | wc -l)
+    while [ $backups_number -ge ${temp_backup_keep[$n]} ]; do
+        oldest="$(ls -rt ${disco}/old_backups | grep backup | head -1 )"
+        rm -rvf "${disco}/old_backups/${oldest}" &> "$HOME/.dalis/logs/temp_backups.log"
+    done
+
+    tar -cvpf ${disco}/old_backups/backup_${date}.tar.gz ${disco}/backups 2>> "$HOME/.dalis/logs/temp_backup.log"
+
+    n=$(($n + 1))
+done && notify-send -i $icon "Weekly Backups 💾" "Backups created with success on ${backup_disks[@]}" ||
+        notify-send -u critical "Weekly Backups 💾" "There was a problem creating the backups. Check the logs!"

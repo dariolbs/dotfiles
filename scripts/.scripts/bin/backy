@@ -1,0 +1,50 @@
+#!/usr/bin/sh
+# Backy sript. It generates links between 2 directories and copies
+# all of the first direcorie's non-hidden files to the second directory.
+# The config file is located automatically in ~/.config/backy
+
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+#source $HOME/.scripts/functions/colors
+config_dir="$HOME/.config/backy"
+cache_dir="$HOME/.cache/backy"
+[ -d "$cache_dir" ] || (mkdir -p "$cache_dir" && touch "$cache_dir/file")
+[ -d "$config_dir" ] || (mkdir -p "$config_dir" && touch "$config_dir/config")
+old_ifs="$IFS"
+icon="$HOME/.local/share/icons/dalis/thumbsup.png"
+
+update(){
+    for line in $(cat $config_dir/config | grep -v "^#"); do
+        from=$(printf "$line\n" | cut -f 1 -d ":")
+        to=$(printf "$line\n" | cut -f 2 -d ":")
+        cp -v "$from"/* "$to"
+    done &&
+        notify-send -i $icon "Backy 🎒" "Sync done!"  ||
+        notify-send -i -u critical "Backy 🎒" "There were problems syncing folders. Check the logs!"
+}
+
+linkdirs(){
+    #USO: linkdirs $(from) $(to)
+    for directory in "$1" "$2"; do
+        [ -d "$directory" ] || (printf "$directory doesnt exist!\n" && return 1)
+    done
+    printf ":${1}:${2}:\n" >> $config_dir/config
+}
+
+case "$1" in
+    "update" | "-u" | "sync") update ;;
+    "link" | "-l") 
+        if [ -z "$2" ]; then
+            if [ -z $(cat $cache_dir/file) ]; then
+                printf "Use \"backy link\" again to create a link from $PWD to another directory\n"
+                printf "$PWD\n" > "$cache_dir/file"
+            else
+                linkdirs "$(cat $cache_dir/file)" "$PWD" &&
+                    printf "There was created a link from $(cat $cache_dir/file) to $PWD\n" &&
+                    printf "\n" > "$cache_dir/file"
+            fi
+        else
+            linkdirs "$PWD" "$2"
+        fi
+        ;;
+    *) grep -v "^#" "$config_dir/config" | sed -e "s/:/ -> /";;
+esac

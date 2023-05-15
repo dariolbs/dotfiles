@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+printf "📰 $(newsboat -x print-unread | cut -f 1 -d " " ) "

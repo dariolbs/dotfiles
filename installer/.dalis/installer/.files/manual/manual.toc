@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Before Starting}{3}{}%
+\contentsline {section}{\numberline {3}Starting out}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Running the wizard}{3}{}%
+\contentsline {section}{\numberline {4}Post Install}{3}{}%
+\contentsline {section}{\numberline {5}Bindings}{4}{}%
+\contentsline {subsection}{\numberline {5.1}Script Bindings}{4}{}%
+\contentsline {subsection}{\numberline {5.2}Window Management Bindings}{4}{}%

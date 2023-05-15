@@ -1,0 +1,44 @@
+#!/bin/bash
+change(){
+	if [ -z $2 ]; then
+		rr1=165
+		rr2=60
+	else
+		rr1=$2
+		rr2=$3
+	fi
+
+	case $1 in
+		"both")
+			xrandr --output DP-1 --primary --mode 1920x1080 --rate $rr1.00 --output HDMI-1 --mode 1920x1080 --rate $rr2.00 --left-of DP-1
+			;;
+		"primary-only")
+			xrandr --output DP-1 --primary --mode 1920x1080 --rate $rr1.00
+			xrandr --output HDMI-1 --off
+			;;
+		"second-only")
+			[ $rr1 -gt 60 ] && rr1=60
+			xrandr --output HDMI-1 --primary --mode 1920x1080 --rate $rr1.00
+			xrandr --output DP-1 --off
+			;;
+		*)
+			printf "Option not found\nCurrent options:\nboth\nprimary-only\nsecond-only\n"
+	esac
+}
+options=(
+"both"
+"primary-only"
+"second-only"
+)
+PS3="Please choose an option: "
+case $1 in
+	"")
+		select option in ${options[@]}; do
+			change $option $2 $3
+			break
+		done
+		;;
+	*)
+		change $1 $2 $3
+		;;
+	esac

@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+source $HOME/.dalis/config
+icon="/home/dario/.local/share/icons/dalis/thumbsup.png"
+
+for disco in ${backup_disks[@]}; do
+	[ -d $disco/backups ] || mkdir -p $disco/backups
+    for directory in ${backup_dirs[@]}; do
+        rsync -uvrP --delete $directory $disco/backups 2> $HOME/.dalis/logs/backup.log
+    done
+done &&	notify-send -i $icon '💾 Daily Backups' "Daily backups finished with success!" || notify-send "💾 Daily Backups" "There were problems backing up your data. Check the logs!"

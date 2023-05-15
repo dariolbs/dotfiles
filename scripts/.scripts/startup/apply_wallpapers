@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+[ -f "$HOME/.dalis/config" ] && source "$HOME/.dalis/config"
+wallpaper_folder="$HOME/.config/wallpaper"
+if [ $(ls $wallpaper_folder | wc -l) -le 2 ]; then
+    xwallpaper --zoom "$wallpaper_folder/wallpaper"
+    exit 0
+else
+    wm=0
+    for monitor in ${monitors[@]}; do
+        if [ -f "$wallpaper_folder/$monitor" ]; then
+            xwallpaper --output $monitor --zoom "$wallpaper_folder/$monitor"
+            wm=$(($wm + 1))
+        fi
+    done
+    [ ${#monitors[@]} -eq $wm ] || xwallpaper --zoom "$wallpaper_folder/wallpaper"
+fi

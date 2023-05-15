@@ -1,0 +1,31 @@
+#!/bin/bash
+case $1 in
+	"select")
+		scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png --select --line mode=edge &&
+		notify-send "Scrot 📷" 'Print Taken!' &&
+		xclip -selection clipboard -t image/png -i $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)
+		;;
+	"")
+        nmonitors="$(xrandr | grep ".* connected" | wc -l)"
+        options=""
+        if [ $nmonitors -gt 1 ]; then
+            i=0
+            while [ $nmonitors != $i ]; do
+                options+="Monitor $i:"
+                i=$(($i+1))
+            done
+            monitors=${monitors%%":"}
+            old_ifs="$IFS"
+            IFS=":"
+            selected="$(for option in ${options[@]}; do printf "$option\n"; done | dmenu -p "Select monitor to screenshot" -l $nmonitors)"
+            IFS="$old_ifs"
+            scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png -M ${selected##*" "} &&
+            notify-send "Scrot 📷" 'Print Taken!' &&
+            xclip -selection clipboard -t image/png -i $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)
+        else
+            scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png &&
+            notify-send "Scrot 📷" 'Print Taken!' &&
+            xclip -selection clipboard -t image/png -i $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)
+        fi
+		;;
+esac

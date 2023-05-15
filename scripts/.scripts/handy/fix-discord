@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+# FIXES DISCORD'S BAD AUTO UPDATE ON LINUX
+if [ -f $HOME/.config/discord/settings.json ]; then
+    printf "Disocrd has already been fixed!\n"
+else
+    printf "\"SKIP_HOST_UPDATE\": true\n" >> $HOME/.config/discord/settings.json
+fi
+

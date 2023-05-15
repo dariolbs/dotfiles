@@ -1,0 +1,197 @@
+add_newline = false
+
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+ssh_symbol = " "
+format = 'in [$hostname](bold purple) '
+trim_at = "."
+disabled = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[󱦰](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[󱦰](bold red)"
+vicmd_symbol = "[󱦱](green)"
+#  
+# configure directory
+[directory]
+read_only = "  "
+truncation_length = 10
+truncate_to_repo = true # truncates directory to root folder if in github repo
+style = "bold italic blue"
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = false
+disabled = false
+style = "bold italic red"
+
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
+[nodejs]
+format = "via [ Node.js](bold green) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+[aws]
+symbol = "  "
+format = "via [$symbol]($style)"
+
+[buf]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[c]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[conda]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[dart]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[elixir]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[elm]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[golang]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[guix_shell]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[haskell]
+symbol = "󰲒 "
+format = "via [$symbol]($style)"
+
+[haxe]
+symbol = "⌘ "
+format = "via [$symbol]($style)"
+
+[java]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[julia]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[lua]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+format = "via [$symbol]($style)"
+
+[nim]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[nix_shell]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[os]
+format = "on [($name $symbol)]($style)"
+style = "bold blue"
+disabled = true
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = "? "
+Windows = " "
+
+[package]
+symbol = " "
+
+[pijul_channel]
+symbol = "🪺 "
+
+[python]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[rlang]
+symbol = "ﳒ "
+format = "via [$symbol]($style)"
+
+[ruby]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[rust]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[scala]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[spack]
+symbol = "🅢 "
+
+# ~/.config/starship.toml
+# ~/.config/starship.toml

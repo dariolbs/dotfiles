@@ -1,0 +1,55 @@
+#!/bin/sh
+
+max_length=25
+cutter="$HOME/.scripts/.used/pmedia_cutter"
+output="$HOME/.scripts/statusbar/dwmblocks/music-state"
+filter() { sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*//g;/\\[playing\\].*/d;/^ERROR/Q" | paste -sd ' ' -;}
+
+main() {
+    command="mpc status"
+    status=$(eval "$command")
+    process_number=0
+    while true; do
+        if [ -n "$status" ]; then
+            filtered=$(filter "$str")
+            if [ ${#filtered} -lt $max_length ]; then
+                [ $process_number -gt 0 ] && kill $process_number
+                printf "$filtered\n" > "$output"
+                process_number=0
+                sleep 5
+
+            elif [ "$filtered" != "$current" ]; then
+                [ $process_number -gt 0 ] && kill $process_number
+                python3 "$cutter" $max_length " | " "$filtered" &
+                process_number="$!"
+                sleep 5
+            else
+                sleep 5
+            fi
+        else
+            printf "\n" > $output
+            sleep 5
+        fi
+    done
+}
+
+
+
+#[ "$(mpc status | cut -f 2 -d " ")" = 'n/a' ] && printf "None\n" && exit 0
+
+pidof -x sb-mpdup >/dev/null 2>&1 || sb-mpdup >/dev/null 2>&1 &
+
+case $BLOCK_BUTTON in
+    1) mpc status | filter ; setsid -f "$TERMINAL" -e ncmpcpp ;;  # right click, pause/unpause
+    2) mpc toggle | filter ;;  # right click, pause/unpause
+    3) mpc status | filter ; notify-send "🎵 Music module" "\- Shows mpd song playing.
+- ⏸ when paused.
+- Left click opens ncmpcpp.
+- Middle click pauses.
+- Scroll changes track.";;  # right click, pause/unpause
+    4) mpc prev   | filter ;;  # scroll up, previous
+    5) mpc next   | filter ;;  # scroll down, next
+    6) mpc status | filter ; "$TERMINAL" -e "$EDITOR" "$0" ;;
+    *) mpc status | filter ;;
+esac
+
