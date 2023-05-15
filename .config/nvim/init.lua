@@ -1,2 +1,0 @@
-require("dario")
-require("plugins")
