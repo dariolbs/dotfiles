@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+setxkbmap pt
 setxkbmap -option caps:escape
 source $HOME/.profile
 exec apply_sys_config &

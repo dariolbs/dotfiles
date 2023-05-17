@@ -35,32 +35,29 @@ archlinux_installer(){
 	#Set dash as default shell
 	sudo ln -sfT dash /usr/bin/sh
 
-    # Copy config files
-    dir="$PWD"
-    cd $HOME
-    git clone "https://github.com/dariolbs/dotfiles"
-    mv dotfiles .dotfiles
-    cd .dotfiles && stow */
-    cd "$dir"
+    # Create links for config files
+    cd ../..
+    stow */
 
-	#Enable processes
+	# Enable processes
     systemctl enable cronie
     systemctl enable NetworkManager
     systemctl enable sshd
 
-	#Compile suckless tools
-    for tool in "dwm" "dmenu" "slstatus" "st" "slock"; do
-        cd $HOME/.config/$tool && sudo make clean install
+	# Compile suckless tools
+    for tool in "dwm" "dmenu" "dwmblocks" "st" "slock"; do
+        cd "$HOME/.config/suckless/$tool" && sudo make clean install
     done
-    cd "$dir"
 
-    ## Copy preset configs
+    # Compile nsxiv (bester image viewer)
+    cd "$HOME/.config/suckless/nsxiv" && sudo make clean install
 
     # Make directories if they don't exist already
     mkdir -p "$HOME/.dalis/logs"
     mkdir -p "$HOME/.config/picom"
 	mkdir -p "$HOME/.config/wallpaper"
 
+    cd "$dir"
     # Wallpaper
 	cp .files/wallpaper.png "$HOME/.config/wallpaper/wallpaper"
     # Xinitrc preset
@@ -81,8 +78,8 @@ archlinux_installer(){
     #Install starship promt
     curl -sS https://starship.rs/install.sh | sh
 
-    # Automatically remove trash files that are older than 30 days
-    (crontab -l ; echo "@daily $(which trash-empty) 30") | crontab -
+    # Automatically remove trash files that are older than 15 days
+    (crontab -l ; echo "@daily $(which trash-empty) 15") | crontab -
 
 	#Update profile
 	source "$HOME/.profile"

@@ -13,12 +13,13 @@ change_keymap(){
 }
 
 change_colorscheme(){
-    color="$(ls "$HOME/.config/colorschemes" | dmenu -l 10 -p "Select colorscheme:")" || exit 1
-	local colorscheme="$HOME/.config/colorschemes/$color"
+    color="$(ls ${dalis_location}/colorschemes/ | dmenu -l 10 -p "Select colorscheme:")" || exit 1
+	local colorscheme="${dalis_location}/colorschemes/$color"
 	    cp -r $colorscheme/$(ls $colorscheme | dmenu -l 10 -p "Select colorscheme") $HOME/.Xresources && notify-send "System" "Colorscheme updated! 🎨"
 }
 
 change_monitor_layout(){
+    source "$HOME/.config/system/config"
 	monitor_options="Apply default config:Primary only:Second only:Third only"
 	option=$(for i in ${monitor_options[@]}; do printf "${i}\n"; done | dmenu -p "Layout:" -l 5)
     case "$option" in 

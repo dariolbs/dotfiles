@@ -16,10 +16,10 @@ case $1 in
 		printf "This script makes it easier for you so consoom more content.\n"
 		;;
 	"import")
-		[ $# -eq 2 ] && import $2 || help 
+		[ $# -eq 2 ] && import $2 || help
 		;;
 	"mv")
-		[ $# -eq 3 ] && mv $consoom_folder/$2 $consoom_folder/$3 || help 
+		[ $# -eq 3 ] && mv $consoom_folder/$2 $consoom_folder/$3 || help
 		;;
 	"")
 		printf "Remember to be ${BOLD_RED}excited ${NO_COLOR}about the next ${BOLD_GREEN}major ${NO_COLOR}product!\n"
