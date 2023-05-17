@@ -16,22 +16,64 @@ case $BLOCK_BUTTON in
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
+
+show_controller=false
+show_battery=true
+# Loop through all attached batteries and format the info
+for battery in $(upower -i $(upower -e | grep gip) | grep "percentage" | awk '{ print $2 }' | sed "s/%//"); do
+    ccapacity=$(upower -i $(upower -e | grep gip) | grep "percentage" | awk '{ print $2 }' | sed "s/%//")
+    [ -z "$ccapacity" ] && continue
+    case 1 in
+        $((ccapacity >= 70)) ) cstatus="󰝍";;
+        $((ccapacity >= 40)) ) cstatus="󰝏";;
+        $((ccapacity >= 10)) ) cstatus="󰝎";;
+        *) cstatus="󰝌";;
+    esac
+    show_controller=true
+done
+
 # Loop through all attached batteries and format the info
 for battery in /sys/class/power_supply/BAT?*; do
 	# If non-first battery, print a space separator.
 	[ -n "${capacity+x}" ] && printf " "
 	# Sets up the status and capacity
 	case "$(cat "$battery/status" 2>&1)" in
-		"Full") status="󰂏" ;;
-		"Discharging") status="󰂌" ;;
-		"Charging") status="󰂄" ;;
-		"Not charging") status="󰂌" ;;
+		"Full") status="󱟢" ;;
+		"Discharging" | "Not charging")
+            capacity="$(cat "$battery/capacity" 2>&1)"
+            case 1 in
+            $((capacity >= 90)) ) status="󰁹";;
+            $((capacity >= 80)) ) status="󰂂";;
+            $((capacity >= 70)) ) status="󰂁";;
+            $((capacity >= 60)) ) status="󰁿";;
+            $((capacity >= 50)) ) status="󰁾";;
+            $((capacity >= 40)) ) status="󰁽";;
+            $((capacity >= 30)) ) status="󰁼";;
+            $((capacity >= 20)) ) status="󰁻";;
+            $((capacity >= 10)) ) status="󰁺";;
+            *) status="󰂎";;
+            esac
+            ;;
+		"Charging")
+            capacity="$(cat "$battery/capacity" 2>&1)"
+            case 1 in
+                $((capacity >= 90)) ) status="󰂅";;
+                $((capacity >= 80)) ) status="󰂋";;
+                $((capacity >= 70)) ) status="󰂊";;
+                $((capacity >= 60)) ) status="󰢞";;
+                $((capacity >= 50)) ) status="󰂉";;
+                $((capacity >= 40)) ) status="󰢝";;
+                $((capacity >= 30)) ) status="󰂈";;
+                $((capacity >= 20)) ) status="󰂆";;
+                $((capacity >= 10)) ) status="󰢜";;
+                *) status="󰢟" ;;
+            esac
+            ;;
 		"Unknown") status="?" ;;
-		*) exit 1 ;;
+		*) show_battery=false ;;
 	esac
 	capacity="$(cat "$battery/capacity" 2>&1)"
-	# Will make a warn variable if discharging and low
-	[ "$status" = "󰂌" ] && [ "$capacity" -le 25 ] && warn="!"
 	# Prints the info
-	printf "%s %s%d%%" "$status" "$warn" "$capacity"; unset warn
+    [ $show_controller = true ] && printf "%s %d%%" "$cstatus" "$ccapacity"
+    [ $show_battery = true ] && printf "%s %d%%" "$status" "$capacity"; unset warn
 done && printf "\\n"

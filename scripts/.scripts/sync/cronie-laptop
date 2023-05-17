@@ -1,12 +1,21 @@
 #!/usr/bin/bash
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
 
+dconfig="$HOME/Documents/Dalis/.config"
+dhome="$HOME/Documents/Dalis/home"
+config=()
+home=()
 devices=(
 	#Dispositivos definidos em ssh
 	"dariolaptop"
 )
-
-dotfilesf="$HOME/.dotfiles"
+icon="/home/dario/.local/share/icons/dalis/thumbsup.png"
+for i in $(ls $dconfig); do
+	config+=("$HOME/.config/$i")
+done
+for i in $(ls -A $dhome); do
+	home+=("$HOME/$i")
+done
 
 for device in ${devices[@]}; do
 	# Verificar conexão
@@ -14,8 +23,9 @@ for device in ${devices[@]}; do
 	go="$?"
 	if [ "$go" = "0" ]; then
 	    #Sincronizar configuração
-	    rsync -uvrP --delete --delete "$dotfilesf"/* "$device:$dotfilesf"
+	    rsync -uvrP --delete ${config[@]} $device:~/.config
+	    rsync -uvrP --delete ${home[@]} $device:
         #mpv --no-video "$HOME/.scripts/media/notification.wav"
+        notify-send -i $icon "Laptop sync 💻" "Devices ${devices[@]} updated with success!"
 	fi
-done && notify-send -i $icon "Laptop sync" "Devices ${devices[@]} updated with success!" ||
-notify-send -u critical "Laptop sync" "There were problems syncing devices ${devices[@]}. Check the logs!"
+done

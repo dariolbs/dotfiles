@@ -8,6 +8,7 @@ PERL_MM_OPT="INSTALL_BASE=/home/dario/.local/progtools/perl5"; export PERL_MM_OP
 export TERMINAL="st"
 export EDITOR="nvim"
 export HAMACHI="logmein-hamachi.service"
+export PHOME="/storage/emulated/0"
 export STEAMSCREENSHOTS="/home/dario/.local/share/Steam/userdata/250615889"
 export JAVA_HOME="/usr/lib/jvm/java-19-openjdk"
 export PATH="$HOME/.local/bin/:${PATH}:$HOME/.scripts/bin/:$HOME/.scripts/handy:$HOME/.scripts/startup:$HOME/.scripts/sync:$HOME/.scripts/statusbar/dwmblocks:$JAVA_HOME"

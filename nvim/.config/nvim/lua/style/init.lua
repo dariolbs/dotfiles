@@ -1,6 +1,0 @@
-require("style.lualine")
-require("style.kanagawa")
-require("style.onedark")
-require("style.tokyonight")
-require("style.transparent")
-require("style.colors")
