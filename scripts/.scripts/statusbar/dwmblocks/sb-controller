@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Loop through all attached batteries and format the info
+for battery in $(upower -i $(upower -e | grep gip) | grep "percentage" | awk '{ print $2 }' | sed "s/%//"); do
+    capacity=$(upower -i $(upower -e | grep gip) | grep "percentage" | awk '{ print $2 }' | sed "s/%//")
+    [ -z "$capacity" ] && exit 1
+    case 1 in
+        $((capacity >= 70)) ) status="󰝍";;
+        $((capacity >= 40)) ) status="󰝏";;
+        $((capacity >= 10)) ) status="󰝎";;
+        *) status="󰝌";;
+    esac
+done
+printf "%s %d%%\n" "$status" "$capacity";
