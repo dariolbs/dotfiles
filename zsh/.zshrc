@@ -52,6 +52,7 @@ export EDITOR="nvim"
 source $HOME/.config/zsh/zsh-history-substring-search.plugin.zsh 2>/dev/null
 source $HOME/.config/zsh/zsh-autosuggestions.zsh 2>/dev/null
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source $HOME/.config/zsh/zsh-autopair/autopair.zsh 2>/dev/null
 
 source "$HOME/.profile"
 
