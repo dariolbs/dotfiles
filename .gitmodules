@@ -1,3 +1,6 @@
 [submodule "suckless/.config/suckless/dwm"]
 	path = suckless/.config/suckless/dwm
 	url = https://github.com/dariolbs/dwm
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = https://github.com/dariolbs/nvim
