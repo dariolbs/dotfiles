@@ -24,7 +24,7 @@ func(){
 	while [ $n -lt $seconds ]
 	do
 		echo "$(tempo $(($seconds-$n)))" > ~/.scripts/statusbar/alarm/alarm-state
-        pkill -RTMIN+11 dwmblocks
+        pkill -RTMIN+9 dwmblocks
 		sleep 1 && n=$((n+=1))
 	done
 }
@@ -90,7 +90,7 @@ esac
 main(){
     [ $r = true ] && func &&
         printf "0s\n" > ~/.scripts/statusbar/alarm/alarm-state &&
-            (pkill -RTMIN+11 dwmblocks;
+            (pkill -RTMIN+9 dwmblocks;
             mpv --no-video ~/.scripts/media/alarm.*)
 }
 
