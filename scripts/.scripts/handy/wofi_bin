@@ -1,0 +1,2 @@
+#!/bin/sh
+dmenu_path | wofi -n --show dmenu "$@" | ${SHELL:-"/bin/sh"} &

@@ -32,9 +32,9 @@
 
 ! Dwm
 dwm.normbgcolor: #232326
-dwm.normbordercolor: #5C6370
+dwm.normbordercolor: #525259
 dwm.normfgcolor: #BBBBBB
-dwm.selbgcolor: #5C6370
+dwm.selbgcolor: #525259
 dwm.selbordercolor: #D19A66
 dwm.selfgcolor: #ffffff
 dwm.borderpx: 1
@@ -48,5 +48,5 @@ dwm.mfact: 0.55
 !dmenu
 dmenu.background: #232326
 dmenu.foreground: #BBBBBB
-dmenu.selbackground: #5C6370
+dmenu.selbackground: #525259
 dmenu.selforeground: #ffffff

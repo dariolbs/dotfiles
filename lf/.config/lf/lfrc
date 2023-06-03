@@ -1,10 +1,16 @@
 # Gigachad's Configuration of the lf file manager
-set previewer ~/.config/lf/lf-ueberzug-previewer
 set cleaner ~/.config/lf/lf-ueberzug-cleaner
+#set previewer ~/.config/lf/lf-ueberzug-previewer
+set previewer ~/.config/lf/preview
 set icons true
-#set drawbox
+set drawbox
+set preview true
 set shell zsh
+set cursorpreviewfmt "\033[7m"
 set shellopts '-euy'
+set mouse true
+set relativenumber false
+#set numberfmt "\033[00m"
 set ifs "\n"
 set filesep "\n"  # default already
 
@@ -134,12 +140,24 @@ cmd chwallpaper ${{
 	cp -r $f ~/.config/wallpaper/wallpaper
     # Remove old muli-monitor wallpaper setup
     #ls $HOME/.config/wallpaper/*-* || rm $HOME/.config/wallpaper/*-*
-	xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+        export SWWW_TRANSITION_FPS=60
+        swww img ~/.config/wallpaper/wallpaper --transition-type wipe\
+            --transition-step 90
+    else
+	    xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+    fi
 }}
 
 cmd bakwallpaper ${{
 	cp -r ~/.config/wallpaper/wallpaper.bak ~/.config/wallpaper/wallpaper
-	xwallpaper --zoom  ~/.config/wallpaper/wallpaper
+    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+        export SWWW_TRANSITION_FPS=60
+        swww img ~/.config/wallpaper/wallpaper --transition-type wipe\
+            --transition-step 90
+    else
+	    xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+    fi
 }}
 
 cmd makefile ${{
@@ -286,6 +304,7 @@ map gb cd /mnt/Barracuda
 map gr cd /mnt/Robalo
 map gd cd ~/Documents
 map gD cd ~/.dotfiles
+map gH cd ~/.config/hypr/
 map gS cd ~/.config/suckless
 map gs cd ~/.scripts
 map gm cd ~/Media

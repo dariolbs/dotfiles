@@ -20,8 +20,15 @@ do
 			[ -d $HOME/.config/wallpaper ] || mkdir -p $HOME/.config/wallpaper
 			cp -r ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
 			cp -r "$file" ~/.config/wallpaper/wallpaper
-			xwallpaper --zoom  ~/.config/wallpaper/wallpaper &&
-				notify-send " Wallpaper updated!"
+
+            if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+                export SWWW_TRANSITION_FPS=60
+                swww img ~/.config/wallpaper/wallpaper --transition-type wipe\
+                    --transition-step 90
+            else
+                xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+            fi
+
 			;;
 	esac
 done

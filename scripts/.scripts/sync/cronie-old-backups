@@ -24,8 +24,8 @@ for disco in ${backup_disks[@]}; do
         rm -rvf "${disco}/old_backups/${oldest}" &> "$HOME/.dalis/logs/temp_backups.log"
     done
 
-    tar -cvpf ${disco}/old_backups/backup_${date}.tar.gz ${disco}/backups 2>> "$HOME/.dalis/logs/temp_backup.log"
+    tar -czvf "${disco}/old_backups/backup_${date}.tar.gz" "${disco}/backups" 2>> "$HOME/.dalis/logs/temp_backup.log"
 
     n=$(($n + 1))
-done && notify-send -i $icon "Weekly Backups 💾" "Backups created with success on ${backup_disks[@]}" ||
+done && notify-send -i "$icon" "Weekly Backups 💾" "Backups created with success" ||
         notify-send -u critical "Weekly Backups 💾" "There was a problem creating the backups. Check the logs!"

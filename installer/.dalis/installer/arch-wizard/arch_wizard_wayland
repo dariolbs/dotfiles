@@ -2,6 +2,8 @@
 dir="$PWD"
 old_ifs="$IFS"
 mkdir -p "$HOME/.dalis/logs"
+programs=$(cat .files/pkglist.conf | grep -v "^#")
+aur_programs=$(cat .files/pkglist-aur.conf | grep -v "^#")
 archlinux_installer(){
 
     #Startup
@@ -26,7 +28,7 @@ archlinux_installer(){
 	install_yay
     printf "Installing AUR programs... Might take a while\n"
     sleep 1
-    yay -S ${aur[@]}
+    yay -S ${aur_programs[@]}
 
     # Change shell to /bin/zsh
 	[ "$(echo $0)" = *"/zsh" ] || chsh -s /usr/bin/zsh
@@ -50,7 +52,7 @@ archlinux_installer(){
     done
 
     # Compile nsxiv (bester image viewer)
-    cd "$HOME/.config/suckless/nsxiv" && sudo make clean install
+    cd "$HOME/.config/suckless/nsxiv" && sudo make install all
 
     # Make directories if they don't exist already
     mkdir -p "$HOME/.dalis/logs"
@@ -60,8 +62,6 @@ archlinux_installer(){
     cd "$dir"
     # Wallpaper
 	cp .files/wallpaper.png "$HOME/.config/wallpaper/wallpaper"
-    # Xinitrc preset
-    cp .files/xinitrc "$HOME"
     # Dalis preset config
     cp .files/dalis_config "$HOME/.dalis/"
     # Picom preset for those sweet effects
@@ -87,117 +87,6 @@ archlinux_installer(){
     printf "After you feel like its ready for use, just reboot the computer and startx!\nYou can also read Dalis's manual at $HOME/.dalis/manual.pdf\n"
     exit 0
 }
-
-programs=(
-#AUDIO
-"pipewire"
-"pipewire-pulse"
-"pipewire-alsa"
-"pipewire-jack"
-"wireplumber"
-#FONTS
-"noto-fonts"
-"noto-fonts-emoji"
-"adobe-source-han-sans-cn-fonts"
-"adobe-source-han-sans-jp-fonts"
-"ttf-jetbrains-mono"
-#TEXT EDITORS
-"neovim"
-"vim"
-#PERSONALLY USED
-"sxhkd"
-"dunst"
-"mpv"
-"pavucontrol"
-"pcmanfm"
-"unrar"
-"trash-cli"
-"fzf"
-"playerctl"
-"calc"
-"tmux"
-"calcurse"
-"scrot"
-"gimp"
-"zathura-pdf-mupdf"
-"mandoc"
-"zathura-cb"
-"zathura"
-"dash"
-"stow"
-"krita"
-"firefox"
-"sxiv"
-"lxappearance"
-"polkit"
-"dosfstools"
-"mpc"
-"plocate"
-"picom"
-"yt-dlp"
-"zsh"
-"neomutt"
-"exa"
-"rsync"
-"alsa-utils"
-"tor"
-"inetutils"
-"torbrowser-launcher"
-"neofetch"
-"mpd"
-"alacritty"
-"ncmpcpp"
-"xorg-xkill"
-"arch-install-scripts"
-"thunderbird"
-"openssh"
-"bat"
-"lf"
-"cronie"
-"xwallpaper"
-"newsboat"
-#NONSENSE
-"linux-headers"
-"feh"
-"atomicparsley"
-"imagemagick"
-"ghostscript"
-"go"
-"nodejs"
-"npm"
-"ntfs-3g"
-"base-devel"
-"networkmanager"
-"graphicsmagick"
-"wget"
-"curl"
-"libusb"
-"lynx"
-"notmuch"
-"xautolock"
-"xdotool"
-"xorg-server"
-"xorg-xinit"
-"libx11"
-"libxinerama"
-"libxft"
-"webkit2gtk"
-)
-
-aur=(
-#"abook"
-"htop-vim"
-"urlview"
-"mpdris2"
-"ueberzugpp"
-"cronwhip"
-#"mutt-wizard"
-"redshift"
-"librewolf-bin"
-#FONTS
-"nerd-fonts-jetbrains-mono-160"
-"ttf-sourcecodepro-nerd"
-)
 
 install_yay(){
 	mkdir -p $HOME/.gitclones

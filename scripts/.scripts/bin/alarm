@@ -4,6 +4,12 @@ r=true
 n=0
 
 case $BLOCK_BUTTON in
+    1) pkill -RTMIN+9 dwmblocks ;;
+	2)
+        printf "0s\n" > ~/.scripts/statusbar/alarm/alarm-state
+        pkill -RTMIN+9 dwmblocks
+        killall alarm
+        ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
@@ -24,7 +30,7 @@ func(){
 	while [ $n -lt $seconds ]
 	do
 		echo "$(tempo $(($seconds-$n)))" > ~/.scripts/statusbar/alarm/alarm-state
-        pkill -RTMIN+11 dwmblocks
+        pkill -RTMIN+9 dwmblocks
 		sleep 1 && n=$((n+=1))
 	done
 }
@@ -67,7 +73,7 @@ case $1 in
 		r=false
 		;;
 	clean | clear | done)
-		printf "0s " > ~/.scripts/statusbar/alarm/alarm-state
+		printf "0s\n" > ~/.scripts/statusbar/alarm/alarm-state
 		r=false
 		killall alarm 2> /dev/null
 		;;
@@ -90,7 +96,7 @@ esac
 main(){
     [ $r = true ] && func &&
         printf "0s\n" > ~/.scripts/statusbar/alarm/alarm-state &&
-            (pkill -RTMIN+11 dwmblocks;
+            (pkill -RTMIN+9 dwmblocks;
             mpv --no-video ~/.scripts/media/alarm.*)
 }
 

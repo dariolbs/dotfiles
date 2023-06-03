@@ -70,7 +70,8 @@ startSession(){
     printf "Logging in...\n"
 
     sleep 1
-    pgrep dwm || startx "$HOME/.xinitrc"
+    #pgrep dwm || startx "$HOME/.xinitrc"
+    pgrep Hyprland || Hyprland
 }
 
 #APPLY PROMTS
@@ -98,3 +99,6 @@ apply_p10k_promt() {
 
 ## Applyuing promt
 apply_starship_promt || apply_p10k_promt
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
