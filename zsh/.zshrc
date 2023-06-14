@@ -75,12 +75,14 @@ startSession(){
 }
 
 #APPLY PROMTS
+
 apply_starship_promt(){
 	if [[ "$(tty)" == "/dev/tty1" ]]; then
         eval "$(starship init zsh)"
         export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship-tty.toml"
         startSession
     else
+        random_pokemon
         eval "$(starship init zsh)"
         export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship.toml"
     fi
@@ -88,7 +90,7 @@ apply_starship_promt(){
 
 apply_p10k_promt() {
 	if [[ "$(tty)" == "/dev/tty1" ]]; then
-        PROMPT="%B%F{red}[%F{green}%n%f%b%B%F{yellow}@%f%b%B%F{blue}%m%f%b%F%B%F{magenta} %~%f%b %B%F{red}]%B%F{green} $%f%b "
+        apply_default_promt
         startSession
     else
         source $HOME/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme &>/dev/null
@@ -96,6 +98,16 @@ apply_p10k_promt() {
 	fi
 	return 0
 }
+
+apply_default_promt() {
+    PROMPT="%B%F{red}[%F{green}%n%f%b%B%F{yellow}@%f%b%B%F{blue}%m%f%b%F%B%F{magenta} %~%f%b %B%F{red}]%B%F{green} $%f%b "
+}
+
+# RANDOM_FUNCTIONS
+random_pokemon(){
+    pokemon-colorscripts -r --no-title
+}
+
 
 ## Applyuing promt
 apply_starship_promt || apply_p10k_promt

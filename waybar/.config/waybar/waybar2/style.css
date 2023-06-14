@@ -7,14 +7,17 @@
 }
 
 window#waybar {
+    /*
     background: rgba(29, 32, 33, .10);
+    */
+    background: rgba(29, 32, 33, .40);
 }
 tooltip {
-    background: #1d2021;
+    background: #282828;
     color: #ebdbb2;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #1d2021;
+    border-color: #282828;
 }
 
 #workspaces button {
@@ -33,7 +36,7 @@ tooltip {
 
 #workspaces button.active {
     background: #ebdbb2;
-    color: #1d2021;
+    color: #282828;
     margin-left: 2px;
     padding-left: 10px;
     padding-right: 10px;
@@ -44,13 +47,14 @@ tooltip {
 
 #workspaces button:hover {
     background: #ebdbb2;
-    color: #1d2021;
+    color: #282828;
 }
 
 #cpu,
 #memory,
 #custom-power,
 #custom-clock,
+#custom-wally,
 #custom-alarm,
 #workspaces,
 #window,
@@ -63,7 +67,7 @@ tooltip {
 #custom-cliphist,
 #tray {
     color: #ebdbb2;
-    background: #1d2021;
+    background: #282828;
     opacity: 1;
     padding: 0px;
     margin: 3px 0px 3px 0px;
@@ -102,7 +106,6 @@ tooltip {
     padding-right: 17px;
     margin-left: 6px;
 }
-
 
 /* workspace window block */
 
@@ -156,9 +159,6 @@ tooltip {
     margin-right: 6px;
 }
 
-
-/* system tray block */
-
 #custom-mode {
     border-radius: 10px 0px 0px 10px;
     margin-left: 6px;
@@ -184,6 +184,13 @@ tooltip {
 }
 
 #pulseaudio {
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 8px;
+    padding-right: 12px;
+    margin-right: 6px;
+}
+
+#custom-wally {
     border-radius: 10px 10px 10px 10px;
     padding-left: 8px;
     padding-right: 12px;

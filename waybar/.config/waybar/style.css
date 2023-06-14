@@ -6,15 +6,25 @@
     background-image: none;
 }
 
+@define-color low #1d2021;
+
+@define-color medium #32302f;
+
+@define-color high #ebdbb2;
+
 window#waybar {
+    /*
     background: rgba(29, 32, 33, .10);
+    */
+    background: @low;
 }
+
 tooltip {
-    background: #1d2021;
-    color: #ebdbb2;
+    background: @medium;
+    color: @high;
     border-radius: 10px;
     border-width: 1px;
-    border-color: #1d2021;
+    border-color: @medium;
 }
 
 #workspaces button {
@@ -26,14 +36,14 @@ tooltip {
     margin-bottom: 3px;
     padding-left: 2px;
     padding-right: 2px;
-    color: #ebdbb2;
+    color: @high;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.active {
-    background: #ebdbb2;
-    color: #1d2021;
+    background: @high;
+    color: @medium;
     margin-left: 2px;
     padding-left: 10px;
     padding-right: 10px;
@@ -43,14 +53,16 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: #ebdbb2;
-    color: #1d2021;
+    background: @high;
+    color: @medium;
 }
 
 #cpu,
 #memory,
 #custom-power,
 #custom-clock,
+#custom-forecast,
+#custom-wally,
 #custom-alarm,
 #workspaces,
 #window,
@@ -58,17 +70,61 @@ tooltip {
 #network,
 #bluetooth,
 #pulseaudio,
+#backlight,
+#battery,
 #custom-wallchange,
 #custom-mode,
 #custom-cliphist,
 #tray {
-    color: #ebdbb2;
-    background: #1d2021;
+    color: @high;
+    background: @medium;
     opacity: 1;
     padding: 0px;
     margin: 3px 0px 3px 0px;
 }
 
+
+/* First left block */
+
+#custom-clock {
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 17px;
+    margin-left: 25px;
+}
+
+/* All blocks on the right */
+
+#custom-updates,
+#custom-forecast,
+#custom-alarm {
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 17px;
+    margin-left: 6px;
+}
+
+/* Workspaces */
+
+#workspaces {
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#window {
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 12px;
+}
+
+/* First right block */
+
+#network {
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 25px;
+}
 
 /* resource monitor block */
 
@@ -86,103 +142,13 @@ tooltip {
     margin-right: 6px;
 }
 
+/* All blocks on the left */
 
-/* date time block */
-
-#custom-clock {
-    border-radius: 10px;
-    padding-left: 12px;
-    padding-right: 17px;
-    margin-left: 25px;
-}
-
-#custom-alarm {
-    border-radius: 10px;
-    padding-left: 12px;
-    padding-right: 17px;
-    margin-left: 6px;
-}
-
-
-/* workspace window block */
-
-#workspaces {
-    border-radius: 10px 10px 10px 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-#window {
-    border-radius: 0px 10px 10px 0px;
-    padding-right: 12px;
-}
-
-
-/* control center block */
-
-#custom-updates {
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-#network {
-    border-radius: 10px 10px 10px 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 25px;
-}
-
-#bluetooth {
-    padding-left: 4px;
-    padding-right: 4px;
-} 
-
-#pulseaudio {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-#pulseaudio.microphone {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-#custom-wallchange {
-    border-radius: 0px 10px 10px 0px;
-    padding-left: 4px;
-    padding-right: 12px;
-    margin-right: 6px;
-}
-
-
-/* system tray block */
-
-#custom-mode {
-    border-radius: 10px 0px 0px 10px;
-    margin-left: 6px;
-    padding-left: 12px;
-    padding-right: 4px;
-}
-
-#custom-cliphist {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-#tray {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-#custom-power {
-    border-radius: 0px 10px 10px 0px;
-    padding-left: 4px;
-    padding-right: 12px;
-    margin-right: 25px;
-}
-
+#tray,
+#pulseaudio,
+#backlight,
+#custom-wally,
+#battery,
 #pulseaudio {
     border-radius: 10px 10px 10px 10px;
     padding-left: 8px;
@@ -190,9 +156,16 @@ tooltip {
     margin-right: 6px;
 }
 
-#tray {
-    border-radius: 10px 10px 10px 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-right: 6px;
-}
+/* Colors Left */
+#custom-clock { color: #ebdbb2;}
+#custom-alarm { color: #FDE2E2;}
+#custom-updates { color: #EEC4C4;}
+#custom-forecast { color: #BCCEF8;}
+/* Colors Right */
+#cpu { color: #FD8A8A;}
+#memory { color: #FD8A8A;}
+#pulseaudio { color: #A8D1D1 }
+#backlight { color: #ffffff }
+#battery { color: #fffbc1 }
+#custom-wally { color: #CEEDC7 }
+#network { color: #d3869b; }

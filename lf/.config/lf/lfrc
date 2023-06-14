@@ -247,7 +247,7 @@ cmd open ${{
          text/* | inode/x-empty | application/json) $EDITOR "$f";;
          image/gif | inode/x-empty | application/json) nsxiv -a "$f" &;;
         #video/*|image/*/application/pdf) xdg-open "$f" & ;;
-        *) xdg-open "$f" &> /dev/null &;;
+        *) xdg-open "$f" &> /dev/null & disown;;
     esac
 }}
 
