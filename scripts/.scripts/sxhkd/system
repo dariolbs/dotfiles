@@ -4,7 +4,7 @@ IFS=":"
 font="JetBrainsMono:size=15"
 options="Exit dwm:Load Xresources:Restart dwm:Lock:Reboot:Poweroff"
 #case $(for option in ${options[@]}; do printf "$option\n";done | dmenu -c -bw 2 -fn "$font" -l 5) in
-case $(for option in ${options[@]}; do printf "$option\n";done | dmenu -l 6 -p "Select option:") in
+case $(for option in ${options[@]}; do printf "$option\n";done | wofi -d -l 6 -p "Select option:") in
 	*"Exit dwm") killall startdwm || killall dwm;;
 	*"Poweroff") poweroff;;
 	*"Xresources") [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources;;

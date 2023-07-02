@@ -295,7 +295,7 @@ map F cdfuzzy
 map a enterTmux
 
 ##Shortcuts
-map gW cd /run/media/Windows
+map gW cd /mnt/Windows/Users/dario
 map gu cd ~/Universidade
 map gH cd /mnt/HDD
 map gt cd ~/.local/share/Trash/

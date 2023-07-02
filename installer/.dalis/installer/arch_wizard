@@ -1,0 +1,127 @@
+#!/usr/bin/bash
+dir="$PWD"
+old_ifs="$IFS"
+PS3="Chosen list:"
+PROMT='>> '
+mkdir -p "$HOME/.dalis/logs"
+
+promt(){
+    printf "$PROMT"; read $@
+}
+
+archlinux_installer(){
+
+    #Startup
+    printf "Before installing make sure you have ${BOLD_GREEN}multilib${NO_COLOR} enabled and access to commands as root using ${BOLD_RED}sudo${NO_COLOR}.\n"
+    promt ok
+	printf "Are you sure you want to install? (yes/no)\n"; promt r
+    [ "$r" = "yes" ] || exit 0
+    printf "Choose a package list!\n"
+    select list in $(ls ./.package_lists); do
+        pkg_list="${list}";
+        break;
+    done
+    # Update the system
+	printf "Updating the system...\n"
+    sleep 1
+	sudo pacman -Syyu || exit 1
+
+    #Install yay and AUR Packages
+    printf "Installing yay..."
+    sleep 1
+	install_yay
+	printf "Installing programs...\n"
+    sleep 1
+    #Install all packages with the  python script
+    python3 ./.source/install_packages.py "${pkg_list}" || exit 1
+
+    # Change shell to /bin/zsh
+	[ "$(echo $0)" = *"/zsh" ] || chsh -s /usr/bin/zsh
+	printf "Copying configuration files...\n"
+
+	#Set dash as default shell
+	sudo ln -sfT dash /usr/bin/sh
+
+    # Create links for config files
+    cd ~/.dotfiles/
+    stow */
+
+	# Enable processes
+    systemctl enable cronie
+    systemctl enable NetworkManager
+    systemctl enable sshd
+
+    printf "Do you want to compile the all suckless utilities?\n"
+    promt r
+    if [ $r = "y" ] || [ $r = "yes" ]; then
+        # Compile suckless tools
+        for tool in "dwm" "dmenu" "dwmblocks" "st" "slock"; do
+            cd "$HOME/.config/suckless/$tool" && sudo make clean install
+        done
+    fi
+
+    # Compile nsxiv (bester image viewer)
+    cd "$HOME/.config/suckless/nsxiv" && sudo make clean install
+
+    # Make directories if they don't exist already
+    mkdir -p "$HOME/.dalis/logs"
+    mkdir -p "$HOME/.config/picom"
+	mkdir -p "$HOME/.config/wallpaper"
+
+    cd "$dir"
+    # Wallpaper
+	cp .files/wallpaper.png "$HOME/.config/wallpaper/wallpaper"
+    # Xinitrc preset
+    cp .files/xinitrc "$HOME"
+    # Dalis preset config
+    cp .files/dalis_config "$HOME/.dalis/"
+    # Picom preset for those sweet effects
+	cp .files/picom.conf "$HOME/.config/picom"
+    # Bash update hook to keep dash as default shell
+	sudo cp -rv .files/bash-update.hook /usr/share/libalpm/hooks
+    # Make .xinitrc executable to avoid problems with login managers
+    chmod +x "$HOME/.xinitrc"
+    # Disable pc speaker (extremely important)
+	sudo cp -rv .files/nobeep.conf /etc/modprobe.d/
+    # Disable mouse acceleration
+	sudo cp -rv .files/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
+
+    #Install starship promt
+    curl -sS https://starship.rs/install.sh | sh
+
+    # Automatically remove trash files that are older than 15 days
+    (crontab -l ; echo "@daily $(which trash-empty) 15") | crontab -
+
+	#Update profile
+	source "$HOME/.profile"
+    printf "Dalis is installed! You can customize the system (monitors/tablet/keyboard/backups) editing $HOME/.dalis/config."
+    printf "After you feel like its ready for use, just reboot the computer and startx!\nYou can also read Dalis's manual at $HOME/.dalis/manual.pdf\n"
+    exit 0
+}
+
+install_yay(){
+	mkdir -p $HOME/.gitclones
+	cd $HOME/.gitclones
+	sudo git clone https://aur.archlinux.org/yay-git.git
+	sudo chown -R $USER:$USER ./yay-git
+	cd yay-git
+	makepkg -si
+	cd "$dir"
+}
+
+install_vim-plug(){
+    #for vim
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    #for neovim
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+}
+
+install_nvim_packer(){
+    #packer
+    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+}
+
+archlinux_installer

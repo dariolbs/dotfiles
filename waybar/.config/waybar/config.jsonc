@@ -6,9 +6,9 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "modules-left": ["custom/clock", "custom/forecast", "custom/alarm", "custom/updates"],
+    "modules-left": ["custom/clock", "custom/alarm" ],
     "modules-center": ["wlr/workspaces"],
-    "modules-right": ["tray", "pulseaudio", "backlight", "battery", "custom/wally", "cpu", "memory", "network"],
+    "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "custom/wally", "cpu", "memory", "network"],
 
 
 // center modules //
@@ -17,22 +17,9 @@
        "disable-scroll": true,
        "all-outputs": false,
        "sort-by-number": true,
-       "on-click": "activate",
+       "on-click": "activate"
    },
 
-    "hyprland/window": {
-        "format": "  {}",
-        "separate-outputs": true,
-        "rewrite": {
-            "(.*) — Mozilla Firefox": "$1 󰈹",
-            "(.*)Mozilla Firefox": "Firefox 󰈹",
-            "(.*) - Visual Studio Code": "$1 󰨞",
-            "(.*)Visual Studio Code": "Code 󰨞",
-            "(.*) — Dolphin": "$1 󰉋",
-            "(.*)Spotify": "Spotify 󰓇",
-            "(.*)Steam": "Steam 󰓓"
-          }
-    },
 
 
 // left modules //
@@ -56,7 +43,9 @@
     "custom/distro": {
         "exec": "~/.scripts/statusbar/waybar/release",
         "show-empty": false,
-        "format": "{}"
+        "format": "{}",
+        "on-click": "pkill wofi || wofi -n -W 30% -H 50% --show drun -I -i",
+        "on-click-right": "bash ~/.config/waybar/scripts/system.sh"
     },
 
     "custom/clock": {
@@ -78,7 +67,7 @@
         "interval": 1,
         "exec": "~/.scripts/bin/alarm",
         "show-empty": false,
-        "format": "{} 󰀠",
+        "format": "{} 󰀠"
     },
 
     "custom/updates": {
@@ -87,6 +76,24 @@
         "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
         "interval": 86400, // once every day
         "tooltip": true
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": false,
+        "on-click": "hyprctl dispatch killactive",
+        "show-empty": false,
+        "rewrite": {
+            "foot": "foot ",
+            "(.*) — Mozilla Firefox": "$1 󰈹",
+            "(.*)Mozilla Firefox": "Firefox 󰈹",
+            "(.*) - Visual Studio Code": "$1 󰨞",
+            "(.*)Visual Studio Code": "Code 󰨞",
+            "(.*) - Discord": "Discord 󰙯",
+            "(.*)Steam": "Steam 󰓓",
+            "(.*)Lutris": "Lutris 󰊖",
+            "": "Empty"
+          }
     },
 
     "custom/wally": {

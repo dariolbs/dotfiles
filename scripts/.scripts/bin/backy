@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 # Backy sript. It generates links between 2 directories and copies
 # all of the first direcorie's non-hidden files to the second directory.
 # The config file is located automatically in ~/.config/backy
@@ -13,13 +13,15 @@ old_ifs="$IFS"
 icon="$HOME/.local/share/icons/dalis/thumbsup.png"
 
 update(){
+    IFS=$'\n'
     for line in $(cat $config_dir/config | grep -v "^#"); do
-        from=$(printf "$line\n" | cut -f 1 -d ":")
-        to=$(printf "$line\n" | cut -f 2 -d ":")
+        from="$(printf "$line\n" | cut -f 1 -d ":")"
+        to="$(printf "$line\n" | cut -f 2 -d ":")"
         cp -v "$from"/* "$to"
     done &&
         notify-send -i $icon "Backy 🎒" "Sync done!"  ||
         notify-send -i -u critical "Backy 🎒" "There were problems syncing folders. Check the logs!"
+    IFS="$old_ifs"
 }
 
 linkdirs(){

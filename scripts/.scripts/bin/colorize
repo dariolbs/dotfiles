@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+updateColrschemes(){
+    [ -f "/tmp/Colorize/foot.ini" ] && cp /tmp/Colorize/foot.ini ~/.config/foot/foot.ini
+    [ -f "/tmp/Colorize/hyprland.conf" ] && cp /tmp/Colorize/hyprland.conf\
+        ~/.config/hypr/hyprland.conf
+    [ -f "/tmp/Colorize/style.css" ] && cp /tmp/Colorize/style.css\
+        ~/.config/waybar/style.css
+}
+
+python3 ~/.scripts/.used/colorize/colorize.py "$@" &&
+    (updateColrschemes; rm -rf /tmp/Colorize)

@@ -44,6 +44,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 #Defaults
+export TELE="u0_a265@dariotele"
 export EDITOR="nvim"
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
@@ -82,7 +83,7 @@ apply_starship_promt(){
         export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship-tty.toml"
         startSession
     else
-        random_pokemon
+        #random_pokemon
         eval "$(starship init zsh)"
         export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship.toml"
     fi
@@ -103,6 +104,16 @@ apply_default_promt() {
     PROMPT="%B%F{red}[%F{green}%n%f%b%B%F{yellow}@%f%b%B%F{blue}%m%f%b%F%B%F{magenta} %~%f%b %B%F{red}]%B%F{green} $%f%b "
 }
 
+apply_colorless() {
+    PROMPT="%n%f%b@%f%b%m%f%b%F{magenta} %~%f%b $%f%b "
+}
+
+
+apply_hacky_promt() {
+    PROMPT=$'%F{%(#.blue.green)}┌──$(%B%F{%(#.red.white)}%n%(#.💀.@)%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+    RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
+}
+
 # RANDOM_FUNCTIONS
 random_pokemon(){
     pokemon-colorscripts -r --no-title
@@ -110,7 +121,9 @@ random_pokemon(){
 
 
 ## Applyuing promt
-apply_starship_promt || apply_p10k_promt
+apply_starship_promt || apply_p10k_promt || apply_hacky_promt
+#apply_hacky_promt
+#apply_colorless
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

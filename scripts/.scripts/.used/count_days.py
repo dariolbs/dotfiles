@@ -5,6 +5,9 @@ init_date = str(argv[1])
 final_date = str(argv[2])
 
 def daysin(date):
+    """
+    Returns the amount of days from 00/00/0000 to the "date" in format dd/mm/yyyy
+    """
     days = int(date.split("/")[0])
     months = int(date.split("/")[1]) - 1
     years = int(date.split("/")[2]) - 1

@@ -1,27 +1,14 @@
 window {
-margin: 5px;
-color: #ABB2BF;
-border: 2px solid #1d2021;
-background-color: #1d2021;
+font-family: "JetBrainsMono", "SauceCodePro Nerd Font";
+font-size: 20px;
 }
 
 #input {
 margin: 5px;
-color: #FFFFFF;
-border: 2px solid #61AFEF;
-background-color: #1d2021;
+border: 1px solid;
 }
 
 #inner-box {
 margin: 5px;
-border: 2px solid #1d2021;
-background-color: #1d2021;
+border: none;
 } 
-
-#entry:selected {
-background-color: #1d2021;
-}
-
-#text:selected {
-    color: #ffffff;
-}

@@ -28,4 +28,3 @@ if [ -n "$EDITOR" ]; then
 else
     printf "Variável de editor de texto não está definida!"
 fi
-

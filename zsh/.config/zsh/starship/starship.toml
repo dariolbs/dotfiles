@@ -4,7 +4,7 @@ add_newline = false
 style_user = "green bold"
 style_root = "red bold"
 format = "[$user]($style) "
-disabled = true
+disabled = false
 show_always = true
 
 [hostname]
@@ -16,16 +16,16 @@ disabled = false
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[󰔰](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[󰔰](bold red)"
-vicmd_symbol = "[󰶢](green)"
+success_symbol = "[󰧂](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[󰧂](bold red)"
+vicmd_symbol = "[󰧀](green)"
 
 # configure directory
 [directory]
-read_only = "  "
+read_only = "  "
 truncation_length = 10
 truncate_to_repo = true # truncates directory to root folder if in github repo
-format = '[](bold red)[](bold green)[](bold yellow) [ $path](bold blue) '
+format = 'in [ $path](bold blue) '
 style = "bold italic blue"
 
 [cmd_duration]

@@ -12,11 +12,23 @@ alias psmem='ps auxf | sort -nr -k 4'
 alias rmpkg="sudo pacman -Rdd"
 alias tarnow='tar -acf '
 alias untar='tar -zxvf '
-alias lla='exa --icons --git -la'
-alias ll='exa --icons --git -l'
-alias la='exa --icons -a'
-alias ls='exa --icons'
-alias sl='exa --icons'
+
+export USE_EXA="true"
+
+if [ $USE_EXA = "true" ]; then
+    alias lla='exa --icons --git -la'
+    alias ll='exa --icons --git -l'
+    alias la='exa --icons -a'
+    alias ls='exa --icons'
+    alias sl='exa --icons'
+else
+    alias lla='ls -lha --color'
+    alias ll='ls -lh --color'
+    alias la='ls -a --color'
+    alias ls='ls --color'
+    alias sl='ls --color'
+fi
+
 alias tree='exa --icons -T'
 alias tra='trash-put -v'
 alias trr='trash-restore'
