@@ -21,10 +21,10 @@ archlinux_installer(){
         pkg_list="${list}";
         break;
     done
-    # Update the system
+    # Update the system and install dependencies
 	printf "Updating the system...\n"
     sleep 1
-	sudo pacman -Syyu || exit 1
+	sudo pacman -Syyu python3 base-devel curl wget || exit 1
 
     #Install yay and AUR Packages
     printf "Installing yay..."
@@ -33,7 +33,7 @@ archlinux_installer(){
 	printf "Installing programs...\n"
     sleep 1
     #Install all packages with the  python script
-    python3 ./.source/install_packages.py "${pkg_list}" || exit 1
+    python3 ./.source/install_packages.py "./.package_lists/${pkg_list}" || exit 1
 
     # Change shell to /bin/zsh
 	[ "$(echo $0)" = *"/zsh" ] || chsh -s /usr/bin/zsh
