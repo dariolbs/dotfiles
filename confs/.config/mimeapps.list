@@ -1,9 +1,9 @@
 [Default Applications]
-image/png=nsxiv.desktop
-image/jpg=nsxiv.desktop
-image/webp=nsxiv.desktop
-image/jpeg=nsxiv.desktop
-image/gif=nsxiv.desktop
+image/png=vimiv.desktop
+image/jpg=vimiv.desktop
+image/webp=vimiv.desktop
+image/jpeg=vimiv.desktop
+image/gif=vimiv.desktop
 inode/directory=thunar.desktop
 x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
 text/plain=nvim.desktop

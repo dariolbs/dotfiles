@@ -23,6 +23,7 @@ fzf
 tmux
 mandoc
 dash
+arch-install-scripts
 stow
 polkit
 dosfstools
@@ -48,3 +49,14 @@ wget
 curl
 lynx
 notmuch
+starship
+nim
+nimble
+webkit2gtk
+abook
+htop-vim
+urlview
+mpdris2
+ueberzugpp
+cronwhip
+xone-dkms

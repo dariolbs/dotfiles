@@ -1,6 +1,8 @@
 #!/usr/bin/awk -f
 
-FILENAME ~ /.*\/colorschemes\.conf/ { reading_colorschemes = 1 }
+FILENAME ~ /.*\.conf/ { reading_colorschemes = 1; waybar = 0 }
+
+FILENAME ~ /.*\/waybar\/style\.css/ { waybar = 1; reading_colorschemes = 0 }
 
 reading_colorschemes == 1 && reading == 1 && /^$/ { next }
 
@@ -34,4 +36,4 @@ waybar == 1 && /^@define-color/ {
     next
 }
 
-FILENAME ~ /.*\/waybar\/style\.css/ { waybar = 1; print; next}
+waybar == 1 { print }

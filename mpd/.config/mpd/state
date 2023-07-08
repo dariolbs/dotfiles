@@ -1,9 +1,9 @@
-sw_volume: 52
+sw_volume: 86
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 40
-time: 224.625000
+current: 43
+time: 29.877000
 random: 0
 repeat: 0
 single: 0
@@ -55,4 +55,7 @@ playlist_begin
 40:Trance/Saeed-Uzyii85rwqo.m4a
 41:Osts/Mr Robot Main Theme Fixed and Extended [XMEXPkPmmq0].opus
 42:Osts/Dai Gyakuten Saiban 2 OST ｜ 34 Great Pursuit ~ The Resolve of Naruhodou Ryuunosuke [bAtJnMEUkQs].opus
+43:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
+44:Trance/Fable (Dream Version)-OCAuoCSWIOQ.m4a
+45:Trance/Heavyweight-9Axg_e8astI.m4a
 playlist_end

@@ -1,6 +1,8 @@
 #!/usr/bin/awk -f
 
-FILENAME ~ /.*\/colorschemes\.conf/ { reading_colorschemes = 1 }
+FILENAME ~ /.*\.conf/ { reading_colorschemes = 1; hyprland = 0 }
+
+FILENAME ~ /.*\/hyprland\.conf/ { hyprland = 1; reading_colorschemes = 0; FS = " "}
 
 reading_colorschemes == 1 && reading == 1 && /^$/ { next }
 
@@ -40,4 +42,4 @@ hyprland == 1 && /col\.inactive_border/ {
     next
 }
 
-FILENAME ~ /.*\/hyprland\.conf/ { hyprland = 1; FS = " "; print}
+hyprland == 1 { print }

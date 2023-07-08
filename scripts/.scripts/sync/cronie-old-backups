@@ -3,7 +3,7 @@ export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
 source $HOME/.dalis/config
 n=0
 icon="/home/dario/.local/share/icons/dalis/thumbsup.png"
-date="$(date +%d:%m:%Y)"
+date="$(date +%m:%d:%Y)"
 
 # Check errors in the config files
 if [ ${#backup_disks[@]} -ne ${#temp_backup_keep[@]} ]; then

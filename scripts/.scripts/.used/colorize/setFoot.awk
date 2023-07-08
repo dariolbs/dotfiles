@@ -1,6 +1,12 @@
 #!/usr/bin/awk -f
 
-FILENAME ~ /.*\/colorschemes\.conf/ { reading_colorschemes = 1 }
+FILENAME ~ /.*\.conf/ { reading_colorschemes = 1; foot = 0 }
+
+FILENAME ~ /.*\/foot\.ini/ { foot = 1; reading_colorschemes = 0}
+
+#-----------------------------------------------------------------------------
+#                   In case its reading the colorscheme file
+#-----------------------------------------------------------------------------
 
 reading_colorschemes == 1 && reading == 1 && /^$/ { next }
 
@@ -24,9 +30,9 @@ reading_colorschemes == 1 && $0 == "COLORSCHEME " colorscheme {
     next
 }
 
-##-------------------------------------------------------------------------
-##                              Foot Config
-##-------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
+#                   In case its reading the foot config file
+#-----------------------------------------------------------------------------
 
 foot == 1 && /\[colors\]/ { reading_colors = 1; FS = "="; print; next }
 
@@ -38,4 +44,4 @@ foot == 1 && reading_colors == 1 && /^(regular|bright|background|foreground)/ {
 
 reading_colors == 1 && /^$/ { FS = " "; print; next }
 
-FILENAME ~ /.*\/foot\.ini/ { foot = 1; print }
+foot == 1 { print }

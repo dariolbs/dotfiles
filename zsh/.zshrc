@@ -83,7 +83,7 @@ apply_starship_promt(){
         export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship-tty.toml"
         startSession
     else
-        #random_pokemon
+        nitch
         eval "$(starship init zsh)"
         export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship.toml"
     fi

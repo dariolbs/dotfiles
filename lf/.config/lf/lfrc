@@ -16,7 +16,7 @@ set filesep "\n"  # default already
 
 cmd firefox ${{
 # Open a file with firefox, for webdev
-    firefox $f &> /dev/null &
+    chromium $f &> /dev/null &
 }}
 cmd mkdir ${{
 	printf "Name of the new directory:\n"
@@ -319,7 +319,7 @@ map gP cd ~/Documents/Projetos
 map gi cd ~/.local/share/icons/dalis
 
 ##Tools
-map tf firefox
+map tf chromium
 map tE encrypt
 map tD decrypt
 map tc compress

@@ -28,7 +28,6 @@ export LF_COLORS="\
 *.jpeg=${PURPLE}:\
 *.png=${PURPLE}:\
 *.webp=${PURPLE}:\
-*.gpg=01;${BLACK}:\
 ln=01;36:\
 di=01;34:\
 ex=01;32:\

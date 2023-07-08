@@ -77,6 +77,7 @@ alias movies="cd ~/Documents/Media/Movies"
 alias anime="cd ~/Documents/Media/Anime"
 alias doc="cd ~/Documents"
 alias gd="cd /home/dario/.local/share/Steam/steamapps/common/Geometry\ Dash"
+alias temp="mkdir -p /tmp/Dario; cd /tmp/Dario"
 
 # MINECRAFT SERVERS
 
