@@ -2,7 +2,6 @@
 # Imports
 *base_package_list
 # Wayland
-waybar
 wlroots-git
 hyprland-git
 wofi
@@ -11,13 +10,7 @@ waybar-hyprland-git
 qt5-wayland
 qt5ct
 webkit2gtk
+swww
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra
-# AUR
-abook
-htop-vim
-urlview
-mpdris2
-cronwhip
-xone-dkms

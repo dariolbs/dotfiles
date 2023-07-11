@@ -2,8 +2,8 @@ sw_volume: 86
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 43
-time: 29.877000
+current: 53
+time: 166.229000
 random: 0
 repeat: 0
 single: 0
@@ -58,4 +58,16 @@ playlist_begin
 43:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
 44:Trance/Fable (Dream Version)-OCAuoCSWIOQ.m4a
 45:Trance/Heavyweight-9Axg_e8astI.m4a
+46:Pt/[LETRA] AnaVitória feat. Diogo Piçarra - Trevo (Tu)-IOp_C3AAr_I.m4a
+47:Pt/Adriana Calcanhotto - Fico Assim Sem Você (Video Clipe (Extras))-iojYDSjKK00.m4a
+48:Pt/Amor Electro _ Rosa Sangue [Official Video]-PSXNtMqAiqo.m4a
+49:Pt/Miguel Araújo - Os Maridos Das Outras-D-q3jaELQeo.m4a
+50:Pt/Os Azeitonas - Quem és tu miúda-aP6orw0M-bY.m4a
+51:Pt/Tiago Bettencourt - Canção De Engate (Acústico)-8daReuj4bU0.m4a
+52:Pt/Eu não sou poeta-UHgUBOvu8Z8.m4a
+53:Pt/Cinderela-kAjZeRNe6aY.m4a
+54:Pt/A Minha Casinha-pQhYQLI-2Tg.m4a
+55:Pt/Playback.m4a
+56:Pt/Bárbara Tinoco - Sei Lá-vHY8xNRvfT0.m4a
+57:Pt/Menina Estás à Janela-Wt144OKuJiY.m4a
 playlist_end

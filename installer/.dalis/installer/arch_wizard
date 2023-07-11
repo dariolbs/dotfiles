@@ -24,7 +24,7 @@ archlinux_installer(){
     # Update the system and install dependencies
 	printf "Updating the system...\n"
     sleep 1
-	sudo pacman -Syyu python3 base-devel curl wget || exit 1
+	sudo pacman -Syyu python3 base-devel curl wget trash-cli cronie || exit 1
 
     #Install yay and AUR Packages
     printf "Installing yay..."
@@ -72,13 +72,13 @@ archlinux_installer(){
 
     cd "$dir"
     # Wallpaper
-	cp .files/wallpaper.png "$HOME/.config/wallpaper/wallpaper"
+	cp .source/presets/wallpaper.png "$HOME/.config/wallpaper/wallpaper"
     # Xinitrc preset
-    cp .files/xinitrc "$HOME"
+    cp .source/presets/xinitrc "$HOME"
     # Dalis preset config
-    cp .files/dalis_config "$HOME/.dalis/"
+    cp .source/presets/dalis_config "$HOME/.dalis/"
     # Picom preset for those sweet effects
-	cp .files/picom.conf "$HOME/.config/picom"
+	cp .source/presets/picom.conf "$HOME/.config/picom"
     # Bash update hook to keep dash as default shell
 	sudo cp -rv .files/bash-update.hook /usr/share/libalpm/hooks
     # Make .xinitrc executable to avoid problems with login managers
@@ -109,12 +109,8 @@ install_yay(){
 }
 
 install_vim-plug(){
-    #for vim
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    #for neovim
-    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 }
 
 install_nvim_packer(){

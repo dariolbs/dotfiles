@@ -16,15 +16,13 @@ alias untar='tar -zxvf '
 export USE_EXA="true"
 
 if [ $USE_EXA = "true" ]; then
-    alias lla='exa --icons --git -la'
+    alias la='exa --icons --git -la'
     alias ll='exa --icons --git -l'
-    alias la='exa --icons -a'
     alias ls='exa --icons'
     alias sl='exa --icons'
 else
-    alias lla='ls -lha --color'
+    alias la='ls -lha --color'
     alias ll='ls -lh --color'
-    alias la='ls -a --color'
     alias ls='ls --color'
     alias sl='ls --color'
 fi
@@ -44,7 +42,7 @@ alias aquario="asciiquarium"
 alias za="zathura"
 alias volume="sh ~/.scripts/statusbar/volume.sh"
 alias updategrub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias lf='lf-ueberzug'
+#alias lf='lf-ueberzug'
 alias v='vim'
 alias nv='nvim'
 alias nb="newsboat"

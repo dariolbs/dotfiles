@@ -7,7 +7,7 @@ def install(pkg_array: list):
     pkg_str = ""
     for i in pkg_array:
         pkg_str += f'{i} '
-    os.system(f"yay -S {pkg_str}")
+    os.system(f"yay -S --needed {pkg_str}")
 
 def getAllLists():
 

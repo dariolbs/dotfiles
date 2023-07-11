@@ -21,7 +21,7 @@ add_steak() {
 }
 
 day_difference(){
-    python3 $HOME/.scripts/.used/count_days.py ${1} ${2}
+    python3 $HOME/.scripts/.used/streak/count_days.py ${1} ${2}
 }
 
 manual() {
