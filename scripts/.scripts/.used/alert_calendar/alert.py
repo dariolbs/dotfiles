@@ -2,11 +2,26 @@ import os
 
 CALCURSE_FILE = f'{os.environ["HOME"]}/.local/share/calcurse/apts'
 
-DATE = os.popen("date +%d/%m/%Y").read().rstrip()
+DATE = os.popen("date +%m/%d/%Y").read().rstrip()
+
+HOUR = os.popen("date +%H:%M:%S").read().rstrip().split(":")
 
 file = open(CALCURSE_FILE, "r")
 
 apts = {}
+
+ICON = f'{os.environ["HOME"]}/.icons/pepe/monkaS.png'
+
+def earlierThan(hour):
+    splitted = hour.split(":")
+    if int(splitted[0]) > int(HOUR[0]):
+        return True
+    elif int(splitted[1]) > int(HOUR[1]):
+        return True
+    elif int(splitted[2]) > int(HOUR[2]):
+        return True
+    else:
+        return False
 
 for line in file.readlines():
     split = line.split(" ")
@@ -16,9 +31,10 @@ for line in file.readlines():
     date = split[0]
     hour = hour_name.split("|")[0]
     name = hour_name.split("|")[1]
+    split = line.split(" ")
 
     apts[date] = (name.rstrip(), hour)
 
 for date in apts.keys():
-    if date == DATE:
-        os.system(f"notify-send \"Lembra-te!\" \"{apts[date][0]} -> {apts[date][1]}\"")
+    if date == DATE and earlierThan(apts[date][1]):
+        os.system(f"notify-send -i {ICON} \"Lembra-te!\" \"{apts[date][0]} -> {apts[date][1]}\"")

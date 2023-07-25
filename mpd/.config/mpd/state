@@ -1,10 +1,10 @@
-sw_volume: 86
+sw_volume: 76
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
-state: pause
-current: 53
-time: 166.229000
-random: 0
+state: play
+current: 28
+time: 151.944000
+random: 1
 repeat: 0
 single: 0
 consume: 0
@@ -12,62 +12,40 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:gd/663334_Yellow-and-Purple.mp3
-1:gd/Terraria Calamity Mod Music - 'Guardian of The Former Seas' - Theme of Desert Scourge-hPEQLU-aD3I.m4a
-2:gd/Verdant Landscape (Xomu & Amidst - Pagoda) Super Low Pitch-SQvZvzDa4x8.m4a
-3:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].m4a
-4:gd/Dimrain47 - At the Speed of Light-1Zrq8FiKS6A.m4a
-5:gd/Dunderpatrullen - Disco Dancing Caravan Camping-GwfiCyJ9EyQ.m4a
-6:gd/Protoflicker (Silentroom - Protoflicker) Low Pitch-x_C9JkGlYvU.m4a
-7:Instrumental/Infected Mushroom - Milosh-_cJeo91-tno.m4a
-8:Instrumental/Infected Mushroom - Guitarmass-R_uS0aT0bG8.m4a
-9:Instrumental/Infected Mushroom - Flamingo-o_bpKA00W_g.m4a
-10:gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
-11:gd/Shukketsu (ぬゆり - ダラクダ) High Pitch-NdT_8eIOj38.m4a
-12:gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
-13:gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
-14:gd/Derpcat - Sonorous-jDVBMVLlAQI.m4a
-15:gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
-16:gd/Omega (Dimrain47 - The Prototype) High Pitch-JZqgd-xI7HE.m4a
-17:gd/Macabre (Creo - Crystallize) Super Low Pitch [BR7UUmp7JQM].m4a
-18:gd/Creo - Carnivores-qZSSJk6OHdA.m4a
-19:gd/Creo - Wavelight-Kc4lIlboH2M.m4a
-20:gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
-21:gd/Sonic Wave (F-777 - Sonic Blaster) Super Low Pitch-XVcI-XIA-NA.m4a
-22:gd/The Hallucination.m4a
-23:gd/Frozen Cave (cYsmix - Fright March) High Pitch-qQNdP98Hl1M.m4a
-24:gd/Ethereal Artifice (NemesisTheory - Rose At Twilight) Low Pitch-WZVYc1ujiHk.m4a
-25:gd/Creo - Aurora-M170iMt3C8A.m4a
-26:gd/Creo - In Circles-E8pMGq5VL3Q.m4a
-27:Japa/Untilted.mp3
-28:Japa/One Punch Man Full Ending-eC-60BeGrLM.m4a
-29:Japa/KANA-BOON - Silhouette-dlFA0Zq1k2A.m4a
-30:Japa/Mob Psycho 100 OP _ Opening Full - '99' by MOB CHOIR (Engsub)-F5OJPUXJvHk.m4a
-31:Japa/Attack on Titan Season 4 - Opening Full『My War』by Shinsei Kamattechan-w2y715XAmso.m4a
-32:Japa/Fullmetal Alchemist - Brotherhood - OP Full 'Again' by YUI-45yi7bopMu0.m4a
-33:Japa/[Touhou Vocal] [RD-Sounds] Mad Party～A Magusnificent Plan  (spanish & english subtitles)-SM-489fbyl0.m4a
-34:Japa/＜ノラガミARAGOTO＞OPテーマ  THE ORAL CIGARETTES「狂乱 Hey Kids!!」MusicVideo-C-o8pTi6vd8.m4a
-35:Japa/The Promised Neverland - Ending Full『Zettai Zetsumei』by Cö shu Nie-sZ9qdr5WcPY.m4a
-36:Osts/Undertale Ost： 077 - ASGORE [hMa4hZQbrms].m4a
-37:Osts/Undertale OST： 068 - Death by Glamour [2TgO-tN5wAM].m4a
-38:Osts/Persona 4 Golden - Shadow World (Full)--oIWGlbl92k.m4a
-39:gd/Plexity - Rebirth Blaster (Sonic Blaster Remix)-Swzg3jgEAgk_D_minor__bpm_145.mp3
-40:Trance/Saeed-Uzyii85rwqo.m4a
-41:Osts/Mr Robot Main Theme Fixed and Extended [XMEXPkPmmq0].opus
-42:Osts/Dai Gyakuten Saiban 2 OST ｜ 34 Great Pursuit ~ The Resolve of Naruhodou Ryuunosuke [bAtJnMEUkQs].opus
-43:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
-44:Trance/Fable (Dream Version)-OCAuoCSWIOQ.m4a
-45:Trance/Heavyweight-9Axg_e8astI.m4a
-46:Pt/[LETRA] AnaVitória feat. Diogo Piçarra - Trevo (Tu)-IOp_C3AAr_I.m4a
-47:Pt/Adriana Calcanhotto - Fico Assim Sem Você (Video Clipe (Extras))-iojYDSjKK00.m4a
-48:Pt/Amor Electro _ Rosa Sangue [Official Video]-PSXNtMqAiqo.m4a
-49:Pt/Miguel Araújo - Os Maridos Das Outras-D-q3jaELQeo.m4a
-50:Pt/Os Azeitonas - Quem és tu miúda-aP6orw0M-bY.m4a
-51:Pt/Tiago Bettencourt - Canção De Engate (Acústico)-8daReuj4bU0.m4a
-52:Pt/Eu não sou poeta-UHgUBOvu8Z8.m4a
-53:Pt/Cinderela-kAjZeRNe6aY.m4a
-54:Pt/A Minha Casinha-pQhYQLI-2Tg.m4a
-55:Pt/Playback.m4a
-56:Pt/Bárbara Tinoco - Sei Lá-vHY8xNRvfT0.m4a
-57:Pt/Menina Estás à Janela-Wt144OKuJiY.m4a
+0:Pop/Avicii - Levels-_ovdm2yX4MA.m4a
+1:Pop/Avicii - The Nights-UtF6Jej8yb4.m4a
+2:Pop/Avicii - Waiting For Love-cHHLHGNpCSA.m4a
+3:Pop/Bon Jovi - It's My Life (Official Music Video)-vx2u5uUu3DE.m4a
+4:Pop/Calvin Harris - Outside (Official Video) ft. Ellie Goulding [J9NQFACZYEU].opus
+5:Pop/Carly Rae Jepsen - Call Me Maybe-fWNaR-rxAic.m4a
+6:Pop/Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]-papuvlVeZg8.m4a
+7:Pop/Clean Bandit - Symphony (feat. Zara Larsson) [Official Video] [aatr_2MstrI].m4a
+8:Pop/David Guetta - She Wolf (Falling To Pieces) ft. Sia (Official Video)-PVzljDmoPVs.m4a
+9:Pop/David Guetta - Titanium ft. Sia (Official Video)-JRfuAukYTKg.m4a
+10:Pop/David Guetta & Sia - Flames (Extended)-b0FyBhRl8XI.m4a
+11:Pop/Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video]-8UVNT4wvIGY.m4a
+12:Pop/Green Day - 21 Guns [Official Music Video]-r00ikilDxW4.m4a
+13:Pop/In The End [Official HD Music Video] - Linkin Park-eVTXPUF4Oz4.m4a
+14:Pop/LSD - Thunderclouds (Official Video) ft. Labrinth, Sia, Diplo-mILth-K6KvM.m4a
+15:Pop/MGMT - Little Dark Age (Video) [rtL5oMyBHPs].opus
+16:Pop/Naughty Boy - La la la ft. Sam Smith (Official Video)-3O1_3zBUKM8.m4a
+17:Pop/Numb [Official Music Video] - Linkin Park-kXYiU_JCYtU.m4a
+18:Pop/P!nk - Just Give Me A Reason ft. Nate Ruess-OpQFFLBMEPI.m4a
+19:Pop/P!nk - Just Like Fire (From'Alice Through The Looking Glass' - Official Video)-5Nrv5teMc9Y.m4a
+20:Pop/P!nk - Try (Official Video)-yTCDVfMz15M.m4a
+21:Pop/Paparazzi - Lady Gaga (Lyrics) 🎵-2dFrTJPuers.m4a
+22:Pop/Pitbull - Timber (Official Video) ft. Ke$ha-hHUbLv4ThOo.m4a
+23:Pop/Selena Gomez, Marshmello - Wolves-cH4E_t3m3xM.m4a
+24:Pop/Sia - Elastic Heart feat. Shia LaBeouf & Maddie Ziegler (Official Video)-KWZGAExj-es.m4a
+25:Pop/Sia - Move Your Body (Single Mix) [Lyric]-0GoGcVs6pbU.m4a
+26:Pop/Taylor Swift - Gorgeous (Lyric Video)-EUoe7cf0HYw.m4a
+27:Pop/Taylor Swift - Look What You Made Me Do-3tmd-ClpJxA.m4a
+28:Pop/This Ain't No Hymn [TM07425xrpw].opus
+29:gd/ParagonX9 - Infiltration [-jszHEXsW50].opus
+30:gd/The Hallucination.m4a
+31:gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
+32:gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
+33:gd/Plexity - Rebirth Blaster (Sonic Blaster Remix)-Swzg3jgEAgk_D_minor__bpm_145.mp3
+34:gd/Creo - Wavelight-Kc4lIlboH2M.m4a
+35:gd/566770_DuoCore---Dignity.mp3
 playlist_end

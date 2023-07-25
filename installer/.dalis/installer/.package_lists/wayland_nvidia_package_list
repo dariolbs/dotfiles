@@ -11,6 +11,8 @@ qt5-wayland
 qt5ct
 webkit2gtk
 swww
+grim
+slurp
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra
@@ -21,6 +23,7 @@ abook
 htop-vim
 urlview
 cronwhip
+pavucontrol
 # Random Libraries
 wine-staging
 winetricks

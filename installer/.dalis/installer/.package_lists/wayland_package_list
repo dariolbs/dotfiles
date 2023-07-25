@@ -11,6 +11,9 @@ qt5-wayland
 qt5ct
 webkit2gtk
 swww
+grim
+slurp
+pavucontrol
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra

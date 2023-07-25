@@ -1,19 +1,3 @@
-call plug#begin()
-"Colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-"Plugins
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'preservim/nerdtree'
-Plug 'ap/vim-css-color'
-Plug 'tribela/vim-transparent'
-Plug 'nvim-treesitter/nvim-treesitter'
-
-let g:transparent_groups = ['Normal', 'Comment', 'Constant', 'Special', 'Identifier',
-\ 'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String',
-\ 'Function', 'Conditional', 'Repeat', 'Operator', 'Structure',
-\ 'LineNr', 'NonText', 'SignColumn', 'CursorLineNr', 'EndOfBuffer']
-
 "---------------------------------------------------------------------------------------------
 "Normal Mode
 "---------------------------------------------------------------------------------------------
@@ -31,7 +15,6 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 vnoremap <F1> <Esc>
 
-call plug#end()
 set nocompatible
 filetype plugin on
 syntax on

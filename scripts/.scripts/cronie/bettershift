@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u dario)/bus
+
+python3 /home/dario/.scripts/.used/bettershift/bettershift.py $@

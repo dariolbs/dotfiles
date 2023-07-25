@@ -168,6 +168,10 @@ tooltip {
     margin-right: 6px;
 }
 
+#tray{
+    padding-right: 8px;
+}
+
 /* Colors Left */
 #custom-clock { color: @high;}
 #custom-alarm { color: #FDE2E2;}

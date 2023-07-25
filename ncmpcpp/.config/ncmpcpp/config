@@ -58,4 +58,4 @@ song_columns_list_format = "(25)[cyan]{a} (40)[]{f} (30)[red]{b} (7f)[green]{l}"
 progressbar_look = "─⊙┄"
 #progressbar_look = "=>"
 #execute_on_song_change = notify-send -u low " Now Playing" "$(mpc --format '%title% \n%artist%' current)"
-execute_on_song_change = notify-send -i "/home/dario/.local/share/icons/dalis/pepe-music.png" "Now Playing:" "$(mpc --format '%title% \n%artist%' current)" -r 100
+execute_on_song_change = notify-send -i "/home/dario/.icons/music/eevee_music.png" "Now Playing:" "$(mpc --format '%title% \n%artist%' current)" -r 100

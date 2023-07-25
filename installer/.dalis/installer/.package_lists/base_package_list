@@ -36,6 +36,8 @@ alsa-utils
 tor
 inetutils
 neofetch
+zathura
+zathura-pdf-mupdf
 newsboat
 openssh
 bat
@@ -45,6 +47,7 @@ go
 nodejs
 mpc
 mpd
+libnotify
 playerctl
 calcurse
 npm

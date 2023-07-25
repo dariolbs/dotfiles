@@ -24,7 +24,7 @@ archlinux_installer(){
     # Update the system and install dependencies
 	printf "Updating the system...\n"
     sleep 1
-	sudo pacman -Syyu python3 base-devel curl wget trash-cli cronie || exit 1
+	sudo pacman -Syyu --noconfirm python3 base-devel curl wget trash-cli cronie || exit 1
 
     #Install yay and AUR Packages
     printf "Installing yay..."
@@ -80,13 +80,13 @@ archlinux_installer(){
     # Picom preset for those sweet effects
 	cp .source/presets/picom.conf "$HOME/.config/picom"
     # Bash update hook to keep dash as default shell
-	sudo cp -rv .files/bash-update.hook /usr/share/libalpm/hooks
+	sudo cp -rv .source/bash-update.hook /usr/share/libalpm/hooks
     # Make .xinitrc executable to avoid problems with login managers
     chmod +x "$HOME/.xinitrc"
     # Disable pc speaker (extremely important)
-	sudo cp -rv .files/nobeep.conf /etc/modprobe.d/
+	sudo cp -rv .source/nobeep.conf /etc/modprobe.d/
     # Disable mouse acceleration
-	sudo cp -rv .files/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
+	sudo cp -rv .source/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
 
     # Automatically remove trash files that are older than 15 days
     (crontab -l ; echo "@daily $(which trash-empty) 15") | crontab -
