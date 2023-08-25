@@ -13,6 +13,8 @@ webkit2gtk
 swww
 grim
 slurp
+swaylock
+swayidle
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra

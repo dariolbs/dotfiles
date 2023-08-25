@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+sudo cryptsetup --type=tcrypt open /mnt/Barracuda/Volumes/VC_NTFS ruivaco
+sudo mount /dev/mapper/ruivaco /mnt/Ruivaco/

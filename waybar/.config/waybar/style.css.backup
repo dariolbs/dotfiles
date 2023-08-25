@@ -6,11 +6,11 @@
     background-image: none;
 }
 
-@define-color low #1d2021;
+@define-color low #272e33;
 
-@define-color medium #32302f;
+@define-color medium #374148;
 
-@define-color high #ebdbb2;
+@define-color high #d3c6aa;
 
 window#waybar {
     /*
@@ -166,6 +166,10 @@ tooltip {
     padding-left: 8px;
     padding-right: 12px;
     margin-right: 6px;
+}
+
+#tray{
+    padding-right: 8px;
 }
 
 /* Colors Left */

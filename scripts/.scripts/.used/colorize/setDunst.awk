@@ -23,8 +23,6 @@ reading_colorschemes == 1 && $0 == "COLORSCHEME " colorscheme {
 reading_dunst == 1 && reading_colorschemes == 1 && reading == 1 {
     type = substr($1, 1, length($1)-1)
     pallet[type] = substr($0, length($1) + 10)
-    print type
-    print pallet[type]
     next
 }
 

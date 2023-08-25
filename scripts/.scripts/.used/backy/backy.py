@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 
-import os
+from os import system
+from os import environ
+from stats import increment, getStats
 from sys import argv
 from tcolors import tcolors
 
 global icon
 global user_id
 
-CONFIG_DIR = f'{os.environ["HOME"]}/.config/backy'
-
+STATS_FILE = f'{environ["HOME"]}/.local/share/backy/stats'
+CONFIG_DIR = f'{environ["HOME"]}/.config/backy'
+STATS_DIR = f'{environ["HOME"]}/.local/share/backy'
 config = CONFIG_DEF = f"{CONFIG_DIR}/config"
-
-icon = ICON_DEF = f'{os.environ["HOME"]}/.icons/anime/Ryukosip.png'
-
-ICON_ERROR_DEF = f'{os.environ["HOME"]}/.icons/anime/aquacry.png'
-
+icon = ICON_DEF = f'{environ["HOME"]}/.icons/anime/Ryukosip.png'
+ICON_ERROR_DEF = f'{environ["HOME"]}/.icons/anime/aquacry.png'
 LOG_FILE = f"{CONFIG_DIR}/.logs"
 
 add = ( None, None )
@@ -22,7 +22,8 @@ add = ( None, None )
 do_update = list_config = verbose = notify = False
 
 # Create config and cache directories if they still don't exist
-os.system(f"mkdir -p {CONFIG_DIR}")
+system(f"mkdir -p {CONFIG_DIR}")
+system(f"mkdir -p {STATS_DIR}")
 
 def help():
     print(
@@ -42,7 +43,7 @@ def readConfig(config = CONFIG_DEF, verbose = False) -> dict[str, str]:
     """
 
     # Check if the configuration file exists
-    if os.system(f"[ -f {config} ]") != 0:
+    if system(f"[ -f {config} ]") != 0:
         print(f"Configuration file {config} does not exist")
         exit(1)
 
@@ -55,8 +56,6 @@ def readConfig(config = CONFIG_DEF, verbose = False) -> dict[str, str]:
     for line in file.readlines():
         if line[0] == "#" or line == "\n":
             continue
-        elif line[0] == "ICON":
-            icon = line.split(" = ")[2].rstrip()
         separated = line.split(" ==> ")
         paths[separated[0]] = separated[1].rstrip()
 
@@ -64,19 +63,24 @@ def readConfig(config = CONFIG_DEF, verbose = False) -> dict[str, str]:
 
 def copyAll(paths, verbose = False, notify = False, config = CONFIG_DEF) -> None:
     error = False
+    n_backups = 0
     for path in paths.keys():
-        if os.system(f"rsync -uvrP --delete {path} {paths[path]} 2>> {LOG_FILE}") != 0:
+        if system(f"rsync -uvrP --delete {path} {paths[path]} 2>> {LOG_FILE}") != 0:
             error = True
 
         if verbose:
             print(f"{path} {tcolors.GREEN}==>{tcolors.ENDC} {paths[path]}")
 
+        n_backups += 1
+
     if notify:
         if not error:
-            os.system(f"notify-send -i {icon} \"Backy 🎒\" \"Completed backup using {config}\"")
+            system(f"notify-send -i {icon} \"Backy 🎒\" \"Completed backup using {config}\"")
 
         else:
-            os.system(f"notify-send -u critical -i {ICON_ERROR_DEF} \"Backy 🎒\" \"Errors occured using {config}!\nCheck the logs!\"")
+            system(f"notify-send -u critical -i {ICON_ERROR_DEF} \"Backy 🎒\" \"Errors occured using {config}!\nCheck the logs!\"")
+
+    increment(config, 1, n_backups)
 
     return
 
@@ -100,6 +104,10 @@ while i < len(argv):
         notify = True
         i += 1
 
+    elif argv[i] == "-i":
+        icon = argv[i + 1]
+        i += 1
+
     elif argv[i] == "update":
         paths = readConfig(config, verbose)
         copyAll(paths, verbose, notify, config)
@@ -107,8 +115,20 @@ while i < len(argv):
 
     elif argv[i] == "ls":
         paths = readConfig(config, verbose)
+        print(f"All paths configured in {tcolors.UNDERLINE}{config}{tcolors.ENDC}")
         for i in paths.keys():
-            print(f"{i} ==> {paths[i]}")
+            print(f"{i} {tcolors.BOLD}{tcolors.BLUE}==> {tcolors.ENDC}" +
+                  f"{tcolors.BOLD}{paths[i]}{tcolors.ENDC}")
+        exit(0)
+
+    elif argv[i] == "stats":
+        stats = getStats()
+        for i in stats.keys():
+            print(
+                    f"Configuration file {i}\n" + 
+                    f"Ran {stats[i][0]} times\n" +
+                    f"{stats[i][1]} backups completed\n"
+                )
         exit(0)
 
     else:

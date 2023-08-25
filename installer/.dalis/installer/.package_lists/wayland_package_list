@@ -2,6 +2,8 @@
 # Imports
 *base_package_list
 # Wayland
+swayidle
+swaylock
 wlroots-git
 hyprland-git
 wofi

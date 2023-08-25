@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+#
 source "$HOME/.dalis/config"
 if [ ${#monitors[@]} -gt 0 ]; then
     n=1

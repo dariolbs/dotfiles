@@ -3,8 +3,11 @@ dir="$PWD"
 old_ifs="$IFS"
 PS3="Chosen list:"
 PROMT='>> '
+
+# Create necessary directories
 mkdir -p "$HOME/.dalis/logs"
 
+# Define the default promt
 promt(){
     printf "$PROMT"; read $@
 }
@@ -21,6 +24,7 @@ archlinux_installer(){
         pkg_list="${list}";
         break;
     done
+
     # Update the system and install dependencies
 	printf "Updating the system...\n"
     sleep 1

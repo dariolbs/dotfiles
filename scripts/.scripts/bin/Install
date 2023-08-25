@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+if ! command -v git &> /dev/null
+then
+    echo "git could not be found. installing..."
+    sudo pacman -S git
+fi
+if ! command -v python3 &> /dev/null
+then
+    echo "python3 could not be found. installing..."
+    sudo pacman -S python3
+fi
+
+python3 $HOME/.scripts/.used/installer/main.py

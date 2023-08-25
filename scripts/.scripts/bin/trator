@@ -7,7 +7,7 @@ case "$1" in
 	'rar') rar a "$2.rar" "$2" ;;
     '7z') 7z a "$2.7z" "$2" ;;
     *.zip | *.vsix | *.ZIP) unzip "$1" ;;
-    *.tar.gz | *.tar.xz | *.tar | *.tgz ) tar -xvf "$1" ;;
+    *.tar | *.tar.* | *.tgz ) tar -xvf "$1" ;;
     *.rar) unrar x "$1" ;;
     *.7z) 7z x "$1" ;;
     *) printf "Compression type not found \n";;

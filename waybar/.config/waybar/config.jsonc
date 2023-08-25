@@ -14,10 +14,34 @@
 // center modules //
 
    "wlr/workspaces": {
-       "disable-scroll": true,
-       "all-outputs": false,
-       "sort-by-number": true,
-       "on-click": "activate"
+        "disable-scroll": true,
+        "all-outputs": false,
+        "sort-by-number": true,
+        "on-click": "activate",
+        "format": "{name} {icon}",
+        "format-icons": {
+             "1":   "",
+             "2":   "",
+             "3":   "",
+             "4":   "",
+             "5":   "",
+             "6":   "󰏘",
+             "7":   "󰖩",
+             "8":   "󰌋",
+             "9":   "󱓞",
+             "10":  "",
+             "11":  "",
+             "12":  "󰝚",
+             "13":  "󰛮",
+             "14":  "󰙯",
+             "15":  "",
+             "16":  "󰗃",
+             "17":  "",
+             "18":  "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
    },
 
 
@@ -41,7 +65,7 @@
     },
 
     "custom/distro": {
-        "exec": "~/.scripts/statusbar/waybar/release",
+        "exec": "~/.config/waybar/scripts/release",
         "show-empty": false,
         "format": "{}",
         "on-click": "pkill wofi || wofi -n -W 30% -H 50% --show drun -I -i",
@@ -98,7 +122,7 @@
 
     "custom/wally": {
         "format": "󰊠 wally",
-        "on-click": "~/.scripts/statusbar/waybar/wally",
+        "on-click": "~/.config/waybar/scripts/wally",
         "on-click-right": "~/.scripts/statusbar/waybar/wally back",
         "on-click-middle": "foot sh -c \"lfrun ~/Media/Wallpapers\"",
         "interval": 86400, // once every day

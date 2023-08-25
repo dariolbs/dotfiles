@@ -56,7 +56,8 @@ general {
     gaps_in = 5
     gaps_out = 15
     border_size = 2
-    col.active_border = rgb(ea6962) rgb(e3a84e) 54deg
+    col.active_border = rgb(a7c080)
+    #col.inactive_border = rgb(595959)
     col.inactive_border = rgb(595959)
 
 
@@ -150,6 +151,9 @@ bind = ,XF86AudioRaiseVolume, exec, ~/.scripts/bin/vol +5 -n
 bind = ,XF86AudioLowerVolume, exec, ~/.scripts/bin/vol -5 -n
 bind = ,PRINT, exec, ~/.config/hypr/scripts/screenshot
 bind = $mainMod, PRINT, exec, ~/.config/hypr/scripts/parcial_screenshot
+
+# Quick Power off
+bind = $mainMod SHIFT P, O, exec, poweroff
 
 # Bindings for Hyprload
 

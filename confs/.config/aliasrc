@@ -22,14 +22,14 @@ if [ $USE_EXA = "true" ]; then
     alias ll='exa --icons --git -l'
     alias ls='exa --icons'
     alias sl='exa --icons'
+    alias tree='exa --icons -T'
 else
-    alias la='ls -lha --color'
+    alias la='ls -lhA --color'
     alias ll='ls -lh --color'
     alias ls='ls --color'
     alias sl='ls --color'
 fi
 
-alias tree='exa --icons -T'
 alias tra='trash-put -v'
 alias trr='trash-restore'
 alias rm='rm -vi'

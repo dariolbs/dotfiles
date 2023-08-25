@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
+
 import os
 from sys import argv
 from time import sleep
 
-OUT_DIR = "~/.scripts/statusbar/alarm/alarm-state"
+OUT_DIR = "~/.cache/alarm/alarm-state"
 ALARM_DIR = "~/.scripts/statusbar/alarm/alarm.mp3"
 
 def secondsTo(endHour, startHour):
@@ -43,7 +44,6 @@ def playAlarm():
     os.system('printf "0s\\n" > ' + OUT_DIR)
     os.system('mpv --no-video ~/.scripts/media/alarm.*')
 
-
 def main(argv):
     index = seconds = minutes = hours = 0
     end = start = ""
@@ -81,4 +81,4 @@ def main(argv):
 if len(argv) > 1:
     main(argv)
 else:
-    os.system("cat ~/.scripts/statusbar/alarm/alarm-state")
+    os.system(f"cat {OUT_DIR}")

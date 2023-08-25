@@ -1,27 +1,24 @@
 import os
 
 CALCURSE_FILE = f'{os.environ["HOME"]}/.local/share/calcurse/apts'
-
 DATE = os.popen("date +%m/%d/%Y").read().rstrip()
-
 HOUR = os.popen("date +%H:%M:%S").read().rstrip().split(":")
 
 file = open(CALCURSE_FILE, "r")
-
 apts = {}
 
 ICON = f'{os.environ["HOME"]}/.icons/pepe/monkaS.png'
 
 def earlierThan(hour):
+
     splitted = hour.split(":")
-    if int(splitted[0]) > int(HOUR[0]):
-        return True
-    elif int(splitted[1]) > int(HOUR[1]):
-        return True
-    elif int(splitted[2]) > int(HOUR[2]):
-        return True
-    else:
+
+    if int(splitted[0]) < int(HOUR[0]):
         return False
+    elif int(splitted[1]) < int(HOUR[1]):
+        return False
+    else:
+        return True
 
 for line in file.readlines():
     split = line.split(" ")

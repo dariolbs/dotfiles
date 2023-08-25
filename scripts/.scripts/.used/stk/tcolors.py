@@ -1,0 +1,17 @@
+class tcolors:
+
+    PURPLE = '\033[95m'
+    BLUE = '\033[94m'
+    CYAN = '\033[96m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    BOLD_PURPLE = '\033[1m\033[95m'
+    BOLD_BLUE = '\033[1m\033[94m'
+    BOLD_CYAN = '\033[1m\033[96m'
+    BOLD_GREEN = '\033[1m\033[92m'
+    BOLD_YELLOW = '\033[1m\033[93m'
+    BOLD_RED = '\033[1m\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'

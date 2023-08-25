@@ -1,0 +1,41 @@
+#!/usr/bin/bash
+
+Help_me_caralho(){
+cat << EOF
+Arguments:
+1 - Name of the video
+2 - Start time
+3 - Output name
+Or:
+1 - Name of the video
+2 - Start time
+3 - End time
+4 - Output name
+EOF
+exit 1
+}
+
+#Check for invalid number of arguments
+if [[ ${#@} -lt 3 ]] || [[ ${#@} -gt 4 ]]; then
+
+    eval 'Help_me_caralho'
+
+fi
+
+# Check if the file exists
+if ! [[ -f "$1" ]]; then
+
+    printf 'File %s does not exist\n' "$1"
+
+    exit 1
+
+fi
+
+if [[ ${#@} -eq 3 ]]; then
+
+    ffmpeg -i "$1" -ss "$2" -c:v copy -c:a copy "$3"
+
+else
+
+    ffmpeg -i "$1" -ss "$2" -to "$3" -c:v copy -c:a copy "$4"
+fi

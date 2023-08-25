@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+file="$HOME/.scripts/sxhkd/emoji_picker/emojis"
+emoji="$(cat $file | wofi -I -i -n -d -p "Select emoji:"| cut -d " " -f 1)"
+printf "${emoji%%"\n"}" | wl-copy

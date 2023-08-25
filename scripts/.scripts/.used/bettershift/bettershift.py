@@ -28,10 +28,14 @@ def createSnapshots(subv) -> None:
     """
     for i in subv.keys():
         while checkLimit(subv[i][0], subv[i][1]):
+
             # Remove old snapshots
             os.system(f"btrfs subvolume delete {subv[i][0]}/$(ls -rt {subv[i][0]} | head -1 )")
+
+        # Create a snapshot for each subvolume
         os.system(f"btrfs subvolume snapshot {i} {subv[i][0]}/{DATE}-snapshot")
-#    os.system(f"export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/{user_id}/bus")
+
+    # Send a notificatio
     os.system(f"sudo -u $(id -nu {user_id}) DISPLAY=:0 " +\
             f"DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/{user_id}/bus notify-send -i {ICON} " +\
             f"\"BetterShift ⌛\" \"Created Snapshots using {config}\"")
@@ -41,24 +45,28 @@ def checkLimit(location, max) -> bool:
     Returns a boolean value representing if the the number of folders in <location>
     is greater than <max>
     """
-    snapList = os.popen(f"ls -rt {location}").readlines()
-    return len(snapList) > max
+    snapList = os.popen(f"ls -l {location}").readlines()
+    return len(snapList) > max + 1
 
 for i in range(1, len(argv)):
     if argv[i] == "-c":
+
         config = argv[i+1]
         i += 2
 
     if argv[i] == "-u":
+
         user_id = os.popen(f"id -u {argv[i+1]}").read().rstrip()
         i += 2
 
     elif argv[i] == "create":
+
         subv = readConfig(config)
         createSnapshots(subv)
         exit(0)
 
     elif argv[i] == "example":
+
         print("#Example Bettershift configuration:\n\n" +\
         "#Create a snapshot of the root subvolume on /etc/snapshots with a maximum of 5 snapshots\n" +\
         "/ -> /etc/snapshots -> 5\n")

@@ -1,35 +1,3 @@
-background
-#1d2021
-foreground
-#ebdbb2
-frame_color
-#ebdbb2
-highlight
-#ebdbb2
-background
-#1f1f28
-foreground
-#dcd7ba
-frame_color
-#dcd7ba
-highlight
-#dcd7ba
-background
-#1d2021
-foreground
-#ebdbb2
-frame_color
-#ebdbb2
-highlight
-#ebdbb2
-background
-#272e33
-foreground
-#d3c6aa
-frame_color
-#d3c6aa
-highlight
-#d3c6aa
 # See dunst(5) for all configuration options
 
 [global]
@@ -350,17 +318,17 @@ highlight
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#1d2021"
-    foreground = "#ebdbb2"
-    frame_color = "#ebdbb2"
-    highlight = "#ebdbb2"
-""""""""""""""""""""""""""""""""
+    background = "#272e33"
+    foreground = "#d3c6aa"
+    frame_color = "#d3c6aa"
+    highlight = "#d3c6aa"
+""""""""""""""""""""""""""""""""""""""""""""""""""""
     timeout = ""
     # Icon "" notifications with normal urgency, uncomment to enable
     #default_icon = ""
-""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 [urgency_critical]
-    background = "#282828"
+    background = "#272e33"
     foreground = "#e06c75"
     frame_color = "#e06c75"
     highlight = "#e06c75"

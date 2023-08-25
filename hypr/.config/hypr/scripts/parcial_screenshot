@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
-slurp | grim -g - ~/Pictures/$(date +%F_%T).png
+[ -d ~/Pictures ] && mkdir -p ~/Pictures
 
+slurp | grim -g - ~/Pictures/$(date +%F_%T).png
 wl-copy < $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)

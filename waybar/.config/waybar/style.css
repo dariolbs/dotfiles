@@ -6,11 +6,15 @@
     background-image: none;
 }
 
-@define-color low #1d2021;
+@define-color low #272e33;
 
-@define-color medium #32302f;
+/*
+@define-color low rgba(39, 46, 51, .5);
+*/
 
-@define-color high #ebdbb2;
+@define-color medium #374148;
+
+@define-color high #d3c6aa;
 
 window#waybar {
     /*
@@ -34,22 +38,28 @@ tooltip {
     border-radius: 7px;
     margin-top: 3px;
     margin-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 13px;
+    color: @high;
+    /*
     padding-left: 2px;
     padding-right: 2px;
-    color: @high;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
+    */
 }
 
 #workspaces button.active {
     background: @high;
     color: @medium;
-    margin-left: 2px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 13px;
+    /*
     margin-right: 2px;
+    margin-left: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
+    */
 }
 
 #workspaces button.urgent {
@@ -59,15 +69,19 @@ tooltip {
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 2px;
+    /*
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
+    */
 }
 
 
+/*
 #workspaces button:hover {
     background: @high;
     color: @medium;
 }
+*/
 
 #cpu,
 #memory,
