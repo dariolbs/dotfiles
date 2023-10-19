@@ -5,6 +5,7 @@ then
     echo "git could not be found. installing..."
     sudo pacman -S git
 fi
+
 if ! command -v python3 &> /dev/null
 then
     echo "python3 could not be found. installing..."

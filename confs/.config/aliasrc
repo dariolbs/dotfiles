@@ -13,15 +13,17 @@ alias tarnow='tar -acf '
 alias untar='tar -zxvf '
 alias metaclean="exiftool -all= -overwrite_original $@"
 alias e='nvim $(fzf)'
-alias f='cd $(cat $HOME/.config/shortcutrc | (fzf || echo .))'
+alias open='xdg-open'
+
+alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
 export USE_EXA="true"
 
 if [ $USE_EXA = "true" ]; then
-    alias la='exa --icons --git -la'
-    alias ll='exa --icons --git -l'
-    alias ls='exa --icons'
-    alias sl='exa --icons'
+    alias la='eza --icons --git -la'
+    alias ll='eza --icons --git -l'
+    alias ls='eza --icons'
+    alias sl='eza --icons'
     alias tree='exa --icons -T'
 else
     alias la='ls -lhA --color'
@@ -52,7 +54,6 @@ alias cl="clear"
 alias wireless="sudo ip link set wlp2s0 up"
 alias cal="calcurse"
 alias nm="neomutt"
-alias horario="sxiv ~/.scripts/media/horario.png"
 alias ncm="ncmpcpp"
 alias t='task'
 
@@ -79,6 +80,10 @@ alias doc="cd ~/Documents"
 alias gd="cd /home/dario/.local/share/Steam/steamapps/common/Geometry\ Dash"
 alias temp="mkdir -p /tmp/Dario; cd /tmp/Dario"
 
+# SYNC
+
+alias sync-laptop="backy -vn --config ~/.config/backy/portatil update"
+
 # MINECRAFT SERVERS
 
 alias sv='java -Xmx1024M -Xms1024M -jar'
@@ -93,3 +98,8 @@ alias jctl="journalctl -p 3 -xb"
 
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+
+# bat alias
+
+alias man="batman"
+alias diff="batdiff"

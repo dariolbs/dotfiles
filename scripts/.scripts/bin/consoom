@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 # Script that makes it easier to consoom content
 source $HOME/.scripts/functions/colors
 source "$HOME/.dalis/config"

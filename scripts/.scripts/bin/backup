@@ -1,8 +1,12 @@
 #!/usr/bin/bash
 # Backup script. Uses values defined in ~/.dalis/config for backups on the fly 
+# Im being held hostage
+
 source $HOME/.scripts/functions/colors
 source $HOME/.dalis/config
+
 PS3="Select folder: "
+
 select dir in ${backup_dirs[@]}; do
     printf "Select folder to back up at $PWD\n"
     rsync -uvrP --delete $dir . 2> ./logs

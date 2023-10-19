@@ -1,129 +1,52 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)		# Include hidden files.
+# Zshell configuration
+# 
+# Configured by Dário Batista
+#
+# Plugins used:
+#
+# zsh-history-substring-search: https://github.com/zsh-users/zsh-history-substring-search
+# zsh-autopair: https://github.com/hlissner/zsh-autopair
+# zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
+# zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
+#
+# Prompts:
+#
+# powerlevel10k: https://github.com/romkatv/powerlevel10k
+# starship: https://starship.rs/
 
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1
+# P10k instant prompt
+# source "$HOME/.config/zsh/powerlevel10k/config/personal/instant_prompt.zsh"
 
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
+# Load environment variables
+source "$HOME/.config/zsh/init/environment.zsh"
 
-# Change cursor shape for different vi modes.
-function zle-keymap-select {
-  if [[ ${KEYMAP} == vicmd ]] ||
-        [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
-  elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
-  fi
-}
-zle -N zle-keymap-select
-zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
-}
-zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
-#Defaults
-export TELE="u0_a265@dariotele"
-export EDITOR="nvim"
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 # Load all plugins
-source $HOME/.config/zsh/zsh-history-substring-search.plugin.zsh 2>/dev/null
-source $HOME/.config/zsh/zsh-autosuggestions.zsh 2>/dev/null
-source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source $HOME/.config/zsh/zsh-autopair/autopair.zsh 2>/dev/null
+source "$HOME/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh" 2>/dev/null
+source "$HOME/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh" 2>/dev/null
+source "$HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" 2>/dev/null
+source "$HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null
+source "$HOME/.config/zsh/zsh-autopair/autopair.zsh" 2>/dev/null
 
+# Load profile
 source "$HOME/.profile"
 
-#LF
-[ -f ~/.config/lf/LF_ICONS ] && {
-	LF_ICONS="$(tr '\n' ':' <~/.config/lf/LF_ICONS)" \
-		&& export LF_ICONS
-    [ -f "$HOME/.config/lf/LF_COLORS" ] && source "$HOME/.config/lf/LF_COLORS"
-}
+# Get fzf config
+source "$HOME/.config/zsh/fzf/config.zsh"
 
-startSession(){
-    neofetch
-    source "$HOME/.profile"
-    printf "Welcome back buddy! ^^\n"
-    printf "Logging in...\n"
+# Load keybindings
+source "$HOME/.config/zsh/keybindings/tmux.zsh"
 
-    sleep 1
-    #pgrep dwm || startx "$HOME/.xinitrc"
-    pgrep Hyprland || Hyprland
-}
+# Startup on tty1
+source "$HOME/.config/zsh/init/tty1.zsh"
 
-#APPLY PROMTS
+# Load main zsh config
+source "$HOME/.config/zsh/init/config.zsh"
 
-apply_starship_promt(){
-	if [[ "$(tty)" == "/dev/tty1" ]]; then
-        eval "$(starship init zsh)"
-        export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship-tty.toml"
-        startSession
-    else
-        nitch
-        eval "$(starship init zsh)"
-        export STARSHIP_CONFIG="$HOME/.config/zsh/starship/starship.toml"
-    fi
-}
+# Get prompt functions
+source "$HOME/.config/zsh/init/prompts.zsh"
 
-apply_p10k_promt() {
-	if [[ "$(tty)" == "/dev/tty1" ]]; then
-        apply_default_promt
-        startSession
-    else
-        source $HOME/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme &>/dev/null
-        source ~/.config/zsh/p10k.zsh
-	fi
-	return 0
-}
-
-apply_default_promt() {
-    PROMPT="%B%F{red}[%F{green}%n%f%b%B%F{yellow}@%f%b%B%F{blue}%m%f%b%F%B%F{magenta} %~%f%b %B%F{red}]%B%F{green} $%f%b "
-}
-
-apply_colorless() {
-    PROMPT="%n%f%b@%f%b%m%f%b%F{magenta} %~%f%b $%f%b "
-}
-
-
-apply_hacky_promt() {
-    PROMPT=$'%F{%(#.blue.green)}┌──$(%B%F{%(#.red.white)}%n%(#.💀.@)%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
-    RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
-}
-
-# RANDOM_FUNCTIONS
-random_pokemon(){
-    pokemon-colorscripts -r --no-title
-}
-
-
-## Applyuing promt
-apply_starship_promt || apply_p10k_promt || apply_hacky_promt
-#apply_hacky_promt
-#apply_colorless
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Execute default prompt function
+eval "$PROMPT_FUNCTION"

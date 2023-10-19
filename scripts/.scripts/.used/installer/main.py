@@ -16,11 +16,6 @@ def main():
     if input(f"Are you sure you want to proceed? (yes/no)\n") != "yes":
         exit(1)
 
-    # Install yay packagle manager
-    inform(f"Installing the {tcolors.GREEN}yay{tcolors.ENDC} package manager")
-    execute("sleep 1")
-    installYay()   
-
     # Install dependencies
     inform(f"Installing Dependencies using {tcolors.UNDERLINE}{DEPENDENCIES_FILE}{tcolors.ENDC}")
     execute("sleep 1")

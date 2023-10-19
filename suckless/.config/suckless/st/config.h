@@ -8,6 +8,7 @@
 //static char *font = "mono:pixelsize=17:antialias=true:autohint=true";
 #include <stdio.h>
 static char *font = "JetBrainsMono:pixelsize=17:antialias=true:autohint=true";
+//static char *font = "FiraCode:pixelsize=17:antialias=true:autohint=true";
 static char *font2[] = { "SauceCodePro Nerd Font:pixelsize=17:antialias=true:autohint=true" };
 static int borderpx = 10;
 static int borderbuf;

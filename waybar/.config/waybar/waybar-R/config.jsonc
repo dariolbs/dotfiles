@@ -1,0 +1,222 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "mod": "dock",
+    "height": 28,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "modules-left": ["custom/clock", "custom/alarm" ],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "custom/wally", "cpu", "memory", "network"],
+
+
+// center modules //
+
+   "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "sort-by-number": true,
+        "on-click": "activate",
+        "format": "{name} {icon}",
+        "format-icons": {
+             "1":   "",
+             "2":   "",
+             "3":   "",
+             "4":   "",
+             "5":   "",
+             "6":   "󰏘",
+             "7":   "󰖩",
+             "8":   "󰌋",
+             "9":   "󱓞",
+             "10":  "",
+             "11":  "",
+             "12":  "󰝚",
+             "13":  "󰛮",
+             "14":  "󰙯",
+             "15":  "",
+             "16":  "󰗃",
+             "17":  "",
+             "18":  "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+   },
+
+
+
+// left modules //
+
+    "cpu": {
+        "interval": 10,
+        "format": "󰍛 {usage}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "󰾆 {percentage}%",
+        "format-alt": "󰾅 {used}GB",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": " {used:0.1f}GB/{total:0.1f}GB"
+    },
+
+    "custom/distro": {
+        "exec": "~/.config/waybar/scripts/release",
+        "show-empty": false,
+        "format": "{}",
+        "on-click": "pkill wofi || wofi -n -W 30% -H 50% --show drun -I -i",
+        "on-click-right": "bash ~/.config/waybar/scripts/system.sh"
+    },
+
+    "custom/clock": {
+        "interval": 1,
+        "exec": "date \"+%a %b %d  %T\"",
+        "show-empty": false,
+        "format": " {}"
+    },
+
+    "custom/forecast": {
+        "interval": 3000,
+        "exec": "~/.scripts/statusbar/dwmblocks/sb-forecast",
+        "show-empty": false,
+        "format": "{}"
+    },
+
+    "custom/alarm": {
+        "on-click": "killall alarm && alarm clear",
+        "interval": 1,
+        "exec": "~/.scripts/bin/alarm",
+        "show-empty": false,
+        "format": "󰀠 {}"
+    },
+
+    "custom/updates": {
+        "format": "󰮯 {}",
+        // "exec": "~/.scripts/statusbar/dwmblocks/sb-packages",
+        "exec": "pacman -Qu | grep -Fcv \"[ignored]\"",
+        "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
+        "interval": 3600, // once every hour
+        "tooltip": true
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": false,
+        "on-click": "hyprctl dispatch killactive",
+        "show-empty": false,
+        "rewrite": {
+            "foot": "foot ",
+            "(.*) — Mozilla Firefox": "$1 󰈹",
+            "(.*)Mozilla Firefox": "Firefox 󰈹",
+            "(.*) - Visual Studio Code": "$1 󰨞",
+            "(.*)Visual Studio Code": "Code 󰨞",
+            "(.*) - Discord": "Discord 󰙯",
+            "(.*)Steam": "Steam 󰓓",
+            "(.*)Lutris": "Lutris 󰊖",
+            "": "Empty"
+          }
+    },
+
+    "custom/wally": {
+        "format": "󰊠 wally",
+        "on-click": "~/.config/waybar/scripts/wally",
+        "on-click-right": "~/.scripts/statusbar/waybar/wally back",
+        "on-click-middle": "foot sh -c \"lfrun ~/Media/Wallpapers\"",
+        "interval": 86400, // once every day
+        "tooltip": true
+    },
+
+// right modules //
+
+    
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󱘖 Wired",
+        "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+        "format-linked": "󱘖 {ifname} (No IP)",
+        "format-disconnected": " Disconnected",
+        "format-alt": "󰤨 {signalStrength}%",
+        "interval": 5
+    },
+
+    "bluetooth": {
+	    "format": "",
+	    "format-disabled": "", // an empty format will hide the module
+	    "format-connected": " {num_connections}",
+	    "tooltip-format": " {device_alias}",
+	    "tooltip-format-connected": "{device_enumerate}",
+	    "tooltip-format-enumerate-connected": " {device_alias}"
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " 0% {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "on-click": "pavucontrol -t 4",
+        "on-click-middle": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+}

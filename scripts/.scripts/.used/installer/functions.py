@@ -105,12 +105,3 @@ def activateDaemons() -> None:
     for daemon in daemons:
         execute(f"sudo systemctl start {daemon}")
         execute(f"sudo systemctl enable {daemon}")
-
-def installYay() -> None:
-    execute("mkdir -p $HOME/.gitclones")
-    execute("cd $HOME/.gitclones")
-    execute("sudo git clone https://aur.archlinux.org/yay-git.git")
-    execute("sudo chown -R $USER:$USER ./yay-git")
-    execute("cd yay-git")
-    execute("makepkg -si")
-    execute("cd")

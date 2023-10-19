@@ -16,6 +16,7 @@ config = CONFIG_DEF = f"{CONFIG_DIR}/config"
 icon = ICON_DEF = f'{environ["HOME"]}/.icons/anime/Ryukosip.png'
 ICON_ERROR_DEF = f'{environ["HOME"]}/.icons/anime/aquacry.png'
 LOG_FILE = f"{CONFIG_DIR}/.logs"
+DEFAULT_FLAGS = "-uvrP --delete"
 
 add = ( None, None )
 
@@ -57,19 +58,34 @@ def readConfig(config = CONFIG_DEF, verbose = False) -> dict[str, str]:
         if line[0] == "#" or line == "\n":
             continue
         separated = line.split(" ==> ")
-        paths[separated[0]] = separated[1].rstrip()
+
+        if len(separated) > 2:
+            paths[separated[0]] = (separated[1].rstrip(), separated[2].rstrip())
+        else:
+            paths[separated[0]] = (separated[1].rstrip(), DEFAULT_FLAGS)
 
     return paths
 
 def copyAll(paths, verbose = False, notify = False, config = CONFIG_DEF) -> None:
+    """
+    COPYALL
+    """
+
     error = False
     n_backups = 0
+
     for path in paths.keys():
-        if system(f"rsync -uvrP --delete {path} {paths[path]} 2>> {LOG_FILE}") != 0:
+
+        command = system(f"rsync {paths[path][1]} {path} {paths[path][0]} 2>> {LOG_FILE} 1>> /dev/null")
+
+        if command != 0:
             error = True
 
         if verbose:
-            print(f"{path} {tcolors.GREEN}==>{tcolors.ENDC} {paths[path]}")
+            if command == 0:
+                print(f"{path} {tcolors.GREEN}==>{tcolors.ENDC} {paths[path][0]} {tcolors.YELLOW}flags:{tcolors.ENDC} {paths[path][1]} returned {tcolors.GREEN}{command}{tcolors.ENDC}")
+            else:
+                print(f"{path} {tcolors.GREEN}==>{tcolors.ENDC} {paths[path][0]} {tcolors.YELLOW}flags:{tcolors.ENDC} {paths[path][1]} returned {tcolors.RED}{command}{tcolors.ENDC}")
 
         n_backups += 1
 

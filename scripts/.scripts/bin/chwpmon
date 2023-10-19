@@ -1,7 +1,9 @@
 #!/usr/bin/bash
 #
 source "$HOME/.dalis/config"
+
 if [ ${#monitors[@]} -gt 0 ]; then
+
     n=1
     printf "Choose a monitor to apply this wallpaper to\n"
     for monitor in ${monitors[@]}; do
@@ -13,5 +15,6 @@ if [ ${#monitors[@]} -gt 0 ]; then
     cp "$f" "$HOME/.config/wallpaper/$ch_mon"
     xwallpaper --output $ch_mon --zoom "$HOME/.config/wallpaper/$ch_mon"
 else
+
     printf "Não tens motitores ó pobre\n" 
 fi

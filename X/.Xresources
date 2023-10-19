@@ -1,39 +1,31 @@
-! hard contrast: *background: #1d2021
+! Colors
+! *background: #242424
 *background: #000000
-! soft contrast: *background: #32302f
-*foreground: #ebdbb2
-! Black + DarkGrey
-*color0:  #665c54
-*color8:  #928c74
-! DarkRed + Red
-*color1:  #ea6962
-*color9:  #ea6962
-! DarkGreen + Green
-*color2:  #a9b665
-*color10: #a9b665
-! DarkYellow + Yellow
-*color3:  #fabd2f
-*color11: #e3a84e
-! DarkBlue + Blue
-*color4:  #7daea3
-*color12: #7daea3
-! DarkMagenta + Magenta
-*color5:  #d3869b
-*color13: #d3869b
-! DarkCyan + Cyan
-*color6:  #89b482
-*color14: #89b482
-! LightGrey + White
-*color7:  #dfbf8e
-*color15: #dfbf8e
+*foreground: #ffffff
+*color0: #242424
+*color1: #f62b5a
+*color2: #47b413
+*color3: #e3c401
+*color4: #24acd4
+*color5: #f2affd
+*color6: #13c299
+*color7: #e6e6e6
+*color8: #616161
+*color9: #ff4d51
+*color10: #35d450
+*color11: #e9e836
+*color12: #5dc5f8
+*color13: #feabf2
+*color14: #24dfc4
+*color15: #ffffff
 
 ! Dwm
-dwm.normbgcolor: #282828
-dwm.normbordercolor: #4d4d4d
-dwm.normfgcolor: #BBBBBB
-dwm.selbgcolor: #005577
-dwm.selbordercolor: #FB4934
-dwm.selfgcolor: #ffffff
+! dwm.normbgcolor: #272e33
+! dwm.normbordercolor: #4d4d4d
+! dwm.normfgcolor: #d3c6aa
+! dwm.selbgcolor: #a7c080
+! dwm.selbordercolor: #a7c080
+! dwm.selfgcolor: #272e33
 dwm.borderpx: 1
 dwm.snap: 32
 dwm.showbar: 1
@@ -43,7 +35,11 @@ dwm.resizehints: 0
 dwm.mfact: 0.55
 
 !dmenu
-dmenu.background: #282828
-dmenu.foreground: #BBBBBB
-dmenu.selbackground: #005577
-dmenu.selforeground: #ffffff
+dmenu.background: #242424
+! dmenu.foreground: #d3c6aa
+! dmenu.selbackground: #a7c080
+! dmenu.selforeground: #272e33
+
+!nsxiv
+! *.bar.background: #a7c080
+! *.bar.foreground: #272e33

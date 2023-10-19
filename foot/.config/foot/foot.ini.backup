@@ -29,7 +29,7 @@ font=JetBrainsMono:size=13
 pad=10x10                             # optionally append 'center'
 # resize-delay-ms=100
 
-# notify=notify-send -a ${app-id} -i ${app-id} ${title} ${body}
+notify=notify-send -a ${app-id} -i ${app-id} ${title} ${body}
 
 # bold-text-in-bright=no
 # word-delimiters=,│`|:"'()[]{}<>
@@ -71,7 +71,7 @@ pad=10x10                             # optionally append 'center'
 # alternate-scroll-mode=yes
 
 [colors]
-alpha=0.9
+alpha=1.0
 background=272e33
 foreground=d3c6aa
 regular0=4a4b50

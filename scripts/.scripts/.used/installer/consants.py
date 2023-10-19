@@ -1,6 +1,6 @@
 from os import environ
 
-DEBUG               = True
+DEBUG               = False
 VERSION             = "1.0"
 AUTHOR              = "Dário Batista"
 DEPENDENCIES_FILE   = f'{environ["HOME"]}/.config/installer/dependencies.conf'

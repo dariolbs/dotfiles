@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+file="$HOME/Universidade/horario.png"
+
+e="xdg-open"
+
+eval "$e $file" &> /dev/null & disown

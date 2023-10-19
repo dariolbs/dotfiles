@@ -1,9 +1,9 @@
-sw_volume: 98
+sw_volume: 100
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 27
-time: 314.326000
+current: 13
+time: 211.694000
 random: 1
 repeat: 0
 single: 1
@@ -12,32 +12,20 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Pop/Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]-papuvlVeZg8.m4a
-1:Japa/【Kano】Paranoia [aeICRSQQrGY].opus
-2:gd/Xtrullor - Dropping Fish (Low Pitch) [S7squyBML-0].opus
-3:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].m4a
-4:gd/Macabre (Creo - Crystallize) Super Low Pitch [BR7UUmp7JQM].m4a
-5:gd/Ethereal Artifice (NemesisTheory - Rose At Twilight) Low Pitch-WZVYc1ujiHk.m4a
-6:gd/ParagonX9 - Infiltration [-jszHEXsW50].opus
-7:gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
-8:gd/Sonic Wave (F-777 - Sonic Blaster) Super Low Pitch-XVcI-XIA-NA.m4a
-9:gd/Dunderpatrullen - Disco Dancing Caravan Camping-GwfiCyJ9EyQ.m4a
-10:gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
-11:gd/Creo - In Circles-E8pMGq5VL3Q.m4a
-12:gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
-13:gd/Warak - Reanimate-zKCe1cA9Eb8.m4a
-14:gd/Xtrullor - Screamroom-ox9X6SjHob8.m4a
-15:gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
-16:gd/Protoflicker (Silentroom - Protoflicker) Low Pitch-x_C9JkGlYvU.m4a
-17:gd/Dimrain47 - At the Speed of Light-1Zrq8FiKS6A.m4a
-18:Osts/3.3_7-urthegod.mod [N29dP7M4R90].opus
-19:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
-20:Japa/「八月、某、月明かり」Hachigatsu, Bou, Tsukiakari by Yorushika w English CCs-J6eih31MaQ8.m4a
-21:Japa/[Touhou Vocal] [RD-Sounds] Mad Party～A Magusnificent Plan  (spanish & english subtitles)-SM-489fbyl0.m4a
-22:Japa/Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai ED [Part Section]「Fukashigi no Carte」-K1PCl5D-IpU.m4a
-23:Osts/Undertale Ost： 077 - ASGORE [hMa4hZQbrms].m4a
-24:Osts/Undertale OST： 071 - Undertale [EBhFHJMVfiI].m4a
-25:Osts/Undertale Ost： 098 - Battle Against a True Hero [aWBtpBwzzdM].m4a
-26:Osts/Undertale Ost： 087 - Hopes and Dreams [tz82xbLvK_k].m4a
-27:Osts/Chris Christodoulou - The Rain Formerly Known as Purple  ｜ Risk of Rain 2 (2020) [EGXPAoyP_cg].opus
+0:Rock/Within Temptation - Paradise (What About Us？) ft. Tarja [Dy6MpsDPKts].opus
+1:Japa/Untilted.mp3
+2:Japa/【Kano】Paranoia [aeICRSQQrGY].opus
+3:Japa/Fullmetal Alchemist - Brotherhood - OP Full 'Again' by YUI-45yi7bopMu0.m4a
+4:Japa/[Touhou Vocal] [RD-Sounds] Mad Party～A Magusnificent Plan  (spanish & english subtitles)-SM-489fbyl0.m4a
+5:Japa/Mob Psycho 100 OP _ Opening Full - '99' by MOB CHOIR (Engsub)-F5OJPUXJvHk.m4a
+6:Japa/One Punch Man Full Ending-eC-60BeGrLM.m4a
+7:Japa/The Promised Neverland - Ending Full『Zettai Zetsumei』by Cö shu Nie-sZ9qdr5WcPY.m4a
+8:Japa/「八月、某、月明かり」Hachigatsu, Bou, Tsukiakari by Yorushika w English CCs-J6eih31MaQ8.m4a
+9:Japa/KANA-BOON - Silhouette-dlFA0Zq1k2A.m4a
+10:Japa/＜ノラガミARAGOTO＞OPテーマ  THE ORAL CIGARETTES「狂乱 Hey Kids!!」MusicVideo-C-o8pTi6vd8.m4a
+11:Japa/真夜中のドア_Stay With Me-VEe_yIbW64w.m4a
+12:Pop/Clean Bandit - Symphony (feat. Zara Larsson) [Official Video] [aatr_2MstrI].m4a
+13:Pop/Sia - Move Your Body (Single Mix) [Lyric]-0GoGcVs6pbU.m4a
+14:Pop/Taylor Swift - Gorgeous (Lyric Video)-EUoe7cf0HYw.m4a
+15:Japa/[Official Video] JAM Project - THE HERO !! -  ＂One Punch Man＂ Opening Theme ワンパンマン [QImBolnTVH8].opus
 playlist_end

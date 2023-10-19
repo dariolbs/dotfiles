@@ -1,18 +1,18 @@
 [Default Applications]
-image/png=vimiv.desktop
-image/jpg=vimiv.desktop
-image/webp=vimiv.desktop
-image/jpeg=vimiv.desktop
-image/gif=vimiv.desktop
+image/png=nsxiv.desktop
+image/jpg=nsxiv.desktop
+image/webp=nsxiv.desktop
+image/jpeg=nsxiv.desktop
+image/gif=nsxiv.desktop
 inode/directory=thunar.desktop
 x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
 text/plain=nvim.desktop
 text/x-shellscript=nvim.desktop
 text/shellscript=nvim.desktop
 inode/x-empty=vim.desktop
-x-scheme-handler/mailto=userapp-Thunderbird-6DPBZ1.desktop
-message/rfc822=userapp-Thunderbird-6DPBZ1.desktop
-x-scheme-handler/mid=userapp-Thunderbird-6DPBZ1.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-HMTZ71.desktop
+message/rfc822=userapp-Thunderbird-HMTZ71.desktop
+x-scheme-handler/mid=userapp-Thunderbird-HMTZ71.desktop
 application/pdf=org.pwmt.zathura.desktop
 application/epub+zip=org.pwmt.zathura.desktop
 x-scheme-handler/discord-460807638964371468=discord-460807638964371468.desktop
@@ -28,8 +28,8 @@ application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 
 [Added Associations]
-x-scheme-handler/mailto=userapp-Thunderbird-6DPBZ1.desktop;
-x-scheme-handler/mid=userapp-Thunderbird-6DPBZ1.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-6DPBZ1.desktop;userapp-Thunderbird-HMTZ71.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-6DPBZ1.desktop;userapp-Thunderbird-HMTZ71.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;
@@ -40,3 +40,4 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+
