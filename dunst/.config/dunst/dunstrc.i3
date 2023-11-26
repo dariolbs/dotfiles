@@ -67,7 +67,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 0 
+    transparency = 0;
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 1
+    frame_width = 3
 
     # Defines color of the frame around the notification window.
     frame_color = "#83a598"
@@ -308,7 +308,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#323232"
+    background = "#000000"
     foreground = "#BBBBBB"
     frame_color = "#BBBBBB"
     highlight = "#BBBBBB"
@@ -318,7 +318,7 @@
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#323232"
+    background = "#000000"
     foreground = "#ffffff"
     frame_color = "#ffffff"
     highlight = "#ffffff"
@@ -327,7 +327,7 @@
     # Icon "" notifications with normal urgency, uncomment to enable
     #default_icon = ""
 [urgency_critical]
-    background = "#323232"
+    background = "#000000"
     foreground = "#ffffff"
     frame_color = "#FF6347"
     highlight = "#FF6347"

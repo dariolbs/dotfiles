@@ -14,6 +14,7 @@ alias untar='tar -zxvf '
 alias metaclean="exiftool -all= -overwrite_original $@"
 alias e='nvim $(fzf)'
 alias open='xdg-open'
+alias diff='diff -u'
 
 alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
@@ -58,13 +59,11 @@ alias ncm="ncmpcpp"
 alias t='task'
 
 # YOUTUBE-DL
-
 alias ytm4a='yt-dlp -x -f "bestaudio[ext=m4a]" --add-metadata --embed-thumbnail'
 alias ytopus='yt-dlp -x -f bestaudio --add-metadata'
 alias ytmp4='yt-dlp -f mp4 --add-metadata --embed-thumbnail'
  
 # SHORTCUTS
-
 alias suckless="cd ~/.config/suckless"
 alias barracuda="cd /mnt/Barracuda"
 alias robalo="cd /mnt/Robalo"
@@ -100,6 +99,9 @@ alias jctl="journalctl -p 3 -xb"
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 # bat alias
-
 alias man="batman"
-alias diff="batdiff"
+# alias diff="batdiff"
+
+# JAVA
+alias java8="/usr/lib/jvm/java-8-openjdk/bin/java"
+alias javac8="/usr/lib/jvm/java-8-openjdk/bin/javac"

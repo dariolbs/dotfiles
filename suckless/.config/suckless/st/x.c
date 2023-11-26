@@ -342,7 +342,6 @@ void
 togglealpha() {
     if (alpha != 1) { alphabuf = alpha; alpha = 1.00;}
     else { alpha = alphabuf; }
-    printf("%f\n", alpha);
 
     alpha = clamp(alpha, 0.0, 1.0);
     alphaUnfocus = clamp(alpha-alphaOffset, 0.0, 1.0);

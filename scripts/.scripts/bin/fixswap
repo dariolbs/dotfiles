@@ -1,0 +1,34 @@
+#!/usr/bin/bash
+
+part="$1"
+key="$2"
+
+
+getuuid(){
+    blkid | grep $part | cut -f 2 -d "\""
+}
+
+# Replace the crypttab file
+rep_ct(){
+    crypttab_file="/etc/crypttab"
+
+    fix_key="$(echo $key | sed "s/\/\\\//g")"
+
+    echo $fix_key
+
+    # sed -i "s/swap.*/swap   UUID=$(getuuid)     $key   swap,cipher=aes-cbc-essiv:sha256,size=256/" $crypttab_file
+}
+
+# 
+# 
+# echo "Encrypting $part..."
+# cryptsetup -y -v luksFormat $part $key
+# 
+# echo "Opening $part using $key..."
+# cryptsetup open -d $key $part swap
+# 
+# mkswap /dev/mapper/swap
+# swapon /dev/mapper/swap
+# 
+rep_ct
+ 

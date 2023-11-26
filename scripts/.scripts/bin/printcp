@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+mv $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1) "$@"

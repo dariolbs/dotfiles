@@ -10,23 +10,21 @@ XF86AudioPlay
 # Scripts
 
 mod4 + shift + p
-	bash ~/.scripts/sxhkd/system_config/configure_system
+	bash ~/.config/sxhkd/scripts/system_config/configure_system
 mod4 + shift + b
-	bash ~/.scripts/sxhkd/bookmark
+	bash ~/.config/sxhkd/scripts/bookmark
 Print
-	bash ~/.scripts/sxhkd/print
+	bash ~/.config/sxhkd/scripts/print
 mod4 + Print
-	sh ~/.scripts/sxhkd/print select
+	sh ~/.config/sxhkd/scripts/print select
 mod4 + e
-	sh ~/.scripts/sxhkd/emoji_picker/script
-#mod4 + shift + e
-#	bash ~/.scripts/sxhkd/system
+	sh ~/.config/sxhkd/scripts/emoji_picker/script
 XF86AudioRaiseVolume
 	sh ~/.scripts/bin/vol +5 -n
 XF86AudioLowerVolume
 	sh ~/.scripts/bin/vol -5 -n
 XF86AudioMute
-	sh ~/.scripts/sxhkd/volume toggle
+	sh ~/.config/sxhkd/scripts/volume toggle
 
 # File managers
 mod4 + n

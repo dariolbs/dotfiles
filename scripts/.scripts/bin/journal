@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-python3 ~/.scripts/.used/Journal/main.py
+python3 "$HOME/.scripts/src/Journal/main.py"

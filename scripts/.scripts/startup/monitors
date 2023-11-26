@@ -1,5 +1,8 @@
 #!/bin/bash
+
+
 change(){
+
 	if [ -z $2 ]; then
 		rr1=165
 		rr2=60
@@ -25,6 +28,7 @@ change(){
 			printf "Option not found\nCurrent options:\nboth\nprimary-only\nsecond-only\n"
 	esac
 }
+
 options=(
 "both"
 "primary-only"

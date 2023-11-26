@@ -6,11 +6,11 @@
     background-image: none;
 }
 
-@define-color low #272e33;
+@define-color low #1d2021;
 
-@define-color medium #374148;
+@define-color medium #32302f;
 
-@define-color high #d3c6aa;
+@define-color high #ebdbb2;
 
 window#waybar {
     /*

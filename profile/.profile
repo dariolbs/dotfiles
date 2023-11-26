@@ -21,7 +21,10 @@ export PATH=${PATH}:/usr/local/go/bin
 export GOPATH="/usr/local/go"
 
 # JAVA 💀💀💀
-export JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 
 # RUBY
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+
+# FCUL
+export PATH="$PATH:$HOME/.bin/sqlcl_fcul/bin/"

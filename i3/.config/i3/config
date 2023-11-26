@@ -30,10 +30,13 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 
-
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
 exec --no-startup-id xrdb -load ~/.Xresources
+exec --no-startup-id ~/.scripts/x11/apply_all.sh
+exec --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
+exec --no-startup-id picom
+exec --no-startup-id dunst -config ~/.config/dunst/dunstrc.i3
+exec --no-startup-id mpd
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -241,3 +244,4 @@ bar {
     }
 }
 
+# Start sceen lock

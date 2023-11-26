@@ -1250,3 +1250,1975 @@ rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
 ssh: connect to host 192.168.1.155 port 22: No route to host
 rsync: connection unexpectedly closed (0 bytes received so far) [sender]
 rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager.dat.ok7Fdf"
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Universidade/LEI-A1-S1/IIO/CADI/Exercicios/.Resolu├з├╡es exerc├нcios 2020_2021.pdf.zaI6wq"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager.dat.nmmfHF"
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Universidade/LEI-A1-S1/SIBD/CADI/Trabalho/Grupo 1/Parte II/00_Outros/SIBD/SIBD/Projecto/2008/.insert_entrega4.sql.jvI5Li"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager.dat.tmLqrj"
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Universidade/LEI-A1-S1/Cal/CADI/Apoio/Livros/.C├бlculo - Vol.2 - James Stewart.pdf.5DAbsy"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync: [sender] change_dir "/mnt/Barracuda/Games/Ni no Kuni - WotWW - Remastered/SteamEmu" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]

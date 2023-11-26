@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 76
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 13
-time: 211.694000
+current: 14
+time: 157.616000
 random: 1
 repeat: 0
 single: 1
@@ -12,20 +12,46 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Rock/Within Temptation - Paradise (What About Us？) ft. Tarja [Dy6MpsDPKts].opus
-1:Japa/Untilted.mp3
-2:Japa/【Kano】Paranoia [aeICRSQQrGY].opus
-3:Japa/Fullmetal Alchemist - Brotherhood - OP Full 'Again' by YUI-45yi7bopMu0.m4a
-4:Japa/[Touhou Vocal] [RD-Sounds] Mad Party～A Magusnificent Plan  (spanish & english subtitles)-SM-489fbyl0.m4a
-5:Japa/Mob Psycho 100 OP _ Opening Full - '99' by MOB CHOIR (Engsub)-F5OJPUXJvHk.m4a
-6:Japa/One Punch Man Full Ending-eC-60BeGrLM.m4a
-7:Japa/The Promised Neverland - Ending Full『Zettai Zetsumei』by Cö shu Nie-sZ9qdr5WcPY.m4a
-8:Japa/「八月、某、月明かり」Hachigatsu, Bou, Tsukiakari by Yorushika w English CCs-J6eih31MaQ8.m4a
-9:Japa/KANA-BOON - Silhouette-dlFA0Zq1k2A.m4a
-10:Japa/＜ノラガミARAGOTO＞OPテーマ  THE ORAL CIGARETTES「狂乱 Hey Kids!!」MusicVideo-C-o8pTi6vd8.m4a
-11:Japa/真夜中のドア_Stay With Me-VEe_yIbW64w.m4a
-12:Pop/Clean Bandit - Symphony (feat. Zara Larsson) [Official Video] [aatr_2MstrI].m4a
-13:Pop/Sia - Move Your Body (Single Mix) [Lyric]-0GoGcVs6pbU.m4a
-14:Pop/Taylor Swift - Gorgeous (Lyric Video)-EUoe7cf0HYw.m4a
-15:Japa/[Official Video] JAM Project - THE HERO !! -  ＂One Punch Man＂ Opening Theme ワンパンマン [QImBolnTVH8].opus
+0:gd/566770_DuoCore---Dignity.mp3
+1:gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
+2:gd/Xtrullor - Dropping Fish (Low Pitch) [S7squyBML-0].opus
+3:gd/ParagonX9 - Infiltration [-jszHEXsW50].opus
+4:gd/Shiawase (VIP) [suisIF4hwyw].opus
+5:Rock/SiM – The Rumbling (OFFICIAL VIDEO) [OBqw818mQ1E].opus
+6:Rock/Within Temptation - Paradise (What About Us？) ft. Tarja [Dy6MpsDPKts].opus
+7:Rock/UNRAVEL (FULL version - Tokyo Ghoul OP) - English opening cover by Jonathan Young [aVpJGGQHSqc].opus
+8:Instrumental/M2U - Quo Vadis [7pY2y3ABo_Y].m4a
+9:gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
+10:gd/Macabre (Creo - Crystallize) Super Low Pitch [BR7UUmp7JQM].m4a
+11:gd/Limbo (VepiumOfficial & Nighthawk22 - Isolation (Official LIMBO Remix) Super Low Pitch [Pd6YM2ehpNs].opus
+12:gd/Creo - Outlaw (Low Pitch) [2jw06gS1kMY].opus
+13:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].m4a
+14:Electro/The Living Tombstone - Hit The Snooze [2_ZhBy9tnpE].opus
+15:Japa/Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai ED [Part Section]「Fukashigi no Carte」-K1PCl5D-IpU.m4a
+16:Japa/Fullmetal Alchemist - Brotherhood - OP Full 'Again' by YUI-45yi7bopMu0.m4a
+17:Japa/[Official Video] JAM Project - THE HERO !! -  ＂One Punch Man＂ Opening Theme ワンパンマン [QImBolnTVH8].opus
+18:Japa/The Promised Neverland - Ending Full『Zettai Zetsumei』by Cö shu Nie-sZ9qdr5WcPY.m4a
+19:Japa/Untilted.mp3
+20:Instrumental/Infected Mushroom - Milosh-_cJeo91-tno.m4a
+21:Instrumental/Infected Mushroom - Guitarmass-R_uS0aT0bG8.m4a
+22:Instrumental/Infected Mushroom - Becoming Insane-WxhTbxMSvT0.m4a
+23:Instrumental/Infected Mushroom - Flamingo-o_bpKA00W_g.m4a
+24:Osts/3.3_7-urthegod.mod [N29dP7M4R90].opus
+25:Japa/「八月、某、月明かり」Hachigatsu, Bou, Tsukiakari by Yorushika w English CCs-J6eih31MaQ8.m4a
+26:Japa/[Touhou Vocal] [RD-Sounds] Mad Party～A Magusnificent Plan  (spanish & english subtitles)-SM-489fbyl0.m4a
+27:Japa/【Kano】Paranoia [aeICRSQQrGY].opus
+28:Japa/Attack on Titan Season 4 - Opening Full『My War』by Shinsei Kamattechan-w2y715XAmso.m4a
+29:Osts/CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins [gzbLODUb1sA].opus
+30:Japa/One Punch Man Full Ending-eC-60BeGrLM.m4a
+31:gd/Dunderpatrullen - Disco Dancing Caravan Camping-GwfiCyJ9EyQ.m4a
+32:gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
+33:Pop/Eminem - Love The Way You Lie ft. Rihanna [uelHwf8o7_U].opus
+34:Pop/This Ain't No Hymn [TM07425xrpw].opus
+35:Pop/Naughty Boy - La la la ft. Sam Smith (Official Video)-3O1_3zBUKM8.m4a
+36:Pop/MGMT - Little Dark Age (Video) [rtL5oMyBHPs].opus
+37:Pop/Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video]-8UVNT4wvIGY.m4a
+38:Pop/Taylor Swift - Gorgeous (Lyric Video)-EUoe7cf0HYw.m4a
+39:Pop/Taylor Swift - Look What You Made Me Do-3tmd-ClpJxA.m4a
+40:Pop/Paparazzi - Lady Gaga (Lyrics) 🎵-2dFrTJPuers.m4a
+41:Pt/O Homem Do Leme-zbs06__3378.m4a
 playlist_end

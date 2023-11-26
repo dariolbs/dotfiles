@@ -157,7 +157,7 @@ cmd bakwallpaper ${{
         swww img ~/.config/wallpaper/wallpaper --transition-type wipe\
             --transition-step 90
     else
-	    xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+	    xwallpaper --focus  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
     fi
 }}
 

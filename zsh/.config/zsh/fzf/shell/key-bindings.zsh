@@ -94,9 +94,9 @@ fzf-bookmarks() {
 }
 
 zle     -N            fzf-bookmarks
-bindkey -M emacs '^K' fzf-bookmarks
-bindkey -M vicmd '^K' fzf-bookmarks
-bindkey -M viins '^K' fzf-bookmarks
+bindkey -M emacs '^T' fzf-bookmarks
+bindkey -M vicmd '^T' fzf-bookmarks
+bindkey -M viins '^T' fzf-bookmarks
 
 fzf-edit() {
 
@@ -149,9 +149,9 @@ fzf-cd-widget() {
 # bindkey -M viins '\ec' fzf-cd-widget
 
 zle     -N             fzf-cd-widget
-bindkey -M emacs '^T' fzf-cd-widget
-bindkey -M vicmd '^T' fzf-cd-widget
-bindkey -M viins '^T' fzf-cd-widget
+bindkey -M emacs '^P' fzf-cd-widget
+bindkey -M vicmd '^P' fzf-cd-widget
+bindkey -M viins '^P' fzf-cd-widget
 
 # CTRL-R - Paste the selected command from history into the command line
 fzf-history-widget() {

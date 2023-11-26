@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Script that makes it easier to consoom content
-source $HOME/.scripts/functions/colors
+source "$HOME/.scripts/src/libraries/bash/colors"
 source "$HOME/.dalis/config"
 PS3="Next content to consoom: "
 [ -d $consoom_folder ] || mkdir -p $consoom_folder

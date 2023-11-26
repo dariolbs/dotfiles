@@ -37,7 +37,7 @@ updateColorschemes(){
     [ -f "/tmp/Colorize/dunstrc" ] && backupAndReplace "/tmp/Colorize/dunstrc" "$HOME/.config/dunst/dunstrc"
 }
 
-python3 ~/.scripts/.used/colorize/colorize.py "$@" && updateColorschemes
+python3 ~/.scripts/src/colorize/colorize.py "$@" && updateColorschemes
     (updateColorschemes; rm -rf /tmp/Colorize;\
     pkill waybar && waybar &\
     pkill dunst && dunst &\
