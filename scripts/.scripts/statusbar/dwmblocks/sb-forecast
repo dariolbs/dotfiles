@@ -3,17 +3,6 @@
 # Displays today's precipication chance (☔), and daily low (🥶) and high (🌞).
 # Usually intended for the statusbar.
 
-case $BLOCK_BUTTON in
-	1) setsid -f "$TERMINAL" wttr ;;
-	2) getforecast && showweather ;;
-	3) notify-send "🌈 Weather module" "\- Left click for full forecast.
-- Middle click to update forecast.
-☔: Chance of rain/snow
-🥶: Daily low
-🌞: Daily high" ;;
-	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
-esac
-
 LOCATION="Assenta"
 
 weatherreport="${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport"

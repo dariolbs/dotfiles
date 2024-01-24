@@ -1,7 +1,14 @@
 #!/usr/bin/sh
 
-editor="tofi --border-color=#005577 --selection-color=#47b413"
+options=(
+'--border-color=#005577'
+'--selection-color=#47b413'
+'--prompt-text='
+)
 
-file="$HOME/.scripts/sxhkd/emoji_picker/emojis"
+editor="tofi ${options[@]}"
+#editor="tofi --border-color=#005577 --selection-color=#47b413"
+
+file="$HOME/.config/sway/scripts/emoji_picker/emojis"
 emoji="$(cat $file | $editor | cut -d " " -f 1)"
 printf "${emoji%%"\n"}" | wl-copy

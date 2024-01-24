@@ -1,4 +1,5 @@
 #!/usr/bin/sh
-file="$HOME/.scripts/sxhkd/emoji_picker/emojis"
-emoji="$(cat $file | wofi -I -i -n -d -p "Select emoji:"| cut -d " " -f 1)"
+tofi="$HOME/.config/hypr/scripts/tofi/tofi.sh"
+file="$HOME/.config/hypr/scripts/emoji_picker/emojis"
+emoji="$($tofi --prompt-text \"\" < $file | cut -d " " -f 1)"
 printf "${emoji%%"\n"}" | wl-copy

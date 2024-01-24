@@ -22,7 +22,7 @@
 # starship: https://starship.rs/
 
 # P10k instant prompt
-# source "$HOME/.config/zsh/powerlevel10k/config/personal/instant_prompt.zsh"
+source "$HOME/.config/zsh/powerlevel10k/config/personal/instant_prompt.zsh"
 
 # Load environment variables
 source "$HOME/.config/zsh/init/environment.zsh"

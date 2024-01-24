@@ -7,5 +7,6 @@ if [[ "$(tty)" == "/dev/tty1" ]]; then
 
         sleep 1
 
-        exec "$HOME/.config/sway/init/init.sh"
+        # exec "$HOME/.config/sway/init/init.sh"
+        eval "Hyprland"
 fi

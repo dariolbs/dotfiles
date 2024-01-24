@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+export SWWW_TRANSITION_FPS=30
+if [ "$1" != "back" ]; then
+    waldir="$HOME/Media/Wallpapers"
+    wallpaper="$(command ls $waldir/* | grep "\." | sort -R | sed 1q)"
+    echo $waldir
+    echo $wallpaper
+    cp ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
+    cp $waldir/*/$wallpaper ~/.config/wallpaper/wallpaper
+    swww img --transition-type grow --transition-pos 0.860,0.030 ~/.config/wallpaper/wallpaper
+else
+    cp ~/.config/wallpaper/wallpaper.bak ~/.config/wallpaper/wallpaper
+    swww img --transition-type outer --transition-pos 0.860,0.030 ~/.config/wallpaper/wallpaper
+fi

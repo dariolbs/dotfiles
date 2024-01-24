@@ -1,0 +1,34 @@
+#!/usr/bin/bash
+# Moves music to the geometry dash Resources folder
+
+need_help(){
+cat << EOF
+togd: Copy files to the gd resources folder!
+
+Usage:
+First argument: Song file
+Second argument: Song id (optional)
+EOF
+}
+
+if [ -z "$@" ]; then
+    need_help
+    exit 1
+fi
+
+song="$1"
+id="$2"
+
+gd_resc="$HOME/.local/share/Steam/steamapps/common/Geometry Dash/Resources"
+
+if [ -z "$id" ]; then
+
+    [ -f "$gd_resc/$song" ] && rm "$gd_resc/$song"
+    mv "$song" "$gd_resc"
+
+else
+
+    [ -f "$gd_resc/$id.mp4" ] && rm "$gd_resc/$id.mp4"
+    mv "$song" "$gd_resc/$id.mp4"
+
+fi

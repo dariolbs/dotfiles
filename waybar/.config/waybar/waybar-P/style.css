@@ -14,7 +14,7 @@
 
 window#waybar {
     /*
-    background: rgba(29, 32, 33, .10);
+    background: rgba(29, 32, 33, .90);
     */
     background: @low;
 }
@@ -31,15 +31,15 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 7px;
+    border-radius: 10px;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 10px;
-    padding-right: 13px;
+    padding-right: 10px;
     color: @high;
+    padding-left: 4px;
+    padding-right: 4px;
     /*
-    padding-left: 2px;
-    padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
     */
@@ -49,13 +49,11 @@ tooltip {
     background: @high;
     color: @medium;
     padding-left: 10px;
-    padding-right: 13px;
-    /*
+    padding-right: 10px;
     margin-right: 2px;
     margin-left: 2px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
-    */
 }
 
 #workspaces button.urgent {
@@ -82,15 +80,18 @@ tooltip {
 #cpu,
 #memory,
 #custom-power,
+#custom-distro,
 #custom-clock,
 #custom-forecast,
 #custom-wally,
+#custom-disk_usage,
 #custom-alarm,
 #workspaces,
 #window,
 #custom-updates,
 #network,
 #bluetooth,
+#clock,
 #pulseaudio,
 #backlight,
 #battery,
@@ -106,28 +107,25 @@ tooltip {
 }
 
 
+#custom-updates{
+    padding-right: 12px;
+}
 /* First left block */
-
-#custom-clock {
-    border-radius: 10px;
+#custom-distro {
+    border-radius: 10px 0px 0px 10px;
     padding-left: 12px;
-    padding-right: 17px;
+    padding-right: 12px;
     margin-left: 25px;
 }
 
-/* All blocks on the right */
-
-#custom-updates,
-#custom-forecast,
+/* Last left block */
 #custom-alarm {
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     padding-left: 12px;
     padding-right: 17px;
-    margin-left: 6px;
 }
 
 /* Workspaces */
-
 #workspaces {
     border-radius: 10px 10px 10px 10px;
     padding-left: 12px;
@@ -140,7 +138,6 @@ tooltip {
 }
 
 /* First right block */
-
 #network {
     border-radius: 10px 10px 10px 10px;
     padding-left: 12px;
@@ -149,13 +146,11 @@ tooltip {
 }
 
 /* resource monitor block */
-
 #cpu {
     border-radius: 10px 0px 0px 10px;
     padding-left: 12px;
     padding-right: 4px;
 }
-
 #memory {
     border-radius: 0px 10px 10px 0px;
     border-left-width: 0px;
@@ -164,12 +159,10 @@ tooltip {
     margin-right: 6px;
 }
 
-/* All blocks on the left */
-
+/* All blocks on the right */
 #tray,
-#pulseaudio,
 #backlight,
-#custom-wally,
+#custom-disk_usage,
 #battery,
 #pulseaudio {
     border-radius: 10px 10px 10px 10px;
@@ -178,20 +171,32 @@ tooltip {
     margin-right: 6px;
 }
 
+#custom-disk_usage {
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 8px;
+    padding-right: 5px;
+    margin-right: 6px;
+}
+
 #tray{
     padding-right: 8px;
 }
 
 /* Colors Left */
-#custom-clock { color: @high;}
-#custom-alarm { color: #FDE2E2;}
-#custom-updates { color: #EEC4C4;}
-#custom-forecast { color: #BCCEF8;}
+
+#custom-clock,
+#clock,
+#custom-alarm,
+#custom-updates,
+#custom-forecast {
+    color: @high
+}
+
 /* Colors Right */
 #cpu { color: #FD8A8A;}
 #memory { color: #FD8A8A;}
 #pulseaudio { color: #A8D1D1 }
 #backlight { color: #ffffff }
 #battery { color: #fffbc1 }
-#custom-wally { color: #CEEDC7 }
+#custom-disk_usage { color: #CEEDC7 }
 #network { color: #d3869b; }

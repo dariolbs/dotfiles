@@ -6,9 +6,10 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "modules-left": ["custom/clock", "custom/alarm" ],
+    // "modules-left": [ "custom/clock", "custom/alarm", "custom/updates" ],
+    "modules-left": [ "custom/distro", "clock", "custom/alarm" ],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "custom/wally", "cpu", "memory", "network"],
+    "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "custom/disk_usage", "cpu", "memory", "network"],
 
 
 // center modules //
@@ -18,7 +19,7 @@
         "all-outputs": false,
         "sort-by-number": true,
         "on-click": "activate",
-        "format": "{name} {icon}",
+        "format": "{name}",
         "format-icons": {
              "1":   "",
              "2":   "",
@@ -67,16 +68,28 @@
     "custom/distro": {
         "exec": "~/.config/waybar/scripts/release",
         "show-empty": false,
-        "format": "{}",
-        "on-click": "pkill wofi || wofi -n -W 30% -H 50% --show drun -I -i",
-        "on-click-right": "bash ~/.config/waybar/scripts/system.sh"
+        "format": "{}"
+    },
+
+    "custom/disk_usage": {
+        "interval": 3600,       // Once every hour
+        "exec": "df | awk '/\\/$/{printf \"󰋊 \" $5} /home$/{printf \" 󰋜 \" $5}'",
+        "show-empty": false,
+        "format": "{} "
     },
 
     "custom/clock": {
         "interval": 1,
-        "exec": "date \"+%a %b %d  %T\"",
+        "exec": "date \"+%a %b %d 󰥔 %T\"",
         "show-empty": false,
-        "format": " {}"
+        "format": " {}",
+        "on-click": "foot --config .config/hypr/configs/foot/foot.ini -e calcurse"
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{: %Y-%m-%d}",
+        "format": "{:󰥔 %H:%M}"
     },
 
     "custom/forecast": {
@@ -95,28 +108,27 @@
     },
 
     "custom/updates": {
-        "format": "󰮯 {}",
-        // "exec": "~/.scripts/statusbar/dwmblocks/sb-packages",
-        "exec": "pacman -Qu | grep -Fcv \"[ignored]\"",
-        "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
+        "format": "󰏖 {}",
+        "exec": "pacman -Qu | wc -l",
+        "show-empty": false,
         "interval": 3600, // once every hour
         "tooltip": true
     },
 
     "hyprland/window": {
-        "format": "{}",
+        "format": "󰣇 {}",
         "separate-outputs": false,
         "on-click": "hyprctl dispatch killactive",
         "show-empty": false,
         "rewrite": {
-            "foot": "foot ",
-            "(.*) — Mozilla Firefox": "$1 󰈹",
-            "(.*)Mozilla Firefox": "Firefox 󰈹",
-            "(.*) - Visual Studio Code": "$1 󰨞",
-            "(.*)Visual Studio Code": "Code 󰨞",
-            "(.*) - Discord": "Discord 󰙯",
-            "(.*)Steam": "Steam 󰓓",
-            "(.*)Lutris": "Lutris 󰊖",
+            "foot": " foot",
+            "(.*) — Mozilla Firefox": "󰈹 $1",
+            "(.*)Mozilla Firefox": "󰈹 Firefox",
+            "(.*) - Visual Studio Code": "󰨞 $1",
+            "(.*)Visual Studio Code": "󰨞 Code",
+            "(.*) - Discord": "󰙯 Discord ",
+            "(.*)Steam": "󰓓 Steam",
+            "(.*)Lutris": "󰊖 Lutris",
             "": "Empty"
           }
     },
@@ -185,7 +197,7 @@
     },
 
     "tray": {
-        "icon-size": 15,
+        "icon-size": 17,
         "spacing": 5
     },
 
@@ -217,6 +229,6 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    },
+    }
 
 }

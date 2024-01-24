@@ -1,7 +1,9 @@
 #!/usr/bin/env /bin/sh
 # Check files
+tofi="$HOME/.config/hypr/scripts/tofi/tofi.sh"
+
 
 folder="$HOME/Documents/Pessoal"
 [ -d $folder ] || mkdir $folder
 [ -f $folder/bookmarks ] || touch $folder/bookmarks
-wl-copy "$(cat $folder/bookmarks | grep -v "^#" | grep -v "^$" | wofi -i -d -l 20 -p "Select Bookmark:" | cut -f 1 -d " ")"
+wl-copy "$(cat $folder/bookmarks | grep -v "^#" | grep -v "^$" | $tofi --prompt-text \"\" | cut -f 1 -d " ")"

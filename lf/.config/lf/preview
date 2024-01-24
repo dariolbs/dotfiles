@@ -8,7 +8,7 @@ image() {
 batorcat() {
 	file="$1"
 	shift
-	if command -v bat > /dev/null 2>&1
+	if command -v bat > /dev/null 2>&1 && [ "$XDG_SESSION_TYPE" != "wayland" ]
 	then
 		bat --color=always --style=plain --pager=never "$file" "$@"
 	else
@@ -140,7 +140,5 @@ else
     esac
 
 fi
-
 # return 127 # nonzero retcode required for lf previews to reload
 return 127
-

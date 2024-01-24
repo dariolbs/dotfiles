@@ -15,6 +15,9 @@ alias metaclean="exiftool -all= -overwrite_original $@"
 alias e='nvim $(fzf)'
 alias open='xdg-open'
 alias diff='diff -u'
+alias tb="nc termbin.com 9999"
+alias radio="~/.venv/bin/radio"
+
 
 alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 

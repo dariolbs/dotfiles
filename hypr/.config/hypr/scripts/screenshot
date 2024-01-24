@@ -2,5 +2,8 @@
 
 [ -d ~/Pictures ] && mkdir -p ~/Pictures
 
-slurp -o | grim -g - ~/Pictures/$(date +%F_%T).png
-wl-copy < $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)
+picture="$HOME/Pictures/$(date +%F_%T).png"
+
+slurp -o | grim -g - "$picture" &&
+wl-copy < $picture &&
+notify-send -i $picture "Slurp 📷" "Screenshot taken!"
