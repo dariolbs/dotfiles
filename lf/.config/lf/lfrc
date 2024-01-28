@@ -134,20 +134,24 @@ cmd lf ${{
 	alacritty -e lf $PWD &
 }}
 
+# cmd chwallpaper ${{
+# 	[ -d $HOME/.config/wallpaper ] || mkdir -p $HOME/.config/wallpaper
+# 	cp -r ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
+# 	cp -r $f ~/.config/wallpaper/wallpaper
+#     # Remove old muli-monitor wallpaper setup
+#     #ls $HOME/.config/wallpaper/*-* || rm $HOME/.config/wallpaper/*-*
+#     if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+#         # export SWWW_TRANSITION_FPS=60
+#         # swww img ~/.config/wallpaper/wallpaper --transition-type wipe\
+#         #     --transition-step 90
+#         echo tua prima de 4
+#     else
+# 	    xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
+#     fi
+# }}
+
 cmd chwallpaper ${{
-	[ -d $HOME/.config/wallpaper ] || mkdir -p $HOME/.config/wallpaper
-	cp -r ~/.config/wallpaper/wallpaper ~/.config/wallpaper/wallpaper.bak
-	cp -r $f ~/.config/wallpaper/wallpaper
-    # Remove old muli-monitor wallpaper setup
-    #ls $HOME/.config/wallpaper/*-* || rm $HOME/.config/wallpaper/*-*
-    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-        # export SWWW_TRANSITION_FPS=60
-        # swww img ~/.config/wallpaper/wallpaper --transition-type wipe\
-        #     --transition-step 90
-        echo tua prima de 4
-    else
-	    xwallpaper --zoom  ~/.config/wallpaper/wallpaper && notify-send " Wallpaper updated!"
-    fi
+    ~/.scripts/bin/apply_wallpaper $f
 }}
 
 cmd bakwallpaper ${{
@@ -244,9 +248,10 @@ cmd nvimfuzzy ${{
 }}
 
 cmd open ${{
+
     case $(file --mime-type "$f" -bL) in
          text/* | inode/x-empty | application/json) $EDITOR "$f";;
-         image/gif | inode/x-empty | application/json) nsxiv -a "$f" &;;
+         image/gif | inode/x-empty | application/json) imv "$f" &;;
         #video/*|image/*/application/pdf) xdg-open "$f" & ;;
         *) xdg-open "$f" &> /dev/null & disown;;
     esac

@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-source "$HOME/.x11.conf"
+source "$HOME/.config/i3/configs/xorg/xconfig"
 
-source "$HOME/.scripts/x11/apply_bk_options.sh"
-source "$HOME/.scripts/x11/apply_tablet_config.sh"
-source "$HOME/.scripts/x11/apply_monitor_config.sh"
-
-xwallpaper --focus "$wallpaper"
+source "$HOME/.config/i3/scripts/apply_bk_options.sh"
+source "$HOME/.config/i3/scripts/apply_tablet_config.sh"
+source "$HOME/.config/i3/scripts/apply_monitor_config.sh"

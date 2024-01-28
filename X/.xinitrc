@@ -10,7 +10,7 @@ source $HOME/.profile
 # dunst -config ~/.config/dunst/dunstrc.i3 &
 # mpd &
 
-exec i3
+exec ~/.config/i3/init.sh
 
 # Old Stuff
 # redshift &

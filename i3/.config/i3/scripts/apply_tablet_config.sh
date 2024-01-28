@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-source "$HOME/.x11.conf"
+source "$HOME/.config/i3/configs/xorg/xconfig"
 
 $has_tablet || exit 0
 

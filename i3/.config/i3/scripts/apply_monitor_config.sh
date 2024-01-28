@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-config="$HOME/.x11.conf"
+config="$HOME/.config/i3/configs/xorg/xconfig"
 
 source "$config"
 

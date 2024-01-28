@@ -1,9 +1,9 @@
-sw_volume: 98
+sw_volume: 90
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 51
-time: 86.742000
+current: 1
+time: 127.132000
 random: 1
 repeat: 0
 single: 1
@@ -12,109 +12,6 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Pt/Nena - os croquetes acabam [fGIMxEceRLU].opus
-1:Pt/Jão - Idiota (Lyric Video)-PPGjmXlWyc4.m4a
-2:Pop/Love The Way You Lie (Part II) (Pt. 2) [1CozRvwZEAs].opus
-3:Pop/This Ain't No Hymn [TM07425xrpw].opus
-4:Pop/Olivia Rodrigo - vampire (Official Video) [RlPNh_PBZb4].opus
-5:Pop/Egzod & Maestro Chives - Royalty (ft. Neoni) [Official Lyric Video] [lW9ep22YmlM].opus
-6:Pop/Taylor Swift - Look What You Made Me Do-3tmd-ClpJxA.m4a
-7:Pop/LSD - Thunderclouds (Official Video) ft. Labrinth, Sia, Diplo-mILth-K6KvM.m4a
-8:Pop/Calvin Harris - Outside (Official Video) ft. Ellie Goulding [J9NQFACZYEU].opus
-9:gd/566770_DuoCore---Dignity.mp3
-10:gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
-11:gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
-12:gd/Creo - Aurora-M170iMt3C8A.m4a
-13:gd/Creo - Carnivores-qZSSJk6OHdA.m4a
-14:gd/Creo - In Circles-E8pMGq5VL3Q.m4a
-15:Pt/Bárbara Tinoco - Sei Lá-vHY8xNRvfT0.m4a
-16:Pt/Menina Estás à Janela-Wt144OKuJiY.m4a
-17:Pt/Eu não sou poeta-UHgUBOvu8Z8.m4a
-18:Pt/Tiago Bettencourt - Canção De Engate (Acústico)-8daReuj4bU0.m4a
-19:Pt/Playback.m4a
-20:Pt/Pronúncia do norte-fyRwEqV7xcY.m4a
-21:Pt/O Homem Do Leme-zbs06__3378.m4a
-22:Pt/A Minha Casinha-pQhYQLI-2Tg.m4a
-23:Pt/Miguel Araújo - Os Maridos Das Outras-D-q3jaELQeo.m4a
-24:Pt/Os Azeitonas - Quem és tu miúda-aP6orw0M-bY.m4a
-25:Trance/Hans Zimmer - Time ( Cyberdesign Remix )-TsTFVdcpLrE.m4a
-26:Trance/Robert Miles - Children [Dream Version]-CC5ca6Hsb2Q.m4a
-27:Trance/The Pretender-jTbCHkx5J0A.m4a
-28:Trance/Fable (Dream Version)-OCAuoCSWIOQ.m4a
-29:Trance/Saeed-Uzyii85rwqo.m4a
-30:Trance/Heavyweight-9Axg_e8astI.m4a
-31:Pop/Sia - Move Your Body (Single Mix) [Lyric]-0GoGcVs6pbU.m4a
-32:Pop/Clean Bandit - Symphony (feat. Zara Larsson) [Official Video] [aatr_2MstrI].m4a
-33:Pop/Avicii - Waiting For Love-cHHLHGNpCSA.m4a
-34:Pop/P!nk - Just Give Me A Reason ft. Nate Ruess-OpQFFLBMEPI.m4a
-35:Pop/Pitbull - Timber (Official Video) ft. Ke$ha-hHUbLv4ThOo.m4a
-36:Pop/Ellie Goulding - Love Me Like You Do (Official Video) [AJtDXIazrMo].opus
-37:Pop/Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie) [Official Video]-papuvlVeZg8.m4a
-38:Pop/David Guetta - She Wolf (Falling To Pieces) ft. Sia (Official Video)-PVzljDmoPVs.m4a
-39:Pop/In The End [Official HD Music Video] - Linkin Park-eVTXPUF4Oz4.m4a
-40:Pop/Lady Antebellum - Need You Now [eM213aMKTHg].opus
-41:Rock/SiM – The Rumbling (OFFICIAL VIDEO) [OBqw818mQ1E].opus
-42:Pop/Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video]-8UVNT4wvIGY.m4a
-43:Osts/CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins [gzbLODUb1sA].opus
-44:Osts/Dai Gyakuten Saiban 2 OST ｜ 34 Great Pursuit ~ The Resolve of Naruhodou Ryuunosuke [bAtJnMEUkQs].opus
-45:Osts/[Persona 4 OST] 08 - Your Affection-d-x3ojOGWa8.m4a
-46:Osts/Chris Christodoulou - The Rain Formerly Known as Purple  ｜ Risk of Rain 2 (2020) [EGXPAoyP_cg].opus
-47:Osts/Mr Robot Main Theme Fixed and Extended [XMEXPkPmmq0].opus
-48:Osts/3.3_7-urthegod.mod [N29dP7M4R90].opus
-49:Osts/Interstellar Main Theme - Extra Extended - Soundtrack by  Hans Zimmer-UDVtMYqUAyw.m4a
-50:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
-51:Osts/CODEX Installer Music #7 (2018-10) [GaZcC68VPtY].opus
-52:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
-53:Osts/Undertale OST： 068 - Death by Glamour [2TgO-tN5wAM].m4a
-54:Osts/Undertale OST： 071 - Undertale [EBhFHJMVfiI].m4a
-55:Osts/Undertale Ost： 087 - Hopes and Dreams [tz82xbLvK_k].m4a
-56:Osts/Undertale Ost： 098 - Battle Against a True Hero [aWBtpBwzzdM].m4a
-57:gd/ParagonX9 - Infiltration [-jszHEXsW50].opus
-58:gd/Rebirth blaster x sonic blaster [BL_EdnNGuQA].opus
-59:gd/Xtrullor - Dropping Fish (Low Pitch) [S7squyBML-0].opus
-60:gd/Macabre (Creo - Crystallize) Super Low Pitch [BR7UUmp7JQM].m4a
-61:gd/gravity.mp3
-62:gd/Frozen Cave (cYsmix - Fright March) High Pitch-qQNdP98Hl1M.m4a
-63:gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
-64:gd/663334_Yellow-and-Purple.mp3
-65:gd/Ethereal Artifice (NemesisTheory - Rose At Twilight) Low Pitch-WZVYc1ujiHk.m4a
-66:gd/Creo - We Can Dream-BhMZzOSrA4I.m4a
-67:gd/Creo - Wavelight-Kc4lIlboH2M.m4a
-68:gd/Creo - Outlaw (Low Pitch) [2jw06gS1kMY].opus
-69:gd/Warak - Reanimate-zKCe1cA9Eb8.m4a
-70:gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
-71:gd/Derpcat - Sonorous-jDVBMVLlAQI.m4a
-72:gd/Protoflicker (Silentroom - Protoflicker) Low Pitch-x_C9JkGlYvU.m4a
-73:gd/Shukketsu (ぬゆり - ダラクダ) High Pitch-NdT_8eIOj38.m4a
-74:gd/Xtrullor - Screamroom-ox9X6SjHob8.m4a
-75:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].m4a
-76:gd/Dimrain47 - At the Speed of Light-1Zrq8FiKS6A.m4a
-77:Japa/Untilted.mp3
-78:Japa/【Kano】Paranoia [aeICRSQQrGY].opus
-79:Japa/「八月、某、月明かり」Hachigatsu, Bou, Tsukiakari by Yorushika w English CCs-J6eih31MaQ8.m4a
-80:Japa/The Promised Neverland - Ending Full『Zettai Zetsumei』by Cö shu Nie-sZ9qdr5WcPY.m4a
-81:Japa/[Touhou Vocal] [RD-Sounds] Mad Party～A Magusnificent Plan  (spanish & english subtitles)-SM-489fbyl0.m4a
-82:Japa/[Official Video] JAM Project - THE HERO !! -  ＂One Punch Man＂ Opening Theme ワンパンマン [QImBolnTVH8].opus
-83:Japa/Attack on Titan Season 4 - Opening Full『My War』by Shinsei Kamattechan-w2y715XAmso.m4a
-84:Japa/＜ノラガミARAGOTO＞OPテーマ  THE ORAL CIGARETTES「狂乱 Hey Kids!!」MusicVideo-C-o8pTi6vd8.m4a
-85:Japa/Fullmetal Alchemist - Brotherhood - OP Full 'Again' by YUI-45yi7bopMu0.m4a
-86:Japa/Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai ED [Part Section]「Fukashigi no Carte」-K1PCl5D-IpU.m4a
-87:Japa/KANA-BOON - Silhouette-dlFA0Zq1k2A.m4a
-88:Electro/The Living Tombstone - Hit The Snooze [2_ZhBy9tnpE].opus
-89:Electro/M2U - Temptation [dlome5tTfcU].opus
-90:Electro/M2U - Brown Wind [nZzWwzIfEDs].opus
-91:Electro/M2U - Gypsytronic (Long Ver) [Zr3jMtBCCgg].opus
-92:Instrumental/Infected Mushroom - Flamingo-o_bpKA00W_g.m4a
-93:Instrumental/Infected Mushroom - Guitarmass-R_uS0aT0bG8.m4a
-94:Instrumental/Infected Mushroom - Milosh-_cJeo91-tno.m4a
-95:Instrumental/M2U - Quo Vadis [7pY2y3ABo_Y].m4a
-96:Osts/Undertale Ost： 077 - ASGORE [hMa4hZQbrms].m4a
-97:Pop/Selena Gomez, Marshmello - Wolves-cH4E_t3m3xM.m4a
-98:Pop/Green Day - 21 Guns [Official Music Video]-r00ikilDxW4.m4a
-99:Pop/Eminem - Love The Way You Lie ft. Rihanna [uelHwf8o7_U].opus
-100:Classica/Beethoven - Moonlight Sonata (FULL) [4Tr0otuiQuU].opus
-101:gd/Idyllic [1074080].mp3
-102:gd/The Hallucination.m4a
-103:gd/Terraria Calamity Mod Music - 'Guardian of The Former Seas' - Theme of Desert Scourge-hPEQLU-aD3I.m4a
-104:gd/Sonic Wave (F-777 - Sonic Blaster) Super Low Pitch-XVcI-XIA-NA.m4a
+0:Instrumental/Infected Mushroom & Bliss - Ani Mevushal [Monstercat Release] [AEm3bIBN8aQ].opus
+1:Instrumental/Infected Mushroom - Spitfire [Monstercat Release] [bnsUkE8i0tU].opus
 playlist_end
