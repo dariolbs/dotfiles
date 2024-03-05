@@ -12,9 +12,9 @@ symlink_locations=(
 
 wallpaper_scripts=(
     ["i3"]="$HOME/.config/i3/configs/wallpaper/init_wallpaper.sh"
-    ["dwm"]="$HOME/.config/dwm/configs/wallpaper/wallpaper"
+    ["dwm"]="$HOME/.config/dwm/configs/wallpaper/init_wallpaper.sh"
     ["Hyprland"]="$HOME/.config/hypr/configs/wallpaper/init_wallpaper.sh"
-    ["sway"]="$HOME/.config/sway/configs/wallpaper/wallpaper"
+    ["sway"]="$HOME/.config/sway/configs/wallpaper/init_wallpaper.sh"
 )
 
 link="${symlink_locations["$DESKTOP_TYPE"]}"

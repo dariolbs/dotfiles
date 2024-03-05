@@ -1,39 +1,134 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 add_newline = false
 
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$cmd_duration\
+$line_break\
+$battery\
+$time\
+$status\
+$container\
+$shell\
+$character
+"""
+
+right_format = """
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$jobs\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$os\
+"""
+
 [username]
-style_user = "green bold"
-style_root = "red bold"
-format = "[$user]($style) "
+format = '[$user](bold purple) '
 disabled = false
 show_always = true
 
+[character]
+success_symbol = '[](bold green) '
+error_symbol = '[](bold red) '
+vimcmd_symbol = '[󰁍](bold green) '
+
 [hostname]
-ssh_only = true
+ssh_only = false
+format = 'at [$hostname](bold red) '
 ssh_symbol = " "
-format = 'in [$hostname](bold purple) '
-trim_at = "."
 disabled = false
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[󰁕](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[󰁕](bold red)"
-vicmd_symbol = "[󰁎](green)"
-
-# configure directory
 [directory]
+# truncate_to_repo = true # truncates directory to root folder if in github repo
 read_only = "  "
-truncation_length = 10
-truncate_to_repo = true # truncates directory to root folder if in github repo
+truncation_symbol = '…/'
+truncation_length = 3
 format = 'in [ $path](bold blue) '
 style = "bold italic blue"
 
 [cmd_duration]
-min_time = 4
+min_time = 500
 show_milliseconds = false
 disabled = false
 style = "bold italic red"
 
+[git_branch]
+truncation_length = 4
+truncation_symbol = ''
 
 [battery]
 full_symbol = '󰂏 '
@@ -48,19 +143,16 @@ style = 'bold red'
 threshold = 40
 style = 'bold yellow'
 
-[docker_context]
-symbol = " "
-format = "via [$symbol$context]($style) "
-style = "blue bold"
-only_with_files = true
-detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
-detect_folders = []
-disabled = false
+[jobs]
+symbol = ' '
+format = "[$symbol $number](bold blue)"
+number_threshold = 1
+symbol_threshold = 1
 
-[nodejs]
-format = "via [ Node.js](bold green) "
-detect_files = ["package.json", ".node-version"]
-detect_folders = ["node_modules"]
+[os]
+format = "on [($name) $symbol]($style)"
+style = "bold blue"
+disabled = true
 
 [aws]
 symbol = "  "
@@ -74,14 +166,26 @@ symbol = " "
 [conda]
 symbol = " "
 
+[crystal]
+symbol = " "
+
 [dart]
 symbol = " "
 
+[docker_context]
+symbol = " "
+
 [elixir]
-symbol = " "
+symbol = " "
 
 [elm]
 symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
 
 [golang]
 symbol = " "
@@ -90,10 +194,13 @@ symbol = " "
 symbol = " "
 
 [haskell]
-symbol = "󰲒 "
+symbol = " "
 
 [haxe]
-symbol = "⌘ "
+symbol = " "
+
+[hg_branch]
+symbol = " "
 
 [java]
 symbol = " "
@@ -101,25 +208,29 @@ symbol = " "
 [julia]
 symbol = " "
 
+[kotlin]
+symbol = " "
+
 [lua]
 symbol = " "
 
 [memory_usage]
-symbol = "󰧑 "
+symbol = "󰍛 "
 
 [meson]
-symbol = "喝 "
+symbol = "󰔷 "
 
 [nim]
-symbol = " "
+symbol = "󰆥 "
 
 [nix_shell]
 symbol = " "
 
-[os]
-format = "on [($name $symbol)]($style)"
-style = "bold blue"
-disabled = true
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
 
 [os.symbols]
 Alpaquita = " "
@@ -135,10 +246,10 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "﯑ "
+Garuda = "󰛓 "
 Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
 Linux = " "
 Mabox = " "
 Macos = " "
@@ -148,43 +259,50 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-OpenBSD = " "
+OpenBSD = "󰈺 "
 openSUSE = " "
-OracleLinux = " "
+OracleLinux = "󰌷 "
 Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
+Redox = "󰀘 "
+Solus = "󰠳 "
 SUSE = " "
 Ubuntu = " "
-Unknown = "? "
-Windows = " "
+Unknown = " "
+Windows = "󰍲 "
 
 [package]
-symbol = " "
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
 
 [pijul_channel]
-symbol = "🪺 "
+symbol = " "
 
 [python]
 symbol = " "
 
 [rlang]
-symbol = "ﳒ "
+symbol = "󰟔 "
 
 [ruby]
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = " "
 
 [scala]
 symbol = " "
 
-[spack]
-symbol = "🅢 "
+[swift]
+symbol = " "
 
-# ~/.config/starship.toml
-# ~/.config/starship.toml
+[zig]
+symbol = " "
+

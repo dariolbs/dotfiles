@@ -27,6 +27,7 @@ exec --no-startup-id dex --autostart --environment i3
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id nm-applet
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -36,9 +37,8 @@ exec --no-startup-id picom
 exec --no-startup-id mpd
 
 # Configs
-exec --no-startup-id xrdb -load ~/.Xresources
-exec --no-startup-id ~/.config/i3/scripts/apply_all.sh
-exec --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
+exec --no-startup-id xrdb -load ~/.config/i3/configs/xorg/Xresources
+exec --no-startup-id sxhkd -c ~/.config/i3/configs/sxhkd/sxhkdrc
 exec --no-startup-id dunst -config ~/.config/i3/configs/dunst/dunstrc
 
 # Start wallpaper
@@ -51,9 +51,11 @@ exec --no-startup-id ~/.config/i3/configs/redshift/init.sh
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-bindsym XF86AudioRaiseVolume exec ~/.config/hypr/scripts/volume +5 -n
-bindsym XF86AudioLowervolume exec ~/.config/hypr/scripts/volume -5 -n
-
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume +5 -n
+bindsym XF86AudioLowervolume exec --no-startup-id ~/.config/i3/scripts/volume -5 -n
+# Alternative voluma management
+bindsym $mod+Mod1+Up exec --no-startup-id ~/.config/i3/scripts/volume +5 -n
+bindsym $mod+Mod1+Down exec --no-startup-id ~/.config/i3/scripts/volume -5 -n
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -86,17 +88,17 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -243,7 +245,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command i3status
+    status_command i3status -c ~/.config/i3/configs/i3status/i3status.conf
 
     tray_output DP-0
 

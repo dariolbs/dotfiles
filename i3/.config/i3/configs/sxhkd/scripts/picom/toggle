@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ "$(pidof picom)" = "" ]; then
+	picom &
+	notify-send -u low " Picom is active!"
+else
+	killall picom
+	notify-send -u normal "Picom is no more"
+fi

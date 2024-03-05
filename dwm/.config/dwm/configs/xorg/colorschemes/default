@@ -1,0 +1,49 @@
+! Colors
+! Terminal colors
+! *background: #222222
+*background: #000000
+*foreground: #ffffff
+*color0: #242424
+*color1: #f62b5a
+*color2: #47b413
+*color3: #e3c401
+*color4: #24acd4
+*color5: #f2affd
+*color6: #13c299
+*color7: #e6e6e6
+*color8: #616161
+*color9: #ff4d51
+*color10: #35d450
+*color11: #e9e836
+*color12: #5dc5f8
+*color13: #feabf2
+*color14: #24dfc4
+*color15: #ffffff
+
+!! St Appearance
+st.borderpx: 10
+st.alpha: 0.85
+st.cursorColor: #ffffff
+
+! Dwm
+dwm.normbgcolor: #222222
+dwm.normbordercolor: #444444
+dwm.normfgcolor: #bbbbbb
+! dwm.selbgcolor: #005577
+dwm.selbgcolor: #444444
+dwm.selbordercolor: #7cfc00
+dwm.selfgcolor: #eeeeee
+dwm.borderpx: 2
+dwm.snap: 32
+dwm.showbar: 1
+dwm.topbar: 0
+dwm.nmaster: 1
+dwm.resizehints: 0
+dwm.mfact: 0.55
+
+!dmenu
+dmenu.background: #222222
+dmenu.foreground: #bbbbbb
+dmenu.selbackground: #444444
+dmenu.selforeground: #eeeeee
+dmenu.bordercolor: #7cfc00

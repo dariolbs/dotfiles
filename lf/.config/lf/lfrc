@@ -311,7 +311,7 @@ map gr cd /mnt/Robalo
 map gd cd ~/Documents
 map gD cd ~/.dotfiles
 map gH cd ~/.config/hypr/
-map gS cd ~/.config/suckless
+map gS cd ~/.src
 map gs cd ~/.scripts
 map gm cd ~/Media
 map gw cd ~/Media/Wallpapers

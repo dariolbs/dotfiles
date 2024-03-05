@@ -1,1 +1,18 @@
-/home/dario/.config/i3/configs/xorg/xconfig.desktop
+#!/usr/bin/bash
+# Configure all X11 options here
+
+# Xkbmap options
+keymap_lang="pt"
+keymap_options="caps:escape"
+
+# Monitor config
+primary="HDMI-0"
+monitors=( "HDMI-0"  "DP-0"  "HDMI-1" )
+resolutions=( "1920x1080"  "1920x1080"  "1920x1080" )
+refresh_rates=( "60"  "165"  "59" )
+
+# Tablet config
+tablet=false
+# tablet_name="HID 256c:006e Pen stylus"
+# tablet_offset="1920x1080+1920+0"
+# absolute_area="50800"

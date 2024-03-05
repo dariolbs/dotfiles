@@ -1,3 +1,0 @@
-#!/usr/bin/sh
-
-node ~/.gitclones/cli-typer/app.js

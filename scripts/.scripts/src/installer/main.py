@@ -6,29 +6,7 @@ from tcolors import tcolors
 from logging import inform
 from sys import argv
 
-def main():
-    """
-    The main function
-    Real shit here
-    """
-
-    print(f"\n{tcolors.BLUE}Arch Linux{tcolors.ENDC} install wizard version {tcolors.UNDERLINE}{VERSION}{tcolors.ENDC}\n")
-
-    print(f"For this install wizard to work, you need to have {tcolors.RED}sudo{tcolors.ENDC} installed and {tcolors.RED}multilib repository{tcolors.ENDC} enabled.\n")
-
-    if input(f"Are you sure you want to proceed? (yes/no)\n") != "yes":
-        exit(1)
-
-    # Install dependencies
-    inform(f"Installing Dependencies using {tcolors.UNDERLINE}{DEPENDENCIES_FILE}{tcolors.ENDC}")
-    execute("sleep 1")
-    installDependencies()   
-
-    # Execute pre install script
-    inform(f"Executing pre install scripts in {tcolors.UNDERLINE}{PRE_SCRIPTS_DIR}{tcolors.ENDC}")
-    execute("sleep 1")
-    execute(f"for script in {PRE_SCRIPTS_DIR}/*; do bash \"$script\"; done")  
-
+def selectAndInstall():
     # Get all package lists avaliable
     package_lists = getPackageLists()
 
@@ -50,8 +28,41 @@ def main():
     for c in chosens:
         packages.append(getList(f'{environ["HOME"]}/.config/installer/package_lists/{package_lists[int(c) - 1]}'))
 
+    for i in packages[0]:
+        print(i)
+
     # Install package lists
     installPackages(packages)
+
+def main():
+    """
+    The main function
+    Real shit here
+    """
+
+    print(f"\n{tcolors.BLUE}Arch Linux{tcolors.ENDC} install wizard version {tcolors.UNDERLINE}{VERSION}{tcolors.ENDC}\n")
+
+    print(f"For this install wizard to work, you need to have {tcolors.RED}sudo{tcolors.ENDC} installed and {tcolors.RED}multilib{tcolors.ENDC} repository enabled.\n")
+
+    if input("Do you want to do a full install? (run install scripts and activate daemons) (yes/no)\n") != "yes":
+        selectAndInstall()
+        exit(0)
+
+    if input(f"Are you sure you want to proceed? (yes/no)\n") != "yes":
+        exit(1)
+
+    # Install dependencies
+    inform(f"Installing Dependencies using {tcolors.UNDERLINE}{DEPENDENCIES_FILE}{tcolors.ENDC}")
+    execute("sleep 1")
+    installDependencies()   
+
+    # Execute pre install script
+    inform(f"Executing pre install scripts in {tcolors.UNDERLINE}{PRE_SCRIPTS_DIR}{tcolors.ENDC}")
+    execute("sleep 1")
+    execute(f"for script in {PRE_SCRIPTS_DIR}/*; do bash \"$script\"; done")  
+
+    # Select and install packages
+    selectAndInstall()
 
     # Activate daemons
     inform(f"Activating daemons using {tcolors.UNDERLINE}{DAEMONS_FILE}{tcolors.ENDC}")
@@ -63,8 +74,8 @@ def main():
     execute("sleep 1")
     execute(f"for script in {POST_SCRIPTS_DIR}/*; do bash \"$script\"; done")  
 
-if argv[1] == "-p":
-    installPackages(argv[2])
-    exit(0)
+# if argv[1] == "-p":
+#     installPackages(argv[2])
+#     exit(0)
 
 main()

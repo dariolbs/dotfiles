@@ -8,5 +8,9 @@ if [[ "$(tty)" == "/dev/tty1" ]]; then
         sleep 1
 
         # exec "$HOME/.config/sway/init/init.sh"
-        eval "Hyprland"
+        if [[ "$(cat /etc/hostname)" = "potente" ]]; then
+            startx
+        else
+            eval "Hyprland"
+        fi
 fi

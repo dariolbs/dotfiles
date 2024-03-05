@@ -1,0 +1,49 @@
+# SXHKD Config - Dário Batista
+
+XF86AudioPrev
+	playerctl previous
+XF86AudioNext
+	playerctl next
+XF86AudioPlay
+	playerctl play-pause
+
+# Scripts
+
+mod4 + shift + p
+	bash ~/.config/dwm/configs/sxhkd/scripts/system_config/configure_system
+mod4 + shift + b
+	bash ~/.config/dwm/configs/sxhkd/scripts/bookmark
+Print
+	bash ~/.config/dwm/configs/sxhkd/scripts/print
+mod4 + Print
+	sh ~/.config/dwm/configs/sxhkd/scripts/print select
+mod4 + e
+	sh ~/.config/dwm/configs/sxhkd/scripts/emoji_picker/script
+XF86AudioRaiseVolume
+	sh ~/.config/dwm/configs/sxhkd/scripts/volume +5
+XF86AudioLowerVolume
+	sh ~/.config/dwm/configs/sxhkd/scripts/volume -5
+XF86AudioMute
+	sh ~/.config/dwm/configs/sxhkd/scripts/volume-toggle
+
+# File managers
+mod4 + n
+	st "lf-ueberzug"
+mod4 + shift + n
+	st -e lf-ueberzug ~/Documents/Notas
+
+# Programas
+mod4 + w
+	firefox
+
+XF86Calculator
+	st calc
+
+XF86Mail
+	st neomutt
+
+XF86Tools
+	st ncmpcpp
+
+mod4 + shift + q
+	xkill

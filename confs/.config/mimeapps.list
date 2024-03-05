@@ -27,6 +27,7 @@ application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 x-scheme-handler/discord-747154846817452045=discord-747154846817452045.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_usr_lib_eclipse_.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-6DPBZ1.desktop;userapp-Thunderbird-HMTZ71.desktop;

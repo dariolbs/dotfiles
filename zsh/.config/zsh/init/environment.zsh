@@ -1,9 +1,6 @@
 # Environment variables
 # ---------------------
 
-export DESKTOP_HOSTNAME="potente"
-export LAPTOP_HOSTNAME="portatil"
-export TELE="u0_a265@dariotele"
 export EDITOR="nvim"
 
 #LF ICONS

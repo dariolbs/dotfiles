@@ -1,0 +1,10 @@
+#!/bin/sh
+r=true
+state=$(grep ":class_g = 'st" $HOME/.config/picom/picom.conf | cut -f 1 -d ":" | sed "s/ //g")
+state=${state##"\""}
+newstate=$(($state $1 $2))
+if [ $newstate -gt 90 ] || [ $newstate -lt 0 ]; then
+	r=false
+fi
+$r && sed -i "s/$state:class_g =/$newstate:class_g =/g" $HOME/.config/picom/picom.conf
+$r && sed -i "s/opacity: 0.$state/opacity: 0.$newstate/g" $HOME/.config/alacritty/alacritty.yml

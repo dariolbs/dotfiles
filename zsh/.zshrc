@@ -21,8 +21,19 @@
 # powerlevel10k: https://github.com/romkatv/powerlevel10k
 # starship: https://starship.rs/
 
+# Zsh history file
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
+
 # P10k instant prompt
-source "$HOME/.config/zsh/powerlevel10k/config/personal/instant_prompt.zsh"
+# Execute an alert script if it exists
+if [ -f "$HOME/.alert" ]; then 
+    eval "$HOME/.alert";
+else
+    source "$HOME/.config/zsh/powerlevel10k/config/personal/instant_prompt.zsh"
+fi
 
 # Load environment variables
 source "$HOME/.config/zsh/init/environment.zsh"
@@ -55,5 +66,8 @@ source "$HOME/.config/zsh/init/config.zsh"
 # Get prompt functions
 source "$HOME/.config/zsh/init/prompts.zsh"
 
-# Execute default prompt function
-eval "$PROMPT_FUNCTION"
+# Decide what prompt to use
+# Options: "p10k" "starship" "default" "pure"
+SEL_PROMPT="p10k"
+eval "apply_${SEL_PROMPT}"
+

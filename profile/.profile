@@ -13,18 +13,19 @@ export PATH="$PATH:$HOME/.bin"
 
 export TERMINAL="foot"
 export EDITOR="nvim"
-export HAMACHI="logmein-hamachi.service"
-export STEAMSCREENSHOTS="/home/dario/.local/share/Steam/userdata/250615889"
 
 # Golang
 export PATH=${PATH}:/usr/local/go/bin
 export GOPATH="/usr/local/go"
 
-# JAVA 💀💀💀
+# Java
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 
-# RUBY
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+# Fix garbage java GUI apps not working properly
+export _JAVA_AWT_WM_NONREPARENTING=1
 
-# FCUL
+# RUBY
+command -v ruby &> /dev/null && export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+
+# Faculdade
 export PATH="$PATH:$HOME/.bin/sqlcl_fcul/bin/"

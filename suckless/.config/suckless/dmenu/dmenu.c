@@ -55,9 +55,10 @@ static XIC xic;
 
 static Drw *drw;
 static Clr *scheme[SchemeLast];
+static char * bordercolor;
 
 /* Temporary arrays to allow overriding xresources values */
-static char *colortemp[4];
+static char *colortemp[5];
 static char *tempfonts;
 
 #include "config.h"
@@ -506,10 +507,10 @@ keypress(XKeyEvent *ev)
 			goto draw;
 		case XK_g: ksym = XK_Home;  break;
 		case XK_G: ksym = XK_End;   break;
-		case XK_k: ksym = XK_Up;    break;
-		case XK_j: ksym = XK_Down;  break;
-		case XK_l: ksym = XK_Return;  break;
-		case XK_h: ksym = XK_Escape;  break;
+		case GO_UP_KEY: ksym = XK_Up;    break;
+		case GO_DOWN_KEY: ksym = XK_Down;  break;
+		case SELECT_KEY: ksym = XK_Return;  break;
+		case ESCAPE_KEY: ksym = XK_Escape;  break;
 		//case XK_h: ksym = XK_Next;  break;
 		//case XK_l: ksym = XK_Prior; break;
 		default:
@@ -921,8 +922,12 @@ setup(void)
 	win = XCreateWindow(dpy, parentwin, x, y - (topbar ? 0 : border_width * 2), mw - border_width * 2, mh, border_width,
 	                    CopyFromParent, CopyFromParent, CopyFromParent,
 	                    CWOverrideRedirect | CWBackPixel | CWEventMask, &swa);
-	if (border_width)
-		XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);
+	if (border_width){
+        Clr *bc = ecalloc(1, sizeof(XftColor));
+		// XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);
+        drw_clr_create(drw, bc, bordercolor);
+		XSetWindowBorder(dpy, win, bc->pixel);
+    }
 	XSetClassHint(dpy, win, &ch);
 
 
@@ -951,7 +956,7 @@ static void
 usage(void)
 {
 	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
-	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
+	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-bc color] [-w windowid]");
 }
 
 void
@@ -984,6 +989,10 @@ readxresources(void) {
 			colors[SchemeSel][ColFg] = strdup(xval.addr);
 		else
 			colors[SchemeSel][ColFg] = strdup(colors[SchemeSel][ColFg]);
+		if (XrmGetResource(xdb, "dmenu.bordercolor", "*", &type, &xval))
+			bordercolor = strdup(xval.addr);
+		else
+			bordercolor = strdup(colors[SchemeSel][ColBg]);
 
 		XrmDestroyDatabase(xdb);
 	}
@@ -1030,6 +1039,8 @@ main(int argc, char *argv[])
 			colortemp[2] = argv[++i];
 		else if (!strcmp(argv[i], "-sf"))  /* selected foreground color */
 			colortemp[3] = argv[++i];
+		else if (!strcmp(argv[i], "-bc"))  /* normal background color */
+			colortemp[4] = argv[++i];       /* border color */
 		else if (!strcmp(argv[i], "-w"))   /* embedding window id */
 			embed = argv[++i];
 		else if (!strcmp(argv[i], "-bw"))
@@ -1061,6 +1072,8 @@ main(int argc, char *argv[])
 	   colors[SchemeSel][ColBg]  = strdup(colortemp[2]);
 	if ( colortemp[3])
 	   colors[SchemeSel][ColFg]  = strdup(colortemp[3]);
+	if ( colortemp[4])
+	   bordercolor = strdup(colortemp[4]);
 
 	if (!drw_fontset_create(drw, (const char**)fonts, LENGTH(fonts)))
 		die("no fonts could be loaded.");

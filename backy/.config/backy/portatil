@@ -15,5 +15,5 @@ dariolaptop:/home/dario/.notes/* ==>  /home/dario/.notes ==> -uvrP
 /home/dario/Documents ==> dariolaptop:/home/dario
 
 # Media Backup
-/home/dario/Media ==> dariolaptop:/home/dario
-/home/dario/.dotfiles/* ==> dariolaptop:/home/dario/.dotfiles
+# /home/dario/Media ==> dariolaptop:/home/dario
+# /home/dario/.dotfiles/* ==> dariolaptop:/home/dario/.dotfiles

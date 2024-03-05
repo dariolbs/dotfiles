@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+awk_script="$HOME/.config/dwm/configs/dwmblocks/get_cpu_usage.awk"
+
+cat /proc/stat | awk -f "$awk_script"

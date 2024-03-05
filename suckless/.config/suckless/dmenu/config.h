@@ -3,8 +3,8 @@
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int centered = 0;                    /* -c option; centers dmenu on screen */
-static int min_width = 500;                    /* minimum width when centered */
-static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
+static int min_width = 500;                 /* minimum width when centered */
+static int fuzzy = 1;                       /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
 
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
@@ -30,7 +30,10 @@ static const char worddelimiters[] = " ";
 /* Size of the window border */
 static unsigned int border_width = 0;
 
-// Mod4Mask = Meta/Windows key
-// Mod1Mask = Left Alt
-
 #define MODKEY Mod4Mask
+
+/* Costumize keys while using MODKEY */
+#define     GO_UP_KEY       XK_k        /* Key to go up */
+#define     GO_DOWN_KEY     XK_j        /* Key to go down */
+#define     ESCAPE_KEY      XK_h        /* Key to escape dmenu */
+#define     SELECT_KEY      XK_l        /* Key to select an item */

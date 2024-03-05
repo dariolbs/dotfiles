@@ -1,5 +1,4 @@
 from os import environ
-import cena.ok
 
 DEBUG               = False
 VERSION             = "1.0"

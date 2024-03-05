@@ -4,4 +4,8 @@ file="$HOME/Universidade/horario.png"
 
 e="xdg-open"
 
-eval "$e $file" &> /dev/null & disown
+if [[ $XDG_SESSION_TYPE != "wayland" ]]; then
+    eval "$e $file" &> /dev/null & disown
+else
+    eval "chafa $file"
+fi

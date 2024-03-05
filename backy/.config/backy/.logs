@@ -9347,3 +9347,2686 @@ rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
 ssh: connect to host 192.168.1.155 port 22: No route to host
 rsync: connection unexpectedly closed (0 bytes received so far) [sender]
 rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager.dat.AQFTwh"
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager2.dat.9UId4b"
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Universidade/LEI-A1-S1/IP/Ipurdle2/MaterialDeApoio/fx/.libjfxwebkit.so.G6nJ6z"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: error in rsync protocol data stream (code 12) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCLocalLevels.dat.AJMVxs"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager.dat.bKjTUV"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.155 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.191 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(713) [Receiver=3.2.7]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(713) [sender=3.2.7]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(713) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+file has vanished: "/home/dario/Documents/Gamesaves/Geometry_dash/.CCGameManager.dat.yiXAfx"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1336) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: unexplained error (code 255) at io.c(231) [Receiver=3.2.7]
+ssh: connect to host 192.168.1.194 port 22: No route to host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(231) [sender=3.2.7]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(713) [sender=3.2.7]

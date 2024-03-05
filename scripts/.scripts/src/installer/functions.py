@@ -79,13 +79,18 @@ def installDependencies() -> None:
 
     execute(f"sudo pacman -S --needed {dependencies}")
 
+    """
+    Installs all packages in the
+    """
 def installPackages(packages) -> None:
-    """
-    Installs all dependencies needed for the install to work
-    All dependencies are stored in config/dependencies.conf
-    """
 
-    execute(f"yay -S --needed {packages}")
+    pstring = ""
+
+    for i in packages:
+        for a in i:
+            pstring += f" {a}"
+
+    execute(f"yay -S --needed {pstring}")
 
 def activateDaemons() -> None:
     """

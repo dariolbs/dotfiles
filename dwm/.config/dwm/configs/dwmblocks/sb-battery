@@ -1,0 +1,29 @@
+#!/bin/bash
+
+barsize=20
+
+# 1º argument -> battery percentage
+# 2º argument -> size of the bar
+printbar(){
+    dots=$(($2 / (100 / $1)))
+    spaces=$(($2 - $dots))
+    printf "["
+    for ((i = 0; i < 3; i++)); do
+        printf "*"
+    done
+    for ((i = 0; i < 10; i++)); do
+        printf " "
+    done
+    printf "]\n"
+}
+
+# for battery in /sys/class/power_supply/BAT?*; do
+#     cap=$(cat $battery/capacity)
+#     printf "$(printbar $cap $barsize) $(cat $battery/state)"
+# done
+# 
+# if empty; then
+#     echo No Battery
+# fi
+
+echo $(printbar 10 20)
