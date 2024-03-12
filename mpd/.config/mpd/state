@@ -2,8 +2,8 @@ sw_volume: 68
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 42
-time: 288.219000
+current: 11
+time: 105.994000
 random: 1
 repeat: 0
 single: 1
@@ -12,64 +12,16 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Osts/Persona 4 The Golden - Snowflakes [hdfmf11Wtbo].opus
-1:Osts/Heaven - Persona 4 [zQ7H4tZa8-k].opus
-2:Osts/Persona 4 Golden - Shadow World (Full)--oIWGlbl92k.m4a
+0:Osts/Persona 4 - Specialist [fTczCpIaLAU].opus
+1:Osts/Persona 5 OST 04 - Life Will Change [7LqTCYxFMlU].opus
+2:gd/Creo - Wavelight-Kc4lIlboH2M.m4a
 3:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].m4a
-4:gd/gravity.mp3
-5:gd/Dunderpatrullen - Disco Dancing Caravan Camping-GwfiCyJ9EyQ.m4a
-6:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].opus
-7:gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
-8:gd/566770_DuoCore---Dignity.mp3
-9:Osts/Persona 4 - Specialist [fTczCpIaLAU].opus
-10:Osts/Undertale Ost： 077 - ASGORE [hMa4hZQbrms].m4a
-11:Rock/SiM – The Rumbling (OFFICIAL VIDEO) [OBqw818mQ1E].opus
-12:Rock/SiM – The Rumbling (OFFICIAL VIDEO) [OBqw818mQ1E].opus
-13:Rock/UNRAVEL (FULL version - Tokyo Ghoul OP) - English opening cover by Jonathan Young [aVpJGGQHSqc].opus
-14:Rock/Within Temptation - Paradise (What About Us？) ft. Tarja [Dy6MpsDPKts].opus
-15:Pt/Tiago Bettencourt - Canção De Engate (Acústico)-8daReuj4bU0.m4a
-16:Trance/Cyberpunk Synthwave - Distance ⧸⧸ Royalty Free No Copyright Background Music [L4ho390u45s].opus
-17:Trance/Hans Zimmer - Time ( Cyberdesign Remix )-TsTFVdcpLrE.m4a
-18:Trance/Saeed-Uzyii85rwqo.m4a
-19:Instrumental/Infected Mushroom - Spitfire [Monstercat Release] [bnsUkE8i0tU].opus
-20:Instrumental/Infected Mushroom & Bliss - Ani Mevushal [Monstercat Release] [AEm3bIBN8aQ].opus
-21:Japa/[Official Video] JAM Project - THE HERO !! -  ＂One Punch Man＂ Opening Theme ワンパンマン [QImBolnTVH8].opus
-22:gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
-23:gd/Limbo (VepiumOfficial & Nighthawk22 - Isolation (Official LIMBO Remix) Super Low Pitch [Pd6YM2ehpNs].opus
-24:gd/Creo - Outlaw (Low Pitch) [2jw06gS1kMY].opus
-25:gd/Idyllic [1074080].mp3
-26:gd/Ethereal Artifice (NemesisTheory - Rose At Twilight) Low Pitch-WZVYc1ujiHk.m4a
-27:gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
-28:Osts/3.3_7-urthegod.mod [N29dP7M4R90].opus
-29:Osts/遊園施設 [8jpJM6nc6fE].opus
-30:Osts/Undertale OST： 068 - Death by Glamour [2TgO-tN5wAM].m4a
-31:Osts/CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins [gzbLODUb1sA].opus
-32:gd/Macabre (Creo - Crystallize) Super Low Pitch [BR7UUmp7JQM].m4a
-33:Osts/Chris Christodoulou - The Rain Formerly Known as Purple  ｜ Risk of Rain 2 (2020) [EGXPAoyP_cg].opus
-34:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
-35:Osts/CODEX Installer Music #7 (2018-10) [GaZcC68VPtY].opus
-36:Osts/CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins [gzbLODUb1sA].opus
-37:Osts/Dai Gyakuten Saiban 2 OST ｜ 34 Great Pursuit ~ The Resolve of Naruhodou Ryuunosuke [bAtJnMEUkQs].opus
-38:Osts/Heaven - Persona 4 [zQ7H4tZa8-k].opus
-39:Osts/Interstellar Main Theme - Extra Extended - Soundtrack by  Hans Zimmer-UDVtMYqUAyw.m4a
-40:Osts/Persona 4 - Specialist [fTczCpIaLAU].opus
-41:Osts/Persona 4 Golden - Shadow World (Full)--oIWGlbl92k.m4a
-42:Osts/Persona 4 The Golden - Snowflakes [hdfmf11Wtbo].opus
-43:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
-44:Osts/Undertale OST： 068 - Death by Glamour [2TgO-tN5wAM].m4a
-45:Osts/Undertale OST： 071 - Undertale [EBhFHJMVfiI].m4a
-46:Osts/Undertale Ost： 077 - ASGORE [hMa4hZQbrms].m4a
-47:Osts/Undertale Ost： 087 - Hopes and Dreams [tz82xbLvK_k].m4a
-48:Osts/Undertale Ost： 098 - Battle Against a True Hero [aWBtpBwzzdM].m4a
-49:Osts/3.3_7-urthegod.mod [N29dP7M4R90].opus
-50:Osts/遊園施設 [8jpJM6nc6fE].opus
-51:Osts/[Persona 4 OST] 08 - Your Affection-d-x3ojOGWa8.m4a
-52:Osts/Mr Robot Main Theme Fixed and Extended [XMEXPkPmmq0].opus
-53:Instrumental/Infected Mushroom - Becoming Insane-WxhTbxMSvT0.m4a
-54:Instrumental/Infected Mushroom - Milosh-_cJeo91-tno.m4a
-55:Trance/The Pretender-jTbCHkx5J0A.m4a
-56:Instrumental/Infected Mushroom - Guitarmass-R_uS0aT0bG8.m4a
-57:Trance/Heavyweight-9Axg_e8astI.m4a
-58:Trance/Saeed-Uzyii85rwqo.m4a
-59:Pt/Jão - Idiota (Lyric Video)-PPGjmXlWyc4.m4a
+4:gd/Dunderpatrullen - Disco Dancing Caravan Camping-GwfiCyJ9EyQ.m4a
+5:gd/Limbo (VepiumOfficial & Nighthawk22 - Isolation (Official LIMBO Remix) Super Low Pitch [Pd6YM2ehpNs].opus
+6:gd/Shukketsu (ぬゆり - ダラクダ) High Pitch-NdT_8eIOj38.m4a
+7:gd/The Hallucination.m4a
+8:gd/Xtrullor - Dropping Fish (Low Pitch) [S7squyBML-0].opus
+9:gd/Sonic Wave (F-777 - Sonic Blaster) Super Low Pitch-XVcI-XIA-NA.m4a
+10:gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
+11:gd/Shiawase (VIP) [suisIF4hwyw].opus
 playlist_end
