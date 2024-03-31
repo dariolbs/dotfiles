@@ -2,6 +2,8 @@
 # This script provides an easy way to
 # configure devices on x11
 
+source "$HOME/.scripts/lib/bash/colors"
+
 logo(){
 cat << EOF
 
@@ -19,7 +21,32 @@ cat << EOF
 EOF
 }
 
+show_edits() {
+    file="$@"
+    printf "File ${BOLD_BLUE}${file}${NO_COLOR} changed:\n\n"
+    cat $file
+}
+
+configure_keyboard(){
+    printf "Keyboard language/language: "
+    read language
+    printf "Keyboard options: "
+    read opts
+cat << EOF > /etc/X11/xorg.conf.d/00-keyboard.conf
+Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbLayout" "$language"
+        Option "XkbOptions" "${opts[@]}"
+EndSection
+EOF
+}
+
 configure_non_wacom_tablet(){
+    if [ -f /etc/X11/xorg.conf.d/10-graphics_tablet.conf ]; then
+        echo Configuration already exists
+        exit 1;
+    fi
 cat << EOF > /etc/X11/xorg.conf.d/10-graphics_tablet.conf
 #
 # InputClass sections for some tablets supported by the DIGImend kernel
@@ -68,6 +95,10 @@ EOF
 }
 
 disable_mouse_accel(){
+    if [ -f /etc/X11/xorg.conf.d/50-mouse-acceleration-config.conf ]; then
+        echo Configuration already exists
+        exit 1;
+    fi
 cat << EOF > /etc/X11/xorg.conf.d/50-mouse-acceleration-config.conf
 Section "InputClass"
  Identifier "libinput pointer catchall"
@@ -87,11 +118,13 @@ IFS=$'\n'
 options=(
 "disble mouse acceleration"
 "configure non-wacom graphics tablet"
+"configure keyboard"
 )
 
 scripts=(
 ["disble mouse acceleration"]="disable_mouse_accel"
 ["configure non-wacom graphics tablet"]="configure_non_wacom_tablet"
+["configure keyboard"]="configure_keyboard"
 )
 
 echo "X11 configuration wizard"

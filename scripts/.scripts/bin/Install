@@ -1,15 +1,60 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
+from sys import argv
+from os import system
 
-if ! command -v git &> /dev/null
+install_method = "apt install"
+packages = { }
 
-then
-    echo "git could not be found. installing..."
-    sudo pacman -S git
-fi
-if ! command -v python3 &> /dev/null
-then
-    echo "python3 could not be found. installing..."
-    sudo pacman -S python3
-fi
+def packages_to_string(plist) -> str:
+    string = ""
+    for p in range(1, len(plist)):
+        string += plist[p] + " "
+    return string
 
-python3 $HOME/.scripts/src/installer/main.py "$@"
+def set_install_method(line):
+    global install_method
+    global packages
+
+    install_method = ""
+
+    for i in range(1, len(line) - 1):
+        install_method += line[i] + " "
+
+    install_method += line[len(line) - 1]
+    if (packages.get(install_method) == None):
+        packages[install_method] = []
+
+def do_command(command):
+    global install_method
+    com = command[0][1:]
+    if (com == "command"):
+        set_install_method(command)
+    elif (com == "include"):
+        read_file(command[1])
+    else:
+        print("Command", com, "not found")
+
+def read_file(filename):
+    try:
+        file = open(filename, "r")
+    except FileNotFoundError:
+        print("File", filename, "not found. Exitting...")
+        exit(1)
+
+    for l in file.readlines():
+        sep = l.rstrip().split(" ")
+        if (l[0] == "#" or l == "\n"):
+            continue
+        elif (l[0] == "!"):
+            do_command(sep);
+        else:
+            packages[install_method].append(sep[0])
+
+def main():
+    read_file(argv[1])
+    for i in packages.keys():
+        if (packages[i] != []):
+            system(f'{i} {packages_to_string(packages[i])}')
+
+if __name__ == "__main__":
+    main()

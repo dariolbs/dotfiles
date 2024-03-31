@@ -71,3 +71,20 @@ source "$HOME/.config/zsh/init/prompts.zsh"
 SEL_PROMPT="p10k"
 eval "apply_${SEL_PROMPT}"
 
+setroot() {
+    dir=""
+    if [ -n "$1" ]; then
+        test ! -d "$1" && echo "$1 is not a directory" && return 1
+        test ! -w "$1" && echo "User does not have read access to $1" && return 1
+        dir="$(realpath $1)"
+    fi
+    # wtf ???
+    sed -i "s/export START_FOLDER=.*/export START_FOLDER=\"${dir//\//\/}\"/g" ~/.zshrc
+}
+
+# Custom start folder
+export START_FOLDER=""
+
+if [ -n "$START_FOLDER" ]; then
+    cd "$START_FOLDER"
+fi

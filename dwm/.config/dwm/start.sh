@@ -26,7 +26,6 @@ source "$HOME/.config/dwm/configs/xorg/xconfig"
 source "$HOME/.config/dwm/env"
 
 # Load xorg config
-eval "$HOME/.config/dwm/scripts/apply_bk_options.sh"
 eval "$HOME/.config/dwm/scripts/apply_monitor_config.sh"
 eval "$HOME/.config/dwm/scripts/apply_tablet_config.sh"
 

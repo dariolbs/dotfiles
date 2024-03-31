@@ -10,6 +10,7 @@ PATH="/home/dario/.local/share/gem/ruby/3.0.0/bin:${PATH}"; export PATH;
 # PATH
 export PATH="$HOME/.local/bin/:${PATH}:$HOME/.scripts/bin/:$HOME/.scripts/handy:$HOME/.scripts/startup:$HOME/.scripts/sync:$HOME/.scripts/statusbar/dwmblocks:$JAVA_HOME"
 export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/Documents/Scripts"
 
 export TERMINAL="foot"
 export EDITOR="nvim"

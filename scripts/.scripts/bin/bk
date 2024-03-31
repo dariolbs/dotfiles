@@ -1,4 +1,0 @@
-#!/usr/bin/bash
-# Run processes in the background
-
-eval "$@" &> /dev/null & disown
