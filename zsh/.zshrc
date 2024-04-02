@@ -51,6 +51,10 @@ source "$HOME/.config/zsh/zsh-autopair/autopair.zsh" 2>/dev/null
 # Load profile
 source "$HOME/.profile"
 
+if [ -f "$HOME/Documents/profile" ]; then
+    source "$HOME/Documents/profile"
+fi
+
 # Get fzf config
 source "$HOME/.config/zsh/fzf/config.zsh"
 
@@ -71,20 +75,25 @@ source "$HOME/.config/zsh/init/prompts.zsh"
 SEL_PROMPT="p10k"
 eval "apply_${SEL_PROMPT}"
 
+# Custom start folder
+rootfile="$HOME/.rootdir"
+test -f $rootfile || touch $rootfile
+
 setroot() {
     dir=""
     if [ -n "$1" ]; then
-        test ! -d "$1" && echo "$1 is not a directory" && return 1
-        test ! -w "$1" && echo "User does not have read access to $1" && return 1
         dir="$(realpath $1)"
+        test ! -d "$dir" && echo "$dir is not a diretiry" && return 1
+        test ! -r "$dir" && echo "No read access to $dir" && return 1
     fi
-    # wtf ???
-    sed -i "s/export START_FOLDER=.*/export START_FOLDER=\"${dir//\//\/}\"/g" ~/.zshrc
+    echo $dir > $rootfile
 }
 
-# Custom start folder
-export START_FOLDER=""
+export START_FOLDER="$(< $rootfile 2> /dev/null)"
 
 if [ -n "$START_FOLDER" ]; then
     cd "$START_FOLDER"
 fi
+
+# script that executes automatically once you enter tty1
+export TTY1_SCRIPT="$HOME/.tty1.sh"
