@@ -26,14 +26,26 @@ st.alpha: 0.85
 st.cursorColor: #ffffff
 
 ! Dwm
-dwm.normbgcolor: #222222
+! dwm.normbgcolor: #222222
+! dwm.normbordercolor: #444444
+! dwm.normfgcolor: #bbbbbb
+! dwm.selbgcolor: #444444
+! dwm.selbordercolor: #7cfc00
+! dwm.selfgcolor: #eeeeee
+! dwm.borderpx: 2
+! dwm.snap: 32
+! dwm.showbar: 1
+! dwm.topbar: 0
+! dwm.nmaster: 1
+! dwm.resizehints: 0
+! dwm.mfact: 0.55
+dwm.normbgcolor: #000000
 dwm.normbordercolor: #444444
-dwm.normfgcolor: #bbbbbb
-! dwm.selbgcolor: #005577
-dwm.selbgcolor: #444444
+dwm.selbgcolor: #000000
 dwm.selbordercolor: #7cfc00
-dwm.selfgcolor: #eeeeee
-dwm.borderpx: 2
+dwm.normfgcolor: #eeeeee
+dwm.selfgcolor: #7cfc00
+dwm.borderpx: 1
 dwm.snap: 32
 dwm.showbar: 1
 dwm.topbar: 0
@@ -42,8 +54,8 @@ dwm.resizehints: 0
 dwm.mfact: 0.55
 
 !dmenu
-dmenu.background: #222222
-dmenu.foreground: #bbbbbb
-dmenu.selbackground: #444444
-dmenu.selforeground: #eeeeee
+dmenu.background: #000000
+dmenu.foreground: #eeeeee
+dmenu.selbackground: #000000
+dmenu.selforeground: #7cfc00
 dmenu.bordercolor: #7cfc00

@@ -1,16 +1,9 @@
 if [[ "$(tty)" == "/dev/tty1" ]]; then
-
-        # neofetch
-        source "$HOME/.profile"
-        printf "Welcome back brother\n"
-        printf "Logging in 1 second...\n"
-
+    if [[ ! -f "$TTY1_SCRIPT" ]]; then
+        printf "#!/usr/bin/sh\nstartx\n" > "$TTY1_SCRIPT"
+        echo "Generated default startup script at $TTY1_SCRIPT"
+        echo "Change it to your needs!"
         sleep 1
-
-        # exec "$HOME/.config/sway/init/init.sh"
-        if [[ "$(cat /etc/hostname)" = "potente" ]]; then
-            startx
-        else
-            eval "Hyprland"
-        fi
+    fi
+    exec "$TTY1_SCRIPT"
 fi
