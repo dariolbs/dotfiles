@@ -1,24 +1,27 @@
 ! Colors
+
+#define selcolor #7cfc00
+
 ! Terminal colors
-! *background: #222222
-*background: #000000
-*foreground: #ffffff
-*color0: #242424
-*color1: #f62b5a
-*color2: #47b413
-*color3: #e3c401
-*color4: #24acd4
-*color5: #f2affd
-*color6: #13c299
-*color7: #e6e6e6
-*color8: #616161
-*color9: #ff4d51
-*color10: #35d450
-*color11: #e9e836
-*color12: #5dc5f8
-*color13: #feabf2
-*color14: #24dfc4
-*color15: #ffffff
+! st.background: #222222
+st.background: #000000
+st.foreground: #ffffff
+st.color0: #242424
+st.color1: #f62b5a
+st.color2: #47b413
+st.color3: #e3c401
+st.color4: #24acd4
+st.color5: #f2affd
+st.color6: #13c299
+st.color7: #e6e6e6
+st.color8: #616161
+st.color9: #ff4d51
+st.color10: #35d450
+st.color11: #e9e836
+st.color12: #5dc5f8
+st.color13: #feabf2
+st.color14: #24dfc4
+st.color15: #ffffff
 
 !! St Appearance
 st.borderpx: 10
@@ -26,25 +29,12 @@ st.alpha: 0.85
 st.cursorColor: #ffffff
 
 ! Dwm
-! dwm.normbgcolor: #222222
-! dwm.normbordercolor: #444444
-! dwm.normfgcolor: #bbbbbb
-! dwm.selbgcolor: #444444
-! dwm.selbordercolor: #7cfc00
-! dwm.selfgcolor: #eeeeee
-! dwm.borderpx: 2
-! dwm.snap: 32
-! dwm.showbar: 1
-! dwm.topbar: 0
-! dwm.nmaster: 1
-! dwm.resizehints: 0
-! dwm.mfact: 0.55
-dwm.normbgcolor: #000000
+dwm.normbgcolor: #222222
 dwm.normbordercolor: #444444
-dwm.selbgcolor: #000000
-dwm.selbordercolor: #7cfc00
-dwm.normfgcolor: #eeeeee
-dwm.selfgcolor: #7cfc00
+dwm.selbgcolor: #005577
+dwm.selbordercolor: selcolor
+dwm.normfgcolor: #bbbbbb
+dwm.selfgcolor: #eeeeee
 dwm.borderpx: 1
 dwm.snap: 32
 dwm.showbar: 1
@@ -54,8 +44,8 @@ dwm.resizehints: 0
 dwm.mfact: 0.55
 
 !dmenu
-dmenu.background: #000000
-dmenu.foreground: #eeeeee
-dmenu.selbackground: #000000
-dmenu.selforeground: #7cfc00
-dmenu.bordercolor: #7cfc00
+dmenu.background: #222222
+dmenu.selbackground: #005577
+dmenu.foreground: #bbbbbb
+dmenu.selforeground: #eeeeee
+dmenu.bordercolor: selcolor

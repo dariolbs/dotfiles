@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 60
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 2
-time: 77.689000
+current: 27
+time: 150.763000
 random: 1
 repeat: 1
 single: 1
@@ -16,4 +16,28 @@ playlist_begin
 1:Osts/[Persona 4 OST] 08 - Your Affection-d-x3ojOGWa8.m4a
 2:Osts/Persona 5 OST 04 - Life Will Change [7LqTCYxFMlU].opus
 3:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
+4:Electro/The Living Tombstone - Hit The Snooze [2_ZhBy9tnpE].opus
+5:Electro/M2U - Gypsytronic (Long Ver) [Zr3jMtBCCgg].opus
+6:Instrumental/Infected Mushroom - Milosh-_cJeo91-tno.m4a
+7:Instrumental/Infected Mushroom & Bliss - Ani Mevushal [Monstercat Release] [AEm3bIBN8aQ].opus
+8:Instrumental/Infected Mushroom - Spitfire [Monstercat Release] [bnsUkE8i0tU].opus
+9:Osts/CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins [gzbLODUb1sA].opus
+10:gd/Creo - Carnivores-qZSSJk6OHdA.m4a
+11:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].m4a
+12:gd/KASAI HARCORES - Cycle Hit [yHLg65nBoz0].opus
+13:gd/Limbo (VepiumOfficial & Nighthawk22 - Isolation (Official LIMBO Remix) Super Low Pitch [Pd6YM2ehpNs].opus
+14:gd/Macabre (Creo - Crystallize) Super Low Pitch [BR7UUmp7JQM].m4a
+15:gd/The Eden Project - XO [syXq0ICfFDg].opus
+16:gd/Dunderpatrullen - Disco Dancing Caravan Camping-GwfiCyJ9EyQ.m4a
+17:gd/Shukketsu (ぬゆり - ダラクダ) High Pitch-NdT_8eIOj38.m4a
+18:gd/ParagonX9 - Infiltration [-jszHEXsW50].opus
+19:gd/Verdant Landscape (Xomu & Amidst - Pagoda) Super Low Pitch-SQvZvzDa4x8.m4a
+20:gd/Shiawase (VIP) [suisIF4hwyw].opus
+21:gd/566770_DuoCore---Dignity.mp3
+22:gd/Creo - Outlaw (Low Pitch) [2jw06gS1kMY].opus
+23:gd/Omega (Dimrain47 - The Prototype) High Pitch-JZqgd-xI7HE.m4a
+24:gd/Sonic Wave (F-777 - Sonic Blaster) Super Low Pitch-XVcI-XIA-NA.m4a
+25:gd/Xtrullor - Dropping Fish (Low Pitch) [S7squyBML-0].opus
+26:gd/Xtrullor - Screamroom-ox9X6SjHob8.m4a
+27:gd/Protoflicker (Silentroom - Protoflicker) Low Pitch-x_C9JkGlYvU.m4a
 playlist_end

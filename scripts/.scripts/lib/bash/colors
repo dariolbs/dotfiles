@@ -59,7 +59,3 @@ GRAY=$(color "0;37")
 BOLD_WHITE=$(color "1;37")
 STANDARD=${LIGTH_GRAY}
 LIGHT_STANDARD=${WHITE}
-
-#Exemplos
-#printf "$GRAY olá\n"
-#printf "$BOLD_BLUE boas\n"

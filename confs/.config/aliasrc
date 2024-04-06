@@ -1,7 +1,4 @@
 #My aliases
-alias dir='dir --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias hw='hwinfo --short'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'
@@ -20,17 +17,20 @@ alias lf="~/.config/lf/lf-ueberzug || lf"
 
 alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
+EZA_FLAGS="--classify"
+LS_FLAGS="--color --classify"
+
 if command -v eza &> /dev/null; then
-    alias la='eza --icons --git -la'
-    alias ll='eza --icons --git -l'
-    alias ls='eza --icons'
-    alias sl='eza --icons'
-    alias tree='eza --icons -T'
+    alias la='eza $EZA_FLAGS --git -lA'
+    alias ll='eza $EZA_FLAGS --git -l'
+    alias ls='eza $EZA_FLAGS'
+    alias sl='eza $EZA_FLAGS'
+    alias tree='eza $EZA_FLAGS -T'
 else
-    alias la='ls -lhA --color'
-    alias ll='ls -lh --color'
-    alias ls='ls --color'
-    alias sl='ls --color'
+    alias la='ls -lhA $LS_FLAGS'
+    alias ll='ls -lh $LS_FLAGS'
+    alias ls='ls $LS_FLAGS'
+    alias sl='ls $LS_FLAGS'
 fi
 
 if command -v rg &> /dev/null; then
@@ -46,8 +46,6 @@ alias upd='/usr/bin/update'
 alias vdir='vdir --color=auto'
 alias wget='wget -c '
 alias rot13='tr "A-Za-z" "N-ZA-Mn-za-m"'
-#alias pwd='echo /home/miguel'
-
 alias shred="shred --zero"
 alias aquario="asciiquarium"
 alias za="zathura"

@@ -1,79 +1,93 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
+#          _     
+#         | |    
+#  _______| |__  
+# |_  / __| '_ \ 
+#  / /\__ \ | | |
+# /___|___/_| |_|
 
-# Zshell configuration
-# 
-# Configured by Dário Batista
-#
-# Plugins used:
-#
-# zsh-history-substring-search: https://github.com/zsh-users/zsh-history-substring-search
-# zsh-autopair: https://github.com/hlissner/zsh-autopair
-# zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
-# zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
-#
-# Prompts:
-#
-# powerlevel10k: https://github.com/romkatv/powerlevel10k
-# starship: https://starship.rs/
+## ZSH CONFIG
+# Basic auto/tab complete:
+autoload -U compinit; compinit
+zstyle ':completion:*' menu select
 
-# Zsh history file
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+        [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[5 q"
+}
+
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+# Zsh history
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
 
-# P10k instant prompt
 # Execute an alert script if it exists
 if [ -f "$HOME/.alert" ]; then 
     eval "$HOME/.alert";
-else
-    source "$HOME/.config/zsh/powerlevel10k/config/personal/instant_prompt.zsh"
 fi
 
-# Load environment variables
-source "$HOME/.config/zsh/init/environment.zsh"
+## ENVIRONMENT VARIABLES
+export EDITOR="nvim"
+# LF ICONS
+[ -f ~/.config/lf/LF_ICONS ] && {
+	LF_ICONS="$(tr '\n' ':' <~/.config/lf/LF_ICONS)" \
+		&& export LF_ICONS
+    [ -f "$HOME/.config/lf/LF_COLORS" ] && source "$HOME/.config/lf/LF_COLORS"
+}
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-# Load all plugins
-source "$HOME/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh" 2>/dev/null
-source "$HOME/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh" 2>/dev/null
-source "$HOME/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" 2>/dev/null
-source "$HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null
-source "$HOME/.config/zsh/zsh-autopair/autopair.zsh" 2>/dev/null
-
 # Load profile
 source "$HOME/.profile"
 
+# Load persona profile
 if [ -f "$HOME/Documents/profile" ]; then
     source "$HOME/Documents/profile"
 fi
 
+# Load all plugins
+source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh" 2>/dev/null
+source "/usr/share/zsh/plugins//zsh-history-substring-search/zsh-history-substring-search.zsh" 2>/dev/null
+source "/usr/share/zsh/plugins//zsh-autosuggestions/zsh-autosuggestions.zsh" 2>/dev/null
+source "$HOME/.config/zsh/zsh-autopair/autopair.zsh" 2>/dev/null
+
 # Get fzf config
 source "$HOME/.config/zsh/fzf/config.zsh"
-
-# Load keybindings
-source "$HOME/.config/zsh/keybindings/tmux.zsh"
-
-# Startup on tty1
-source "$HOME/.config/zsh/init/tty1.zsh"
-
-# Load main zsh config
-source "$HOME/.config/zsh/init/config.zsh"
-
-# Get prompt functions
-source "$HOME/.config/zsh/init/prompts.zsh"
-
-# Decide what prompt to use
-# Options: "p10k" "starship" "default" "pure"
-SEL_PROMPT="p10k"
-eval "apply_${SEL_PROMPT}"
 
 # Custom start folder
 rootfile="$HOME/.rootdir"
@@ -95,5 +109,35 @@ if [ -n "$START_FOLDER" ]; then
     cd "$START_FOLDER"
 fi
 
-# script that executes automatically once you enter tty1
+# Load version control information
+autoload -Uz vcs_info
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '(%b)'
+
+## PROMPT CONFIG
+setopt prompt_subst
+PROMPT='%F{green}%n%f%F{yellow}@%f%F{red}%m %f%F{magenta}%~ %F{green}${vcs_info_msg_0_}
+%f%F{green}λ '
+
+# Add a newline before the prompt
+precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
+alias clear='clear; precmd() { vcs_info; precmd(){ vcs_info; echo "" }}'
+
+
+## AUTOMATIC STARTUP
 export TTY1_SCRIPT="$HOME/.tty1.sh"
+
+if [[ "$(tty)" == "/dev/tty1" ]]; then
+
+    if [[ ! -f "$TTY1_SCRIPT" ]]; then
+        printf "#!/usr/bin/sh\nstartx\n" > "$TTY1_SCRIPT"
+        chmod +x $TTY1_SCRIPT
+        echo "Generated default startup script at $TTY1_SCRIPT"
+        echo "Change it to your needs!"
+        sleep 1
+    fi
+
+    echo "Executing $TTY1_SCRIPT..."
+    exec "$TTY1_SCRIPT"
+fi
+
