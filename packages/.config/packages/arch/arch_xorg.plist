@@ -1,0 +1,25 @@
+# ArchLinux - Xorg package list
+!command pacman -S --needed --noconfirm
+# X Stuff
+xautolock
+xdotool
+xorg-server
+xorg-xinit
+xorg-xrandr
+xorg-xhost
+xwallpaper
+libx11
+libxinerama
+libxft
+ueberzugpp
+xorg-server-common
+xorg-setxkbmap
+xorg-xauth
+xorg-xev
+xorg-xhost
+xorg-xmodmap
+xorg-xrdb
+xf86-input-libinput
+xorg-xwallpaper
+sxhkd
+redshift
