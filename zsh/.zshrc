@@ -4,6 +4,8 @@
 # |_  / __| '_ \ 
 #  / /\__ \ | | |
 # /___|___/_| |_|
+#
+# "É isso aí mesmo mano"
 
 ## ZSH CONFIG
 # Basic auto/tab complete:
@@ -18,7 +20,7 @@ _comp_options+=(globdots)		# Include hidden files.
 bindkey -v
 export KEYTIMEOUT=1
 
-# Use vim keys in tab complete menu:
+# Use vim keys in tab complete menu
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
@@ -79,17 +81,75 @@ if [ -f "$HOME/Documents/profile" ]; then
     source "$HOME/Documents/profile"
 fi
 
-# Load all plugins
-source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-source "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh" 2>/dev/null
-source "/usr/share/zsh/plugins//zsh-history-substring-search/zsh-history-substring-search.zsh" 2>/dev/null
-source "/usr/share/zsh/plugins//zsh-autosuggestions/zsh-autosuggestions.zsh" 2>/dev/null
-source "$HOME/.config/zsh/zsh-autopair/autopair.zsh" 2>/dev/null
-
 # Get fzf config
 source "$HOME/.config/zsh/fzf/config.zsh"
 
-# Custom start folder
+# Load version control information
+autoload -Uz vcs_info
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '(%b)'
+
+## PROMPT CONFIG
+lcrv() {
+    rv=$?
+    if [ $rv -gt 0 ]; then
+        echo "$rv "
+    fi
+}
+setopt prompt_subst
+PROMPT='%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
+%B%F{red}$(lcrv)%f%F{blue}λ%b%f '
+
+# Add a newline before the prompt
+precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
+alias clear='clear; precmd() { vcs_info; precmd(){ vcs_info; echo "" }}'
+
+## Who needs a plugin manager?
+
+declare -A plugin_repos
+
+# Plugins are stored to $HOME/.local/share/zsh
+ZSH_PLUGIN_DIR="$HOME/.local/share/zsh/"
+mkdir -p "$ZSH_PLUGIN_DIR"
+
+plugin_repos=(
+    ["zsh-syntax-highlighting"]='https://github.com/zsh-users/zsh-syntax-highlighting.git'
+    ["zsh-history-substring-search"]='https://github.com/zsh-users/zsh-history-substring-search'
+    ["zsh-autosuggestions"]='https://github.com/zsh-users/zsh-autosuggestions'
+    ["zsh-autopair"]='https://github.com/hlissner/zsh-autopair'
+    )
+
+plugin-sync() {
+    cdir="$PWD"
+    cd $ZSH_PLUGIN_DIR
+    for plugin in "${(k)plugin_repos[@]}"; do
+        pdir="$ZSH_PLUGIN_DIR/$plugin"
+        if [ ! -d "$pdir" ]; then
+            cd "$pdir"
+            echo "Plugin $plugin is not installed, cloning ${plugin_repos[$plugin]}..."
+            git clone "${plugin_repos[$plugin]}"
+            cd ..
+        else
+            cd "$pdir"
+            echo "Updating $plugin..."
+            git pull
+            cd ..
+        fi
+    done
+    cd $cdir
+}
+
+plugin-source() {
+    cdir="$PWD"
+    cd $ZSH_PLUGIN_DIR
+    for plugin in ${(k)plugin_repos[@]}; do
+        pdir="$ZSH_PLUGIN_DIR/$plugin"
+        [ -d "$pdir" ] && source "$pdir/$plugin.plugin.zsh"
+    done
+    cd $cdir
+}
+
+# You can change the default starting folder
 rootfile="$HOME/.rootdir"
 test -f $rootfile || touch $rootfile
 
@@ -109,21 +169,6 @@ if [ -n "$START_FOLDER" ]; then
     cd "$START_FOLDER"
 fi
 
-# Load version control information
-autoload -Uz vcs_info
-# Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats '(%b)'
-
-## PROMPT CONFIG
-setopt prompt_subst
-PROMPT='%F{green}%n%f%F{yellow}@%f%F{red}%m %f%F{magenta}%~ %F{green}${vcs_info_msg_0_}
-%f%F{green}λ '
-
-# Add a newline before the prompt
-precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
-alias clear='clear; precmd() { vcs_info; precmd(){ vcs_info; echo "" }}'
-
-
 ## AUTOMATIC STARTUP
 export TTY1_SCRIPT="$HOME/.tty1.sh"
 
@@ -141,3 +186,5 @@ if [[ "$(tty)" == "/dev/tty1" ]]; then
     exec "$TTY1_SCRIPT"
 fi
 
+# Source all plugins
+plugin-source
