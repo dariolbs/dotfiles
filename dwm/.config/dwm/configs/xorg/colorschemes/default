@@ -3,7 +3,7 @@
 #define selcolor #7cfc00
 
 ! Terminal colors
-! st.background: #222222
+!st.background: #222222
 st.background: #000000
 st.foreground: #ffffff
 st.color0: #242424

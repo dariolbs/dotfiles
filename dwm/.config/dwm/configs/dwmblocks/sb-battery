@@ -5,25 +5,24 @@ barsize=20
 # 1º argument -> battery percentage
 # 2º argument -> size of the bar
 printbar(){
-    dots=$(($2 / (100 / $1)))
+    dots=$(($2 * $1 / 100))
     spaces=$(($2 - $dots))
-    printf "["
-    for ((i = 0; i < 3; i++)); do
-        printf "*"
+    batstr="["
+    for ((i = 0; i < $dots; i++)); do
+        batstr="${batstr}*"
     done
-    for ((i = 0; i < 10; i++)); do
-        printf " "
+    for ((i = 0; i < $spaces; i++)); do
+        batstr="${batstr} "
     done
-    printf "]\n"
+    batstr="${batstr}]"
+    echo $batstr
 }
 
-# for battery in /sys/class/power_supply/BAT?*; do
-#     cap=$(cat $battery/capacity)
-#     printf "$(printbar $cap $barsize) $(cat $battery/state)"
-# done
-# 
-# if empty; then
-#     echo No Battery
-# fi
-
-echo $(printbar 10 20)
+if [ -L /sys/class/power_supply/BAT* ]; then
+    for battery in /sys/class/power_supply/BAT?*; do
+        cap=$(cat $battery/capacity)
+        echo "$(printbar $cap $barsize) ${cap}% $(cat $battery/status)"
+    done
+else
+    echo No Battery
+fi

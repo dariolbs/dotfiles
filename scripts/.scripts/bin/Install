@@ -1,60 +1,113 @@
 #!/usr/bin/python3
+# Made to work with my custom package list format
+
 from sys import argv
 from os import system
 
 install_method = "apt install"
-packages = { }
+packages = {}
+execs = []
+PFX = " * "
 
+def print_success(info_str):
+    print(f'{tc.BOLD}{tc.GREEN}{PFX}{tc.ENDC}{tc.GREEN}{info_str}{tc.ENDC}')
+
+def print_info(info_str):
+    print(f'{tc.BOLD}{tc.BLUE}{PFX}{tc.ENDC}{tc.BLUE}{info_str}{tc.ENDC}')
+
+def print_warn(info_str):
+    print(f'{tc.BOLD}{tc.YELLOW}{PFX}{info_str}{tc.ENDC}')
+
+def print_error(info_str):
+    print(f'{tc.BOLD}{tc.RED}{PFX}{info_str}{tc.ENDC}')
+
+'''
+Returns the arguments of a command in a string
+'''
+def args_to_string(line_str) -> str:
+    line_split = line_str.rstrip().split(" ")
+    args = ""
+    for i in range(1, len(line_split)):
+        args += line_split[i] + " "
+    return args[:-1]
+
+"""
+Puts all packages in a string seperated by spaces
+"""
 def packages_to_string(plist) -> str:
     string = ""
     for p in range(1, len(plist)):
         string += plist[p] + " "
     return string
 
-def set_install_method(line):
+def read_file(filename):
     global install_method
     global packages
 
-    install_method = ""
-
-    for i in range(1, len(line) - 1):
-        install_method += line[i] + " "
-
-    install_method += line[len(line) - 1]
-    if (packages.get(install_method) == None):
-        packages[install_method] = []
-
-def do_command(command):
-    global install_method
-    com = command[0][1:]
-    if (com == "command"):
-        set_install_method(command)
-    elif (com == "include"):
-        read_file(command[1])
-    else:
-        print("Command", com, "not found")
-
-def read_file(filename):
     try:
         file = open(filename, "r")
     except FileNotFoundError:
-        print("File", filename, "not found. Exitting...")
-        exit(1)
+        print_warn(f"File {filename} was not found")
+        return
 
     for l in file.readlines():
         sep = l.rstrip().split(" ")
         if (l[0] == "#" or l == "\n"):
             continue
+        # If it is a command
         elif (l[0] == "!"):
-            do_command(sep);
+            com = sep[0][1:]
+            # Set install method
+            if com == "command":
+                install_method = args_to_string(l)
+                if (packages.get(install_method) == None):
+                    packages[install_method] = []
+            elif com == "execute":
+                execs.append(args_to_string(l))
+            # Include a package list
+            elif com == "include":
+                include_file = args_to_string(l)
+                print_info(f"Including file {include_file}")
+                read_file(include_file)
+            # Execute a shell command
+            else:
+                print(f"Command {com} not found")
         else:
             packages[install_method].append(sep[0])
 
 def main():
+    if len(argv) != 2:
+        print_error("Invalid number of arguments.")
+        exit(1)
     read_file(argv[1])
     for i in packages.keys():
         if (packages[i] != []):
-            system(f'{i} {packages_to_string(packages[i])}')
+            print_info(f"Installing packages with {i}")
+            print(f"Command: {i} {packages_to_string(packages[i])}")
+            ret = system(f'{i} {packages_to_string(packages[i])}')
+            if ret == 0:
+                print_success("Command returned 0")
+            else:
+                print_error(f"Errors ocurred. Command returned {ret}")
+
+    for i in execs:
+        print_info(f"Executing {i}")
+        ret = system(i)
+        if ret == 0:
+            print_success(f"Command \"{i}\" returned 0")
+        else:
+            print_error(f"Command \"{i}\" returned {ret}")
+
+class tc:
+    PURPLE = '\033[95m'
+    BLUE = '\033[94m'
+    CYAN = '\033[96m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 if __name__ == "__main__":
     main()

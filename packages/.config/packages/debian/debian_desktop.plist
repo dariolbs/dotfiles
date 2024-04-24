@@ -1,7 +1,0 @@
-# Debian desktop
-!command apt install
-# X11
-libx11-dev
-x11-utils
-libghc-x11-dev
-xinit

@@ -87,7 +87,7 @@ source "$HOME/.config/zsh/fzf/config.zsh"
 # Load version control information
 autoload -Uz vcs_info
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats '(%b)'
+zstyle ':vcs_info:git:*' formats '(%b) %m'
 
 ## PROMPT CONFIG
 lcrv() {
@@ -109,43 +109,47 @@ alias clear='clear; precmd() { vcs_info; precmd(){ vcs_info; echo "" }}'
 declare -A plugin_repos
 
 # Plugins are stored to $HOME/.local/share/zsh
-ZSH_PLUGIN_DIR="$HOME/.local/share/zsh/"
+ZSH_PLUGIN_DIR="$HOME/.local/share/zsh"
 mkdir -p "$ZSH_PLUGIN_DIR"
 
-plugin_repos=(
-    ["zsh-syntax-highlighting"]='https://github.com/zsh-users/zsh-syntax-highlighting.git'
-    ["zsh-history-substring-search"]='https://github.com/zsh-users/zsh-history-substring-search'
-    ["zsh-autosuggestions"]='https://github.com/zsh-users/zsh-autosuggestions'
-    ["zsh-autopair"]='https://github.com/hlissner/zsh-autopair'
+# Put your plugins here
+plugins=(
+    'zsh-users/zsh-syntax-highlighting'
+    'zsh-users/zsh-history-substring-search'
+    'zsh-users/zsh-autosuggestions'
+    'hlissner/zsh-autopair'
     )
 
-plugin-sync() {
-    cdir="$PWD"
+
+plugin-load() {
+    local cdir="$PWD"
     cd $ZSH_PLUGIN_DIR
-    for plugin in "${(k)plugin_repos[@]}"; do
+    for plugin in *; do
         pdir="$ZSH_PLUGIN_DIR/$plugin"
-        if [ ! -d "$pdir" ]; then
-            cd "$pdir"
-            echo "Plugin $plugin is not installed, cloning ${plugin_repos[$plugin]}..."
-            git clone "${plugin_repos[$plugin]}"
-            cd ..
-        else
-            cd "$pdir"
-            echo "Updating $plugin..."
-            git pull
-            cd ..
-        fi
+        [ -d "$pdir" ] && source $pdir/*.plugin.zsh
     done
     cd $cdir
 }
 
-plugin-source() {
-    cdir="$PWD"
+plugin-sync() {
+    local cdir="$PWD"
     cd $ZSH_PLUGIN_DIR
-    for plugin in ${(k)plugin_repos[@]}; do
-        pdir="$ZSH_PLUGIN_DIR/$plugin"
-        [ -d "$pdir" ] && source "$pdir/$plugin.plugin.zsh"
+    for plugin in "${plugins[@]}"; do
+        local pname="${plugin//*\/}"
+        local prepo="https://github.com/$plugin"
+        local pdir="$ZSH_PLUGIN_DIR/$pname"
+        if [ ! -d "$pdir" ]; then
+            echo "Plugin $pname is not installed, cloning $prepo..."
+            git clone "$prepo"
+        else
+            cd "$pdir"
+            echo "Updating $pname..."
+            git pull
+            cd ..
+        fi
     done
+    echo "Loading plugins..."
+    plugin-load
     cd $cdir
 }
 
@@ -157,7 +161,7 @@ setroot() {
     dir=""
     if [ -n "$1" ]; then
         dir="$(realpath $1)"
-        test ! -d "$dir" && echo "$dir is not a diretiry" && return 1
+        test ! -d "$dir" && echo "$dir is not a directory" && return 1
         test ! -r "$dir" && echo "No read access to $dir" && return 1
     fi
     echo $dir > $rootfile
@@ -176,15 +180,18 @@ if [[ "$(tty)" == "/dev/tty1" ]]; then
 
     if [[ ! -f "$TTY1_SCRIPT" ]]; then
         printf "#!/usr/bin/sh\nstartx\n" > "$TTY1_SCRIPT"
-        chmod +x $TTY1_SCRIPT
         echo "Generated default startup script at $TTY1_SCRIPT"
         echo "Change it to your needs!"
         sleep 1
+    fi
+
+    if [ ! -x $TTY1_SCRIPT ]; then
+        chmod +x $TTY1_SCRIPT
     fi
 
     echo "Executing $TTY1_SCRIPT..."
     exec "$TTY1_SCRIPT"
 fi
 
-# Source all plugins
-plugin-source
+# Load all plugins
+plugin-load

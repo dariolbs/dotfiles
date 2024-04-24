@@ -2,8 +2,8 @@ sw_volume: 60
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 15
-time: 20.979000
+current: 29
+time: 99.608000
 random: 1
 repeat: 1
 single: 1
@@ -40,4 +40,29 @@ playlist_begin
 25:gd/Xtrullor - Dropping Fish (Low Pitch) [S7squyBML-0].opus
 26:gd/Xtrullor - Screamroom-ox9X6SjHob8.m4a
 27:gd/Protoflicker (Silentroom - Protoflicker) Low Pitch-x_C9JkGlYvU.m4a
+28:gd/Splatterhouse [imqCwRLmRjM].opus
+29:gd/Ruthless (Creo - Avalanche) Low Pitch-I4t4WRDO4w0.m4a
+30:gd/Sonic Blaster cover (Original and HJFod low pitched) [jvXsf0Icb60].m4a
+31:gd/Rebirth blaster x sonic blaster [BL_EdnNGuQA].opus
+32:gd/Terraria Calamity Mod Music - 'Guardian of The Former Seas' - Theme of Desert Scourge-hPEQLU-aD3I.m4a
+33:gd/gravity.mp3
+34:gd/Plexity - Rebirth Blaster (Sonic Blaster Remix)-Swzg3jgEAgk_D_minor__bpm_145.mp3
+35:gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
+36:gd/Creo - Aurora-M170iMt3C8A.m4a
+37:gd/Camellia - Light it up (from crystallized) [eKyQvs6tCRM].opus
+38:gd/Creo - Wavelight-Kc4lIlboH2M.m4a
+39:gd/Creo - In Circles-E8pMGq5VL3Q.m4a
+40:gd/The Hallucination.m4a
+41:gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
+42:gd/Ethereal Artifice (NemesisTheory - Rose At Twilight) Low Pitch-WZVYc1ujiHk.m4a
+43:gd/Warak - Reanimate-zKCe1cA9Eb8.m4a
+44:gd/Dylnmatrix - Inner Demons (Equilibria Remix) [Free Download in Description] [6B6DGwL8aro].opus
+45:gd/Dimrain47 - At the Speed of Light-1Zrq8FiKS6A.m4a
+46:gd/663334_Yellow-and-Purple.mp3
+47:gd/Idyllic [1074080].mp3
+48:gd/Frozen Cave (cYsmix - Fright March) High Pitch-qQNdP98Hl1M.m4a
+49:gd/Arkady Ukupnik - I'll Never Marry You (DJ Koko Remix)(Tenth Circle Song)-37QVOF1Tl8I.m4a
+50:gd/Creo - Lost [q0ppj-J5_i4].opus
+51:gd/Creo - We Can Dream-BhMZzOSrA4I.m4a
+52:gd/Derpcat - Sonorous-jDVBMVLlAQI.m4a
 playlist_end
