@@ -1,0 +1,25 @@
+# ArchLinux - Xorg package list
+# Aí nessa merda
+# X Stuff
+xautolock
+xdotool
+xorg-server
+xorg-xinit
+xorg-xrandr
+xorg-xhost
+xwallpaper
+libx11
+libxinerama
+libxft
+ueberzug
+xorg-server-common
+xorg-setxkbmap
+xorg-xauth
+xorg-xev
+xorg-xhost
+xorg-xmodmap
+xorg-xrdb
+xf86-input-libinput
+xwallpaper
+sxhkd
+redshift

@@ -1,0 +1,23 @@
+# Debian base packages
+!command apt install
+libghc-gi-harfbuzz-dev
+build-essential
+manpages-dev
+gcc
+git
+vim
+stow
+zsh
+sudo
+wget
+curl
+npm
+go
+nodejs
+neofetch
+tor
+rsync
+exa
+polkit
+ruby
+neovim

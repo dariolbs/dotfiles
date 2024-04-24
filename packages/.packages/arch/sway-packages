@@ -1,0 +1,17 @@
+# Arch linux packages for sway desktop
+wlroots
+grim
+slurp
+gammastep
+qt5-wayland
+qt5ct
+webkit2gtk
+swayidle
+swaylock
+swaybg
+foot
+xorg-xwayland
+sway
+# Gtk stuff
+gtk-engine-murrine
+gnome-themes-extra
