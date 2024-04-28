@@ -6,7 +6,7 @@ keymap_lang="pt"
 keymap_options="caps:escape"
 
 # Monitor config
-primary="HDMI-0"
+primary="DP-0"
 monitors=( "HDMI-0"  "DP-0" )
 resolutions=( "1920x1080"  "1920x1080" )
 refresh_rates=( "60"  "165" )

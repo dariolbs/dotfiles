@@ -21,6 +21,8 @@ if command -v nvidia-smi &> /dev/null; then
     export __GLX_VENDOR_LIBRARY_NAME=nvidia
     # Xwayland compatibility
     export XWAYLAND_NO_GLAMOR=1
+
+    export sway_args="--unsupported-gpu"
 fi
 
 # Variables so wayland sucks less

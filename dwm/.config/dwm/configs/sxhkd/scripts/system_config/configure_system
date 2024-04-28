@@ -56,11 +56,14 @@ change_monitor_layout(){
     esac
 }
 configure_picom(){
+
 	local options=("Toggle:None:All:Blur:Rounded Corners:Shaders:Inactive Opacity:Fading:Vsync")
+			local file="$HOME/.config/dwm/configs/picom/picom.conf"
+
 	case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu ${dmenu_flags[@]} -l 9 -p "Select option:") in
 		"Toggle")
 			if [ "$(pidof picom)" = "" ]; then
-				picom &
+				picom --config ~/.config/dwm/configs/picom/picom.conf &
 				notify-send "Picom is active! 🌟"
 			else
 				killall picom
@@ -68,7 +71,6 @@ configure_picom(){
 			fi
 			;;
 		"Vsync")
-			local file="$HOME/.config/picom/picom.conf"
 			if [ -z "$(pidof picom)" ]; then
 				notify-send "😥 Picom is not running!" "Activate picom if you want to use vsync."
 			else
@@ -84,15 +86,15 @@ configure_picom(){
 			fi
 			;;
 		"Blur")
-			local state="$(grep "^blur-method" $HOME/.config/picom/picom.conf)"
+			local state="$(grep "^blur-method" $file)"
+
 			if [ -z $state ]; then
-				sed -i "s/#blur-method/blur-method/g" $HOME/.config/picom/picom.conf
+				sed -i "s/#blur-method/blur-method/g" $file
 			else
-				sed -i "s/blur-method/#blur-method/g" $HOME/.config/picom/picom.conf
+				sed -i "s/blur-method/#blur-method/g" $file
 			fi
 			;;
 		"Shaders")
-			local file="$HOME/.config/picom/picom.conf"
 			local state=$(grep "^shadow =" "$file" )
 			state=${state##*"= "}
 			if [ $state = "false;" ]; then
@@ -104,7 +106,6 @@ configure_picom(){
 			fi
 			;;
 		"Fading")
-			local file="$HOME/.config/picom/picom.conf"
 			local state=$(grep "^fading =" "$file" )
 			state=${state##*"= "}
 			if [ $state = "false;" ]; then
@@ -116,41 +117,43 @@ configure_picom(){
 			fi
 			;;
         "Inactive"*)
-			local file="$HOME/.config/picom/picom.conf"
 			local state=$(grep "^inactive-opacity =" "$file" )
             if [ -z $state ]; then
-				sed -i "s/#inactive-opacity =/inactive-opacity =/g" $HOME/.config/picom/picom.conf
+				sed -i "s/#inactive-opacity =/inactive-opacity =/g" $file
             else
-				sed -i "s/inactive-opacity =/#inactive-opacity =/g" $HOME/.config/picom/picom.conf
+				sed -i "s/inactive-opacity =/#inactive-opacity =/g" $file
             fi
             ;;  
 		"Rounded Corners")
-			local state="$(grep "^corner-radius" $HOME/.config/picom/picom.conf)"
+			local state="$(grep "^corner-radius" $file)"
 			if [ -z $state ]; then
-				sed -i "s/#corner-radius/corner-radius/g" $HOME/.config/picom/picom.conf
+				sed -i "s/#corner-radius/corner-radius/g" $file
 			else
-				sed -i "s/corner-radius/#corner-radius/g" $HOME/.config/picom/picom.conf
+				sed -i "s/corner-radius/#corner-radius/g" $file
 			fi
             ;;
         "None")
             sed -i "s/fading = true;/fading = false;/g; s/corner-radius/#corner-radius/g; s/blur-method/#blur-method/g; s/shadow = true;/shadow = false;/" $HOME/.config/picom/picom.conf
-            sed -i "s/inactive-opacity =/#inactive-opacity =/g" $HOME/.config/picom/picom.conf
+            sed -i "s/inactive-opacity =/#inactive-opacity =/g" $file
             ;;
         "All")
             sed -i "s/fading = false;/fading = true;/; s/#corner-radius/corner-radius/g; s/#blur-method/blur-method/g; s/shadow = false;/shadow = true;/" $HOME/.config/picom/picom.conf
-            sed -i "s/#inactive-opacity =/inactive-opacity =/g" $HOME/.config/picom/picom.conf
+            sed -i "s/#inactive-opacity =/inactive-opacity =/g" $file
 			;;
 esac
 }
 change_tablet_layout(){
+
 	local device="$(xsetwacom list devices | grep stylus)"
 	local device="${device%%stylus*}stylus"
 	local absolute_area=$(xsetwacom get "$device" Area | cut -f 3 -d " ")
+
 	if [ -f $script_folder/.tablet_data ]; then
 		local absolute_area=$(cat $script_folder/.tablet_data)
 	else
 		local absolute_area=$(xsetwacom get "$device" Area | cut -f 3 -d " ") && printf "$absolute_area" > $script_folder/.tablet_data
 	fi
+
 	local precision=1000000
 	local def_area=$(($absolute_area*(1080*$precision/1920)))
 	local def_area=$(($def_area / $precision ))
@@ -186,12 +189,6 @@ change_tablet_layout(){
 			# Salvar área de tablet original
 			;;
 	esac
-}
-
-suckless_config(){
-    # Suckless config for those lazy bastards
-    tools=$(command ls $HOME/.config/suckless)
-    selected=$(echo ${tools[@]}; dmenu ${dmenu_flags[@]} -l 10 -p "Select option:")
 }
 
 # Options on the script

@@ -42,13 +42,13 @@ function zle-keymap-select {
 
 zle -N zle-keymap-select
 zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    zle -K viins        # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
     echo -ne "\e[5 q"
 }
 
 zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+echo -ne '\e[5 q'       # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;}    # Use beam shape cursor for each new prompt.
 
 # Zsh history
 HISTFILE="$HOME/.zsh_history"
@@ -96,9 +96,16 @@ lcrv() {
         echo "$rv "
     fi
 }
+
 setopt prompt_subst
+if [[ "$(tty)" == "/dev/tty"* ]]; then
+    PROMPT_SYMBOL="#"
+else
+    PROMPT_SYMBOL="😎"
+fi
+
 PROMPT='%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
-%B%F{red}$(lcrv)%f%F{blue}λ%b%f '
+%B%F{red}$(lcrv)%f%F{blue}%b$PROMPT_SYMBOL%f '
 
 # Add a newline before the prompt
 precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
@@ -125,7 +132,7 @@ plugin-load() {
     local cdir="$PWD"
     cd $ZSH_PLUGIN_DIR
     for plugin in *; do
-        pdir="$ZSH_PLUGIN_DIR/$plugin"
+        local pdir="$ZSH_PLUGIN_DIR/$plugin"
         [ -d "$pdir" ] && source $pdir/*.plugin.zsh
     done
     cd $cdir

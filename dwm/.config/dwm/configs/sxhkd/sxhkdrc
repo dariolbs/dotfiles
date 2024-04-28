@@ -14,9 +14,9 @@ mod4 + shift + p
 mod4 + shift + b
 	bash ~/.config/dwm/configs/sxhkd/scripts/bookmark
 Print
-	bash ~/.config/dwm/configs/sxhkd/scripts/print
+	bash ~/.config/dwm/configs/sxhkd/scripts/print_monitor
 mod4 + Print
-	sh ~/.config/dwm/configs/sxhkd/scripts/print select
+	sh ~/.config/dwm/configs/sxhkd/scripts/print
 mod4 + e
 	sh ~/.config/dwm/configs/sxhkd/scripts/emoji_picker/script
 XF86AudioRaiseVolume

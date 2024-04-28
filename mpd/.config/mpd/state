@@ -2,8 +2,8 @@ sw_volume: 60
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 29
-time: 99.608000
+current: 18
+time: 9.116000
 random: 1
 repeat: 1
 single: 1
@@ -65,4 +65,6 @@ playlist_begin
 50:gd/Creo - Lost [q0ppj-J5_i4].opus
 51:gd/Creo - We Can Dream-BhMZzOSrA4I.m4a
 52:gd/Derpcat - Sonorous-jDVBMVLlAQI.m4a
+53:Osts/Persona 4 The Golden - Snowflakes [hdfmf11Wtbo].opus
+54:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
 playlist_end
