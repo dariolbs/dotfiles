@@ -18,11 +18,13 @@ zathura
 zathura-pdf-mupdf
 dunst
 webkit2gtk
+imv
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra
 # Better Desktop Experience
 polkit-kde-agent
+ly
 # NetworkManager
 network-manager-applet
 networkmanager-openvpn

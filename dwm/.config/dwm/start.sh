@@ -1,5 +1,21 @@
 #!/usr/bin/bash
 
+logs_dir="$HOME/.logs"
+awk_fallback_script="$HOME/.config/dwm/scripts/fallback_config.awk"
+xconfig="$HOME/.config/dwm/configs/xorg/xconfig"
+xhash="$HOME/.config/dwm/configs/xorg/.xrandr.md5"
+mons="$(xrandr | awk '$2 == "connected" {print $1}')"
+
+[ ! -d $logs_dir ] && mkdir -p $logs_dir
+
+not_installed() {
+    name="$1"
+    ! command -v $name && {
+        echo [ddwm config] $name is not installed! >> $logs_dir/dwm-startup.log
+    }
+}
+
+# System for messaging the user
 create_alert_script() {
 touch "$HOME/.alert"
 chmod +x "$HOME/.alert"
@@ -11,17 +27,25 @@ rm "$HOME/.alert"
 EOF
 }
 
-awk_fallback_script="$HOME/.config/dwm/scripts/fallback_config.awk"
-xconfig="$HOME/.config/dwm/configs/xorg/xconfig"
-xhash="$HOME/.config/dwm/configs/xorg/.xrandr.md5"
-mons="$(xrandr | awk '$2 == "connected" {print $1}')"
+# All dependencies
+deps=(
+    "xrandr"
+    "picom"
+    "dunst"
+    "mpd"
+    "sxhkd"
+    "nm-applet"
+    "dwmblocks"
+    "xrdb"
+)
 
-if ! command -v xrandr &> /dev/null; then
-    echo "Command xrandr was not found"
-    exit 1
-fi
+# Log every dependency taht isn't installed
+for d in ${deps[@]}; do
+    not_installed $d
+done
 
 # get variables
+source "$HOME/.profile"
 source "$HOME/.config/dwm/configs/xorg/xconfig"
 source "$HOME/.config/dwm/env"
 
@@ -54,7 +78,6 @@ mpd &
 
 # Load the Xresources !!!
 xrdb -load ~/.config/dwm/configs/xorg/colorschemes/$COLORSCHEME
-
 dwmblocks &
 
-exec dwm &> $HOME/.dwm.log
+exec dwm 2>> $logs_dir/dwm.log

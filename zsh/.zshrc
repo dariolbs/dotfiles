@@ -63,12 +63,6 @@ fi
 
 ## ENVIRONMENT VARIABLES
 export EDITOR="nvim"
-# LF ICONS
-[ -f ~/.config/lf/LF_ICONS ] && {
-	LF_ICONS="$(tr '\n' ':' <~/.config/lf/LF_ICONS)" \
-		&& export LF_ICONS
-    [ -f "$HOME/.config/lf/LF_COLORS" ] && source "$HOME/.config/lf/LF_COLORS"
-}
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
@@ -101,10 +95,10 @@ setopt prompt_subst
 if [[ "$(tty)" == "/dev/tty"* ]]; then
     PROMPT_SYMBOL="#"
 else
-    PROMPT_SYMBOL="😎"
+    PROMPT_SYMBOL="$"
 fi
 
-PROMPT='%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
+PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
 %B%F{red}$(lcrv)%f%F{blue}%b$PROMPT_SYMBOL%f '
 
 # Add a newline before the prompt

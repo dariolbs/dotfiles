@@ -89,12 +89,12 @@ configure_picom(){
 			local state="$(grep "^blur-method" $file)"
 
 			if [ -z $state ]; then
-				sed -i "s/#blur-method/blur-method/g" $file
+				sed -i "s/# blur-method/blur-method/g" $file
 			else
-				sed -i "s/blur-method/#blur-method/g" $file
+				sed -i "s/blur-method/# blur-method/g" $file
 			fi
-			;;
-		"Shaders")
+        ;;
+    "Shaders")
 			local state=$(grep "^shadow =" "$file" )
 			state=${state##*"= "}
 			if [ $state = "false;" ]; then
@@ -119,9 +119,9 @@ configure_picom(){
         "Inactive"*)
 			local state=$(grep "^inactive-opacity =" "$file" )
             if [ -z $state ]; then
-				sed -i "s/#inactive-opacity =/inactive-opacity =/g" $file
+				sed -i "s/# inactive-opacity =/inactive-opacity =/g" $file
             else
-				sed -i "s/inactive-opacity =/#inactive-opacity =/g" $file
+				sed -i "s/inactive-opacity =/# inactive-opacity =/g" $file
             fi
             ;;  
 		"Rounded Corners")

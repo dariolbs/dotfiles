@@ -6,16 +6,11 @@
     background-image: none;
 }
 
-/*
 @define-color low #1d2021;
 
 @define-color medium #32302f;
 
 @define-color high #ebdbb2;
-*/
-@define-color low rgba(29, 32, 33, .80);
-@define-color medium #181616;
-@define-color high #c5c9c5;
 
 window#waybar {
     /*
@@ -36,7 +31,6 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 10px;
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 10px;
@@ -104,15 +98,11 @@ tooltip {
 #custom-mode,
 #custom-cliphist,
 #tray {
-
     color: @high;
     background: @medium;
     opacity: 1;
     padding: 0px;
     margin: 3px 0px 3px 0px;
-    border: solid;
-    border-width: 2px;
-    border-color: @high;
 }
 
 
@@ -139,7 +129,6 @@ tooltip {
     border-radius: 10px 10px 10px 10px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-left: 20px;
 }
 
 #window {
@@ -202,19 +191,11 @@ tooltip {
     color: @high
 }
 
-/* Colors Right
+/* Colors Right */
 #cpu { color: #FD8A8A;}
 #memory { color: #FD8A8A;}
 #pulseaudio { color: #A8D1D1 }
 #backlight { color: #ffffff }
 #battery { color: #fffbc1 }
 #custom-disk_usage { color: #CEEDC7 }
-#network { color: #d3869b; } */
-
-#cpu,
-#memory,
-#pulseaudio,
-#backlight,
-#battery,
-#custom-disk_usage,
-#network { color: @high }
+#network { color: #d3869b; }

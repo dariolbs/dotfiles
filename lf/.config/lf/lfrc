@@ -151,7 +151,7 @@ cmd lf ${{
 # }}
 
 cmd chwallpaper ${{
-    ~/.scripts/bin/apply_wallpaper $f
+    ~/.scripts/bin/apply_wallpaper $f &> /dev/null & disown
 }}
 
 cmd bakwallpaper ${{

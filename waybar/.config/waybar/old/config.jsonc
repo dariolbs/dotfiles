@@ -7,8 +7,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     // "modules-left": [ "custom/clock", "custom/alarm", "custom/updates" ],
-    "modules-left": [ "custom/distro", "clock", "custom/alarm" ],
-    "modules-center": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "custom/disk_usage", "cpu", "memory", "network"],
 
 

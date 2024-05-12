@@ -1,2 +1,0 @@
-#!/bin/sh
-dmenu_path | $HOME/.scripts/.used/dmenu "$@" | ${SHELL:-"/bin/sh"} &

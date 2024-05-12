@@ -1,1 +1,240 @@
-/home/dario/.config/hypr/configs/waybar/style.css
+* {
+	border: none;
+	border-radius: 10;
+    font-family: "JetbrainsMono Nerd Font" ;
+	font-size: 15px;
+	min-height: 10px;
+}
+
+@define-color background #000000;
+@define-color text  #1a1a1a;
+
+window#waybar {
+	background: transparent;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	margin-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+    color: transparent;
+	background: transparent;
+}
+
+#workspaces {
+	margin-bottom: 6px;
+	margin-left: 12px;
+	font-size: 4px;
+	border-radius: 10px;
+	background: @text;
+	transition: none;
+}
+
+#workspaces button {
+	transition: none;
+	color: #B5E8E0;
+	background: transparent;
+	font-size: 16px;
+	border-radius: 2px;
+}
+
+#workspaces button.urgent {
+	transition: none;
+	color: #F28FAD;
+	background: transparent;
+	font-size: 4px;
+}
+
+#workspaces button.active {
+	color: #ABE9B3;
+    border-top: 2px solid #ABE9B3;
+    border-bottom: 2px solid #ABE9B3;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #FAE3B0;
+    border-color: #E8A2AF;
+    color: #E8A2AF;
+}
+
+#workspaces button.focused:hover {
+    color: #E8A2AF;
+}
+
+#network {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #bd93f9;
+}
+
+#pulseaudio {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #FAE3B0;
+}
+
+#battery {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color:  @text;
+	background: #B5E8E0;
+}
+
+#battery.charging, #battery.plugged {
+	color: @text;
+    background-color: #B5E8E0;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #B5E8E0;
+    color: @text;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+
+#backlight {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #F8BD96;
+}
+#clock {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #ABE9B3;
+	/*background: #1A1826;*/
+}
+
+#memory {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #DDB6F2;
+}
+#cpu {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #96CDFB;
+}
+
+#tray {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #B5E8E0;
+	background: @text;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 10px;
+	transition: none;
+    color: #89DCEB;
+    background: @text;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-bottom: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #F28FAD;
+}
+
+#custom-wallpaper {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #C9CBFF;
+}
+
+#custom-updates {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #E8A2AF;
+}
+
+#custom-media {
+	margin-bottom: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: @text;
+	background: #F2CDCD;
+}

@@ -1,1 +1,117 @@
-/home/dario/.config/hypr/configs/waybar/config.jsonc
+{
+	"layer": "top",
+    "position": "bottom",
+	"modules-left": ["custom/launcher", "cpu", "memory", "custom/updates", "tray"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["pulseaudio", "backlight", "battery", "network", "clock", "custom/power"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}% {format_source}",
+		"format-muted": "{icon} {volume}%",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+		"on-click":"pavucontrol",
+        "format-muted": " 0% {format_source}",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "river/tags": {
+		"num-tags": 6
+    },
+
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": " {:%Y-%m-%d}",
+        "format": "󰥔 {:%H:%M}"
+    },
+
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󱘖 Wired",
+        "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+        "format-linked": "󱘖 {ifname} (No IP)",
+        "format-disconnected": " Disconnected",
+        "format-alt": "󰤨 {signalStrength}%",
+        "interval": 5
+    },
+
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+    },
+
+    "custom/power":{
+        "format": " "
+    },
+
+    "custom/updates":{
+        "format": "󰮯 {}",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[ $(checkupdates | wc -l) -ne 0 ]",
+        "interval": 3600,
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+    },
+
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    }
+}

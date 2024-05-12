@@ -1,11 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 # Prints the current volume or 🔇 if muted.
-
 vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
 
 # If muted, print 🔇 and exit.
-[ "$vol" != "${vol%\[MUTED\]}" ] && echo muted && exit
+[ "$vol" != "${vol%\[MUTED\]}" ] && echo 🔇 muted && exit
 
 vol="${vol#Volume: }"
 
@@ -18,4 +17,12 @@ split() {
 
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
-echo "$vol%"
+if [ $vol -gt 100 ]; then
+    echo "🔴 $vol%"
+elif [ $vol -gt 60 ]; then
+    echo "🔊 $vol%"
+elif [ $vol -gt 20 ]; then
+    echo "🔉 $vol%"
+else
+    echo "🔈 $vol%"
+fi

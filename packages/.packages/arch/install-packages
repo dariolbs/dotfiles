@@ -1,3 +1,4 @@
 #!/usr/bin/bash
+#instalas merdas todas
 
 pacman -S --needed --noconfirm $(grep -v "^#" $@)

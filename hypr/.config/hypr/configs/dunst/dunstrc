@@ -18,6 +18,7 @@
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
     follow = keyboard
+
 ### Geometry ###
 
     # dynamic width from 0 to 300
@@ -86,10 +87,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#83a598"
+    frame_color = "#ABE9B3"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -308,30 +309,30 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
-    foreground = "#BBBBBB"
-    frame_color = "#BBBBBB"
-    highlight = "#BBBBBB"
+    background = "#010101"
+    foreground = "#B5E8E0"
+    frame_color = "#B5E8E0"
+    highlight = "#B5E8E0"
 
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#1d2021"
-    foreground = "#ebdbb2"
-    frame_color = "#ebdbb2"
-    highlight = "#ebdbb2"
+    background = "#010101"
+    foreground = "#ABE9B3"
+    frame_color = "#ABE9B3"
+    highlight = "#ABE9B3"
 
     timeout = ""
     # Icon "" notifications with normal urgency, uncomment to enable
     #default_icon = ""
 
 [urgency_critical]
-    background = "#1d2021"
-    foreground = "#e06c75"
-    frame_color = "#e06c75"
-    highlight = "#e06c75"
+    background = "#010101"
+    foreground = "#F28FAD"
+    frame_color = "#F28FAD"
+    highlight = "#F28FAD"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     default_icon = /home/dario/.local/share/icons/dalis/PepeHands.png

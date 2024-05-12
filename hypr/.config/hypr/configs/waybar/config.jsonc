@@ -7,9 +7,9 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     // "modules-left": [ "custom/clock", "custom/alarm", "custom/updates" ],
-    // "modules-left": [ "custom/distro", "clock", "custom/alarm" ],
-    "modules-left": ["hyprland/workspaces"],
-    "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "custom/disk_usage", "cpu", "memory", "network"],
+    "modules-left": [ "custom/distro", "clock", "custom/alarm" ],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [ "tray", "pulseaudio", "backlight", "battery", "cpu", "memory", "network"],
 
 
 // center modules //
@@ -66,7 +66,7 @@
     },
 
     "custom/distro": {
-        "exec": "~/.config/hypr/configs/waybar/scripts/release",
+        "exec": "~/.config/waybar/scripts/release",
         "show-empty": false,
         "format": "{}"
     },
@@ -135,7 +135,7 @@
 
     "custom/wally": {
         "format": "󰊠 wally",
-        "on-click": "~/.config/hypr/configs/waybar/scripts/wally",
+        "on-click": "~/.config/waybar/scripts/wally",
         "on-click-right": "~/.scripts/statusbar/waybar/wally back",
         "on-click-middle": "foot sh -c \"lfrun ~/Media/Wallpapers\"",
         "interval": 86400, // once every day
@@ -170,7 +170,7 @@
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "󰝟 0% {format_source}",
+        "format-muted": " 0% {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
@@ -212,7 +212,7 @@
 
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{icon} {percent}%",
+        "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
 
@@ -222,10 +222,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{icon} {time}",
+        "format": "{capacity}% {icon} ",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]

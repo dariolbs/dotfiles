@@ -3,25 +3,25 @@
 #define selcolor #7cfc00
 
 ! Terminal colors
-!st.background: #222222
-st.background: #000000
-st.foreground: #ffffff
-st.color0: #242424
-st.color1: #f62b5a
-st.color2: #47b413
-st.color3: #e3c401
-st.color4: #24acd4
-st.color5: #f2affd
-st.color6: #13c299
-st.color7: #e6e6e6
-st.color8: #616161
-st.color9: #ff4d51
-st.color10: #35d450
-st.color11: #e9e836
-st.color12: #5dc5f8
-st.color13: #feabf2
-st.color14: #24dfc4
-st.color15: #ffffff
+st.background: #080808
+st.foreground: #eeeeee
+
+st.color0: #323437
+st.color1: #ff5454
+st.color2: #8cc85f
+st.color3: #e3c78a
+st.color4: #80a0ff
+st.color5: #d183e8
+st.color6: #79dac8
+st.color7: #a1aab8
+st.color8: #7c8f8f
+st.color9: #ff5189
+st.color10: #36c692
+st.color11: #bfbf97
+st.color12: #74b2ff
+st.color13: #ae81ff
+st.color14: #85dc85
+st.color15: #e2637f
 
 !! St Appearance
 st.borderpx: 10
