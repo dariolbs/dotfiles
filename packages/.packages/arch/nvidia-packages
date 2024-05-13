@@ -1,6 +1,8 @@
 # Nvidia stuff
 nvidia-dkms
 nvidia-utils
+libva-nvidia-driver
+libva-nvidia-driver
 lib32-nvidia-utils
 nvidia-settings
 vulkan-icd-loader

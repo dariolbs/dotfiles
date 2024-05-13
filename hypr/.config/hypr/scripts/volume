@@ -13,5 +13,5 @@ pactl set-sink-volume @DEFAULT_SINK@ $1%
 vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
 vol="${vol#Volume: }"
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
-[ "$2" = "-n" ] && notify-send " ${vol}%" -r 100 -t 700 -h int:value:$((vol))
+[ "$2" = "-n" ] && notify-send "  ${vol}%" -r 100 -t 700 -h int:value:$((vol))
 pkill -RTMIN+10 dwmblocks;

@@ -9,7 +9,8 @@ options=(
 "--padding-top 15%"
 "--result-spacing 20"
 "--num-results 11"
-"--font JetBrainsMono"
+"--font JetBrainsMonoNerdFont"
 "--background-color \#000A"
-"--selection-color \#7daea3"
+"--selection-color \#ffffff"
+"--text-color \#a0a0a0"
 )

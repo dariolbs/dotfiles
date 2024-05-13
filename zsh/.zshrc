@@ -93,13 +93,13 @@ lcrv() {
 
 setopt prompt_subst
 if [[ "$(tty)" == "/dev/tty"* ]]; then
-    PROMPT_SYMBOL="#"
+    PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
+%B%F{red}$(lcrv)%f%F{blue}%b$%f '
 else
-    PROMPT_SYMBOL="$"
+    PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{blue}%~ %b %F{green}${vcs_info_msg_0_}
+%B%F{red}$(lcrv)%f%F{blue}%b%f '
 fi
 
-PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
-%B%F{red}$(lcrv)%f%F{blue}%b$PROMPT_SYMBOL%f '
 
 # Add a newline before the prompt
 precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
@@ -192,6 +192,24 @@ if [[ "$(tty)" == "/dev/tty1" ]]; then
 
     echo "Executing $TTY1_SCRIPT..."
     exec "$TTY1_SCRIPT"
+fi
+
+## YAZI
+
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+alias lf="yy"
+
+# Launch yazy imediately
+if [ -f /tmp/yazi-launcher ]; then
+    rm -f /tmp/yazi-launcher
+    yy
 fi
 
 # Load all plugins

@@ -1,6 +1,5 @@
 #Gigachad's Configuration of the lf file manager
 set cleaner ~/.config/lf/lf-ueberzug-cleaner
-#set previewer ~/.config/lf/lf-ueberzug-previewer
 set previewer ~/.config/lf/preview
 set icons true
 set drawbox

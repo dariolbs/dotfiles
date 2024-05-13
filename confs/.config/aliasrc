@@ -21,10 +21,10 @@ EZA_FLAGS="--classify"
 LS_FLAGS="--color --classify"
 
 if command -v eza &> /dev/null; then
-    alias la='eza $EZA_FLAGS --git -lA'
-    alias ll='eza $EZA_FLAGS --git -l'
-    alias ls='eza $EZA_FLAGS'
-    alias sl='eza $EZA_FLAGS'
+    alias la="eza $EZA_FLAGS --git -lA"
+    alias ll="eza $EZA_FLAGS --git -l"
+    alias ls="eza $EZA_FLAGS"
+    alias sl="eza $EZA_FLAGS"
     alias tree='eza $EZA_FLAGS -T'
 else
     alias la='ls -lhA $LS_FLAGS'

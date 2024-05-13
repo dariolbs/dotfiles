@@ -1,4 +1,19 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -x
 #instalas merdas todas
 
-pacman -S --needed --noconfirm $(grep -v "^#" $@)
+# Install paru if not installed
+! command -v paru &> /dev/null && {
+cdir="$PWD"
+mkdir -p ~/.cache/paru_install
+cd ~/.cache/paru_install
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd $cdir
+}
+
+# Install yazi if not installed
+! command -v yazi &> /dev/null && sudo pacman -S yazi
+
+paru -S --needed --noconfirm $(grep -v "^#" $@)

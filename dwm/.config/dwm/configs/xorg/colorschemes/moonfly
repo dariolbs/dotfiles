@@ -25,16 +25,16 @@ st.color15: #e2637f
 
 !! St Appearance
 st.borderpx: 10
-st.alpha: 0.85
+st.alpha: 0.90
 st.cursorColor: #ffffff
 
 ! Dwm
-ddwm.normbgcolor: #222222
+ddwm.normbgcolor: #323437
 ddwm.normbordercolor: #444444
-ddwm.selbgcolor: #005577
+ddwm.selbgcolor: #80a0ff
 ddwm.selbordercolor: selcolor
-ddwm.normfgcolor: #bbbbbb
-ddwm.selfgcolor: #eeeeee
+ddwm.normfgcolor: #eeeeee
+ddwm.selfgcolor: #323232
 ddwm.borderpx: 1
 ddwm.snap: 32
 ddwm.showbar: 1
@@ -44,8 +44,8 @@ ddwm.mfact: 0.55
 ddwm.resizehints: 0
 
 !dmenu
-dmenu.background: #222222
-dmenu.selbackground: #005577
-dmenu.foreground: #bbbbbb
-dmenu.selforeground: #eeeeee
+dmenu.background: #323437
+dmenu.selbackground: #80a0ff
+dmenu.foreground: #eeeeee
+dmenu.selforeground: #323232
 dmenu.bordercolor: selcolor

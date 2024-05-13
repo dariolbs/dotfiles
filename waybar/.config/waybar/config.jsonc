@@ -1,7 +1,7 @@
 {
 	"layer": "top",
     "position": "bottom",
-	"modules-left": ["custom/launcher", "cpu", "memory", "custom/updates", "tray"],
+	"modules-left": ["custom/launcher", "cpu", "memory", "custom/disk_usage", "custom/updates", "tray"],
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["pulseaudio", "backlight", "battery", "network", "clock", "custom/power"],
 	
@@ -24,11 +24,8 @@
     },
 
 	"backlight": {
-		"tooltip": false,
-		"format": " {}%",
-		"interval":1,
-        "on-scroll-up": "light -A 5",
-		"on-scroll-down": "light -U 5"
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
 
     "battery": {
@@ -58,17 +55,20 @@
     "cpu": {
         "interval": 15,
         "format": " {}%",
-        "max-length": 10
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     },
 
     "memory": {
         "interval": 30,
-        "format": " {}%",
-        "max-length": 10
+        "format": " {percentage}%",
+        "format-alt": " {used}GB",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": " {used:0.1f}GB/{total:0.1f}GB"
     },
 
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "󰤨 {essid}",
         "format-ethernet": "󱘖 Wired",
         "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
@@ -93,9 +93,7 @@
     },
 
     "custom/launcher":{
-        "format": " ",
-        "on-click": "rofi -show drun",
-        "on-click-right": "killall rofi"
+        "format": " "
     },
 
     "custom/power":{
@@ -106,12 +104,13 @@
         "format": "󰮯 {}",
         "exec": "checkupdates | wc -l",
         "exec-if": "[ $(checkupdates | wc -l) -ne 0 ]",
-        "interval": 3600,
-        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+        "interval": 3600
     },
 
-    "custom/wallpaper":{
-        "format":" ",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    "custom/disk_usage": {
+        "interval": 3600,       // Once every hour
+        "exec": "df | awk '/\\/$/{printf \"󰋊 %s\", $5} /home$/{printf \" 󰋜 %s\", $5}'",
+        "show-empty": false,
+        "format": "{} "
     }
 }
