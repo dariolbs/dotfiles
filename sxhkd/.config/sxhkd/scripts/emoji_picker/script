@@ -1,5 +1,0 @@
-#!/usr/bin/sh
-
-file="$HOME/.config/sxhkd/scripts/emoji_picker/emojis"
-emoji="$(cat $file | dmenu -l 20 -bw 0 -p "Select emoji:"| cut -d " " -f 1)"
-printf "${emoji%%"\n"}" | xclip -sel clip

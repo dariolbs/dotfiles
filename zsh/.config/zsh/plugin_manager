@@ -1,0 +1,47 @@
+#!/usr/bin/zsh
+# Plugins are stored to $HOME/.local/share/zsh
+
+ZSH_PLUGIN_DIR="$HOME/.local/share/zsh"
+mkdir -p "$ZSH_PLUGIN_DIR"
+
+# Put your plugins here
+plugins=(
+    'zsh-users/zsh-syntax-highlighting'
+    'zsh-users/zsh-history-substring-search'
+    'zsh-users/zsh-autosuggestions'
+    'hlissner/zsh-autopair'
+    )
+
+
+plugin-load() {
+    local cdir="$PWD"
+    cd $ZSH_PLUGIN_DIR
+    for plugin in *; do
+        local pdir="$ZSH_PLUGIN_DIR/$plugin"
+        [ -d "$pdir" ] && source $pdir/*.plugin.zsh
+    done
+    cd $cdir
+}
+
+plugin-sync() {
+    local cdir="$PWD"
+    cd $ZSH_PLUGIN_DIR
+    for plugin in "${plugins[@]}"; do
+        local pname="${plugin//*\/}"
+        local prepo="https://github.com/$plugin"
+        local pdir="$ZSH_PLUGIN_DIR/$pname"
+        if [ ! -d "$pdir" ]; then
+            echo "Plugin $pname is not installed, cloning $prepo..."
+            git clone "$prepo"
+        else
+            cd "$pdir"
+            echo "Updating $pname..."
+            git pull
+            cd ..
+        fi
+    done
+    echo "Loading plugins..."
+    plugin-load
+    cd $cdir
+}
+

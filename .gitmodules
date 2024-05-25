@@ -3,4 +3,4 @@
 	url = https://github.com/dariolbs/dwm
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = https://github.com/dariolbs/nvim
+	url = git@github.com:dariolbs/nvim.git

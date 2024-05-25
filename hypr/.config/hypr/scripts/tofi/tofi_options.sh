@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-
 options=(
 "--width 100%"
 "--height 100%"
@@ -11,6 +10,6 @@ options=(
 "--num-results 11"
 "--font JetBrainsMonoNerdFont"
 "--background-color \#000A"
-"--selection-color \#ffffff"
-"--text-color \#a0a0a0"
+"--selection-color \#96cdfb"
+"--text-color \#ffffff"
 )

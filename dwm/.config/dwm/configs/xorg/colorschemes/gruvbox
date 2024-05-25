@@ -40,19 +40,19 @@ st.borderpx: 10
 st.alpha: 1
 
 ! Dwm
-ddwm.normbgcolor: #282828
-ddwm.normbordercolor: #444444
-ddwm.normfgcolor: #a89984
-ddwm.selbgcolor: #928374
-ddwm.selbordercolor: #b8bb26
-ddwm.selfgcolor: #ebdbb2
-ddwm.borderpx: 2
-ddwm.snap: 32
-ddwm.showbar: 1
-ddwm.topbar: 0
-ddwm.nmaster: 1
-ddwm.resizehints: 0
-ddwm.mfact: 0.55
+dwm.normbgcolor: #282828
+dwm.normbordercolor: #444444
+dwm.normfgcolor: #a89984
+dwm.selbgcolor: #928374
+dwm.selbordercolor: #b8bb26
+dwm.selfgcolor: #ebdbb2
+dwm.borderpx: 2
+dwm.snap: 32
+dwm.showbar: 1
+dwm.topbar: 0
+dwm.nmaster: 1
+dwm.resizehints: 0
+dwm.mfact: 0.55
 
 !dmenu
 dmenu.background: #282828

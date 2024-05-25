@@ -23,6 +23,8 @@ if [ -L /sys/class/power_supply/BAT* ]; then
         cap=$(cat $battery/capacity)
         echo "${battery##*/} $(printbar $cap $barsize) ${cap}% $(cat $battery/status)"
     done
+    exit 0
 else
     echo No Battery
+    exit 1
 fi

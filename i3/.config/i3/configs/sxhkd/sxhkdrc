@@ -28,12 +28,11 @@ XF86AudioMute
 
 # File managers
 mod4 + n
-	st "lf-ueberzug"
-mod4 + shift + n
-	st -e lf-ueberzug ~/Documents/Notas
+	touch /tmp/yazi-launcher && st
+
 # Programas
 mod4 + w
-	firefox || librewolf
+	firefox
 XF86Calculator
 	st calc
 XF86Mail

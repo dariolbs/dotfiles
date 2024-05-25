@@ -18,7 +18,7 @@ zathura
 zathura-pdf-mupdf
 dunst
 webkit2gtk
-imv
+nsxiv
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra

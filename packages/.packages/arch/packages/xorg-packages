@@ -11,7 +11,7 @@ xwallpaper
 libx11
 libxinerama
 libxft
-ueberzug
+ueberzugpp
 xorg-server-common
 xorg-setxkbmap
 xorg-xauth

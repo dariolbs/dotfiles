@@ -11,7 +11,7 @@ mons="$(xrandr | awk '$2 == "connected" {print $1}')"
 not_installed() {
     name="$1"
     ! command -v $name && {
-        echo [ddwm config] $name is not installed! >> $logs_dir/dwm-startup.log
+        echo [dwm config] $name is not installed! >> $logs_dir/dwm-startup.log
     }
 }
 

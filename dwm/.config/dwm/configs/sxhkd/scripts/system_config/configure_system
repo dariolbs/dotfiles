@@ -62,7 +62,7 @@ configure_picom(){
 
 	case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu ${dmenu_flags[@]} -l 9 -p "Select option:") in
 		"Toggle")
-			if [ "$(pidof picom)" = "" ]; then
+			if ! pidof picom 2> /dev/null; then
 				picom --config ~/.config/dwm/configs/picom/picom.conf &
 				notify-send "Picom is active! 🌟"
 			else

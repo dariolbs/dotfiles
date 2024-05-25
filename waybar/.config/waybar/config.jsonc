@@ -1,9 +1,9 @@
 {
 	"layer": "top",
     "position": "bottom",
-	"modules-left": ["custom/launcher", "cpu", "memory", "custom/disk_usage", "custom/updates", "tray"],
+	"modules-left": [ "custom/launcher", "cpu", "memory", "custom/updates", "tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["pulseaudio", "backlight", "battery", "network", "clock", "custom/power"],
+	"modules-right": ["pulseaudio", "backlight", "battery", "network", "clock"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -101,7 +101,7 @@
     },
 
     "custom/updates":{
-        "format": "󰮯 {}",
+        "format": "󰏖 {}",
         "exec": "checkupdates | wc -l",
         "exec-if": "[ $(checkupdates | wc -l) -ne 0 ]",
         "interval": 3600

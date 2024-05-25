@@ -1,9 +1,9 @@
 [Default Applications]
-image/png=imv.desktop
-image/jpg=imv.desktop
-image/webp=imv.desktop
-image/jpeg=imv.desktop
-image/gif=imv.desktop
+image/png=nsxiv.desktop
+image/jpg=nsxiv.desktop
+image/webp=nsxiv.desktop
+image/jpeg=nsxiv.desktop
+image/gif=nsxiv.desktop
 inode/directory=pcmanfm.desktop
 x-scheme-handler/discord-712465656758665259=discord-712465656758665259.desktop
 text/plain=nvim.desktop

@@ -80,33 +80,36 @@ source "$HOME/.config/zsh/fzf/config.zsh"
 
 # Load version control information
 autoload -Uz vcs_info
+zstyle ':vcs_info:*' check-for-changes true
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats '(%b) %m'
+# zstyle ':vcs_info:git:*' formats '%s %b %m%u%c'
+zstyle ':vcs_info:git*' actionformats "%s  %r/%S %b %m%u%c "
 
 ## PROMPT CONFIG
 lcrv() {
     rv=$?
     if [ $rv -gt 0 ]; then
-        echo "$rv "
+        echo "%F{red}$rv%f "
     fi
 }
 
 setopt prompt_subst
+
+# Old prompt
 if [[ "$(tty)" == "/dev/tty"* ]]; then
     PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
 %B%F{red}$(lcrv)%f%F{blue}%b$%f '
 else
-    PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{blue}%~ %b %F{green}${vcs_info_msg_0_}
-%B%F{red}$(lcrv)%f%F{blue}%b%f '
+    PROMPT='%F{magenta}%~ %b%F{green}${vcs_info_msg_0_}
+%B%F{red}$(lcrv)%f%F{blue}λ%b%f '
+    RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
 fi
-
 
 # Add a newline before the prompt
 precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
 alias clear='clear; precmd() { vcs_info; precmd(){ vcs_info; echo "" }}'
 
 ## Who needs a plugin manager?
-
 declare -A plugin_repos
 
 # Plugins are stored to $HOME/.local/share/zsh
@@ -212,5 +215,4 @@ if [ -f /tmp/yazi-launcher ]; then
     yy
 fi
 
-# Load all plugins
 plugin-load

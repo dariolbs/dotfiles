@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+# Install packages
+declare -A question_packages=(
+    ["Are you using an NVidia GPU?"]="packages/nvidia-packages"
+    ["Will you be using hyprland?"]="packages/hyprland-packages"
+    ["Will you be using an xorg window manager?"]="packages/xorg-packages"
+    ["Will you be using wine?"]="packages/wine-packages"
+)
+
+packages="packages/base-packages packages/desktop-packages"
+
+for q in "${!question_packages[@]}"; do
+    echo "$q (y/n)"
+    read r
+    [ $r == "y" ] && packages="${packages} ${question_packages["$q"]}"
+done
+
+eval "./install-packages ${packages[@]}"

@@ -1,9 +1,9 @@
-sw_volume: 62
+sw_volume: 70
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 15
-time: 97.754000
+current: 28
+time: 86.640000
 random: 1
 repeat: 1
 single: 1
@@ -65,7 +65,6 @@ playlist_begin
 50:gd/Creo - Lost [q0ppj-J5_i4].opus
 51:gd/Creo - We Can Dream-BhMZzOSrA4I.m4a
 52:gd/Derpcat - Sonorous-jDVBMVLlAQI.m4a
-53:Osts/Persona 4 The Golden - Snowflakes [hdfmf11Wtbo].opus
-54:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
-55:Classica/Beethoven - Moonlight Sonata (FULL) [4Tr0otuiQuU].opus
+53:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
+54:Classica/Beethoven - Moonlight Sonata (FULL) [4Tr0otuiQuU].opus
 playlist_end

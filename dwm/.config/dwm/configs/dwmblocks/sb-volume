@@ -17,12 +17,14 @@ split() {
 
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
-if [ $vol -gt 100 ]; then
-    echo "🔴 $vol%"
-elif [ $vol -gt 60 ]; then
-    echo " $vol%"
-elif [ $vol -gt 20 ]; then
-    echo " $vol%"
-else
-    echo " $vol%"
-fi
+echo "$vol%"
+
+# if [ $vol -gt 100 ]; then
+#     echo "🔴 $vol%"
+# elif [ $vol -gt 60 ]; then
+#     echo " $vol%"
+# elif [ $vol -gt 20 ]; then
+#     echo " $vol%"
+# else
+#     echo " $vol%"
+# fi

@@ -1,7 +1,5 @@
 #!/usr/bin/bash
 
-export DESKTOP_TYPE="dwm"
-export COLORSCHEME="moonfly"
-export NVIM_COLORSCHEME="gruvbox"
-export NVIM_TRANSPARENT="y"
-# export NVIM_NO_LUALINE="y"
+export GTK_THEME="Adwaita-dark"
+export DESKTOP_TYPE="ddwm"
+export COLORSCHEME="jellybeans"
