@@ -1,18 +1,15 @@
 #!/usr/bin/bash
 
-declare -A symlink_locations
-declare -A wallpaper_scripts
-
-symlink_locations=(
+declare -A symlink_locations=(
     ["i3"]="$HOME/.config/i3/configs/wallpaper/wallpaper"
-    ["ddwm"]="$HOME/.config/ddwm/configs/wallpaper/wallpaper"
+    ["ddwm"]="$HOME/.config/dwm/configs/wallpaper/wallpaper"
     ["Hyprland"]="$HOME/.config/hypr/configs/wallpaper/wallpaper"
     ["sway"]="$HOME/.config/sway/configs/wallpaper/wallpaper"
 )
 
-wallpaper_scripts=(
+declare -A wallpaper_scripts=(
     ["i3"]="$HOME/.config/i3/configs/wallpaper/init_wallpaper.sh"
-    ["ddwm"]="$HOME/.config/ddwm/configs/wallpaper/init_wallpaper.sh"
+    ["ddwm"]="$HOME/.config/dwm/configs/wallpaper/init_wallpaper.sh"
     ["Hyprland"]="$HOME/.config/hypr/configs/wallpaper/init_wallpaper.sh"
     ["sway"]=""
 )

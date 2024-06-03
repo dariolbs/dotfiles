@@ -3,4 +3,4 @@ total=$(free -m | awk '/^Mem/ {print $2}')
 used=$(free -m | awk '/^Mem/ {print $3}')
 
 percentage=$(($used*100/$total))
-printf "%s%%" $percentage
+printf "[%s/%sM %s%%]" $used $total $percentage

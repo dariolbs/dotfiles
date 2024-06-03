@@ -72,7 +72,7 @@ eval "$HOME/.config/dwm/configs/redshift/init.sh" &
 # Services
 dunst -config "$HOME/.config/dwm/configs/dunst/dunstrc" &
 sxhkd -c "$HOME/.config/dwm/configs/sxhkd/sxhkdrc" &
-picom --config "$HOME/.config/dwm/configs/picom/picom.conf" &
+# picom --config "$HOME/.config/dwm/configs/picom/picom.conf" &
 nm-applet &
 mpd &
 

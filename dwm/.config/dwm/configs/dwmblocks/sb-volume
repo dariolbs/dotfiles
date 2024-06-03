@@ -17,7 +17,7 @@ split() {
 
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
-echo "$vol%"
+echo "[VOL $vol%]"
 
 # if [ $vol -gt 100 ]; then
 #     echo "🔴 $vol%"

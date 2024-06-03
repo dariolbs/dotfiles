@@ -1,0 +1,5 @@
+gnome
+gnome-shell-extension-blur-my-shell
+gnome-shell-extension-dash-to-dock
+gnome-shell-extensions
+paru -S gnome-shell-extension-appindicator

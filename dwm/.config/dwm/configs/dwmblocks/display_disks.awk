@@ -1,4 +1,4 @@
 /\/$/ { root = $5 }
 /\/home$/ { home = $5 }
 
-END{ print "root:" root, "home:" home}
+END{ print "[r:" root, "h:" home "]"}
