@@ -2,8 +2,8 @@ sw_volume: 86
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 8
-time: 88.823000
+current: 3
+time: 84.072000
 random: 1
 repeat: 1
 single: 1
@@ -28,4 +28,7 @@ playlist_begin
 13:gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
 14:gd/Creo - Lost [q0ppj-J5_i4].opus
 15:gd/566770_DuoCore---Dignity.mp3
+16:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
+17:Osts/Chris Christodoulou - The Rain Formerly Known as Purple  ｜ Risk of Rain 2 (2020) [EGXPAoyP_cg].opus
+18:Osts/Heaven - Persona 4 [zQ7H4tZa8-k].opus
 playlist_end
