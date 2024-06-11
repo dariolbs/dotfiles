@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-
-export GTK_THEME="Adwaita-dark"
-export DESKTOP_TYPE="ddwm"
-export COLORSCHEME="default"

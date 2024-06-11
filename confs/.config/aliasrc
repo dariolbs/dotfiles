@@ -17,7 +17,7 @@ alias lf="~/.config/lf/lf-ueberzug || lf"
 
 alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
-EZA_FLAGS="--classify"
+EZA_FLAGS="--icons"
 LS_FLAGS="--color --classify"
 
 if command -v eza &> /dev/null; then
@@ -27,10 +27,10 @@ if command -v eza &> /dev/null; then
     alias sl="eza $EZA_FLAGS"
     alias tree='eza $EZA_FLAGS -T'
 else
-    alias la='ls -lhA $LS_FLAGS'
-    alias ll='ls -lh $LS_FLAGS'
-    alias ls='ls $LS_FLAGS'
-    alias sl='ls $LS_FLAGS'
+    alias la="ls -lhA $LS_FLAGS"
+    alias ll="ls -lh $LS_FLAGS"
+    alias ls="ls $LS_FLAGS"
+    alias sl="ls $LS_FLAGS"
 fi
 
 if command -v rg &> /dev/null; then

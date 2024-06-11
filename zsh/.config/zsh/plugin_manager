@@ -1,17 +1,15 @@
 #!/usr/bin/zsh
 # Plugins are stored to $HOME/.local/share/zsh
 
+declare -A plugin_repos
+
+# Plugins are stored to $HOME/.local/share/zsh
 ZSH_PLUGIN_DIR="$HOME/.local/share/zsh"
-mkdir -p "$ZSH_PLUGIN_DIR"
 
-# Put your plugins here
-plugins=(
-    'zsh-users/zsh-syntax-highlighting'
-    'zsh-users/zsh-history-substring-search'
-    'zsh-users/zsh-autosuggestions'
-    'hlissner/zsh-autopair'
-    )
-
+if [ ! -d "$ZSH_PLUGIN_DIR" ]; then
+    mkdir -p "$ZSH_PLUGIN_DIR"
+    plugin-sync
+fi
 
 plugin-load() {
     local cdir="$PWD"
@@ -20,7 +18,11 @@ plugin-load() {
         local pdir="$ZSH_PLUGIN_DIR/$plugin"
         [ -d "$pdir" ] && source $pdir/*.plugin.zsh
     done
-    cd $cdir
+    if [ -r "$cdir" ]; then
+        cd $cdir
+    else
+        cd $cdir
+    fi
 }
 
 plugin-sync() {
@@ -42,6 +44,9 @@ plugin-sync() {
     done
     echo "Loading plugins..."
     plugin-load
-    cd $cdir
+    if [ -r "$cdir" ]; then
+        cd $cdir
+    else
+        cd
+    fi
 }
-

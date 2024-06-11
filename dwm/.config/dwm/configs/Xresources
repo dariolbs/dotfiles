@@ -50,7 +50,7 @@ st.background:   base00
 #endif
 st.cursorColor:  base05
 
-st.color0:       base00
+st.color0:       base01
 st.color1:       base08
 st.color2:       base0B
 st.color3:       base0A

@@ -24,7 +24,6 @@ gtk-engine-murrine
 gnome-themes-extra
 # Better Desktop Experience
 polkit-kde-agent
-ly
 # NetworkManager
 network-manager-applet
 networkmanager-openvpn

@@ -4,17 +4,13 @@ BEGIN {
 }
 
 function getBestRefreshRate(){
-
     max = 0
-
     for (i=2; i <= NF; i++) {
         number = split($i, a, "\\.")
         if (a[1] > max)
             max = a[1]
     }
-
     return max
-
     }
 
 $2 == "connected" {

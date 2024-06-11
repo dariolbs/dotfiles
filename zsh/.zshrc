@@ -100,7 +100,7 @@ if [[ "$(tty)" == "/dev/tty"* ]]; then
     PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
 %B%F{red}$(lcrv)%f%F{blue}%b$%f '
 else
-    PROMPT='%F{magenta}%~ %b%F{green}${vcs_info_msg_0_}
+    PROMPT='%F{red}%u%F{magenta}%~ %b%F{green}${vcs_info_msg_0_}
 %B%F{red}$(lcrv)%f%F{blue}λ%b%f '
     RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
 fi
@@ -109,53 +109,17 @@ fi
 precmd() { vcs_info; precmd(){ vcs_info; echo "" }}
 alias clear='clear; precmd() { vcs_info; precmd(){ vcs_info; echo "" }}'
 
-## Who needs a plugin manager?
-declare -A plugin_repos
-
-# Plugins are stored to $HOME/.local/share/zsh
-ZSH_PLUGIN_DIR="$HOME/.local/share/zsh"
-mkdir -p "$ZSH_PLUGIN_DIR"
+source "$HOME/.config/zsh/plugin_manager"
 
 # Put your plugins here
+# Keys = git repo
+# Vals = path for the plugin file
 plugins=(
     'zsh-users/zsh-syntax-highlighting'
     'zsh-users/zsh-history-substring-search'
     'zsh-users/zsh-autosuggestions'
     'hlissner/zsh-autopair'
     )
-
-
-plugin-load() {
-    local cdir="$PWD"
-    cd $ZSH_PLUGIN_DIR
-    for plugin in *; do
-        local pdir="$ZSH_PLUGIN_DIR/$plugin"
-        [ -d "$pdir" ] && source $pdir/*.plugin.zsh
-    done
-    cd $cdir
-}
-
-plugin-sync() {
-    local cdir="$PWD"
-    cd $ZSH_PLUGIN_DIR
-    for plugin in "${plugins[@]}"; do
-        local pname="${plugin//*\/}"
-        local prepo="https://github.com/$plugin"
-        local pdir="$ZSH_PLUGIN_DIR/$pname"
-        if [ ! -d "$pdir" ]; then
-            echo "Plugin $pname is not installed, cloning $prepo..."
-            git clone "$prepo"
-        else
-            cd "$pdir"
-            echo "Updating $pname..."
-            git pull
-            cd ..
-        fi
-    done
-    echo "Loading plugins..."
-    plugin-load
-    cd $cdir
-}
 
 # You can change the default starting folder
 rootfile="$HOME/.rootdir"

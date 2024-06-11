@@ -6,4 +6,4 @@ source $HOME/.profile
 # exec ~/.config/i3/start.sh
 
 # For ddwm
-exec ~/.config/dwm/start.sh
+exec ~/.config/dwm/init.sh
