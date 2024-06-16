@@ -1,6 +1,6 @@
 #!/bin/sh
 r=true
-state=$(grep ":class_g = 'st" $HOME/.config/picom/picom.conf | cut -f 1 -d ":" | sed "s/ //g")
+state=$(grep ":class_g = 'st" $HOME/.config/dwm/configs/picom/picom.conf | cut -f 1 -d ":" | sed "s/ //g")
 state=${state##"\""}
 newstate=$(($state $1 $2))
 if [ $newstate -gt 90 ] || [ $newstate -lt 0 ]; then

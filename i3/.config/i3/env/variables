@@ -1,8 +1,0 @@
-#!/usr/bin/bash
-
-export DESKTOP_TYPE="i3"
-export NVIM_COLORSCHEME="gruvbox"
-# export NVIM_TRANSPARENT="y"
-# export NVIM_NO_CURSORLINE="y"
-# export NVIM_NO_LUALINE="y"
-# export NVIM_NO_IDL="y"

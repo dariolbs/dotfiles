@@ -1,5 +1,5 @@
 #!/bin/sh 
-file="$HOME/.config/picom/picom.conf"
+file="$HOME/.config/dwm/configs/picom/picom.conf"
 if [ -z "$(pidof picom)" ]; then
 	notify-send "😥 Picom is not running!" "Activate picom if you want to use vsync."
 else
@@ -7,9 +7,9 @@ else
 	state=${state##*=}
 	if [ $state = "false" ]; then
 		sed -i "s/vsync = false/vsync = true/" "$file"
-		notify-send -u low " Vsync in on!"
+		notify-send -u low "Vsync in on!"
 	else
 		sed -i "s/vsync = true/vsync = false/" "$file"
-		notify-send -u low " Vsync in off!"
+		notify-send -u low "Vsync in off!"
 	fi
 fi

@@ -3,7 +3,7 @@
 source $HOME/.profile
 
 # For i3
-# exec ~/.config/i3/start.sh
+# exec ~/.config/i3/init.sh
 
-# For ddwm
+# For dwm
 exec ~/.config/dwm/init.sh

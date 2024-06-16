@@ -102,3 +102,10 @@ dmenu.selbackground: #005577
 dmenu.foreground: #bbbbbb
 dmenu.selforeground: #eeeeee
 dmenu.bordercolor: selcolor
+
+!nsxiv
+nsxiv.background: #222222
+nsxiv.selbackground: #005577
+nsxiv.foreground: #bbbbbb
+nsxiv.selforeground: #eeeeee
+nsxiv.bordercolor: selcolor

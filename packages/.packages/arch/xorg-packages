@@ -19,6 +19,7 @@ xorg-xev
 xorg-xhost
 xorg-xmodmap
 xorg-xrdb
+xclip
 xf86-input-libinput
 xwallpaper
 sxhkd

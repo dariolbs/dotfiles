@@ -62,3 +62,10 @@ notmuch
 ruby
 sudo
 checkbashisms
+chafa
+gnome-epub-thumbnailer
+perl-image-exiftool
+transmission-cli
+poppler
+imagemagick
+ffmpegthumbnailer

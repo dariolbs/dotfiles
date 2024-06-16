@@ -5,23 +5,29 @@ old_ifs="$IFS"
 IFS=":"
 script_folder="$HOME/.config/sxhkd/scripts/system_config"
 
+dmenu_flags=(
+"-c"
+"-bw"
+"2"
+)
+
 change_keymap(){
     options="$(command ls $keymaps_folder)"
-	chosen=$(for option in ${options[@]}; do printf "${option[@]}\n"; done | dmenu -l 5 -p "Select keymap:") &&
+	chosen=$(for option in ${options[@]}; do printf "${option[@]}\n"; done | dmenu ${dmenu_flags[@]} -l 5 -p "Select keymap:") &&
     xmodmap "$keymaps_folder/$chosen" && notify-send "Keymap updated" "Changed keymap to $chosen"
 }
 
 change_colorscheme(){
     colorscheme_folder="$HOME/.config/colorschemes"
-    color="$(ls "$colorscheme_folder" | dmenu -l 10 -p "Select colorscheme:")" || exit 1
+    color="$(ls "$colorscheme_folder" | dmenu ${dmenu_flags[@]} -l 10 -p "Select colorscheme:")" || exit 1
 	local colorscheme="${colorscheme_folder}/$color"
-	    cp -r $colorscheme/$(ls $colorscheme | dmenu -l 10 -p "Select colorscheme") $HOME/.Xresources && notify-send "System" "Colorscheme updated! 🎨"
+	    cp -r $colorscheme/$(ls $colorscheme | dmenu ${dmenu_flags[@]} -l 10 -p "Select colorscheme") $HOME/.Xresources && notify-send "System" "Colorscheme updated! 🎨"
 }
 
 change_monitor_layout(){
     source "$HOME/.config/system/config"
 	monitor_options="Apply default config:Primary only:Second only:Third only"
-	option=$(for i in ${monitor_options[@]}; do printf "${i}\n"; done | dmenu -p "Layout:" -l 5)
+	option=$(for i in ${monitor_options[@]}; do printf "${i}\n"; done | dmenu ${dmenu_flags[@]} -p "Layout:" -l 5)
     case "$option" in 
         "Apply default config") apply_sys_config;;
         "Primary only")
@@ -50,11 +56,14 @@ change_monitor_layout(){
     esac
 }
 configure_picom(){
+
 	local options=("Toggle:None:All:Blur:Rounded Corners:Shaders:Inactive Opacity:Fading:Vsync")
-	case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu -l 9 -p "Select option:") in
+			local file="$HOME/.config/dwm/configs/picom/picom.conf"
+
+	case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu ${dmenu_flags[@]} -l 9 -p "Select option:") in
 		"Toggle")
-			if [ "$(pidof picom)" = "" ]; then
-				picom &
+			if ! pidof picom 2> /dev/null; then
+				picom --config ~/.config/dwm/configs/picom/picom.conf &
 				notify-send "Picom is active! 🌟"
 			else
 				killall picom
@@ -62,7 +71,6 @@ configure_picom(){
 			fi
 			;;
 		"Vsync")
-			local file="$HOME/.config/picom/picom.conf"
 			if [ -z "$(pidof picom)" ]; then
 				notify-send "😥 Picom is not running!" "Activate picom if you want to use vsync."
 			else
@@ -78,15 +86,15 @@ configure_picom(){
 			fi
 			;;
 		"Blur")
-			local state="$(grep "^blur-method" $HOME/.config/picom/picom.conf)"
+			local state="$(grep "^blur-method" $file)"
+
 			if [ -z $state ]; then
-				sed -i "s/#blur-method/blur-method/g" $HOME/.config/picom/picom.conf
+				sed -i "s/# blur-method/blur-method/g" $file
 			else
-				sed -i "s/blur-method/#blur-method/g" $HOME/.config/picom/picom.conf
+				sed -i "s/blur-method/# blur-method/g" $file
 			fi
-			;;
-		"Shaders")
-			local file="$HOME/.config/picom/picom.conf"
+        ;;
+    "Shaders")
 			local state=$(grep "^shadow =" "$file" )
 			state=${state##*"= "}
 			if [ $state = "false;" ]; then
@@ -98,7 +106,6 @@ configure_picom(){
 			fi
 			;;
 		"Fading")
-			local file="$HOME/.config/picom/picom.conf"
 			local state=$(grep "^fading =" "$file" )
 			state=${state##*"= "}
 			if [ $state = "false;" ]; then
@@ -110,49 +117,51 @@ configure_picom(){
 			fi
 			;;
         "Inactive"*)
-			local file="$HOME/.config/picom/picom.conf"
 			local state=$(grep "^inactive-opacity =" "$file" )
             if [ -z $state ]; then
-				sed -i "s/#inactive-opacity =/inactive-opacity =/g" $HOME/.config/picom/picom.conf
+				sed -i "s/# inactive-opacity =/inactive-opacity =/g" $file
             else
-				sed -i "s/inactive-opacity =/#inactive-opacity =/g" $HOME/.config/picom/picom.conf
+				sed -i "s/inactive-opacity =/# inactive-opacity =/g" $file
             fi
             ;;  
 		"Rounded Corners")
-			local state="$(grep "^corner-radius" $HOME/.config/picom/picom.conf)"
+			local state="$(grep "^corner-radius" $file)"
 			if [ -z $state ]; then
-				sed -i "s/#corner-radius/corner-radius/g" $HOME/.config/picom/picom.conf
+				sed -i "s/#corner-radius/corner-radius/g" $file
 			else
-				sed -i "s/corner-radius/#corner-radius/g" $HOME/.config/picom/picom.conf
+				sed -i "s/corner-radius/#corner-radius/g" $file
 			fi
             ;;
         "None")
             sed -i "s/fading = true;/fading = false;/g; s/corner-radius/#corner-radius/g; s/blur-method/#blur-method/g; s/shadow = true;/shadow = false;/" $HOME/.config/picom/picom.conf
-            sed -i "s/inactive-opacity =/#inactive-opacity =/g" $HOME/.config/picom/picom.conf
+            sed -i "s/inactive-opacity =/#inactive-opacity =/g" $file
             ;;
         "All")
             sed -i "s/fading = false;/fading = true;/; s/#corner-radius/corner-radius/g; s/#blur-method/blur-method/g; s/shadow = false;/shadow = true;/" $HOME/.config/picom/picom.conf
-            sed -i "s/#inactive-opacity =/inactive-opacity =/g" $HOME/.config/picom/picom.conf
+            sed -i "s/#inactive-opacity =/inactive-opacity =/g" $file
 			;;
 esac
 }
 change_tablet_layout(){
+
 	local device="$(xsetwacom list devices | grep stylus)"
 	local device="${device%%stylus*}stylus"
 	local absolute_area=$(xsetwacom get "$device" Area | cut -f 3 -d " ")
+
 	if [ -f $script_folder/.tablet_data ]; then
 		local absolute_area=$(cat $script_folder/.tablet_data)
 	else
 		local absolute_area=$(xsetwacom get "$device" Area | cut -f 3 -d " ") && printf "$absolute_area" > $script_folder/.tablet_data
 	fi
+
 	local precision=1000000
 	local def_area=$(($absolute_area*(1080*$precision/1920)))
 	local def_area=$(($def_area / $precision ))
 
 	source $script_folder/.tablet_data
 	local tablet_options=("Monitor 1:Monitor 2:Monitor 3:Osu! Mode")
-	#case $(for option in ${tablet_options[@]}; do printf "${option}\n"; done | dmenu -l 3 -p "New layout:") in
-	case $(for option in ${tablet_options[@]}; do printf "${option}\n"; done | dmenu -l 4 -p "Tablet Layout:") in
+	#case $(for option in ${tablet_options[@]}; do printf "${option}\n"; done | dmenu ${dmenu_flags[@]} -l 3 -p "New layout:") in
+	case $(for option in ${tablet_options[@]}; do printf "${option}\n"; done | dmenu ${dmenu_flags[@]} -l 4 -p "Tablet Layout:") in
 		"Monitor 1")
 			# Mapear para o monitor principal
 			xsetwacom set "$device" MapToOutput 1920x1080+1920+0
@@ -182,16 +191,10 @@ change_tablet_layout(){
 	esac
 }
 
-suckless_config(){
-    # Suckless config for those lazy bastards
-    tools=$(command ls $HOME/.config/suckless)
-    selected=$(echo ${tools[@]}; dmenu -l 10 -p "Select option:")
-}
-
 # Options on the script
 options="Keybindings:Picom:Tablet:Monitors:Colorschemes"
 
-case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu -l 5 -p "Select option:") in
+case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu ${dmenu_flags[@]} -l 5 -p "Select option:") in
 	"Keybindings") change_keymap;;
 	"Tablet") change_tablet_layout;;
 	"Monitors") change_monitor_layout;;

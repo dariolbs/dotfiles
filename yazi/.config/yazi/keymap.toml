@@ -12,7 +12,7 @@ append_keymap = [
 	{ on = [ "g", "b" ], run = 'cd /mnt/Barracuda', desc = "Go to Barracuda" },
 
     # Scripts
-	{ on = [ "i", "w" ], run = 'shell --confirm "apply_wallpaper $0"', desc = "Set a wallpaper" },
+	{ on = [ "i", "w" ], run = 'shell --confirm "apply_wallpaper \"$0\""', desc = "Set a wallpaper" },
 	{ on = [ "i", "e" ], run = 'shell --confirm "trator $0"', desc = "Extract a file" },
 
     # Others

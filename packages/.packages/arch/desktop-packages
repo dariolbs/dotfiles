@@ -14,11 +14,13 @@ pipewire-alsa
 pipewire-jack
 wireplumber
 # Applications
+keepassxc
 zathura
 zathura-pdf-mupdf
 dunst
 webkit2gtk
 nsxiv
+mpv
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra

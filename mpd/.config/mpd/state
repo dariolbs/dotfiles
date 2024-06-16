@@ -1,9 +1,9 @@
-sw_volume: 86
+sw_volume: 80
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
-state: play
-current: 4
-time: 174.219000
+state: pause
+current: 25
+time: 122.830000
 random: 1
 repeat: 1
 single: 1
@@ -31,4 +31,11 @@ playlist_begin
 16:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
 17:Osts/Chris Christodoulou - The Rain Formerly Known as Purple  ｜ Risk of Rain 2 (2020) [EGXPAoyP_cg].opus
 18:Osts/Heaven - Persona 4 [zQ7H4tZa8-k].opus
+19:Osts/I AM -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [VUrNujEfmOA].opus
+20:Osts/CREAM SODA -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [ETPpc4eed4E].opus
+21:Osts/THE TRUTH -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [weX7m17sVGo].opus
+22:Osts/NEXT TO YOU -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [UboPPTZLFas].opus
+23:Osts/Favored Nations - The Setup [GTA V Ending Credits Full Song] [Eu3SdvNmBQY].opus
+24:Osts/Persona 4 Golden - Shadow World (Full)--oIWGlbl92k.m4a
+25:Osts/kiseijuu OST- Speak (migi's theme) [pcScX2Rh6qM].opus
 playlist_end
