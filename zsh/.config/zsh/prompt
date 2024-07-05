@@ -2,30 +2,46 @@
 
 # Load version control information
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' check-for-changes true
+
 # Format the vcs_info_msg_0_ variable
-# zstyle ':vcs_info:git:*' formats '%s %b %m%u%c'
-zstyle ':vcs_info:git*' actionformats "%s  %r/%S %b %m%u%c "
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:git:*' formats 'on %b'
 
 ## PROMPT CONFIG
 lcrv() {
     rv=$?
     if [ $rv -gt 0 ]; then
-        echo "%F{red}!$rv%f "
+        echo "$rv "
+    fi
+}
+
+lcrv2() {
+    rv=$?
+    if [ $rv -gt 0 ]; then
+        echo "%F{red}%B$rv%f%b"
+    else
+        echo "%F{green}$rv%f"
     fi
 }
 
 setopt prompt_subst
 
 # Old prompt
-if [[ "$(tty)" == "/dev/tty"* ]]; then
-    PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
-%B%F{red}$(lcrv)%f%F{blue}%b$%f '
-else
-    PROMPT='%F{red}%u%F{magenta}%~ %b%F{green}${vcs_info_msg_0_}
-%B%F{red}$(lcrv)%f%F{blue}λ%b%f '
-    RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
-fi
+# if [[ "$(tty)" == "/dev/tty"* ]]; then
+#     PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
+# %B%F{red}$(lcrv)%f%F{blue}%b$%f '
+# else
+#     PROMPT='%F{red}%u%F{magenta}%~ %b%F{green}${vcs_info_msg_0_}
+# %B%F{red}$(lcrv)%f%F{blue}λ%b%f '
+#     RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
+# fi
+PROMPT='%B%F{yellow}%n%f%b%B%F{green}@%f%b%B%F{blue}%m%f%b %F{magenta}%~%f %F{red}%B$(lcrv)%f%b
+%B$%b%f '
+
+# PROMPT='%F{blue}┌[%f%b%B%F{yellow}%n%f%b%B%F{red}@%f%b%B%F{green}%m%f%b%F{blue}]%f%F{blue}-[%f%B%F{magenta}%~%f%b%F{blue}]-[$(lcrv2)%F{blue}]
+# └─$%f%b '
+# RPROMPT=\$vcs_info_msg_0_
+
 
 # Add a newline before the prompt
 precmd() { vcs_info; precmd(){ vcs_info; echo "" }}

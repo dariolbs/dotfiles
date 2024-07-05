@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
-source "$HOME/.dalis/config"
 old_ifs="$IFS"
 IFS=":"
-script_folder="$HOME/.config/sxhkd/scripts/system_config"
+
+script_folder="$HOME/.config/dwm/sxhkd/scripts/system_config"
 
 dmenu_flags=(
 "-c"
@@ -15,13 +15,6 @@ change_keymap(){
     options="$(command ls $keymaps_folder)"
 	chosen=$(for option in ${options[@]}; do printf "${option[@]}\n"; done | dmenu ${dmenu_flags[@]} -l 5 -p "Select keymap:") &&
     xmodmap "$keymaps_folder/$chosen" && notify-send "Keymap updated" "Changed keymap to $chosen"
-}
-
-change_colorscheme(){
-    colorscheme_folder="$HOME/.config/colorschemes"
-    color="$(ls "$colorscheme_folder" | dmenu ${dmenu_flags[@]} -l 10 -p "Select colorscheme:")" || exit 1
-	local colorscheme="${colorscheme_folder}/$color"
-	    cp -r $colorscheme/$(ls $colorscheme | dmenu ${dmenu_flags[@]} -l 10 -p "Select colorscheme") $HOME/.Xresources && notify-send "System" "Colorscheme updated! 🎨"
 }
 
 change_monitor_layout(){
@@ -58,12 +51,12 @@ change_monitor_layout(){
 configure_picom(){
 
 	local options=("Toggle:None:All:Blur:Rounded Corners:Shaders:Inactive Opacity:Fading:Vsync")
-			local file="$HOME/.config/dwm/configs/picom/picom.conf"
+			local file="$HOME/.config/dwm/picom.conf"
 
 	case $(for i in ${options[@]}; do printf "${i}\n"; done | dmenu ${dmenu_flags[@]} -l 9 -p "Select option:") in
 		"Toggle")
 			if ! pidof picom 2> /dev/null; then
-				picom --config ~/.config/dwm/configs/picom/picom.conf &
+				picom --config ~/.config/dwm/picom.conf &
 				notify-send "Picom is active! 🌟"
 			else
 				killall picom

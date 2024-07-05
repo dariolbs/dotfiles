@@ -1,0 +1,5 @@
+#!/bin/bash
+command="$@"
+now="$(date +"%d/%m/%Y %H:%M:%S.%N")"
+eval "${command[@]}"
+echo "[${now[@]}] ${command[@]} exited $?" >> $HOME/.log

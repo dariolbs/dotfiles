@@ -1,28 +1,5 @@
 ! Colors
 
-! Terminal colors
-!st.background: #222222
-!st.background: #010101
-!st.foreground: #ffffff
-!st.color0: #242424
-!st.color1: #f62b5a
-!st.color2: #47b413
-!st.color3: #e3c401
-!st.color4: #24acd4
-!st.color5: #f2affd
-!st.color6: #13c299
-!st.color7: #e6e6e6
-!st.color8: #616161
-!st.color9: #ff4d51
-!st.color10: #35d450
-!st.color11: #e9e836
-!st.color12: #5dc5f8
-!st.color13: #feabf2
-!st.color14: #24dfc4
-!st.color15: #ffffff
-! Base16 Gruvbox dark, hard
-! Scheme: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-
 #define base00 #1d2021
 #define base01 #3c3836
 #define base02 #504945
@@ -41,11 +18,7 @@
 #define base0F #d65d0e
 
 st.foreground:   base05
-#ifdef background_opacity
-st.background:   [background_opacity]base00
-#else
 st.background:   base00
-#endif
 st.cursorColor:  base05
 
 st.color0:       base01
@@ -75,15 +48,16 @@ st.color20:      base04
 st.color21:      base06
 
 !! St Appearance
+!st.cursorColor: #ffffff
 st.borderpx: 0
 st.alpha: 1
-!st.cursorColor: #ffffff
 
 #define selcolor #7cfc00
+
 ! Dwm
 dwm.normbgcolor: #222222
 dwm.normbordercolor: #444444
-dwm.selbgcolor: #005577
+dwm.selbgcolor: #444444
 dwm.selbordercolor: selcolor
 dwm.normfgcolor: #bbbbbb
 dwm.selfgcolor: #eeeeee
@@ -97,14 +71,13 @@ dwm.resizehints: 0
 
 !dmenu
 dmenu.background: #222222
-dmenu.selbackground: #005577
+dmenu.selbackground: #444444
 dmenu.foreground: #bbbbbb
 dmenu.selforeground: #eeeeee
 dmenu.bordercolor: selcolor
 
 !nsxiv
-nsxiv.background: #222222
-nsxiv.selbackground: #005577
-nsxiv.foreground: #bbbbbb
-nsxiv.selforeground: #eeeeee
-nsxiv.bordercolor: selcolor
+Nsxiv.window.background: #222222
+Nsxiv.window.foreground: #eeeeee
+Nsxiv.bar.background: #FEBF69
+Nsxiv.bar.foreground: #000000

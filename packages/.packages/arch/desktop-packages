@@ -21,9 +21,12 @@ dunst
 webkit2gtk
 nsxiv
 mpv
+# Icons
+adwaita-icon-theme
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra
+nwg-look
 # Better Desktop Experience
 polkit-kde-agent
 # NetworkManager

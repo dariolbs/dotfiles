@@ -113,25 +113,7 @@ if [ -n "$START_FOLDER" ]; then
     cd "$START_FOLDER"
 fi
 
-## AUTOMATIC STARTUP
-export TTY1_SCRIPT="$HOME/.tty1.sh"
-
-if [[ "$(tty)" == "/dev/tty1" ]]; then
-
-    if [[ ! -f "$TTY1_SCRIPT" ]]; then
-        printf "#!/usr/bin/sh\nstartx\n" > "$TTY1_SCRIPT"
-        echo "Generated default startup script at $TTY1_SCRIPT"
-        echo "Change it to your needs!"
-        sleep 1
-    fi
-
-    if [ ! -x $TTY1_SCRIPT ]; then
-        chmod +x $TTY1_SCRIPT
-    fi
-
-    echo "Executing $TTY1_SCRIPT..."
-    exec "$TTY1_SCRIPT"
-fi
+source "$HOME/.config/zsh/login_manager"
 
 ## YAZI
 

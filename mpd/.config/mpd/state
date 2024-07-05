@@ -1,9 +1,9 @@
-sw_volume: 80
+sw_volume: 86
 audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:my_fifo
 state: pause
-current: 25
-time: 122.830000
+current: 3
+time: 84.937000
 random: 1
 repeat: 1
 single: 1
@@ -13,29 +13,10 @@ mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
 0:Osts/Persona 4 The Golden - Snowflakes [hdfmf11Wtbo].opus
-1:Osts/Persona 5 OST 04 - Life Will Change [7LqTCYxFMlU].opus
-2:Osts/遊園施設 [8jpJM6nc6fE].opus
-3:Osts/Mr Robot Main Theme Fixed and Extended [XMEXPkPmmq0].opus
-4:Osts/CYBERPUNK 2077 SOUNDTRACK - I REALLY WANT TO STAY AT YOUR HOUSE by Rosa Walton & Hallie Coggins [gzbLODUb1sA].opus
-5:Osts/Persona 4 - Specialist [fTczCpIaLAU].opus
-6:Osts/Dai Gyakuten Saiban 2 OST ｜ 34 Great Pursuit ~ The Resolve of Naruhodou Ryuunosuke [bAtJnMEUkQs].opus
-7:gd/Creo - In Circles-E8pMGq5VL3Q.m4a
-8:gd/ParagonX9 - Infiltration [-jszHEXsW50].opus
-9:gd/The Eden Project - XO [syXq0ICfFDg].opus
-10:gd/Camellia - Exit This Earth's Atomosphere [Low Pitched]-HGfBswo3eH4.m4a
-11:gd/Creo - Outlaw (Low Pitch) [2jw06gS1kMY].opus
-12:gd/Creo - Wavelight-Kc4lIlboH2M.m4a
-13:gd/FantomenK - A Tiny Spaceship's Final Mission-GIN_cpdLyw4.m4a
-14:gd/Creo - Lost [q0ppj-J5_i4].opus
-15:gd/566770_DuoCore---Dignity.mp3
-16:Osts/clubbed to death - Matrix soundtrack-pFS4zYWxzNA.m4a
-17:Osts/Chris Christodoulou - The Rain Formerly Known as Purple  ｜ Risk of Rain 2 (2020) [EGXPAoyP_cg].opus
-18:Osts/Heaven - Persona 4 [zQ7H4tZa8-k].opus
-19:Osts/I AM -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [VUrNujEfmOA].opus
-20:Osts/CREAM SODA -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [ETPpc4eed4E].opus
-21:Osts/THE TRUTH -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [weX7m17sVGo].opus
-22:Osts/NEXT TO YOU -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [UboPPTZLFas].opus
-23:Osts/Favored Nations - The Setup [GTA V Ending Credits Full Song] [Eu3SdvNmBQY].opus
-24:Osts/Persona 4 Golden - Shadow World (Full)--oIWGlbl92k.m4a
-25:Osts/kiseijuu OST- Speak (migi's theme) [pcScX2Rh6qM].opus
+1:Osts/Persona 5 ost - Layer Cake [Extended] [Mp3IENE0Wlc].opus
+2:Osts/kiseijuu OST- Speak (migi's theme) [pcScX2Rh6qM].opus
+3:Osts/Throw Away Your Mask - Persona 5 The Royal [WzDTqGfyFB0].opus
+4:Osts/Phoenix Wright： Trials and Tribulations OST - Questioning ~ Allegro 2004 [b6pvnwwbNFA].opus
+5:Osts/THE TRUTH -by KEN ARAI ：：(Parasyte：The Maxim ⧸ Kiseijuu： Sei no Kakuritsu) OST [weX7m17sVGo].opus
+6:Osts/遊園施設 [8jpJM6nc6fE].opus
 playlist_end

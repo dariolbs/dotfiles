@@ -54,7 +54,6 @@ alias updategrub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias v='vim'
 alias nv='nvim'
 alias nb="newsboat"
-alias cl="clear"
 alias wireless="sudo ip link set wlp2s0 up"
 alias cal="calcurse"
 alias nm="neomutt"

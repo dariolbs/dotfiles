@@ -1,2 +1,41 @@
 #!/usr/bin/zsh
-# Dispay managers are ass
+# Dispay managers are all ass
+
+gen_login_script() {
+
+cat << EOF
+#!/usr/bin/bash
+PS3="Session: "
+
+declare -A sessions=(
+["dwm"]="startx ~/.config/dwm/init.sh"
+["i3"]="startx ~/.config/i3/init.sh"
+["gnome"]="XDG_SESSION_TYPE=wayland dbus-run-session gnome-session"
+)
+
+select s in \${!sessions[@]}; do
+    eval "\${sessions[\$s]}"
+    break;
+done
+EOF
+}
+
+export TTY1_SCRIPT="$HOME/.tty1.sh"
+
+if [[ "$(tty)" == "/dev/tty1" ]]; then
+
+    if [[ ! -f "$TTY1_SCRIPT" ]]; then
+        gen_login_script > "$TTY1_SCRIPT"
+        echo "Generated default startup script at $TTY1_SCRIPT"
+        echo "Change it to your needs!"
+        sleep 1
+    fi
+
+    if [ ! -x $TTY1_SCRIPT ]; then
+        chmod +x $TTY1_SCRIPT
+    fi
+
+    echo "Executing $TTY1_SCRIPT..."
+    exec "$TTY1_SCRIPT"
+fi
+

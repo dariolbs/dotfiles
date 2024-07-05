@@ -18,7 +18,6 @@ fi
 
 song="$1"
 id="$2"
-
 gd_resc="$HOME/.local/share/Steam/steamapps/common/Geometry Dash/Resources"
 
 if [ -z "$id" ]; then

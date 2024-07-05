@@ -1,63 +1,75 @@
 #!/usr/bin/bash
-# Applies Xorg config
+# Applies X11 config
 
 awk_fallback_script="$HOME/.fallback_config.awk"
 xconfig="$HOME/.Xconfig"
+xconfig_hash="$HOME/.cache/xconfig.md5"
+command_cache="$HOME/.cache/xcommand"
 
 # Generate fallback config
 if ! [ -f "$xconfig" ]; then
     xrandr | awk -f "$awk_fallback_script" > $xconfig
-    echo "Config file generated in $xconfig, change it to your needs!"
-    # Create a hash to chech if the monitor config has changed
-    echo "${mons[@]}" | md5sum > "$xhash"
 fi
 
-# Generate fallback config
 source "$xconfig"
 
-# monitor config
-i=0
-n=1
-command="xrandr"
-for mon in ${monitors[@]}; do
-    [ "${mon}" = "${primary}" ] && p="--primary "
-    [ "${monitors[$n]}" != "" ] && l=" --left-of ${monitors[$n]}"
-    command+=" --output ${mon} ${p}--mode ${resolutions[$i]} --rate ${refresh_rates[$i]} ${l[@]}"
-    $((i++)); $((n++)); p=""; l="";
-done
-eval "$command"
+if [ -f "$xconfig_hash" ] && md5sum -c "$xconfig_hash" &> /dev/null; then
+    eval "$(cat $command_cache)"
+else
 
-# tablet config
-if $tablet; then
+    # monitor config
+    i=0
+    n=1
+    command="xrandr"
+    for mon in ${monitors[@]}; do
+        [ "${mon}" = "${primary}" ] && p="--primary "
+        [ "${monitors[$n]}" != "" ] && l=" --left-of ${monitors[$n]}"
+        command+=" --output ${mon} ${p}--mode ${resolutions[$i]} --rate ${refresh_rates[$i]} ${l[@]}"
+        $((i++)); $((n++)); p=""; l="";
+    done
 
-    # Fallback
-    if [ "$tablet_name" = "" ]; then
-        tablet="$(xsetwacom list devices | grep stylus)"
-        tablet="${tablet%%stylus*}stylus"
+    # tablet config
+    if $tablet; then
+
+        # Fallback name
+        if [ "$tablet_name" = "" ]; then
+            tablet_name="$(xsetwacom list devices | grep stylus)"
+            tablet_name="${tablet%%stylus*}stylus"
+        fi
+
+        if [ "$absolute_area" = "" ]; then
+            absolute_area="$(xsetwacom get "$tablet" Area | cut -f 3 -d " ")"
+        fi
+
+        if [ "$tablet_offset" = "" ]; then
+            # Mapped to the first monitor by default
+            tablet_offset="${resolutions[0]}+0+0"
+        fi
+
+        precision=1000000
+
+        w=$(cut -f 1 -d "x" <<< ${resolutions[0]})
+        h=$(cut -f 2 -d "x" <<< ${resolutions[0]})
+
+        def_area=$(python3 <<< "print(int(($absolute_area * ($h * $precision / $w) / $precision)")
+
+        # Mapear para o monitor principal
+        command="${command}; xsetwacom set \"$tablet_name\" MapToOutput \"$tablet_offset\""
+
+        # Introduzir a area correta
+        command="${command}; xsetwacom set \"$tablet_name\" Area 0 0 $absolute_area $def_area"
+
     fi
 
-    if [ "$absolute_area" = "" ]; then
-        absolute_area="$(xsetwacom get "$tablet" Area | cut -f 3 -d " ")"
-    fi
+    command="${command}; setxkbmap \"$keymap_lang\""
 
-    if [ "$tablet_offset" = "" ]; then
-        tablet_offset="1920x1080+0+0"
-    fi
+    for option in ${keymap_options}; do
+        command="${command}; setxkbmap -option \"$option\""
+    done
 
-    precision=1000000
-    def_area=$(($absolute_area*(1080*$precision/1920)))
-    def_area=$(($def_area / $precision ))
+    echo ${command} > "$command_cache"
+    md5sum "${xconfig}" > "$xconfig_hash"
 
-    # Mapear para o monitor principal
-    xsetwacom set "$tablet" MapToOutput "$tablet_offset"
-
-    # Introduzir a area correta
-    xsetwacom set "$tablet" Area 0 0 $absolute_area $def_area
-
+    eval "$command"
 fi
 
-setxkbmap "$keymap_lang"
-
-for option in ${keymap_options}; do
-    setxkbmap -option "$option"
-done

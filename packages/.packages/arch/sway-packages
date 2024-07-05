@@ -13,6 +13,3 @@ foot
 xorg-xwayland
 sway
 i3status
-# Gtk stuff
-gtk-engine-murrine
-gnome-themes-extra

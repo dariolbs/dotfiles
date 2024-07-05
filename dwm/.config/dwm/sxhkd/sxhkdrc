@@ -10,21 +10,21 @@ XF86AudioPlay
 # Scripts
 
 mod4 + shift + p
-	bash ~/.config/dwm/configs/sxhkd/scripts/system_config/configure_system
+	bash ~/.config/dwm/sxhkd/scripts/system_config/configure_system
 mod4 + shift + b
-	bash ~/.config/dwm/configs/sxhkd/scripts/bookmark
+	bash ~/.config/dwm/sxhkd/scripts/bookmark
 Print
-	bash ~/.config/dwm/configs/sxhkd/scripts/print_monitor
+	bash ~/.config/dwm/sxhkd/scripts/print_monitor
 mod4 + Print
-	sh ~/.config/dwm/configs/sxhkd/scripts/print
+	sh ~/.config/dwm/sxhkd/scripts/print
 mod4 + e
-	sh ~/.config/dwm/configs/sxhkd/scripts/emoji_picker/script
+	sh ~/.config/dwm/sxhkd/scripts/emoji_picker/script
 XF86AudioRaiseVolume
-	sh ~/.config/dwm/configs/sxhkd/scripts/volume +5
+	sh ~/.config/dwm/sxhkd/scripts/volume +5
 XF86AudioLowerVolume
-	sh ~/.config/dwm/configs/sxhkd/scripts/volume -5
+	sh ~/.config/dwm/sxhkd/scripts/volume -5
 XF86AudioMute
-	sh ~/.config/dwm/configs/sxhkd/scripts/volume-toggle
+	sh ~/.config/dwm/sxhkd/scripts/volume-toggle
 
 # File managers
 mod4 + n

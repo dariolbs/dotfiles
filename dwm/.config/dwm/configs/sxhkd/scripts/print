@@ -1,4 +1,0 @@
-#!/bin/bash
-scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png --select --line mode=edge &&
-    xclip -selection clipboard -t image/png -i $HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1) &&
-notify-send "Scrot 📷" 'Print Taken!'

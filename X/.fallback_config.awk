@@ -20,14 +20,12 @@ $2 == "connected" {
     }
 
 getatts == 1 {
-
     resolutions[idx] = $1
     rates[idx] = getBestRefreshRate()
     idx++
     getatts = 0
     next
 }
-
 
 END {
 
@@ -75,7 +73,7 @@ END {
     print "# Tablet config"
 
     print "tablet=false"
-    print "# tablet_name=\"HID 256c:006e Pen stylus\""
-    print "# tablet_offset=\"1920x1080+1920+0\""
-    print "# absolute_area=\"50800\""
+    print "tablet_name=\"HID 256c:006e Pen stylus\""
+    print "tablet_offset=\"1920x1080+1920+0\" # Mapped to the second monitor"
+    print "absolute_area=\"50800\""
     }

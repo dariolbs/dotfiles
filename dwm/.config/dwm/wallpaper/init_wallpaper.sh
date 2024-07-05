@@ -2,8 +2,8 @@
 # Initializes the wallpaper for I3
 
 command="xwallpaper --focus"
-fallback_wp="$HOME/.config/dwm/configs/wallpaper/wallpaper_default.jpg"
-default_wp="$HOME/.config/dwm/configs/wallpaper/wallpaper"
+fallback_wp="$HOME/.config/dwm/wallpaper/default_wallpaper.jpg"
+default_wp="$HOME/.config/dwm/wallpaper/wallpaper"
 
 # Check if there is $default_wp exists as a symlink
 if [ -h "$default_wp" ]; then
