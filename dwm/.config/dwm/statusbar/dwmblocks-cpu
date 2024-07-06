@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1);;
+	4);;
+	5);;
+esac
+
+printf "^c#fb4934^  %s^d^" $(cut -f 1 -d " " < /proc/loadavg)

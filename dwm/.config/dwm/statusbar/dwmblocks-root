@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+printf "^c#d3869b^ %s^d^" $(df -h | awk " /\/$/ { print \$5 }")

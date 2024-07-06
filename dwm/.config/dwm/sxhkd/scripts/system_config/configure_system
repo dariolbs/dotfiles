@@ -8,7 +8,7 @@ script_folder="$HOME/.config/dwm/sxhkd/scripts/system_config"
 dmenu_flags=(
 "-c"
 "-bw"
-"2"
+"1"
 )
 
 change_keymap(){

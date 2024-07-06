@@ -1,0 +1,34 @@
+#!/usr/bin/sh
+
+case $BLOCK_BUTTON in
+    # Left click
+	1) wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof dwmblocks) ;;
+    # Scroll up
+	4) wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+; kill -44 $(pidof dwmblocks) ;;
+    # Scroll down
+	5) wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-; kill -44 $(pidof dwmblocks) ;;
+esac
+
+color="#93a598"
+
+vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
+
+[ "$vol" != "${vol%\[MUTED\]}" ] && printf "^c%s^  muted^d^" "$color" && exit
+vol="${vol#Volume: }"
+
+split() {
+	# For ommiting the . without calling and external program.
+	IFS=$2
+	set -- $1
+	printf '%s' "$@"
+}
+
+vol="$(printf "%.0f" "$(split "$vol" ".")")"
+
+if [ $vol -gt 60 ]; then
+    printf "^c%s^  %s%%^d^" "$color" "$vol"
+elif [ $vol -gt 20 ]; then
+    printf "^c%s^  %s%%^d^" "$color" "$vol"
+else
+    printf "^c%s^  %s%%^d^" "$color" "$vol"
+fi

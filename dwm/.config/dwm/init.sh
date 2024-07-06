@@ -6,6 +6,8 @@
 export GTK_THEME="Adwaita-dark"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CURRENT_DESKTOP="dwm"
+export PATH="${PATH}:$HOME/.config/dwm/statusbar"
+export TERMINAL="st"
 
 # Start Services
 dunst -config "$HOME/.config/dwm/dunstrc" &

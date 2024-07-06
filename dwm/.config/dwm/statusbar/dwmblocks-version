@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+printf "  %s" "$(dwm -v 2>&1 | cut -f 2 -d -)"

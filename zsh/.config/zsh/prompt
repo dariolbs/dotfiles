@@ -35,8 +35,9 @@ setopt prompt_subst
 # %B%F{red}$(lcrv)%f%F{blue}λ%b%f '
 #     RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
 # fi
-PROMPT='%B%F{yellow}%n%f%b%B%F{green}@%f%b%B%F{blue}%m%f%b %F{magenta}%~%f %F{red}%B$(lcrv)%f%b
-%B$%b%f '
+PROMPT='%F{magenta}%~%f %F{red}%B$(lcrv)%f%b
+%B#%b%f '
+RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
 
 # PROMPT='%F{blue}┌[%f%b%B%F{yellow}%n%f%b%B%F{red}@%f%b%B%F{green}%m%f%b%F{blue}]%f%F{blue}-[%f%B%F{magenta}%~%f%b%F{blue}]-[$(lcrv2)%F{blue}]
 # └─$%f%b '

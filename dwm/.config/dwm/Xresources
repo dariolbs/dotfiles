@@ -52,15 +52,16 @@ st.color21:      base06
 st.borderpx: 0
 st.alpha: 1
 
-#define selcolor #7cfc00
+! #define selcolor #7cfc00
+#define selcolor #fabd2f
 
 ! Dwm
-dwm.normbgcolor: #222222
+dwm.normbgcolor: #1d2021
 dwm.normbordercolor: #444444
-dwm.selbgcolor: #444444
+dwm.selbgcolor: #3c3836
 dwm.selbordercolor: selcolor
-dwm.normfgcolor: #bbbbbb
-dwm.selfgcolor: #eeeeee
+dwm.normfgcolor: #ebdbb2
+dwm.selfgcolor: #fbf1c7
 dwm.borderpx: 1
 dwm.snap: 32
 dwm.showbar: 1
@@ -70,14 +71,14 @@ dwm.mfact: 0.55
 dwm.resizehints: 0
 
 !dmenu
-dmenu.background: #222222
-dmenu.selbackground: #444444
-dmenu.foreground: #bbbbbb
-dmenu.selforeground: #eeeeee
+dmenu.background: #1d2021
+dmenu.selbackground: #3c3836
+dmenu.foreground: #ebdbb2
+dmenu.selforeground: #fbf1c7
 dmenu.bordercolor: selcolor
 
 !nsxiv
 Nsxiv.window.background: #222222
 Nsxiv.window.foreground: #eeeeee
-Nsxiv.bar.background: #FEBF69
+Nsxiv.bar.background: #b8bb26
 Nsxiv.bar.foreground: #000000

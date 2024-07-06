@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+printf "^c#d65d0e^ %s^d^" "$(uname -r)"

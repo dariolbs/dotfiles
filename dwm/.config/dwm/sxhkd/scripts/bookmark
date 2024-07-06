@@ -3,4 +3,4 @@
 folder="$HOME/Documents/Pessoal"
 [ -d $folder ] || mkdir $folder
 [ -f $folder/bookmarks ] || touch $folder/bookmarks
-xdotool type --delay 3 "$(cat $folder/bookmarks | grep -v "^#" | grep -v "^$" | dmenu -c -b -bw 2 -l 20 -p "Select Bookmark:" | cut -f 1 -d " ")"
+xdotool type --delay 3 "$(cat $folder/bookmarks | grep -v "^#" | grep -v "^$" | dmenu -c -b -bw 1 -l 20 -p "Select Bookmark:" | cut -f 1 -d " ")"

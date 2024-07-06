@@ -1,0 +1,2 @@
+#!/usr/bin/sh
+printf "^c#fabd2f^  %sM^d^" $(free -m | awk '/^Mem/ {print $3}')
