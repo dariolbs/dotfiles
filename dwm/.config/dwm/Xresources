@@ -52,16 +52,16 @@ st.color21:      base06
 st.borderpx: 0
 st.alpha: 1
 
-! #define selcolor #7cfc00
-#define selcolor #fabd2f
+#define selcolor #7cfc00
+! #define selcolor #b8bb26
 
 ! Dwm
-dwm.normbgcolor: #1d2021
+dwm.normbgcolor: #222222
 dwm.normbordercolor: #444444
-dwm.selbgcolor: #3c3836
+dwm.selbgcolor: #005577
 dwm.selbordercolor: selcolor
-dwm.normfgcolor: #ebdbb2
-dwm.selfgcolor: #fbf1c7
+dwm.normfgcolor: #bbbbbb
+dwm.selfgcolor: #eeeeee
 dwm.borderpx: 1
 dwm.snap: 32
 dwm.showbar: 1
@@ -71,10 +71,10 @@ dwm.mfact: 0.55
 dwm.resizehints: 0
 
 !dmenu
-dmenu.background: #1d2021
-dmenu.selbackground: #3c3836
-dmenu.foreground: #ebdbb2
-dmenu.selforeground: #fbf1c7
+dmenu.background: #222222
+dmenu.selbackground: #005577
+dmenu.foreground: #bbbbbb
+dmenu.selforeground: #eeeeee
 dmenu.bordercolor: selcolor
 
 !nsxiv

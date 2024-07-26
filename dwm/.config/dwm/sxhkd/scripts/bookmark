@@ -1,6 +1,8 @@
-#!/usr/bin/env /bin/sh
+#!/usr/bin/env /bin/bash
 # Check files
-folder="$HOME/Documents/Pessoal"
-[ -d $folder ] || mkdir $folder
-[ -f $folder/bookmarks ] || touch $folder/bookmarks
-xdotool type --delay 3 "$(cat $folder/bookmarks | grep -v "^#" | grep -v "^$" | dmenu -c -b -bw 1 -l 20 -p "Select Bookmark:" | cut -f 1 -d " ")"
+if [ -z "$BOOKMARKS_FILE" ]; then
+    exit 1
+fi
+
+bookmark="$(cat $BOOKMARKS_FILE | grep -v "^#" | grep -v "^$" | dmenu -c -b -bw 1 -l 20 -p "Select Bookmark:" | cut -f 1 -d " ")"
+printf ${bookmark%%"\n"} | xclip -sel clip

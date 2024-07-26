@@ -1,2 +1,59 @@
-#!/usr/bin/sh
-printf "^c#fabd2f^  %sM^d^" $(free -m | awk '/^Mem/ {print $3}')
+#!/usr/bin/bash
+
+swap_file="$XDG_RUNTIME_DIR/dwmblocks-swap.lock"
+percentage_file="$XDG_RUNTIME_DIR/dwmblocks-percentage.lock"
+
+red="#FF0000"
+yellow="#FFFF00"
+green="#00FF00"
+
+declare -A icons=(
+["Mem"]=""
+["Swap"]="󰯎"
+)
+
+if [ ! -f "$swap_file" ]; then
+    type="Mem"
+else
+    type="Swap"
+fi
+
+toggle(){
+    file="$1"
+    if [ ! -f "$file" ]; then
+        touch "$file"
+    else
+        rm "$file"
+    fi
+}
+
+case $BLOCK_BUTTON in
+    # Left click
+	1) toggle "$swap_file";;
+    # Right Click
+	3) toggle "$percentage_file";;
+esac
+
+used="$(free -m | awk "/^$type/ {print \$3}")"
+total="$(free -m | awk "/^$type/ {print \$2}")"
+percentage=$(( used * 100 / total))
+
+if [ $percentage -ge 80 ]; then
+    if [ ! -f "$percentage_file" ]; then
+        printf "^c%s^%s  %sM^d^" $red ${icons["$type"]} "$used"
+    else
+        printf "^c%s^%s  %s%%^d^" $red ${icons["$type"]} "$percentage"
+    fi
+elif [ $percentage -ge 50 ]; then
+    if [ ! -f "$percentage_file" ]; then
+        printf "^c%s^%s  %sM^d^" $yellow ${icons["$type"]} "$used"
+    else
+        printf "^c%s^%s  %s%%^d^" $yellow ${icons["$type"]} "$percentage"
+    fi
+else
+    if [ ! -f "$percentage_file" ]; then
+        printf "%s  %sM" ${icons["$type"]} "$used"
+    else
+        printf "%s  %s%%" ${icons["$type"]} "$percentage"
+    fi
+fi

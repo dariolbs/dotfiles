@@ -1,18 +1,20 @@
-#!/usr/bin/bash -v
+#!/usr/bin/bash
 
 # Install paru if not installed
 ! command -v paru &> /dev/null && {
     cdir="$PWD"
-    mkdir -p ~/.cache/paru_install
-    cd ~/.cache/paru_install
-    sudo pacman -S --needed base-devel
-    git clone https://aur.archlinux.org/paru.git
-    cd paru
-    makepkg -si
+    mkdir -p /tmp/paru_install
+    cd /tmp/paru_install
+    sudo pacman -S --needed base-devel tar zstd
+    wget "https://github.com/Morganamilo/paru/releases/download/v2.0.3/paru-v2.0.3-1-x86_64.tar.zst"
+    tar --use-compress-program=unzstd -xvf paru-v2.0.3-1-x86_64.tar.zst
+    cp paru /usr/bin
     cd $cdir
 }
+
+packages="$(grep -v "^#" $@)"
 
 # Install yazi if not installed
 ! command -v yazi &> /dev/null && sudo pacman -S yazi
 
-paru -S --needed --noconfirm $(cat $@ | grep -v "^#")
+paru -S --needed --noconfirm ${packages[@]}

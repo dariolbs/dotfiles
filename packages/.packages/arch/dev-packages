@@ -1,0 +1,14 @@
+bash-language-server
+lua-language-server
+typescript-language-server
+pyright
+clang
+valgrind
+gopls
+texlab
+podman
+base-devel
+ruby
+npm
+go
+nodejs

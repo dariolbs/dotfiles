@@ -11,5 +11,5 @@ swaylock
 swaybg
 foot
 xorg-xwayland
-sway
-i3status
+xdg-desktop-portal
+xdg-desktop-portal-wlr

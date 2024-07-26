@@ -1,20 +1,4 @@
 # Arch linux base package list
-# Kernel
-linux-firmware
-linux-headers
-linux
-# Development
-bash-language-server
-lua-language-server
-typescript-language-server
-pyright
-clang
-valgrind
-llvm
-gopls
-texlab
-base-devel
-podman
 # Text editors
 neovim
 vim
@@ -23,11 +7,9 @@ unrar
 fzf
 tmux
 mandoc
-ruby
 dash
 arch-install-scripts
 stow
-polkit
 dosfstools
 yt-dlp
 zsh
@@ -36,36 +18,19 @@ rsync
 tor
 inetutils
 neofetch
-newsboat
 openssh
-bat
 cronie
 yazi
-go
-nodejs
-mpc
-mpd
 libnotify
 sshfs
 fuse3
 playerctl
-calcurse
-npm
 ntfs-3g
 ncmpcpp
-base-devel
 networkmanager
 wget
 curl
-lynx
-notmuch
-ruby
 sudo
-checkbashisms
 chafa
-gnome-epub-thumbnailer
 perl-image-exiftool
-transmission-cli
-poppler
 imagemagick
-ffmpegthumbnailer

@@ -1,0 +1,116 @@
+{
+	"layer": "top",
+    "position": "bottom",
+	"modules-left": [ "custom/launcher", "cpu", "memory", "custom/updates", "tray"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["pulseaudio", "backlight", "battery", "network", "clock"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}% {format_source}",
+		"format-muted": "{icon} {volume}%",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+		"on-click":"pavucontrol",
+        "format-muted": " 0% {format_source}",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "river/tags": {
+		"num-tags": 6
+    },
+
+	"backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+	},
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": " {:%Y-%m-%d}",
+        "format": "󰥔 {:%H:%M}"
+    },
+
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": " {percentage}%",
+        "format-alt": " {used}GB",
+        "max-length": 10,
+        "tooltip": true,
+        "tooltip-format": " {used:0.1f}GB/{total:0.1f}GB"
+    },
+
+    "network": {
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󱘖 Wired",
+        "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+        "format-linked": "󱘖 {ifname} (No IP)",
+        "format-disconnected": " Disconnected",
+        "format-alt": "󰤨 {signalStrength}%",
+        "interval": 5
+    },
+
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+
+    "custom/launcher":{
+        "format": " "
+    },
+
+    "custom/power":{
+        "format": " "
+    },
+
+    "custom/updates":{
+        "format": "󰏖 {}",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[ $(checkupdates | wc -l) -ne 0 ]",
+        "interval": 3600
+    },
+
+    "custom/disk_usage": {
+        "interval": 3600,       // Once every hour
+        "exec": "df | awk '/\\/$/{printf \"󰋊 %s\", $5} /home$/{printf \" 󰋜 %s\", $5}'",
+        "show-empty": false,
+        "format": "{} "
+    }
+}

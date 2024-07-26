@@ -1,8 +1,9 @@
 #!/usr/bin/sh
 
 n="$(checkupdates | wc -l)"
-if [ $? -gt 0 ]; then
+
+if [ $n -eq 0 ]; then
     exit 1
 fi
 
-printf "^c#b8bb26^󰏔 %s^d^" $n
+printf "󰏔 %s" $n

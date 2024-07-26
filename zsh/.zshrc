@@ -63,6 +63,7 @@ fi
 
 ## ENVIRONMENT VARIABLES
 export EDITOR="nvim"
+# export TERM="linux"
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"

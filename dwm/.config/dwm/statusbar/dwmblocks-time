@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-date +'%b %d 󰅐 %H:%M'
+date +'󰅐  %b %d %H:%M'

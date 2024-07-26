@@ -36,12 +36,12 @@ setopt prompt_subst
 #     RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
 # fi
 PROMPT='%F{magenta}%~%f %F{red}%B$(lcrv)%f%b
-%B#%b%f '
+%F{blue}%Bλ%b%f '
 RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
 
-# PROMPT='%F{blue}┌[%f%b%B%F{yellow}%n%f%b%B%F{red}@%f%b%B%F{green}%m%f%b%F{blue}]%f%F{blue}-[%f%B%F{magenta}%~%f%b%F{blue}]-[$(lcrv2)%F{blue}]
-# └─$%f%b '
-# RPROMPT=\$vcs_info_msg_0_
+PROMPT='%F{blue}┌[%f%b%B%F{yellow}%n%f%b%B%F{red}@%f%b%B%F{green}%m%f%b%F{blue}]%f%F{blue}-[%f%B%F{magenta}%~%f%b%F{blue}]-[$(lcrv2)%F{blue}]
+└─$%f%b '
+RPROMPT=\$vcs_info_msg_0_
 
 
 # Add a newline before the prompt

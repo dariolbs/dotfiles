@@ -5,6 +5,8 @@ mkdir -p ~/Pictures
 monitors="$(xrandr | awk 'BEGIN {n = 0}; $2 == "connected" {print "Monitor", n++, "(" $1 ")"}')"
 selmon="$(dmenu -p "Monitor to screenshot:" -l 3 <<< $monitors | cut -f 2 -d " " )"
 
+sleep 0.5
+
 scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png -M $selmon && {
     fpath="$HOME/Pictures/$(ls -Art $HOME/Pictures | tail -n 1)"
     xclip -selection clipboard -t image/png -i $fpath &&

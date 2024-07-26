@@ -2,18 +2,22 @@
 
 case $BLOCK_BUTTON in
     # Left click
-	1) wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof dwmblocks) ;;
+	1) wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle;;
     # Scroll up
-	4) wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+; kill -44 $(pidof dwmblocks) ;;
+	4) wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+;;
     # Scroll down
-	5) wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-; kill -44 $(pidof dwmblocks) ;;
+	5) wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-;;
 esac
 
 color="#93a598"
 
+red="#FF0000"
+yellow="#FFFF00"
+green="#00FF00"
+
 vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
 
-[ "$vol" != "${vol%\[MUTED\]}" ] && printf "^c%s^  muted^d^" "$color" && exit
+[ "$vol" != "${vol%\[MUTED\]}" ] && printf "  muted" "$color" && exit
 vol="${vol#Volume: }"
 
 split() {
@@ -25,10 +29,10 @@ split() {
 
 vol="$(printf "%.0f" "$(split "$vol" ".")")"
 
-if [ $vol -gt 60 ]; then
-    printf "^c%s^  %s%%^d^" "$color" "$vol"
-elif [ $vol -gt 20 ]; then
-    printf "^c%s^  %s%%^d^" "$color" "$vol"
+if [ $vol -gt 80 ]; then
+    printf "^c%s^  %s%%^d^" "$red" "$vol"
+elif [ $vol -gt 40 ]; then
+    printf "^c%s^  %s%%^d^" "$yellow" "$vol"
 else
-    printf "^c%s^  %s%%^d^" "$color" "$vol"
+    printf "  %s%%" "$vol"
 fi

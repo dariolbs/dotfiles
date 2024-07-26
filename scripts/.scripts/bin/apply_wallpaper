@@ -3,15 +3,15 @@
 declare -A symlink_locations=(
     ["i3"]="$HOME/.config/i3/configs/wallpaper/wallpaper"
     ["dwm"]="$HOME/.config/dwm/wallpaper/wallpaper"
+    ["dwl"]="$HOME/.config/dwl/wallpaper/wallpaper"
     ["Hyprland"]="$HOME/.config/hypr/configs/wallpaper/wallpaper"
-    ["sway"]="$HOME/.config/sway/configs/wallpaper/wallpaper"
 )
 
 declare -A wallpaper_scripts=(
     ["i3"]="$HOME/.config/i3/configs/wallpaper/init_wallpaper.sh"
+    ["dwl"]="$HOME/.config/dwl/wallpaper/init_wallpaper.sh"
     ["dwm"]="$HOME/.config/dwm/wallpaper/init_wallpaper.sh"
     ["Hyprland"]="$HOME/.config/hypr/configs/wallpaper/init_wallpaper.sh"
-    ["sway"]=""
 )
 
 link="${symlink_locations["$XDG_CURRENT_DESKTOP"]}"

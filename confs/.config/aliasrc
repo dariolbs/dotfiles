@@ -23,8 +23,8 @@ LS_FLAGS="--color --classify"
 if command -v eza &> /dev/null; then
     alias la="eza $EZA_FLAGS --git -lA"
     alias ll="eza $EZA_FLAGS --git -l"
-    alias ls="eza $EZA_FLAGS"
-    alias sl="eza $EZA_FLAGS"
+    alias ls="eza $EZA_FLAGS -G"
+    alias sl="eza $EZA_FLAGS -G"
     alias tree='eza $EZA_FLAGS -T'
 else
     alias la="ls -lhA $LS_FLAGS"
@@ -79,7 +79,7 @@ alias movies="cd ~/Documents/Media/Movies"
 alias anime="cd ~/Documents/Media/Anime"
 alias doc="cd ~/Documents"
 alias gd="cd /home/dario/.local/share/Steam/steamapps/common/Geometry\ Dash"
-alias temp="mkdir -p /tmp/Dario; cd /tmp/Dario"
+alias temp="mkdir -p /tmp/dario; cd /tmp/dario"
 
 # SYNC
 

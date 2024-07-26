@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+iface="$(route | awk '/^default/ {print $8}')"
+sdir="/sys/class/net/$iface/statistics"
+
+seconds=1
+
+irx="$(< "$sdir/rx_bytes")"
+itx="$(< "$sdir/tx_bytes")"
+sleep $seconds
+erx="$(< "$sdir/rx_bytes")"
+etx="$(< "$sdir/tx_bytes")"
+
+printf "^c#8ec07c^ %sM/s  %sM/s^d^" $(((etx - itx) / (seconds * 1000) )) $(((erx - irx) / (seconds * 1000))) 
