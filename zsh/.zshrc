@@ -56,14 +56,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
 
-# Execute an alert script if it exists
-if [ -f "$HOME/.alert" ]; then 
-    eval "$HOME/.alert";
-fi
-
 ## ENVIRONMENT VARIABLES
 export EDITOR="nvim"
-# export TERM="linux"
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
@@ -78,8 +72,6 @@ fi
 
 # Get fzf config
 source "$HOME/.config/zsh/fzf/config.zsh"
-
-source "$HOME/.config/zsh/prompt"
 
 source "$HOME/.config/zsh/plugin_manager"
 
@@ -126,12 +118,5 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
 alias lf="yy"
-
-# Launch yazy imediately
-if [ -f /tmp/yazi-launcher ]; then
-    rm -f /tmp/yazi-launcher
-    yy
-fi
-
-plugin-load

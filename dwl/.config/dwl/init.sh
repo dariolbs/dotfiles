@@ -9,4 +9,4 @@ export QT_QPA_PLATFORM=wayland
 export TERMINAL="foot"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-XDG_CURRENT_DESKTOP=dwl dbus-run-session cat | dwl -s "$HOME/.config/dwl/startup.sh"
+dbus-run-session cat | dwl -s "$HOME/.config/dwl/startup.sh"

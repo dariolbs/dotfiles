@@ -11,38 +11,18 @@ zstyle ':vcs_info:git:*' formats 'on %b'
 lcrv() {
     rv=$?
     if [ $rv -gt 0 ]; then
-        echo "$rv "
-    fi
-}
-
-lcrv2() {
-    rv=$?
-    if [ $rv -gt 0 ]; then
-        echo "%F{red}%B$rv%f%b"
+        echo "%F{red}> %f"
     else
-        echo "%F{green}$rv%f"
+    echo "%F{blue}> %f"
     fi
 }
 
 setopt prompt_subst
 
-# Old prompt
-# if [[ "$(tty)" == "/dev/tty"* ]]; then
-#     PROMPT='%B%F{green}%n%f%F{yellow}@%f%F{red}%m %B%f%F{magenta}%~%b %F{green}${vcs_info_msg_0_}
-# %B%F{red}$(lcrv)%f%F{blue}%b$%f '
-# else
-#     PROMPT='%F{red}%u%F{magenta}%~ %b%F{green}${vcs_info_msg_0_}
-# %B%F{red}$(lcrv)%f%F{blue}λ%b%f '
-#     RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
-# fi
-PROMPT='%F{magenta}%~%f %F{red}%B$(lcrv)%f%b
-%F{blue}%Bλ%b%f '
-RPROMPT="%F{black}%n%f%F{black}@%f%F{black}%m%f"
+PROMPT='%F{magenta}%~%f
+$(lcrv)'
 
-PROMPT='%F{blue}┌[%f%b%B%F{yellow}%n%f%b%B%F{red}@%f%b%B%F{green}%m%f%b%F{blue}]%f%F{blue}-[%f%B%F{magenta}%~%f%b%F{blue}]-[$(lcrv2)%F{blue}]
-└─$%f%b '
 RPROMPT=\$vcs_info_msg_0_
-
 
 # Add a newline before the prompt
 precmd() { vcs_info; precmd(){ vcs_info; echo "" }}

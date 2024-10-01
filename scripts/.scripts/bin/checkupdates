@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 TMPPATH="${TMPDIR:-/tmp}/checkup-db-${USER}"
 DBPATH="$(pacman-conf DBPath)"
 mkdir -p "$TMPPATH"

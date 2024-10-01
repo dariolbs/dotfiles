@@ -23,3 +23,6 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 		&& export LF_ICONS
     [ -f "$HOME/.config/lf/LF_COLORS" ] && source "$HOME/.config/lf/LF_COLORS"
 }
+
+# Haskell
+[ -f "/home/dario/.ghcup/env" ] && . "/home/dario/.ghcup/env" # ghcup-env

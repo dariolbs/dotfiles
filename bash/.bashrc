@@ -59,7 +59,7 @@ fi
 # The following block is surrounded by two delimiters.
 # These delimiters must not be modified. Thanks.
 # START KALI CONFIG VARIABLES
-PROMPT_ALTERNATIVE=twoline
+PROMPT_ALTERNATIVE=oneline
 NEWLINE_BEFORE_PROMPT=yes
 # STOP KALI CONFIG VARIABLES
 

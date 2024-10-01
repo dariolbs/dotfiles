@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 
 [ -d ~/Pictures ] && mkdir -p "$HOME/Pictures"
 picture="$HOME/Pictures/$(date +%F_%T).png"

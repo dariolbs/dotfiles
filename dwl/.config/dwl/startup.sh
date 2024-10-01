@@ -3,26 +3,33 @@
 # Close stdin
 exec <&-
 
-# Per-device script
-local_script="$HOME/.dwl_local.sh"
-[ -x "$local_script" ] && eval "$local_script $PPID" &  # Run local config if it exists
-
 # Default startup programs
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=dwl
 dunst -config "$HOME/.config/dwl/configs/dunstrc" &
 
+# Per-device script
+local_script="$HOME/.dwl_local.sh"
+
+[ -x "$local_script" ] && eval "$local_script $PPID"  # Run local config if it exists
+
+# Generate config if it doesnt exist
+if [ ! -f "$local_script" ]; then
+
+touch $local_script 
+chmod 755 $local_script
+cat << EOF > $local_script
 # EXAMPLES
 #
 # MUSIC PLAYER DAEMON
-# [ ! -s "$HOME/.config/mpd/pid" ] && mpd &
+# [ ! -s "\$HOME/.config/mpd/pid" ] && mpd &
 #
 # XDG DESKTOP PORTAL FOR SCREENSHARING
 # /usr/lib/xdg-desktop-portal-wlr -r &
-# /usr/lib/xdg-desktop-portal-gtk --config "$HOME/.config/dwl/configs/xdg-desktop-portal-wlr.ini" -r &
+# /usr/lib/xdg-desktop-portal-gtk --config "\$HOME/.config/dwl/configs/xdg-desktop-portal-wlr.ini" -r &
 # /usr/lib/xdg-desktop-portal -r &
 #
 # WALLPAPER
-# eval "$HOME/.config/dwl/wallpaper/init_wallpaper.sh" &
+# eval "\$HOME/.config/dwl/wallpaper/init_wallpaper.sh" &
 #
 # MONITOR CONFIGURATION
 # wlr-randr\
@@ -40,29 +47,31 @@ dunst -config "$HOME/.config/dwl/configs/dunstrc" &
 # BAR SCRIPT
 # getvol()
 # {
-#     vol="$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
-#     [ "$vol" != "${vol%\[MUTED\]}" ] && printf " muted" && exit
-#     vol="${vol#Volume: }"
+#     vol="\$(wpctl get-volume @DEFAULT_AUDIO_SINK@)"
+#     [ "\$vol" != "\${vol%\[MUTED\]}" ] && printf " muted" && exit
+#     vol="\${vol#Volume: }"
 #     split() {
 #         # For ommiting the . without calling and external program.
-#         IFS=$2
-#         set -- $1
-#         printf '%s' "$@"
+#         IFS=\$2
+#         set -- \$1
+#         printf '%s' "\$@"
 #     }
-#     vol="$(printf "%.0f" "$(split "$vol" ".")")"
-#     echo $vol
+#     vol="\$(printf "%.0f" "\$(split "\$vol" ".")")"
+#     echo \$vol
 # }
 # 
 # barscript()
 # {
 #     while true; do
 #         printf "vol: %s%% | cpu: %s | mem: %s | %s"\
-#             "$(getvol)"\
-#             "$(awk "{print \$1, \$2, \$3}" < /proc/loadavg)"\
-#             "$(free -h | awk '/^Mem/ { print $3"/"$2 }' | sed s/i//g)"\
-#             "$(date '+%b %d (%a) %H:%M')"
+#             "\$(getvol)"\
+#             "\$(awk '{print \$1, \$2, \$3}' < /proc/loadavg)"\
+#             "\$(free -h | awk '/^Mem/ { print \$3"/"\$2 }' | sed s/i//g)"\
+#             "\$(date '+%b %d (%a) %H:%M')"
 #             sleep 10
 #         done
 # }
 # 
-# barscript > /proc/$dwlpid/fd/0
+# barscript > /proc/\$dwlpid/fd/0
+EOF
+fi

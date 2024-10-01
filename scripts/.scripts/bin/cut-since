@@ -30,7 +30,7 @@ if ! [[ -f "$1" ]]; then
 fi
 
 if [[ ${#@} -eq 4 ]]; then
-    ffmpeg -i "$1" -ss "$2" -c:v copy -c:a ac3 -map 0:a:$4 -map 0:v:0 "$3"
-else
-    ffmpeg -i "$1" -ss "$2" -to "$3" -c:v copy -c:a ac3 -map 0:a:$5  -map 0:v:0 "$4"
+    ffmpeg -ss "$2" -i "$1" -c:v copy -c:a ac3 -map 0:a:$4 -map 0:v:0 "$3"
+else                
+    ffmpeg -ss "$2" -i "$1" -to "$3" -c:v copy -c:a ac3 -map 0:a:$5 -map 0:v:0 "$4"
 fi
