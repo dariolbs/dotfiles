@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-source $HOME/.profile
+./.config/dwm/init.sh
 
-openbox
+dwm

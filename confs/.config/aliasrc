@@ -15,8 +15,7 @@ alias diff='diff -u'
 alias tb="nc termbin.com 9999"
 alias radio="~/.venv/bin/radio"
 alias lf="~/.config/lf/lf-ueberzug || lf"
-alias pspice="WINEPREFIX=~/.wine32 wine \"/home/dario/.wine/drive_c/Program Files/OrCAD_Demo/PSpice/pspice.exe\""
-alias psched="WINEPREFIX=~/.wine32 wine \"/home/dario/.wine/drive_c/Program Files/OrCAD_Demo/PSpice/psched.exe\""
+alias winexp='WINEPREFIX=$HOME/.wine_xp wine'
 
 alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
@@ -100,12 +99,6 @@ alias jctl="journalctl -p 3 -xb"
 
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-
-# bat alias
-if [ -x /usr/bin/batman ]; then
-    alias man="batman"
-fi
-# alias diff="batdiff"
 
 # JAVA
 alias java8="/usr/lib/jvm/java-8-openjdk/bin/java"

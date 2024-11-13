@@ -1,4 +1,3 @@
-# Packages for desktop usage
 # Fonts
 ttf-hack-nerd
 adobe-source-han-sans-cn-fonts
@@ -7,12 +6,14 @@ ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 noto-fonts
 noto-fonts-emoji
-# Audio
+
+# Audio / Media
 pipewire
 pipewire-pulse
 pipewire-alsa
 pipewire-jack
 wireplumber
+
 # Applications
 calcurse
 mpc
@@ -28,16 +29,67 @@ mpv
 gnome-epub-thumbnailer
 poppler
 ffmpegthumbnailer
+imv
+firefox
+thunderbird
+thunar
+
 # Icons
 adwaita-icon-theme
+
 # Gtk stuff
 gtk-engine-murrine
 gnome-themes-extra
 nwg-look
+
 # Better Desktop Experience
 polkit-kde-agent
 polkit
+
 # NetworkManager
 network-manager-applet
 networkmanager-openvpn
 networkmanager-strongswan
+
+## ---------------------------------------------------
+##                  COMPOSITOR
+## ---------------------------------------------------
+
+# Runtime dependecies
+dunst
+brightnessctl
+playerctl
+hyprpicker
+grim
+slurp
+xorg-xwayland
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+swaybg
+swayidle
+swaylock
+gammastep
+qt5-wayland
+qt5ct
+webkit2gtk
+wlr-randr
+foot
+
+# Compile-time dependecies
+meson
+libinput
+libdrm
+libxkbcommon
+pixman
+fcft
+wayland-protocols
+libxcb
+xcb-util-errors
+xcb-util-renderutil
+xcb-util-wm
+hwdata
+seatd
+libdisplay-info
+libliftoff
+tllist
+scdoc

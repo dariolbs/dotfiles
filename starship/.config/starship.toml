@@ -1,6 +1,20 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
+[character]
+# success_symbol = '[λ](blue)'
+# vimcmd_symbol = '[λ](blue)'
+# vimcmd_replace_symbol = '[λ](blue)'
+# vimcmd_replace_one_symbol = '[λ](blue)'
+# vimcmd_visual_symbol = '[λ](blue)'
+# error_symbol = '[λ](bold red)'
+success_symbol = '[](blue)'
+vimcmd_symbol = '[](blue)'
+vimcmd_replace_symbol = '[](blue)'
+vimcmd_replace_one_symbol = '[](blue)'
+vimcmd_visual_symbol = '[](blue)'
+error_symbol = '[](bold red)'
+
 [aws]
 symbol = "  "
 

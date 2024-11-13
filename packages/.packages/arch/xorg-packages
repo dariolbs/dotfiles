@@ -1,6 +1,4 @@
-# ArchLinux - Xorg package list
-# Aí nessa merda
-# X Stuff
+# Xorg packages for LEGACY systems
 xautolock
 xdotool
 xorg-server

@@ -1,7 +1,9 @@
-# Arch linux base package list
+# Base system packages that are required for magic
+
 # Text editors
 neovim
 vim
+
 # Others
 unrar
 fzf
@@ -34,3 +36,22 @@ sudo
 chafa
 perl-image-exiftool
 imagemagick
+unzip
+
+# Development
+base-devel
+python-pip
+bash-language-server
+lua-language-server
+typescript-language-server
+pyright
+clang
+valgrind
+gopls
+texlab
+podman
+ruby
+npm
+go
+nodejs
+man-pages

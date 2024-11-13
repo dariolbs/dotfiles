@@ -1,11 +1,8 @@
 # Debian base packages
-!command apt install
-libghc-gi-harfbuzz-dev
 build-essential
 manpages-dev
 gcc
 git
-vim
 stow
 zsh
 sudo
@@ -20,4 +17,5 @@ rsync
 exa
 polkit
 ruby
+vim
 neovim
