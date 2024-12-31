@@ -8,12 +8,12 @@ add_newline = false
 # vimcmd_replace_one_symbol = '[λ](blue)'
 # vimcmd_visual_symbol = '[λ](blue)'
 # error_symbol = '[λ](bold red)'
-success_symbol = '[](blue)'
-vimcmd_symbol = '[](blue)'
-vimcmd_replace_symbol = '[](blue)'
-vimcmd_replace_one_symbol = '[](blue)'
-vimcmd_visual_symbol = '[](blue)'
-error_symbol = '[](bold red)'
+# success_symbol = '[I](blue)'
+# vimcmd_symbol = '[V](blue)'
+# vimcmd_replace_symbol = '[R](blue)'
+# vimcmd_replace_one_symbol = '[R](blue)'
+# vimcmd_visual_symbol = '[V](blue)'
+# error_symbol = '[I](bold red)'
 
 [aws]
 symbol = "  "

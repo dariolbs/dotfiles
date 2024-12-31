@@ -58,6 +58,7 @@ setopt appendhistory
 
 ## ENVIRONMENT VARIABLES
 export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
@@ -65,14 +66,8 @@ export EDITOR="nvim"
 # Load profile
 source "$HOME/.profile"
 
-# Load persona profile
-if [ -f "$HOME/Documents/profile" ]; then
-    source "$HOME/Documents/profile"
-fi
-
 # Get fzf config
 source "$HOME/.config/zsh/fzf/config.zsh"
-
 source "$HOME/.config/zsh/plugin_manager"
 
 # Put your plugins here

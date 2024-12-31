@@ -32,7 +32,9 @@ ffmpegthumbnailer
 imv
 firefox
 thunderbird
+torbrowser-launcher
 thunar
+libreoffice-still
 
 # Icons
 adwaita-icon-theme
@@ -51,10 +53,6 @@ network-manager-applet
 networkmanager-openvpn
 networkmanager-strongswan
 
-## ---------------------------------------------------
-##                  COMPOSITOR
-## ---------------------------------------------------
-
 # Runtime dependecies
 dunst
 brightnessctl
@@ -62,6 +60,7 @@ playerctl
 hyprpicker
 grim
 slurp
+wl-clipboard
 xorg-xwayland
 xdg-desktop-portal
 xdg-desktop-portal-wlr

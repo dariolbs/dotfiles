@@ -11,6 +11,6 @@ lib32-opencl-nvidia
 opencl-nvidia
 libglvnd
 lib32-libglvnd
-lib32-libva-mesa-driver
-mesa-vdpau
+lib32-mesa
+mesa
 libvdpau-va-gl

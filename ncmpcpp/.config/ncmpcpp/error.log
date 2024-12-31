@@ -33,3 +33,4 @@ writeCommonTags: couldn't write 'track' tag to 'Music/Chill/nogfgoodnight - made
 writeCommonTags: couldn't write 'track' tag to 'Music/Classica/Beethoven - Moonlight Sonata (FULL) [4Tr0otuiQuU].opus' as it's not a positive integer
 TagLib: Could not open file /home/dario/Media/Audio/Osts/Persona/Memories of the City - Persona 3 Reload Original Soundtrack [KSOSILl5XHw].opus
 TagLib: Could not open file /home/dario/Media/Audio/Pop/Egzod & Maestro Chives - Royalty (ft. Neoni) [Official Lyric Video] [lW9ep22YmlM].opus
+TagLib: Could not open file /home/dario/Media/Audio/Electro/M2U - A Bella! [vJk4K9ASKIY].opus
