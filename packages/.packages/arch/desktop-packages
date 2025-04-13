@@ -29,6 +29,7 @@ mpv
 gnome-epub-thumbnailer
 poppler
 ffmpegthumbnailer
+wmenu
 imv
 firefox
 thunderbird
@@ -44,8 +45,8 @@ gtk-engine-murrine
 gnome-themes-extra
 nwg-look
 
-# Better Desktop Experience
-polkit-kde-agent
+# Authentication agent
+polkit-gnome
 polkit
 
 # NetworkManager
@@ -54,6 +55,7 @@ networkmanager-openvpn
 networkmanager-strongswan
 
 # Runtime dependecies
+waybar
 dunst
 brightnessctl
 playerctl
@@ -69,6 +71,8 @@ swayidle
 swaylock
 gammastep
 qt5-wayland
+qt6-wayland
+polkit-qt6
 qt5ct
 webkit2gtk
 wlr-randr

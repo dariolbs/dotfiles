@@ -16,3 +16,8 @@ export JAVA_HOME="/usr/lib/jvm/default"
 
 # Haskell
 [ -f "/home/dario/.ghcup/env" ] && . "/home/dario/.ghcup/env" # ghcup-env
+
+# Load personal profile
+if [ -f "$HOME/Documents/profile" ]; then
+    source "$HOME/Documents/profile"
+fi

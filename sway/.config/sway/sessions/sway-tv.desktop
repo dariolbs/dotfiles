@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Sway TV
+Comment=An i3-compatible Wayland compositor
+Exec=~/.config/sway/tv.sh
+Type=Application
