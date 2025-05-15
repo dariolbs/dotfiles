@@ -17,5 +17,5 @@ export JAVA_HOME="/usr/lib/jvm/default"
 # Load personal profile
 if [ -f "$HOME/Documents/profile" ]; then
     # Source for posix complient shell
-    eval $(cat "$HOME/Documents/profile")
+    source "$HOME/Documents/profile"
 fi
