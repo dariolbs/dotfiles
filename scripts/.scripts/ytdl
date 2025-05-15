@@ -1,0 +1,28 @@
+#!/bin/bash
+# Download tons of music from youtube with this simple script
+
+PROMPT=">>>"
+
+case "$1" in
+    "video")
+        command='yt-dlp -f mp4 --add-metadata --embed-thumbnail'
+        ;;
+    "audio")
+        command='yt-dlp -x -f bestaudio --add-metadata --embed-thumbnail'
+        ;;
+    *)
+        echo First argument has to be either video or audio
+        exit 1
+        ;;
+esac
+
+links=()
+
+echo type \"start\" to begin downloading
+while [ "$r" != "start" ]; do
+    printf "$PROMPT "
+    read r
+    links+=($r)
+done
+
+eval "$command $links"

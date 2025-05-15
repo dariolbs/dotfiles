@@ -1,0 +1,51 @@
+#!/usr/bin/bash
+
+set -e
+
+if [ -z "$1" ]; then
+    echo No package lists passed.
+    exit 1
+fi
+
+for f in "$@"; do
+    if ! [ -r $f ]; then
+        echo File \"$f\" does not exist or the user has no read access.
+        exit 1
+    fi
+done
+
+set -u
+
+ic="paru"
+pmflags="-S --needed --noconfirm"
+tempdir="$XDG_RUNTIME_DIR/paru-install"
+
+! command -v sudo &> /dev/null && {
+    echo sudo is not installed
+    exit 1
+}
+
+# Install paru if not installed
+! command -v paru &> /dev/null && {
+    echo Paru is not installed, do you want to install it? [Y/n]
+    read r
+    if [ $r != "y" ] && [ $r != "Y" ]; then
+        ic="sudo pacman"
+    else
+        cdir="$PWD"
+        mkdir -p ${tempdir}
+        cd ${tempdir}
+        sudo pacman -S --needed base-devel tar zstd
+        git clone https://aur.archlinux.org/paru.git
+        cd paru
+        makepkg -si
+        cd $cdir
+    fi
+}
+
+packages="$(cat $@ | grep -v "^#" | tr '\n' ' ')"
+
+# Install yazi if not installed
+! command -v yazi &> /dev/null && eval "${ic} ${pmflags} yazi"
+
+eval "${ic} ${pmflags[@]} ${packages[@]}"

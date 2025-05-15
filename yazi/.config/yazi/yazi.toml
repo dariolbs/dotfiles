@@ -1,0 +1,4 @@
+# keymap.toml
+[manager]
+show_hidden = false
+ratio = [1, 4, 3]

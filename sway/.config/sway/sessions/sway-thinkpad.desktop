@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Sway Thinkpad
+Comment=An i3-compatible Wayland compositor
+Exec=~/.config/sway/thinkpad.sh
+Type=Application

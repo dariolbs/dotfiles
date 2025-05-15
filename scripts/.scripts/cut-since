@@ -1,0 +1,36 @@
+#!/usr/bin/bash
+# Uses ffmpeg to cut videos
+
+Help_me_caralho(){
+cat << EOF
+Arguments:
+1 - Name of the video
+2 - Start time
+3 - Output name
+4 - Audio Stream (Starting on 0)
+Or:
+1 - Name of the video
+2 - Start time
+3 - End time
+4 - Output name
+5 - Audio Stream (Starting on 0)
+EOF
+exit 1
+}
+
+#Check for invalid number of arguments
+if [[ ${#@} -lt 4 ]] || [[ ${#@} -gt 5 ]]; then
+    eval 'Help_me_caralho'
+fi
+
+# Check if the file exists
+if ! [[ -f "$1" ]]; then
+    printf 'File %s does not exist\n' "$1"
+    exit 1
+fi
+
+if [[ ${#@} -eq 4 ]]; then
+    ffmpeg -ss "$2" -i "$1" -c:v copy -c:a ac3 -map 0:a:$4 -map 0:v:0 "$3"
+else                
+    ffmpeg -ss "$2" -i "$1" -to "$3" -c:v copy -c:a ac3 -map 0:a:$5 -map 0:v:0 "$4"
+fi

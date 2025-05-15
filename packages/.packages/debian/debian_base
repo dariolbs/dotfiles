@@ -1,0 +1,21 @@
+# Debian base packages
+build-essential
+manpages-dev
+gcc
+git
+stow
+zsh
+sudo
+wget
+curl
+npm
+go
+nodejs
+neofetch
+tor
+rsync
+exa
+polkit
+ruby
+vim
+neovim

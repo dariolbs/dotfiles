@@ -1,0 +1,46 @@
+#!/usr/bin/zsh
+# Installs all plugins
+
+# Autopair
+plugins_folder="$HOME/.local/share/zsh"
+if [[ ! -d $plugins_folder/zsh-autopair ]]; then
+  git clone https://github.com/hlissner/zsh-autopair $plugins_folder/zsh-autopair
+fi
+source $plugins_folder/zsh-autopair/autopair.zsh
+autopair-init
+
+# Autosuggestions
+if [[ ! -d $plugins_folder/zsh-autosuggestions ]]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions $plugins_folder/zsh-autosuggestions
+fi
+source $plugins_folder/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Syntax Highlighting
+if [[ ! -d $plugins_folder/zsh-syntax-highlighting ]]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $plugins_folder/zsh-syntax-highlighting
+fi
+source $plugins_folder/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Hystory substring search
+if [[ ! -d $plugins_folder/zsh-history-substring-search ]]; then
+    git clone https://github.com/zsh-users/zsh-history-substring-search $plugins_folder/zsh-history-substring-search
+fi
+source $plugins_folder/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh
+
+# Starship
+if [[ ! -x /usr/local/bin/starship ]]; then
+    curl -sS https://starship.rs/install.sh | sh
+fi
+
+# Add a newline before the prompt
+precmd() { precmd(){ ; echo "" }}
+alias clear='clear; precmd() { precmd(){ echo "" }}'
+eval "$(starship init zsh)"
+
+function update_plugins(){
+    for i in $plugins_folder/*; do
+        echo Trying to update repo at $i
+        cd $i
+        git pull
+    done
+}

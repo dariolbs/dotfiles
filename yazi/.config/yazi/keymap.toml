@@ -1,0 +1,20 @@
+[manager]
+append_keymap = [
+    # Shortcuts
+	{ on = [ "g", "u" ], run = 'cd ~/Universidade', desc = "Go to my Universitie's directory" },
+	{ on = [ "g", "n" ], run = 'cd ~/.notes/', desc = "Go to my Notes directory" },
+	{ on = [ "g", "w" ], run = 'cd ~/Media/Wallpapers/', desc = "Go to my wallpaper's directory" },
+	{ on = [ "g", "D" ], run = 'cd ~/Documents/', desc = "Go to the document's directory" },
+	{ on = [ "g", "m" ], run = 'cd ~/Music/', desc = "Go to my music's directory" },
+	{ on = [ "g", "s" ], run = 'cd ~/.scripts/', desc = "Go to my script's directory" },
+	{ on = [ "g", "H" ], run = 'cd ~/.config/hypr/', desc = "Go to my Hyprland's config" },
+	{ on = [ "g", "v" ], run = 'cd ~/.config/nvim/', desc = "Go to my neovim config" },
+	{ on = [ "g", "b" ], run = 'cd /mnt/Barracuda', desc = "Go to Barracuda" },
+
+    # Scripts
+	{ on = [ "i", "w" ], run = 'shell --confirm "apply_wallpaper \"$0\""', desc = "Set a wallpaper" },
+	{ on = [ "i", "e" ], run = 'shell --confirm "trator $0"', desc = "Extract a file" },
+
+    # Others
+	# { on = [ "e" ], run = 'open', desc = "Open a file" },
+]

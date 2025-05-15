@@ -1,0 +1,98 @@
+# Fonts
+ttf-hack-nerd
+adobe-source-han-sans-cn-fonts
+adobe-source-han-sans-jp-fonts
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols
+noto-fonts
+noto-fonts-emoji
+
+# Audio / Media
+pipewire
+pipewire-pulse
+pipewire-alsa
+pipewire-jack
+wireplumber
+
+# Applications
+calcurse
+mpc
+mpd
+newsboat
+keepassxc
+zathura
+zathura-pdf-mupdf
+dunst
+webkit2gtk
+nsxiv
+mpv
+gnome-epub-thumbnailer
+poppler
+ffmpegthumbnailer
+wmenu
+imv
+firefox
+thunderbird
+torbrowser-launcher
+thunar
+libreoffice-still
+
+# Icons
+adwaita-icon-theme
+
+# Gtk stuff
+gtk-engine-murrine
+gnome-themes-extra
+nwg-look
+
+# Authentication agent
+polkit-gnome
+polkit
+
+# NetworkManager
+network-manager-applet
+networkmanager-openvpn
+networkmanager-strongswan
+
+# Runtime dependecies
+waybar
+dunst
+brightnessctl
+playerctl
+hyprpicker
+grim
+slurp
+wl-clipboard
+xorg-xwayland
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+swaybg
+swayidle
+swaylock
+gammastep
+qt5-wayland
+qt6-wayland
+polkit-qt6
+qt5ct
+webkit2gtk
+wlr-randr
+foot
+
+# Compile-time dependecies
+meson
+libinput
+libdrm
+libxkbcommon
+pixman
+fcft
+wayland-protocols
+libxcb
+xcb-util-errors
+xcb-util-renderutil
+xcb-util-wm
+hwdata
+seatd
+libdisplay-info
+libliftoff
+tllist
+scdoc

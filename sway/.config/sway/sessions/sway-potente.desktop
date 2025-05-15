@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Sway Potente
+Comment=An i3-compatible Wayland compositor
+Exec=~/.config/sway/potente.sh
+Type=Application

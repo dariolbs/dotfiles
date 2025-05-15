@@ -1,0 +1,97 @@
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias hw='hwinfo --short'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias fm='pcmanfm . &> /dev/null & disown'
+alias psmem='ps auxf | sort -nr -k 4'
+alias rmpkg="sudo pacman -Rdd"
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias e='nvim $(fzf)'
+alias open='xdg-open'
+alias diff='diff -u'
+alias tb="nc termbin.com 9999"
+alias winexp='WINEPREFIX=$HOME/.wine_xp wine'
+alias nf='notify-send "command finished running!"'
+alias neofetch='fastfetch'
+
+alias gitlog='git log --color --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
+EZA_FLAGS="--classify"
+LS_FLAGS="--color --classify"
+
+if command -v eza &> /dev/null; then
+    alias la="eza $EZA_FLAGS --git -lA"
+    alias ll="eza $EZA_FLAGS --git -l"
+    alias ls="eza $EZA_FLAGS -G"
+    alias sl="eza $EZA_FLAGS -G"
+    alias tree="eza $EZA_FLAGS -T"
+else
+    alias la="ls -lhA --color --classify"
+    alias ll="ls -lh --color --classify"
+    alias ls="ls --color --classify"
+    alias sl="ls --color --classify"
+fi
+
+if command -v rg &> /dev/null; then
+    alias grep='rg'
+else
+    alias grep='grep --color=auto'
+fi
+
+alias tra='trash-put -v'
+alias trr='trash-restore'
+alias rm='rm -v'
+alias upd='/usr/bin/update'
+alias vdir='vdir --color=auto'
+alias wget='wget -c '
+alias rot13='tr "A-Za-z" "N-ZA-Mn-za-m"'
+alias shred="shred --zero"
+alias aquario="asciiquarium"
+alias za="zathura"
+alias volume="sh ~/.scripts/statusbar/volume.sh"
+alias updategrub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias v='vim'
+alias nv='nvim'
+alias nb="newsboat"
+alias wireless="sudo ip link set wlp2s0 up"
+alias cal="calcurse"
+alias nm="neomutt"
+alias ncm="ncmpcpp"
+alias t='task'
+
+# YOUTUBE-DL
+alias ytm4a='yt-dlp -x -f "bestaudio[ext=m4a]" --add-metadata --embed-thumbnail'
+alias ytopus='yt-dlp -x -f bestaudio --add-metadata'
+alias ytmp4='yt-dlp -f mp4 --add-metadata --embed-thumbnail'
+ 
+# SHORTCUTS
+alias barracuda="cd /mnt/Barracuda"
+alias robalo="cd /mnt/Robalo"
+alias uni="cd ~/Universidade"
+alias doc="cd ~/Documents"
+alias books="cd ~/Documents/Media/Books"
+alias music="cd ~/Documents/Media/Music"
+alias podcasts="cd ~/Documents/Media/Podcasts"
+alias movies="cd ~/Documents/Media/Movies"
+alias anime="cd ~/Documents/Media/Anime"
+alias doc="cd ~/Documents"
+alias gd="cd /home/dario/.local/share/Steam/steamapps/common/Geometry\ Dash"
+alias temp="mkdir -p /tmp/dario; cd /tmp/dario"
+
+# MINECRAFT SERVERS
+alias sv='java -Xmx1024M -Xms1024M -jar'
+alias bettermcsv="/usr/lib/jvm/java-8-openjdk/jre/bin/java -Xmx4000M -jar forge.jar nogui"
+alias forgesv="/usr/lib/jvm/java-8-openjdk/jre/bin/java -Xmx3000m -jar"
+
+# Cleanup orphaned packages
+alias cleanup='sudo pacman -Rns `pacman -Qtdq`'
+
+# Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# Recent installed packages
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+
+# JAVA
+alias java8="/usr/lib/jvm/java-8-openjdk/bin/java"
+alias javac8="/usr/lib/jvm/java-8-openjdk/bin/javac"

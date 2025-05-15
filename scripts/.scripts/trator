@@ -1,0 +1,14 @@
+#!/usr/bin/sh
+# Compress/Extract all files with trator
+
+case "$1" in
+    "tar" ) tar -czvf "$2.tar.gz" "$2" ;;
+    'zip') zip -r -q -v "$2.zip" "$2" ;;
+	'rar') rar a "$2.rar" "$2" ;;
+    '7z') 7z a "$2.7z" "$2" ;;
+    *.zip | *.vsix | *.ZIP) unzip "$1" ;;
+    *.tar | *.tar.* | *.tgz ) tar -xvf "$1" ;;
+    *.rar) unrar x "$1" ;;
+    *.7z) 7z x "$1" ;;
+    *) printf "Compression type not found \n";;
+esac

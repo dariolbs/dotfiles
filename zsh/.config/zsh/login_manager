@@ -1,0 +1,17 @@
+#!/usr/bin/zsh
+# Dispay managers are all ass
+
+export TTY1_SCRIPT="$HOME/.tty1.sh"
+
+if [[ "$(tty)" == "/dev/tty1" && -x "$TTY1_SCRIPT" ]]; then
+
+    if [[ ! -f "$TTY1_SCRIPT" ]]; then
+        gen_login_script > "$TTY1_SCRIPT"
+        echo "Generated default startup script at $TTY1_SCRIPT"
+        echo "Change it to your needs!"
+        sleep 1
+    fi
+
+    echo "Executing $TTY1_SCRIPT..."
+    exec "$TTY1_SCRIPT"
+fi

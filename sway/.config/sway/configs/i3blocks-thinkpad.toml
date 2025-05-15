@@ -1,0 +1,30 @@
+[volume]
+command=~/.config/sway/scripts/volume.sh
+interval=once
+signal=10
+
+[keyboard_layout]
+command=~/.config/sway/scripts/kblayout.py
+interval=once
+signal=12
+
+[network]
+command=nmcli --color no -t con show --active | awk -f ~/.config/sway/scripts/network.awk
+interval=once
+signal=11
+
+[load]
+command=~/.config/sway/scripts/load.sh
+interval=5
+
+[memory]
+command=~/.config/sway/scripts/memory.sh
+interval=5
+
+[battery]
+command=~/.config/sway/scripts/battery.sh
+interval=5
+
+[epoch]
+command=date "+%a %b %d %H:%M"
+interval=60

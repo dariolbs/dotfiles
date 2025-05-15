@@ -1,0 +1,24 @@
+# Xorg packages for LEGACY systems
+xautolock
+xdotool
+xorg-server
+xorg-xinit
+xorg-xrandr
+xorg-xhost
+xwallpaper
+libx11
+libxinerama
+libxft
+ueberzugpp
+xorg-server-common
+xorg-setxkbmap
+xorg-xauth
+xorg-xev
+xorg-xhost
+xorg-xmodmap
+xorg-xrdb
+xclip
+xf86-input-libinput
+xwallpaper
+sxhkd
+redshift
