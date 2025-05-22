@@ -1,5 +1,0 @@
-app-arch/unrar unRAR
-sys-kernel/linux-firmware linux-fw-redistributable
-sys-firmware/intel-microcode intel-ucode
-# required by games-util/steam-launcher (argument)
->=games-util/steam-launcher-1.0.0.82-r1 ValveSteamLicense

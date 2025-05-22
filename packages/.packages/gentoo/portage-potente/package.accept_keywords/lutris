@@ -1,7 +1,0 @@
-# required by lutris (argument)
-dev-python/pypresence ~amd64
-# required by lutris (argument)
-games-util/lutris ~amd64
-# required by games-util/lutris-0.5.19::gentoo[python_single_target_python3_12]
-# required by lutris (argument)
-dev-python/moddb ~amd64

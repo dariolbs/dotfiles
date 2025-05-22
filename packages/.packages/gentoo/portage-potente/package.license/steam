@@ -1,5 +1,0 @@
-games-util/steam-launcher ValveSteamLicense
-# required by net-im/discord (argument)
->=net-im/discord-0.0.90 all-rights-reserved
-# required by media-sound/spotify (argument)
->=media-sound/spotify-1.2.59 Spotify
